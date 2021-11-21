@@ -1,5 +1,20 @@
-# Esummit22-frontend
-Run the following in terminal after cloning the code <br>
-``` npm run build ```
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Getting Started
 
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
+Install pre-commit hooks for code formatting:
+
+```bash
+npm install -g pre-commit
+pre-commit install
+
+```
+For linting :
+yarn lint
