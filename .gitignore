@@ -36,3 +36,7 @@ yarn-error.log*
 #lock files
 yarn.lock
 package-lock.json
+
+# SEO
+/public/robots.txt
+/public/sitemap.xml
