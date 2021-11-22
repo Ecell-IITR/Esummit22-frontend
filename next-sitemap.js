@@ -1,6 +1,6 @@
 const HOST_URL =
   process.env.ENV === "prod"
-    ? "https://esummit.vercel.app"
+    ? "https://www.esummit.com"
     : "http://localhost:3000";
 
 module.exports = {
