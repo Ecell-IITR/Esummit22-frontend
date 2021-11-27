@@ -1,6 +1,7 @@
 import { DefaultSeoProps } from "next-seo";
 
-export const SITE_DESCRIPTION = `Esummit`;
+export const SITE_DESCRIPTION = `E-Cell IIT Roorkee is Asia's one of the Largest Entrepreneurship Promoting college body. Our flagship event E-Summit, has hosted some of the most prominent stalwarts of the industry over the years including but not limited to startup expo, Ideastorm, Investors Vista, Saleable, product-a-thon, speaker events and much more 
+`;
 
 const defaultSEOConfig = {
   defaultTitle: "Esummit",
