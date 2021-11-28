@@ -20,5 +20,10 @@
   "devDependencies": {
     "eslint": "<8.0.0",
     "eslint-config-next": "12.0.4"
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Ecell-IITR/Esummit22-frontend.git",
+  "author": "pranav <pranav_a@ece.iitr.ac.in>",
+  "license": "MIT"
 }
