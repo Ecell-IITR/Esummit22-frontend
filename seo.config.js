@@ -11,7 +11,7 @@ const defaultSEOConfig = {
     locale: "en_IN",
     site_name: "E-summit_22",
     title: "E-summit 22",
-    description: "Official website of E-summit 22 IIT Roorkee ",
+    description: SITE_DESCRIPTION,
     images: [
       {
         url: "https://www.esummit.in/static/media/new-home-esummit.39c7033f.svg",
