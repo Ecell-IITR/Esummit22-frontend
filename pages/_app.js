@@ -1,4 +1,5 @@
 import "../styles/globals.css";
+import  '../styles/index.scss'
 import { AuthContext } from "../utils/auth-context";
 import { isAuthenticated, isLocalHost, unAuthenticate } from "../utils";
 import router, { useRouter } from "next/router";
@@ -7,6 +8,7 @@ import { DefaultSeo } from "next-seo";
 import defaultSEOConfig from "../seo.config";
 import Script from "next/script";
 import config from "../config";
+import Footer from '../components/footer'
 
 function MyApp({ Component, pageProps }) {
   // initial_user
@@ -33,6 +35,7 @@ function MyApp({ Component, pageProps }) {
            `}
       </Script>
       <Component {...pageProps} />
+      <Footer/>
     </AuthContext.Provider>
   );
 }
