@@ -1,6 +1,6 @@
 .new-footer-container {
   overflow: hidden;
-
+  font-family: $ralewayFont;
   background-color: #01070b;
   display: flex;
   padding: 3rem;
@@ -10,10 +10,10 @@
     margin-left: 10%;
   }
   .width-40 {
-    width: 20%;
+    width: 15%;
   }
   .width-45 {
-    width: 40%;
+    width: 45%;
     margin-left: 10%;
   }
   .new-footer-container-child {
@@ -48,6 +48,7 @@
         width: 100%;
         padding-top: 0.5rem;
         background-color: #01070b;
+        opacity: 0.5;
 
         .new-footer-form-field {
           padding: 0.5rem;
@@ -66,12 +67,19 @@
           width: 100%;
         }
 
+        .height-100 {
+          // height: 100%;
+          padding: 18px 24px;
+        }
+
         .textarea-field {
           width: 100%;
+          padding: 18px 24px;
         }
       }
       .new-footer-form-input-contact {
         display: flex;
+        justify-content: space-between;
       }
       .clip {
         display: flex;
@@ -83,7 +91,7 @@
         border: 1px solid;
         border-color: #e9f0f4;
         color: #e9f0f4 !important;
-        font-style: Blinker;
+        font-family: $blinkerFont;
         font-weight: bold;
         border-radius: 10px;
         /* letter-spacing: 0.038em; */
@@ -126,7 +134,7 @@
         margin-top: 1rem;
         font-weight: bold;
         color: #e9f0f4;
-        font-family: Proxima-bold;
+        font-family: $ralewayFont;
         margin: 1rem 0 0 0;
         justify-content: space-between;
         font-size: 1.4rem;
@@ -143,7 +151,7 @@
         background-color: #01070b;
 
         font-weight: normal;
-        font-family: Proxima-regular;
+        font-family: $ralewayFont;
         letter-spacing: 0.03em;
 
         margin-top: 1rem;
@@ -188,6 +196,7 @@
 
   padding-top: 4rem;
 }
+
 .padding-1rem {
   padding: 1rem;
 }
