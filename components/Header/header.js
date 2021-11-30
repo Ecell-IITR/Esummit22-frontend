@@ -1,6 +1,7 @@
 import Link from "next/link";
 export const Header = () => {
   return (
+    
     <div className="navbar-container" id="navbar">
       <div className="navbar-logo-link">
         <img src="fete-of-fortitude.png" className="navbar-logo" alt="" />
