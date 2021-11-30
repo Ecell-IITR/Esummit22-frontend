@@ -152,7 +152,7 @@ const Footer = () => {
               <input
                 id="inputContact"
                 type="number"
-                className="new-footer-form-field height-100"
+                className="new-footer-form-field width-99 height-100"
                 placeholder="Contact Number"
                 name="contact"
                 //   value={contact}
