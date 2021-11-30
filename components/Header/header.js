@@ -1,7 +1,6 @@
 import Link from "next/link";
 export const Header = () => {
   return (
-    
     <div className="navbar-container" id="navbar">
       <div className="navbar-logo-link">
         <img src="fete-of-fortitude.png" className="navbar-logo" alt="" />
@@ -9,24 +8,36 @@ export const Header = () => {
       <ul className="navbar-subcontent1">
         <li className="navbar-items">
           <div className="hover_color_underline">
-            <span><pre> HOME </pre></span>
+            <span>
+              <pre> HOME </pre>
+            </span>
           </div>
         </li>
         <li className="navbar-items">
-          <div className="hover_color_underline"><pre> THEME </ pre></div>
+          <div className="hover_color_underline">
+            <pre> THEME </pre>
+          </div>
         </li>
         <li className="navbar-items">
-          <div className="hover_color_underline"><pre> EVENTS </pre></div>
+          <div className="hover_color_underline">
+            <pre> EVENTS </pre>
+          </div>
         </li>
         <li className="navbar-items">
-          <div className="hover_color_underline"><pre> SPEAKERS </pre></div>
+          <div className="hover_color_underline">
+            <pre> SPEAKERS </pre>
+          </div>
         </li>
         <li className="navbar-items">
-          <div className="hover_color_underline"><pre> SPONSORS </pre></div>
+          <div className="hover_color_underline">
+            <pre> SPONSORS </pre>
+          </div>
         </li>
 
         <li className="navbar-items">
-          <div className="hover_color_underline" ><pre> FAQ </pre></div>
+          <div className="hover_color_underline">
+            <pre> FAQ </pre>
+          </div>
         </li>
         {/* <li className="navbar-items">
             <NavHashLink
