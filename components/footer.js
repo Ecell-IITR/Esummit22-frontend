@@ -1,4 +1,49 @@
+import FetchApi from "../utils/fetchAPI";
+import { FOOTER_QUERY_API } from "../utils/APIs";
+import { toast } from "react-toastify";
+import React, { useState } from "react";
+
 const Footer = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [contact, setContact] = useState(null);
+  const [message, setMessage] = useState("");
+  const [query, setQuery] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      name,
+      email,
+      contact,
+      message,
+      query,
+    };
+    FetchApi("post", FOOTER_QUERY_API, data, null)
+      .then((res) => {
+        toast.success("Query Submitted !");
+        setName("");
+        setEmail("");
+        setMessage("");
+        setQuery();
+        setContact(null);
+      })
+      .catch((err) => {
+        console.log(err);
+        const errors = err.response.data;
+        for (let value of Object.values(errors)) {
+          toast.error("Error !", value[0]);
+        }
+        this.setState({
+          name: "",
+          email: "",
+          message: "",
+          contact: null,
+          query: "",
+        });
+      });
+  };
+
   return (
     <div className="new-footer-container" id="footer">
       <div className="new-footer-container-child width-30">
@@ -127,11 +172,12 @@ const Footer = () => {
               className="new-footer-form-field width-100 height-100"
               placeholder="Name"
               name="name"
-              //   value={name}
+              value={name}
               autoCorrect="off"
               autoComplete="off"
               autoCapitalize="off"
               spellCheck="false"
+              onChange={(event) => setName(event.target.value)}
               //   onChange={this.onChange}
               required
             />
@@ -143,44 +189,47 @@ const Footer = () => {
               className="new-footer-form-field width-100 height-100"
               placeholder="Email"
               name="email"
-              //   value={email}
+              value={email}
               autoCorrect="off"
               autoComplete="off"
               autoCapitalize="off"
               spellCheck="false"
+              onChange={(event) => setEmail(event.target.value)}
               //   onChange={this.onChange}
               required
             />
           </div>
           <div className="new-footer-form-input-contact">
-            <div className="new-footer-form-input-container mr-2">
+            <div className="new-footer-form-input-container mr-4">
               <input
                 id="inputContact"
                 type="number"
                 className="new-footer-form-field width-99 height-100"
                 placeholder="Contact Number"
                 name="contact"
-                //   value={contact}
+                value={contact}
                 autoCorrect="off"
                 autoComplete="off"
                 autoCapitalize="off"
                 spellCheck="false"
+                onChange={(event) => setContact(event.target.value)}
                 //   onChange={this.onChange}
                 required
               />
             </div>
-            <div className="new-footer-form-input-container ml-2">
+            <div className="new-footer-form-input-container">
               <input
                 id="inputContact"
                 type="text"
                 className="new-footer-form-field  width-100 height-100"
                 placeholder="Query Regarding"
                 name="query"
-                //   value={query}
+                value={query}
                 autoCorrect="off"
                 autoComplete="off"
                 autoCapitalize="off"
                 spellCheck="false"
+                onChange={(event) => setQuery(event.target.value)}
                 //   onChange={this.onChange}
                 required
               />
@@ -193,18 +242,22 @@ const Footer = () => {
               className="new-footer-form-field textarea-field"
               placeholder="Write your message"
               name="message"
-              //   value={message}
+              value={message}
               rows="5"
               autoCorrect="off"
               autoComplete="off"
               autoCapitalize="off"
               spellCheck="false"
+              onChange={(event) => setMessage(event.target.value)}
               //   onChange={this.onChange}
               required
             />
           </div>
           {/* <button className="new-form-submit-button" type="submit"> */}
-          <div className="clip"> SUBMIT </div>
+          <div className="clip" onClick={handleSubmit}>
+            {" "}
+            SUBMIT{" "}
+          </div>
           {/* {loader ? (
                 <>
                   <i className="fa fa-circle-o-notch fa-spin"></i>

@@ -217,71 +217,72 @@
 }
 
 @media only screen and (max-width: 760px) {
-  .new-footer-container{
-  padding: 1rem;
-  .width-30 {
-    width: 100% !important;
-    
-  }
-  .width-40 {
-    width: 100% !important;
-    display: flex;
-    align-items: center;
-  }
-  .width-45 {
-    width: 100% !important;
-    margin-left: 0% !important;
-  }
-  .new-footer-form-input-contact {
-    display: flex;
-    flex-direction: column;
-  }
-  .width-99 {
-    width: 100%;
-  }
-  .new-footer-section-ecell-logo {
-    display: none;
-  }
   .new-footer-container {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+    padding: 1rem;
+    flex-direction: column-reverse;
+    .width-30 {
+      width: 100% !important;
+    }
+    .width-40 {
+      width: 100% !important;
+      display: flex;
+      align-items: center;
+    }
+    .width-45 {
+      width: 100% !important;
+      margin-left: 0% !important;
+    }
+    .new-footer-form-input-contact {
+      display: flex;
+      flex-direction: column;
+    }
+    .width-99 {
+      width: 100%;
+    }
+    .new-footer-section-ecell-logo {
+      display: none;
+    }
+    .new-footer-section-esummit-logo {
+      display: none;
+    }
+    .new-footer-container {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .new-footer-form {
+      width: 85% !important;
+    }
+    .clip {
+      margin-left: 25%;
+    }
   }
-  .new-footer-form {
-    width: 85% !important;
-  }
-  .clip {
-    margin-left: 25%;
-  }
-}
   .new-footer-section-contact-container-additional-margin01 {
     background-color: #01070b;
-  
+
     padding-top: 0rem !important;
   }
   .new-footer-section-contact-container-additional-margin0 {
     background-color: #01070b;
-  
+
     padding-top: 0rem !important;
   }
   .new-footer-section-contact-container-additional-margin {
     background-color: #01070b;
-  
+
     padding-top: 0rem !important;
   }
   .new-footer-section-contact-container-additional-margin1 {
     background-color: #01070b;
-  
+
     padding-top: 0rem !important;
   }
-
 }
 
 @media only screen and (max-width: 1100px) {
-  
   .width-30 {
     width: 34% !important;
-    margin-left: 0%!important;
+    margin-left: 0% !important;
   }
   .width-40 {
     width: 28% !important;
@@ -297,5 +298,4 @@
   .width-99 {
     width: 100%;
   }
-  
 }

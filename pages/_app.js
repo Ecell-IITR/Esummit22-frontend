@@ -9,6 +9,8 @@ import defaultSEOConfig from "../seo.config";
 import Script from "next/script";
 import config from "../config";
 import Footer from "../components/footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function MyApp({ Component, pageProps }) {
   // initial_user
@@ -21,6 +23,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <AuthContext.Provider value={{ user: isAuthenticated() }}>
       <DefaultSeo {...defaultSEOConfig} />
+      <ToastContainer />
       <Script
         strategy="lazyOnload"
         src={`"https://www.googletagmanager.com/gtag/js?id=${config.GOOGLE_ANALYTICS_ID}"`}
