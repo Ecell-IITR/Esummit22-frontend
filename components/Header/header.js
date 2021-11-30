@@ -7,25 +7,25 @@ export const Header = () => {
       </div>
       <ul className="navbar-subcontent1">
         <li className="navbar-items">
-          <div>
-            <span>HOME</span>
+          <div className="hover_color_underline">
+            <span><pre> HOME </pre></span>
           </div>
         </li>
         <li className="navbar-items">
-          <div>THEME</div>
+          <div className="hover_color_underline"><pre> THEME </ pre></div>
         </li>
         <li className="navbar-items">
-          <div>EVENTS</div>
+          <div className="hover_color_underline"><pre> EVENTS </pre></div>
         </li>
         <li className="navbar-items">
-          <div>SPEAKERS</div>
+          <div className="hover_color_underline"><pre> SPEAKERS </pre></div>
         </li>
         <li className="navbar-items">
-          <div>SPONSORS</div>
+          <div className="hover_color_underline"><pre> SPONSORS </pre></div>
         </li>
 
         <li className="navbar-items">
-          <div>FAQ</div>
+          <div className="hover_color_underline" ><pre> FAQ </pre></div>
         </li>
         {/* <li className="navbar-items">
             <NavHashLink

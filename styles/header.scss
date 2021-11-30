@@ -177,6 +177,19 @@ a {
 }
 .navbar-mobile-container {
   display: none;
+
+}
+
+.hover_color_underline:hover{
+  color : rgba(245, 228, 202, 1);
+  
+ 
+  
+  text-decoration: underline;
+  text-decoration-thickness: 0.2vw;
+  text-underline-offset: 10px;
+  
+
 }
 
 @media screen and (max-width: 480px) {
