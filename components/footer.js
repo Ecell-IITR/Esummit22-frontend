@@ -11,13 +11,15 @@ const Footer = () => {
         </a>
         <div>
           <div className="new-footer-section-contact-container new-footer-section-contact-container-additional-margin0">
-            <div className="new-footer-section-contact-heading">EMAIL</div>
+            <div className="new-footer-section-contact-heading blinker-font">
+              EMAIL
+            </div>
             <div className="new-footer-section-contact-subheading">
               esummit@iitr.ac.in
             </div>
           </div>
           <div className="new-footer-section-contact-container new-footer-section-contact-container-additional-margin">
-            <div className="new-footer-section-contact-heading">
+            <div className="new-footer-section-contact-heading blinker-font">
               FOLLOW US AT
             </div>
             <div className="new-footer-section-contact-subheading logo-container">
@@ -34,13 +36,38 @@ const Footer = () => {
                 />
               </a>
               <a
+                className="new-footer-section-contact-link"
+                href="https://twitter.com/ECell_IITR"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="Twitter.png"
+                  className="new-footer-section-contact-logo"
+                  alt=""
+                />
+              </a>
+
+              <a
                 href="https://www.instagram.com/ecelliitr/"
                 target="_blank"
                 className="new-footer-section-contact-link"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="instagram.png"
+                  src="Instagram.png"
+                  className="new-footer-section-contact-logo"
+                  alt=""
+                />
+              </a>
+              <a
+                className="new-footer-section-contact-link"
+                href="https://www.linkedin.com/company/esummit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="LinkedIN.png"
                   className="new-footer-section-contact-logo"
                   alt=""
                 />
@@ -53,30 +80,6 @@ const Footer = () => {
               >
                 <img
                   src="Youtube.png"
-                  className="new-footer-section-contact-logo"
-                  alt=""
-                />
-              </a>
-              <a
-                className="new-footer-section-contact-link"
-                href="https://twitter.com/ECell_IITR"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="Twitter.png"
-                  className="new-footer-section-contact-logo"
-                  alt=""
-                />
-              </a>
-              <a
-                className="new-footer-section-contact-link"
-                href="https://www.linkedin.com/company/esummit"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="Linkedin.png"
                   className="new-footer-section-contact-logo"
                   alt=""
                 />
@@ -95,13 +98,15 @@ const Footer = () => {
         </a>
         <div>
           <div className="new-footer-section-contact-container new-footer-section-contact-container-additional-margin01">
-            <div className="new-footer-section-contact-heading">PHONE</div>
+            <div className="new-footer-section-contact-heading blinker-font">
+              PHONE
+            </div>
             <div className="new-footer-section-contact-subheading">
               Vinyas: +91 98765 56789 <br /> Sharma: +91 98765 56789
             </div>
           </div>
           <div className="new-footer-section-contact-container new-footer-section-contact-container-additional-margin1">
-            <div className="new-footer-section-contact-heading">
+            <div className="new-footer-section-contact-heading blinker-font">
               OUR ADDRESS
             </div>
             <div className="new-footer-section-contact-subheading prewrap">
@@ -136,7 +141,7 @@ const Footer = () => {
               id="inputEmail"
               type="email"
               className="new-footer-form-field width-100 height-100"
-              placeholder="EMail"
+              placeholder="Email"
               name="email"
               //   value={email}
               autoCorrect="off"
@@ -148,7 +153,7 @@ const Footer = () => {
             />
           </div>
           <div className="new-footer-form-input-contact">
-            <div className="new-footer-form-input-container">
+            <div className="new-footer-form-input-container mr-2">
               <input
                 id="inputContact"
                 type="number"
@@ -164,7 +169,7 @@ const Footer = () => {
                 required
               />
             </div>
-            <div className="new-footer-form-input-container">
+            <div className="new-footer-form-input-container ml-2">
               <input
                 id="inputContact"
                 type="text"
@@ -199,7 +204,7 @@ const Footer = () => {
             />
           </div>
           {/* <button className="new-form-submit-button" type="submit"> */}
-          <div className="clip">      SUBMIT      </div>
+          <div className="clip"> SUBMIT </div>
           {/* {loader ? (
                 <>
                   <i className="fa fa-circle-o-notch fa-spin"></i>
