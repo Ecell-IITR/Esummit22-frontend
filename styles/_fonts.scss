@@ -1,9 +1,11 @@
 $ralewayFont: "Raleway";
 $blinkerFont: "Blinker";
-$copperPalletGradient: "linear-gradient(124.76deg, #F5E4CA 12.61%, #DBBA89 63.66%";
+$linearGradient: linear-gradient(
+  #dbba89 0%,
+  rgba(219, 186, 137, 0.33) 124.76%
+);
 
 .blinker-font {
-  font-family: $blinkerFont;
 }
 
 .raleway-font {
