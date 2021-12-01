@@ -25,16 +25,10 @@
 .professional-pay-container a {
   text-decoration: none;
 }
-.pp-rajorpay-logo {
-  background-color: transparent;
-  width: 10%;
-  /* margin: auto; */
-  padding: 1%;
-  margin: auto 8%;
-}
+
 .pp-text {
   background-color: transparent;
-  width: max-content;
+  width: 100%;
   align-self: center;
 }
 .pp-text-1 {
@@ -47,6 +41,8 @@
   font-weight: 200;
   background-color: transparent;
   font-size: 0.85rem;
+  width: 100%;
+  text-align: center;
   /* padding-top: -20px; */
   position: relative;
 }
