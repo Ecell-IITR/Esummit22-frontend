@@ -7,36 +7,60 @@ export const Header = () => {
       </div>
       <ul className="navbar-subcontent1">
         <li className="navbar-items">
-          <div className="hover_color_underline">
+          <div id="heading">
             <span>
-              <pre> HOME </pre>
+              <div className="hover_color">
+                <pre> HOME </pre>
+              </div>
+              <br />
+              <div className="hover_underline"> </div>
             </span>
           </div>
         </li>
         <li className="navbar-items">
-          <div className="hover_color_underline">
-            <pre> THEME </pre>
+          <div id="heading">
+            <div className="hover_color">
+              <pre> THEME </pre>
+              <br />
+              <div className="hover_underline"> </div>
+            </div>
           </div>
         </li>
         <li className="navbar-items">
-          <div className="hover_color_underline">
-            <pre> EVENTS </pre>
+          <div id="heading">
+            <div className="hover_color">
+              <pre> EVENTS </pre>
+              <br />
+              <div className="hover_underline"> </div>
+            </div>
           </div>
         </li>
         <li className="navbar-items">
-          <div className="hover_color_underline">
-            <pre> SPEAKERS </pre>
+          <div id="heading">
+            <div className="hover_color">
+              <pre> SPEAKERS </pre>
+              <br />
+              <div className="hover_underline"> </div>
+            </div>
           </div>
         </li>
         <li className="navbar-items">
-          <div className="hover_color_underline">
-            <pre> SPONSORS </pre>
+          <div id="heading">
+            <div className="hover_color">
+              <pre> SPONSORS </pre>
+              <br />
+              <div className="hover_underline"> </div>
+            </div>
           </div>
         </li>
 
         <li className="navbar-items">
-          <div className="hover_color_underline">
-            <pre> FAQ </pre>
+          <div id="heading">
+            <div className="hover_color">
+              <pre> FAQ </pre>
+              <br />
+              <div className="hover_underline"> </div>
+            </div>
           </div>
         </li>
         {/* <li className="navbar-items">
@@ -154,7 +178,7 @@ export const Header = () => {
       {/* </div> */}
       <ul className="navbar-subcontent2">
         <li className="navbar-items">
-          <span>LOG IN</span>
+          <span>LOG IN</span> <br />
         </li>
 
         <li className="navbar-items">
@@ -162,6 +186,7 @@ export const Header = () => {
         </li>
 
         <li className="navbar-items register-navbar">REGISTER</li>
+        <br />
       </ul>
     </div>
   );

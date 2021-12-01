@@ -14,7 +14,7 @@ const defaultSEOConfig = {
     description: SITE_DESCRIPTION,
     images: [
       {
-        url: "https://www.esummit.in/static/media/new-home-esummit.39c7033f.svg",
+        url: "publicEsummit_logo.png",
       },
     ],
   },
