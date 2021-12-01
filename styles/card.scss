@@ -1,0 +1,19 @@
+.trapezoid {
+  border-bottom: 40px solid;
+  border-left: 25px solid transparent;
+  border-right: 25px solid;
+  height: 0;
+  width: 200px;
+}
+.i_trapezoid {
+  border-top: 40px solid;
+  border-left: 25px solid;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 200px;
+}
+.rectangle {
+  height: 10px;
+  width: 250px;
+  background-color: #000;
+}
