@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <>
-      {width <= breakpoint ? (
+      {width && width <= breakpoint ? (
         <div>
           <HeaderMobile />
         </div>
