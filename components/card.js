@@ -2,10 +2,13 @@ import React from "react";
 
 export default function Card() {
   return (
-    <div className="card">
-      <div class="trapezoid "></div>
-      <div class="rectangle"></div>
-      <div class="i_trapezoid "></div>
+    <div className="professional-pay-container">
+      <div className="pp-botton">
+        <div className="pp-text">
+          <div className="pp-text-1">REGISTER NOW</div>
+          <div className="pp-text-2">Presented by E-Cell IITR</div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,19 +1,52 @@
-.trapezoid {
-  border-bottom: 40px solid;
-  border-left: 25px solid transparent;
-  border-right: 25px solid;
-  height: 0;
-  width: 200px;
+.professional-pay-container {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  width: 300px;
+  height: 100px;
+  border: 2px solid #5300bf;
+  /* background-color: #ff5642; */
+  z-index: 10000000000;
 }
-.i_trapezoid {
-  border-top: 40px solid;
-  border-left: 25px solid;
-  border-right: 25px solid transparent;
-  height: 0;
-  width: 200px;
+
+.pp-botton {
+  background: linear-gradient(94.89deg, #9e34d0 4.16%, #7203fd 96.27%);
+  /* background-color: #5300BF; */
+  width: 80%;
+  height: 70%;
+  margin: 5% 10%;
+  display: flex;
+  flex-direction: row;
+  /* margin: 50px; */
+  clip-path: polygon(10% 0, 100% 0, 100% 65%, 90% 100%, 0 100%, 0 33%);
+  color: white;
+  cursor: pointer;
 }
-.rectangle {
-  height: 10px;
-  width: 250px;
-  background-color: #000;
+.professional-pay-container a {
+  text-decoration: none;
+}
+.pp-rajorpay-logo {
+  background-color: transparent;
+  width: 10%;
+  /* margin: auto; */
+  padding: 1%;
+  margin: auto 8%;
+}
+.pp-text {
+  background-color: transparent;
+  width: max-content;
+  align-self: center;
+}
+.pp-text-1 {
+  font-weight: 500;
+  background-color: transparent;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.pp-text-2 {
+  font-weight: 200;
+  background-color: transparent;
+  font-size: 0.85rem;
+  /* padding-top: -20px; */
+  position: relative;
 }
