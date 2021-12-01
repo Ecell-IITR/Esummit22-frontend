@@ -186,14 +186,11 @@ a {
   -webkit-text-fill-color: transparent;
 }
 #heading:hover .hover_underline {
-  border-bottom: 5px solid;
-  border-left: 2.5px solid;
-  border-right: 2.5px solid;
-  border-width: 1px;
-  height: 1px;
+  height: 0.2vw;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   width: 100%;
-  border-color: #dbba89;
 }
+
 @media screen and (max-width: 480px) {
   .navbar-subcontent1,
   .navbar-subcontent2,
