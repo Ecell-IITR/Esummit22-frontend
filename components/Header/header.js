@@ -141,7 +141,7 @@ export const Header = () => {
       </ul>
 
       <ul className="navbar-subcontent2">
-        <li className="navbar-items">
+        <li className="navbar-items register-login">
           <span>
             LOG IN
             <br />{" "}
