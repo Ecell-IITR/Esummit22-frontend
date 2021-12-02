@@ -3,11 +3,12 @@ import React from "react";
 export default function PayNowCard() {
   return (
     <div className="professional-pay-container">
+      <div class="rectangle_grad"></div>
+      <div class="rectangle"></div>
       <div className="pp-botton">
         <div className="pp-text">
           <div className="pp-text-1">PAY NOW</div>
-          <div className="pp-text-2">Presented by E-Cell</div>
-          <div className="pp-text-2">IITR</div>
+          <div className="pp-text-2">Presented by E-Cell IITR</div>
         </div>
       </div>
     </div>

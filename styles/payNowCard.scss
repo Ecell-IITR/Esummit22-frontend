@@ -1,14 +1,28 @@
 .professional-pay-container {
   position: fixed;
-  bottom: 50px;
-  right: 0;
-  width: 300px;
-  height: 100px;
-  border: 2px solid #dbba89;
-  /* background-color: #ff5642; */
+  bottom: 9.25vh;
+  right: 1vw;
+  width: 13vw;
+  height: 9vh;
+
   z-index: 10000000000;
 }
-
+.rectangle {
+  position: fixed;
+  bottom: 6.9vh;
+  right: 0;
+  width: 15.09vw;
+  height: 14vh;
+  background-color: #000;
+}
+.rectangle_grad {
+  position: fixed;
+  bottom: 6.5vh;
+  right: 0;
+  width: 15.35vw;
+  height: 14.82vh;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+}
 .pp-botton {
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   /* background-color: #5300BF; */
@@ -31,17 +45,21 @@
   align-self: center;
 }
 .pp-text-1 {
-  font-weight: 500;
+  font-weight: 800;
   background-color: transparent;
   text-align: center;
   font-size: 1.1rem;
+  color: #000;
+  font-family: Raleway;
 }
 .pp-text-2 {
-  font-weight: 200;
+  font-weight: 500;
   background-color: transparent;
   font-size: 0.85rem;
   width: 100%;
   text-align: center;
   /* padding-top: -20px; */
+  color: #000;
+  font-family: Raleway;
   position: relative;
 }
