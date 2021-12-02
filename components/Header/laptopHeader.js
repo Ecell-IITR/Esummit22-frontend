@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { useState } from "react";
-export const Header = () => {
+import CustomGradientBtn from "../customGradientBtn";
+
+export const LaptopHeader = () => {
   //const [active, setactive] = useState("home")
   const active = "";
   return (
@@ -15,25 +17,18 @@ export const Header = () => {
       <ul className="navbar-subcontent1">
         <li className="navbar-items">
           <div id="heading">
-            <span>
-              <div
-                className={
-                  "home" == active ? "active_hover_color" : "hover_color"
-                }
-              >
-                <pre> HOME </pre>
-              </div>
-              <br />
-              <div
-                className={
-                  "home" == active
-                    ? "active_hover_underline"
-                    : "hover_underline"
-                }
-              >
-                {" "}
-              </div>
-            </span>
+            <div
+              className={
+                "home" == active ? "active_hover_color" : "hover_color"
+              }
+            >
+              <pre> HOME </pre>
+            </div>
+            <div
+              className={
+                "home" == active ? "active_hover_underline" : "hover_underline"
+              }
+            ></div>
           </div>
         </li>
         <li className="navbar-items">
@@ -44,7 +39,7 @@ export const Header = () => {
               }
             >
               <pre> THEME </pre>
-              <br />
+
               <div
                 className={
                   "theme" == active
@@ -65,7 +60,7 @@ export const Header = () => {
               }
             >
               <pre> EVENTS </pre>
-              <br />
+
               <div
                 className={
                   "events" == active
@@ -86,7 +81,7 @@ export const Header = () => {
               }
             >
               <pre> SPEAKERS </pre>
-              <br />
+
               <div
                 className={
                   "speakers" == active
@@ -107,7 +102,7 @@ export const Header = () => {
               }
             >
               <pre> SPONSORS </pre>
-              <br />
+
               <div
                 className={
                   "sponsors" == active
@@ -127,14 +122,12 @@ export const Header = () => {
               className={"faq" == active ? "active_hover_color" : "hover_color"}
             >
               <pre> FAQ </pre>
-              <br />
+
               <div
                 className={
                   "faq" == active ? "active_hover_underline" : "hover_underline"
                 }
-              >
-                {" "}
-              </div>
+              ></div>
             </div>
           </div>
         </li>
@@ -142,25 +135,20 @@ export const Header = () => {
 
       <ul className="navbar-subcontent2">
         <li className="navbar-items register-login">
-          <span>
-            LOG IN
-            <br />{" "}
-            <div>
-              <pre> </pre>
-            </div>{" "}
-          </span>
+          <span>LOG IN</span>
         </li>
 
         <li className="navbar-items">
           <p className="or-navbar">or</p>
-          <br />
         </li>
         <li>
-          <div className="navbar-items register-navbar">REGISTER</div>
+          <div className="navbar-items register-navbar">
+            <CustomGradientBtn text={"REGISTER"} />
+          </div>
         </li>
       </ul>
     </div>
   );
 };
 
-export default Header();
+export default LaptopHeader();

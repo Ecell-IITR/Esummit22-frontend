@@ -32,11 +32,9 @@
 
 .Hamburger {
   background-color: #01070b;
-
   width: 50px;
-
   float: right;
-  margin-top: 6vh;
+  margin-top: 1.75em;
   display: inline;
 }
 
@@ -45,14 +43,13 @@
   position: fixed;
   width: 100%;
   height: auto;
-  /* margin: -50px 0 0 0; */
-  padding: 50px;
   padding-left: 10px;
+  padding-bottom: 1.8vh;
   margin-top: 112px;
   opacity: 0.75;
   transform-origin: 0% 0%;
-  transform: translate(0, -140%);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transform: translate(0, -160%);
+  transition: transform 0.5s cubic-bezier(0.89, -0.63, 0, 1.75);
   z-index: 999;
 }
 .mobile-navbar-majorcontainer input:checked ~ ul {
@@ -66,10 +63,10 @@
 
 .mobilenavMenu-items {
   font-size: 1rem;
-  font-family: Proxima-regular;
   line-height: 4vw;
   background: inherit;
   opacity: 1;
+  margin-top: 1.2rem;
 }
 .mobilenavMenu-links {
   background: inherit !important;

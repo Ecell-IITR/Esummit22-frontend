@@ -1,12 +1,13 @@
 .navbar-container {
   background-color: #01070b;
   display: flex;
-
   justify-content: space-between;
-
+  align-items: center;
   position: relative;
   width: 100%;
   z-index: 100000;
+  padding: 0 10vw;
+  margin-top: 1.5vh;
 }
 
 .navbar-active {
@@ -27,10 +28,8 @@ a {
   margin-bottom: 0 !important;
 }
 .navbar-subcontent2 {
-  margin-right: 3vw;
   display: flex;
   flex-direction: row;
-
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -40,8 +39,7 @@ a {
 .navbar-logo {
   padding-top: 0.05vw;
   margin: 6% 0;
-  width: 15vw;
-  height: 3.75vw;
+  width: 12vw;
 }
 
 .navbar-container ul {
@@ -49,7 +47,6 @@ a {
   background-color: inherit;
 }
 .navbar-links {
-  font-family: Proxima-regular;
   background-color: inherit;
   font-weight: 470;
   letter-spacing: 0.038vw;
@@ -67,7 +64,6 @@ a {
   text-align: right;
   margin-right: 1.5vw;
   text-decoration: none;
-  font-family: Proxima-regular;
   font-weight: bold;
   font-style: normal;
   font-size: 2vh;
@@ -142,6 +138,7 @@ a {
 .or-navbar {
   text-decoration: none;
   background-color: inherit;
+  text-transform: none;
 }
 
 .clip {
@@ -168,9 +165,6 @@ a {
   color: white !important;
   background: #6f00ff;
 }
-.navbar-logo-link {
-  margin-left: 8.75em;
-}
 .navbar-mobile-container {
   display: none;
 }
@@ -185,12 +179,16 @@ a {
   height: 0.2vw;
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   width: 100%;
+  position: relative;
+  top: 12px;
 }
 
 .active_hover_underline {
   height: 0.2vw;
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   width: 100%;
+  position: relative;
+  top: 12px;
 }
 
 .active_hover_color {
@@ -209,18 +207,9 @@ a {
 }
 
 .register-navbar {
-  padding-top: 0;
-  margin-right: 0;
-  margin-bottom: 0.6vw;
-  font-size: 1vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #01070b;
-  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
-  width: 5.7vw;
-  height: 1.9vw;
+  width: 7vw;
   border-radius: 0.5vw 0.25vw 0.5vw 0px;
+  color: #01070b;
 }
 
 .register-login {
