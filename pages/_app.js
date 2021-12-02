@@ -11,6 +11,7 @@ import config from "../config";
 import Footer from "../components/footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Header from "../components/Header/index";
 
 function MyApp({ Component, pageProps }) {
   // initial_user
@@ -37,6 +38,7 @@ function MyApp({ Component, pageProps }) {
             gtag('config', '${config.GOOGLE_ANALYTICS_ID}');
            `}
       </Script>
+      <Header />
       <Component {...pageProps} />
       <Footer />
     </AuthContext.Provider>
