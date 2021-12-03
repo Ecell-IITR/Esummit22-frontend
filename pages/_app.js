@@ -41,6 +41,7 @@ function MyApp({ Component, pageProps }) {
       </Script>
       <Header />
       <Component {...pageProps} />
+      <Speaker_card/>
       <Footer />
     </AuthContext.Provider>
   );
