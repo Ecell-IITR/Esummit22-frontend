@@ -1,0 +1,112 @@
+.perks-container-behind {
+    background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+    width: 31vw;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2vh;
+    border-radius: 0px 18px 7px 18px;
+    
+
+    
+}
+
+.perks-container-front {
+    background-color: black;
+    width: 30.8vw;
+    align-items: center;
+    border-radius: 0px 18px 7px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.title_div {
+    font-family: Blinker;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2em;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    width: 25vw;
+    // padding-left: 8vw;
+    padding-top: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.title_div img {
+    padding-top: 1vh;
+    height: 1.3vh;
+    width: 14vw;
+}
+
+// .border_div {
+//     padding-top: 20px;
+//     padding-left: 97px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .border_div img {
+//     width: 150px;
+//     height: 1px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+.content_div {
+    width: 26vw;
+    padding-top: 2vh;
+}
+
+.content_div p {
+    text-align: center;
+}
+
+.content_style{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.85rem;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding-top: 1vh;
+    padding-bottom: 8vh;
+
+}
+
+@media  screen and (max-width:1400px) {
+    .content_style {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .perks-container-behind {
+        min-width: 50%;
+    }
+
+    .perks-container-front {
+        min-width: 100%;
+    }
+    .content_div {
+        width: 40vw;
+    }
+
+    .content_style {
+        padding-bottom: 4vh;
+        font-size: 1rem;
+    }
+}
