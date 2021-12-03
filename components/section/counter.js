@@ -21,7 +21,11 @@ export const Counter = () => {
               </VisibilitySensor>
             )}
           </CountUp>
-          <img className="landing-counter-svg" src="vector.png" alt='landing counter image' />
+          <img
+            className="landing-counter-svg"
+            src="vector.png"
+            alt="landing counter image"
+          />
           <span className="landing-counter-text">{tab.text}</span>
         </div>
       ))}
