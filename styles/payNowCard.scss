@@ -12,8 +12,8 @@
   align-self: flex-end;
   right: 0;
   top: 326px;
-  width: 336px;
-  height: 148px;
+  width: 335px;
+  height: 146px;
   background-color: #000;
 }
 .rectangle_grad {
@@ -21,7 +21,7 @@
   align-self: flex-end;
   top: 290px;
   width: 340px;
-  height: 156px;
+  height: 154px;
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
 }
 .pp-botton {
@@ -32,7 +32,7 @@
   margin: 5% 10%;
   display: flex;
   flex-direction: row;
-  /* margin: 50px; */
+  margin-right: 50px;
   clip-path: polygon(10% 0, 100% 0, 100% 65%, 90% 100%, 0 100%, 0 33%);
   cursor: pointer;
 }
