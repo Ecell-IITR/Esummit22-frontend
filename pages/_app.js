@@ -12,6 +12,7 @@ import Footer from "../components/footer";
 import Speaker_card from "../components/speaker-card";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Header from "../components/Header/index";
 
 function MyApp({ Component, pageProps }) {
   // initial_user
@@ -38,6 +39,7 @@ function MyApp({ Component, pageProps }) {
             gtag('config', '${config.GOOGLE_ANALYTICS_ID}');
            `}
       </Script>
+      <Header />
       <Component {...pageProps} />
       <Speaker_card/>
       <Footer />

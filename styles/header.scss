@@ -1,0 +1,217 @@
+.navbar-container {
+  background-color: #01070b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  z-index: 100000;
+  padding: 0 10vw;
+  margin-top: 1.5vh;
+}
+
+.navbar-active {
+  color: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+}
+a {
+  text-decoration: none;
+}
+.navbar-subcontent1 {
+  padding: 0;
+  /* scroll-padding-top: 10px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: inherit;
+  margin-bottom: 0 !important;
+}
+.navbar-subcontent2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-bottom: 0 !important;
+}
+
+.navbar-logo {
+  padding-top: 0.05vw;
+  margin: 6% 0;
+  width: 12vw;
+}
+
+.navbar-container ul {
+  list-style-type: none;
+  background-color: inherit;
+}
+.navbar-links {
+  background-color: inherit;
+  font-weight: 470;
+  letter-spacing: 0.038vw;
+  text-transform: uppercase;
+  color: #e9f0f4;
+  /* color: linear-gradient(99.8deg, #8c20e2 0%, #7518d2 100%); */
+  font-size: 0.85vw !important;
+  line-height: 1.02rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: inherit;
+}
+.navbar-items {
+  color: #e9f0f4;
+  text-align: right;
+  margin-right: 1.5vw;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2vh;
+  line-height: 2vh;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.navbar-items {
+  font-weight: 1000;
+}
+
+.logout-link {
+  color: #e61515;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.links-campus-ambassador {
+  transition: ease;
+  animation: campusamba 2.5s ease 0s infinite;
+  /* background-image: linear-gradient(
+    124.76deg,
+    #a036cd 12.61%,
+    #6f00ff 85.77%
+  ) !important; */
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-decoration: none;
+  /* background-color:inherit; */
+}
+@keyframes campusamba {
+  0% {
+    background-image: linear-gradient(124.76deg, #a036cd 0%, #6f00ff 100%);
+  }
+  10% {
+    background-image: linear-gradient(
+      124.76deg,
+      #a036cd 12.61%,
+      #6f00ff 85.77%
+    );
+  }
+  50% {
+    background-image: linear-gradient(
+      124.76deg,
+      #a036cd 49.19%,
+      #6f00ff 49.19%
+    );
+  }
+  90% {
+    background-image: linear-gradient(
+      124.76deg,
+      #a036cd 85.77%,
+      #6f00ff 12.61%
+    );
+  }
+  100% {
+    background-image: linear-gradient(124.76deg, #a036cd 100%, #6f00ff 0%);
+  }
+}
+
+.login-padding {
+  margin-left: 3.6vw;
+  text-decoration: none;
+  background-color: inherit;
+}
+.login-padding span {
+  background-color: inherit;
+}
+.or-navbar {
+  text-decoration: none;
+  background-color: inherit;
+  text-transform: none;
+}
+
+.clip {
+  width: 6.7vw !important;
+  background: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+  color: #6f00ff !important;
+  font-family: Proxima-regular;
+  text-decoration: none;
+  font-weight: bold !important;
+  /* letter-spacing: 0.038em; */
+  text-transform: uppercase;
+  font-size: 0.9vw !important;
+  line-height: 1.12rem;
+  text-align: center;
+  transition: 0.3s;
+  clip-path: polygon(10% 0, 100% 0, 100% 65%, 90% 100%, 0 100%, 0 33%);
+}
+.clip:hover {
+  color: white !important;
+  background: #6f00ff;
+}
+.navbar-mobile-container {
+  display: none;
+}
+
+#heading:hover .hover_color {
+  text-align: center;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#heading:hover .hover_underline {
+  height: 0.2vw;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  width: 100%;
+  position: relative;
+  top: 12px;
+}
+
+.active_hover_underline {
+  height: 0.2vw;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  width: 100%;
+  position: relative;
+  top: 12px;
+}
+
+.active_hover_color {
+  text-align: center;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-subcontent1,
+  .navbar-subcontent2,
+  .navbar-logo-link {
+    display: none;
+  }
+}
+
+.register-navbar {
+  width: 7vw;
+  border-radius: 0.5vw 0.25vw 0.5vw 0px;
+  color: #01070b;
+}
+
+.register-login {
+  font-size: 1vw;
+}
