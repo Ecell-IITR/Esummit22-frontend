@@ -9,6 +9,7 @@ import defaultSEOConfig from "../seo.config";
 import Script from "next/script";
 import config from "../config";
 import Footer from "../components/footer";
+import Speaker_card from "../components/speaker-card";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "../components/Header/index";
@@ -40,6 +41,7 @@ function MyApp({ Component, pageProps }) {
       </Script>
       <Header />
       <Component {...pageProps} />
+      <Speaker_card/>
       <Footer />
     </AuthContext.Provider>
   );
