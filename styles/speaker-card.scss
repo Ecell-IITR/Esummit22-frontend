@@ -1,0 +1,82 @@
+.speaker-card {
+  background-color: #01070b;
+
+  .speaker-card-box1 {
+    height: 332.3074035644531px;
+    width: 270.7908172607422px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .speaker-card-box1-background {
+    z-index: 1;
+    position: absolute;
+    height: 223.2358856201172px;
+    width: 268px;
+    
+    // left: 0px;top: 48.3819580078125px;
+    
+  }
+  .speaker-card-box1-photo {
+    width: 243.79px;
+    height: 332.31px;
+    border-radius: 50%;
+    border-width: 3px;
+    border: solid #01070b;
+    z-index: 2;
+    position: absolute;
+  }
+  .speaker-card-box {
+    margin-top: 1%;
+    width: 270.7908172607422px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: #ddbd8d;
+    border-top: 3px solid #ddbd8d;
+    border-bottom: 3px solid #ddbd8d;
+    border-image: repeating-linear-gradient(
+        90deg,
+        rgba(221, 189, 141, 0) -0.12%,
+        #ddbd8d 49.21%,
+        rgba(221, 189, 141, 0) 100%
+      )
+      8;
+    height: 104px;
+    overflow: hidden;
+    z-index: 5;
+    transition: .5s ease;
+  }
+  .speaker-card-box:hover{
+    height: 200px;
+}
+  .speaker-card-box-name {
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+  .speaker-card-box-position {
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    color: white;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  .speaker-card-description-hidden{
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    color: white;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+}
