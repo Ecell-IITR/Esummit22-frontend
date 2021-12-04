@@ -33,7 +33,7 @@
   flex-direction: column;
   padding: 2%;
   width: 14%;
-  align-items: start;
+  align-items: flex-start;
 }
 .EventsTimeline-subcontainer-rounds-heading-icon {
   display: flex;
@@ -134,7 +134,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .EventsTimeline-container{
+  .EventsTimeline-container {
     height: 130vh;
   }
   .TimelinePointer-img {
@@ -153,15 +153,15 @@
     position: relative;
     justify-content: space-between;
   }
-  .heding-logo{
+  .heding-logo {
     display: none;
   }
   .Timeline-Intersect {
     display: none;
   }
   .Timeline-img {
-  display: none;
-}
+    display: none;
+  }
   .Rounds-container {
     font-size: 0.7rem;
   }
@@ -178,16 +178,16 @@
     margin-bottom: 5%;
     width: 90%;
   }
-  .EventsTimeline-subcontainer-round-logo{
+  .EventsTimeline-subcontainer-round-logo {
     display: none;
   }
-  .EventsTimeline-subcontainer-round-details{
+  .EventsTimeline-subcontainer-round-details {
     width: 100%;
-    height:38vh;
+    height: 38vh;
     display: flex;
     align-items: center;
   }
-  .EventsTimeline-subcontainer-round-details-content{
+  .EventsTimeline-subcontainer-round-details-content {
     width: 90%;
   }
 }
