@@ -13,6 +13,7 @@ import Speaker_card from "../components/speaker-card";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "../components/Header/index";
+import Timeline_card from "../components/timeline";
 import PayNowCard from "../components/payNowCard";
 import MobileProvider from "../utils/MobileContext";
 
@@ -41,11 +42,13 @@ function MyApp({ Component, pageProps }) {
 
             gtag('config', '${config.GOOGLE_ANALYTICS_ID}');
            `}
-        </Script>
-        <Header />
-        <Component {...pageProps} />
-        <PayNowCard />
-        <Footer />
+      </Script>
+      <Header />
+      <Component {...pageProps} />
+      <Speaker_card/>
+      <Timeline_card/>
+      <Footer />
+      <PayNowCard />
       </MobileProvider>
     </AuthContext.Provider>
   );

@@ -1,0 +1,193 @@
+.EventsTimeline-container {
+  width: 100%;
+  height: 100vh;
+  background: #000000;
+  color: white;
+  position: relative;
+}
+.EventsTimeline-header {
+  font-size: 1.8rem;
+  margin-left: 7%;
+  font-weight: 700;
+  color: white;
+}
+.EventsTimeline-subcontainer {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  flex-direction: row;
+  //   justify-content: flex-start;
+}
+.EventsTimeline-subcontainer-rounds-heading {
+  background: transparent;
+  font-family: Blinker;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  width: 14%;
+  align-items: start;
+}
+.EventsTimeline-subcontainer-rounds-heading-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.EventsTimeline-subcontainer-rounds-description {
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  color: black;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  display: flex;
+  border-radius: 0px 15px 0px 15px;
+  flex-direction: column;
+  padding: 2%;
+  width: 40%;
+}
+// .Timeline-Intersect {
+//   margin-left: 10%;
+// }
+#rounds-description-heading {
+  background: transparent;
+  font-size: 1.3rem;
+  transition: 0.5s;
+}
+#rounds-description-content {
+  background: transparent;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+.Rounds-container {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  cursor: pointer !important;
+  z-index: 100;
+  transition: 0.5s;
+}
+.timelineRounds-active {
+  color: #dbba89;
+}
+.Timeline-nodisplay {
+  display: none;
+}
+
+.EventsTimeline-subcontainer-round-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.EventsTimeline-subcontainer-round-details-content {
+  width: 300px;
+  height: 70px;
+  border: solid #f5e4ca;
+  border-width: 2px;
+  border-radius: 0px 10px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.EventsTimeline-subcontainer-round-details-content-heading {
+  font-family: Blinker;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-left: 10%;
+}
+.EventsTimeline-subcontainer-round-details-content-description {
+  font-family: Raleway;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-left: 10%;
+}
+.EventsTimeline-subcontainer-round-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #f5e4ca;
+  border-width: 2px;
+  border-radius: 0px 10px 0px 10px;
+  width: 140px;
+}
+.EventsTimeline-subcontainer-round-logo-image {
+  height: 75px;
+  width: 76px;
+}
+
+@media screen and (max-width: 480px) {
+  .EventsTimeline-container{
+    height: 130vh;
+  }
+  .TimelinePointer-img {
+    position: absolute;
+    display: none;
+  }
+  .EventsTimeline-subcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .EventsTimeline-subcontainer-rounds-heading {
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    justify-content: space-between;
+  }
+  .heding-logo{
+    display: none;
+  }
+  .Timeline-Intersect {
+    display: none;
+  }
+  .Timeline-img {
+  display: none;
+}
+  .Rounds-container {
+    font-size: 0.7rem;
+  }
+  #rounds-description-content {
+    background: transparent;
+    font-size: 0.9rem;
+    transition: 0.5s;
+  }
+  .EventsTimeline-subcontainer-rounds-heading {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .EventsTimeline-subcontainer-rounds-description {
+    margin-bottom: 5%;
+    width: 90%;
+  }
+  .EventsTimeline-subcontainer-round-logo{
+    display: none;
+  }
+  .EventsTimeline-subcontainer-round-details{
+    width: 100%;
+    height:38vh;
+    display: flex;
+    align-items: center;
+  }
+  .EventsTimeline-subcontainer-round-details-content{
+    width: 90%;
+  }
+}
