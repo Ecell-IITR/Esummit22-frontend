@@ -14,6 +14,8 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "../components/Header/index";
 import Timeline_card from "../components/timeline";
+import PayNowCard from "../components/payNowCard";
+import MobileProvider from "../utils/MobileContext";
 
 function MyApp({ Component, pageProps }) {
   // initial_user
@@ -25,14 +27,15 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <AuthContext.Provider value={{ user: isAuthenticated() }}>
-      <DefaultSeo {...defaultSEOConfig} />
-      <ToastContainer />
-      <Script
-        strategy="lazyOnload"
-        src={`"https://www.googletagmanager.com/gtag/js?id=${config.GOOGLE_ANALYTICS_ID}"`}
-      />
-      <Script id="initialize-gtag" strategy="lazyOnload">
-        {`
+      <MobileProvider>
+        <DefaultSeo {...defaultSEOConfig} />
+        <ToastContainer />
+        <Script
+          strategy="lazyOnload"
+          src={`"https://www.googletagmanager.com/gtag/js?id=${config.GOOGLE_ANALYTICS_ID}"`}
+        />
+        <Script id="initialize-gtag" strategy="lazyOnload">
+          {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
@@ -45,6 +48,8 @@ function MyApp({ Component, pageProps }) {
       <Speaker_card/>
       <Timeline_card/>
       <Footer />
+      <PayNowCard />
+      </MobileProvider>
     </AuthContext.Provider>
   );
 }

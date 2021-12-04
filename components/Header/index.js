@@ -1,42 +1,12 @@
 import { LaptopHeader } from "./laptopHeader";
 import { HeaderMobile } from "./mobileHeader";
-import { useState, useEffect } from "react";
+import { useMobile, useUpdateMobile } from "../../utils/MobileContext";
+import React, { useEffect } from "react";
 
 export default function Header() {
-  const useWindowDimensions = () => {
-    const hasWindow = typeof window !== "undefined";
-
-    function getWindowDimensions() {
-      const width = hasWindow ? window.innerWidth : null;
-      const height = hasWindow ? window.innerHeight : null;
-      return {
-        width,
-        height,
-      };
-    }
-
-    const [windowDimensions, setWindowDimensions] = useState(
-      getWindowDimensions()
-    );
-
-    useEffect(() => {
-      if (hasWindow) {
-        function handleResize() {
-          setWindowDimensions(getWindowDimensions());
-        }
-
-        window.addEventListener("resize", handleResize);
-        return () => window.removeEventListener("resize", handleResize);
-      }
-    }, [hasWindow]);
-
-    return windowDimensions;
-  };
-
-  const { height, width } = useWindowDimensions();
-  const breakpoint = 768;
-
-  return (
-    <>{width && width <= breakpoint ? <HeaderMobile /> : <LaptopHeader />}</>
-  );
+  const setMobile = useUpdateMobile();
+  useEffect(() => {
+    setMobile();
+  });
+  return <>{useMobile().isMobile ? <HeaderMobile /> : <LaptopHeader />}</>;
 }
