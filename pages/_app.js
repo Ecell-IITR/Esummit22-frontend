@@ -13,6 +13,7 @@ import Speaker_card from "../components/speaker-card";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "../components/Header/index";
+import PayNowCard from "../components/payNowCard";
 
 function MyApp({ Component, pageProps }) {
   // initial_user
@@ -41,6 +42,7 @@ function MyApp({ Component, pageProps }) {
       </Script>
       <Header />
       <Component {...pageProps} />
+      <PayNowCard />
       <Footer />
     </AuthContext.Provider>
   );
