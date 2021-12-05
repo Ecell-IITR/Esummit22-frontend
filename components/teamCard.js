@@ -12,9 +12,16 @@ export const TeamMemberCard = () => {
           VAIBHAV SETHIA
         </div>
         <div className="team-card-description-hidden">
-          <div className="mb-2">Session Type : </div>
-          <div className="mb-2">Date : </div>
-          <div className="mb-2">Time : </div>
+          <div className="mb-2">vaibhav_s@bt.iitr.ac.in </div>
+          <div className="mb-2">9638527410 </div>
+          <div className="social-links">
+            <a href="https://twitter.com">
+              <img className="twitter" src="memberTwitter.png" alt="twitter" />
+            </a>
+            <a className="linkedin" href="https://linkedin.com">
+              <img src="memberLinkedin.png" alt="linkedin" />
+            </a>
+          </div>
         </div>
       </div>
     </div>
