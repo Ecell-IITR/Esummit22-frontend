@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 import Speaker_card from "../components/speaker-card";
 import React, { useEffect, useState } from "react";
 
@@ -48,12 +48,7 @@ function speakers() {
 }
 
 export default speakers;
-=======
-import Speaker_card from "../components/speaker-card";
-import React, { useEffect, useState } from "react";
 
-import FetchApi from "../utils/fetchAPI";
-import { SPEAKERS_API } from "../utils/APIs";
 
 function speakers() {
   const [Speakers_Arr, setSpeakers_Arr] = useState([]);
@@ -98,4 +93,4 @@ function speakers() {
 }
 
 export default speakers;
->>>>>>> Stashed changes
+
