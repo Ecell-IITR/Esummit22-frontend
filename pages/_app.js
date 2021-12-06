@@ -16,6 +16,7 @@ import Header from "../components/Header/index";
 import Timeline_card from "../components/timeline";
 import PayNowCard from "../components/payNowCard";
 import MobileProvider from "../utils/MobileContext";
+import Faq from "../components/faq/faq";
 
 function MyApp({ Component, pageProps }) {
   // initial_user
@@ -45,6 +46,7 @@ function MyApp({ Component, pageProps }) {
         </Script>
         <Header />
         <Component {...pageProps} />
+        <Faq/>
         <Footer />
         <PayNowCard />
       </MobileProvider>
