@@ -5,13 +5,13 @@ export const EventHead = () => {
       <div className="event-image-container">
         <img className="event-image" src="ideastorm.png" alt="ideastorm" />
         <div>
-          <button className="previous-event-button">
+          <button className="previous-event-button text-white	">
             <img className="previous-next" src="previous.png" alt="previous" />
             previous
           </button>
         </div>
         <div>
-          <button className="next-event-button">
+          <button className="next-event-button text-white	">
             <img className="previous-next" src="next.png" alt="next" />
             next
           </button>
