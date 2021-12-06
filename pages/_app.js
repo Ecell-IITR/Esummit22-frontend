@@ -14,6 +14,8 @@ import "react-toastify/dist/ReactToastify.css";
 import Header from "../components/Header/index";
 import PayNowCard from "../components/payNowCard";
 import MobileProvider from "../utils/MobileContext";
+import Content from "../components/content";
+
 function MyApp({ Component, pageProps }) {
   // initial_user
   initializeGA(isAuthenticated());
@@ -41,6 +43,7 @@ function MyApp({ Component, pageProps }) {
            `}
         </Script>
         <Header />
+        <Content/>
         <Component {...pageProps} />
         <Footer />
         <PayNowCard />
