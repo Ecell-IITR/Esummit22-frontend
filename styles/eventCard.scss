@@ -1,0 +1,129 @@
+.event-container {
+  position: relative;
+  width: 290px;
+  background-color: transparent;
+  border-radius: 64px 16px 64px 0px;
+  cursor: pointer;
+  margin: auto;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+}
+
+.event-card-image {
+  padding: 1px;
+  width: 100%;
+  position: relative;
+  border-radius: 64px 16px 64px 0px;
+  object-fit: cover;
+  display: block;
+  height: auto;
+}
+
+.event-card-name {
+  font-size: 20px;
+  color: black;
+  font-weight: 550;
+  line-height: 150%;
+  text-align: left;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: Blinker;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  padding: 5% 10%;
+  border-radius: 0px 0px 64px 0px;
+}
+
+.event-hovered {
+  position: absolute;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 59px;
+  transition: 0.25s ease;
+}
+.event-container:hover .event-hovered {
+  height: 279.36px;
+  border-radius: 0 0 64px 0;
+}
+
+// .event-card-para-des > *,li,span,strong{
+//     background-color:transparent;
+// }
+
+.event-card-para-des {
+  overflow-y: scroll;
+  color: black;
+  font-size: 12.8px;
+  padding: 0% 10%;
+  font-weight: 600;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-family: Raleway;
+  border-radius: 0 0 64px 0;
+  /* margin: auto 2%; */
+  /* margin-right: 25px; */
+  /* margin-left: -10px; */
+}
+.View_more {
+  padding: 5%;
+  text-align: center;
+  color: black;
+  background: rgba(194, 166, 124, 1);
+  border-radius: 0px 0px 64px 0px;
+  cursor: pointer;
+}
+
+.event-card-para {
+  height: 221.04px;
+  border-radius: 0 0 64px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-container:hover .event-card-name {
+  border-radius: 0;
+  background: transparent;
+}
+
+.event-container:hover .event-hovered {
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+}
+
+@media screen and (max-width: 480px) {
+  .event-container {
+    padding: 1px;
+    width: 215px;
+    height: 272px;
+  }
+  .event-card-image {
+    width: 100%;
+    height: 272px;
+  }
+  .event-card-name {
+    border-radius: 0 0 64px 0;
+    padding: 5%;
+    font-size: 16px;
+    height: 44.5px;
+    width: 211px;
+    background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  }
+  .event-hovered {
+    height: 45px;
+    width: 213px;
+    border-radius: 0 0 64px 0;
+  }
+  .event-container:hover .event-hovered {
+    height: 150px;
+  }
+  .event-card-para-des {
+    font-size: 8px;
+    width: 213px;
+  }
+  .event-card-para {
+    height: 104.8px;
+    width: 213px;
+  }
+}

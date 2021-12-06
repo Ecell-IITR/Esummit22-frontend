@@ -43,14 +43,12 @@ function MyApp({ Component, pageProps }) {
 
             gtag('config', '${config.GOOGLE_ANALYTICS_ID}');
            `}
-      </Script>
-      <Header />
-      <Component {...pageProps} />
-      <Speaker_card/>
-      <Timeline_card/>
-      <Faq/>
-      <Footer />
-      <PayNowCard />
+        </Script>
+        <Header />
+        <Component {...pageProps} />
+        <Faq/>
+        <Footer />
+        <PayNowCard />
       </MobileProvider>
     </AuthContext.Provider>
   );
