@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import FetchApi from "../utils/fetchAPI";
 import { SPEAKERS_API } from "../utils/APIs";
 
-function speakers() {
+export default function Speakers() {
   const [Speakers_Arr, setSpeakers_Arr] = useState([]);
   const [Speakers_Arr_caller, setSpeakers_Arr_caller] = useState(true);
 
@@ -44,5 +44,3 @@ function speakers() {
     </div>
   );
 }
-
-export default speakers;
