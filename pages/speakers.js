@@ -1,4 +1,3 @@
-
 import Speaker_card from "../components/speaker-card";
 import React, { useEffect, useState } from "react";
 
@@ -16,7 +15,6 @@ function speakers() {
         setSpeakers_Arr(res.data);
         setSpeakers_Arr_caller(false);
       }
-      console.log(res);
     })
     .catch((err) => {
       console.log(err);
@@ -27,9 +25,9 @@ function speakers() {
       <div className="bg-black text-white  Speaker_page_container">
         <div className="Speaker_page_title">Speaker</div>
         <div className="Speaker_Card_Container">
-          {Speakers_Arr.map((det) => {
+          {Speakers_Arr.map((det, id) => {
             return (
-              <div className="Speaker_Card_Loop">
+              <div className="Speaker_Card_Loop" key={id}>
                 <Speaker_card
                   name={det.speaker.name}
                   position={det.speaker.designation}
@@ -48,6 +46,3 @@ function speakers() {
 }
 
 export default speakers;
-
-
-
