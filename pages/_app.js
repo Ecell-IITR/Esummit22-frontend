@@ -43,7 +43,7 @@ function MyApp({ Component, pageProps }) {
            `}
         </Script>
         <Header />
-        <Content/>
+        <Content />
         <Component {...pageProps} />
         <Footer />
         <PayNowCard />
