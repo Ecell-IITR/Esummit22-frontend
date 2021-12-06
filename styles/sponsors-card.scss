@@ -19,7 +19,6 @@
   height: 32vh;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-
 }
 
 .img_div_front {
@@ -34,8 +33,6 @@
   border-radius: 20px;
   align-items: center;
   height: 31vh;
-
-
 }
 
 .title_sponsor {
@@ -52,7 +49,6 @@
   letter-spacing: 0.04em;
   justify-content: center;
   align-items: center;
-  
 }
 
 @media screen and (max-width: 1024px) {
@@ -81,13 +77,12 @@
   .img_div_front {
     width: 40vw;
     min-width: 49.5%;
-    padding-top: 3.0rem;
+    padding-top: 3rem;
     padding-bottom: 2.8rem;
     border-radius: 10px;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     height: 16vh;
-
   }
 
   .title_sponsor {
@@ -96,7 +91,7 @@
 }
 
 @media screen and (width: 768px) {
-  .img_div_behind{
+  .img_div_behind {
     height: 100vh;
   }
   .img_div_front {

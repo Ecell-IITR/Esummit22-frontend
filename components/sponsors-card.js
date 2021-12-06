@@ -1,11 +1,11 @@
 import React from "react";
 
-export const Sponsor = ({sponsorsTitle, format}) => {
+export const Sponsor = ({ sponsorsTitle, format }) => {
   return (
     <div className="sponsor_main">
       <div className="img_div_behind">
         <div className="img_div_front">
-          <img src={('sponsors/' + sponsorsTitle + format)} alt=" "></img>
+          <img src={"sponsors/" + sponsorsTitle + format} alt=" "></img>
         </div>
       </div>
       <div className="title_sponsor">
