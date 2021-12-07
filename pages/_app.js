@@ -14,8 +14,6 @@ import "react-toastify/dist/ReactToastify.css";
 import Header from "../components/Header/index";
 import PayNowCard from "../components/payNowCard";
 import MobileProvider from "../utils/MobileContext";
-import Content from "../components/content";
-import Task from "../components/task";
 
 function MyApp({ Component, pageProps }) {
   // initial_user
@@ -44,8 +42,6 @@ function MyApp({ Component, pageProps }) {
            `}
         </Script>
         <Header />
-        <Content />
-        <Task />
         <Component {...pageProps} />
         <Footer />
         <PayNowCard />
