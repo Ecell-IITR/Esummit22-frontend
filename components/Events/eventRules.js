@@ -8,7 +8,8 @@ function Eventrules(Event_Arr_rules) {
         {Event_Arr_rules.Eventrules.map((det) => {
           return (
             <div className="event_rule_loop">
-              <Image src="../../public/Ellipse91.png" /> {det.rule}
+              <img src="Ellipse91.png" className="Event_ellipse_rule" alt="" />{" "}
+              <div className="Event_rule_text">&emsp; {det.rule}</div>
             </div>
           );
         })}
