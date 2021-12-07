@@ -2,11 +2,11 @@
   font-family: Blinker;
   font-style: normal;
   font-weight: 600;
-  font-size: 2.3vw;
-  line-height: 38px;
+  font-size: 1.66vw;
+  line-height: 2vw;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin-bottom: 36px;
+  margin-bottom: 2.3vw;
 
   color: #e9f0f4;
 }
@@ -14,10 +14,9 @@
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 160%;
-  /* identical to box height, or 32px */
-  margin-bottom: 12px;
+  font-size: 1.041vw;
+  line-height: 1.6vw;
+
   letter-spacing: 0.02em;
 
   /* Theme Light Blue */
@@ -29,21 +28,29 @@
   display: flex;
 }
 .Event_ellipse_rule {
-  width: 15px;
-  height: 15px;
-  margin-top: 8px;
+  width: 0.976vw;
+  height: 0.976vw;
+  margin-top: 0.4vw;
 }
-// @media screen and (max-width: 1440px) {
+@media screen and (max-width: 768px) {
+  .Event-rules-head {
+    margin-left: 4vw;
+    font-size: 3vw;
+    line-height: 2vw;
+    letter-spacing: 0.02em;
+  }
 
-//   .Event-rules-head {
+  .event_rule_loop {
+    font-size: 4vw;
+    line-height: 4vw;
+    margin-bottom: 20px;
+    display: flex;
+  }
 
-//     font-size: 24px;
-//     line-height: 30px;
-//     letter-spacing: 0.02em;
-
-//     margin-bottom: 36px;
-
-//     color: #e9f0f4;
-//   }
-
-// }
+  .Event_ellipse_rule {
+    width: 3vw;
+    height: 3vw;
+    margin-top: 0.4vw;
+    margin-left: 4vw;
+  }
+}
