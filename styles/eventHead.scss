@@ -1,0 +1,68 @@
+.event-head {
+  position: relative;
+}
+.event-image-container {
+  width: 100vw;
+  top: 0;
+  background: linear-gradient(
+    90.09deg,
+    rgba(0, 0, 0, 0.9) 0.09%,
+    #594a32 51.76%,
+    rgba(0, 0, 0, 0.969988) 99.94%,
+    rgba(0, 0, 0, 0.9) 99.94%
+  );
+}
+.event-image {
+  position: relative;
+  object-fit: contain;
+  opacity: 0.25;
+}
+.previous-event-button {
+  position: absolute;
+  top: 40%;
+  margin: 5%;
+  font-family: Blinker;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.previous-next {
+  padding-left: 45%;
+}
+
+.next-event-button {
+  margin: auto;
+  position: absolute;
+  top: 40%;
+  right: 0;
+  margin: 5%;
+  font-family: Blinker;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.event-name {
+  font-family: Blinker;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e9f0f4;
+  font-size: 3rem;
+}
+.event-desc {
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 1.15rem;
+  line-height: 160%;
+  letter-spacing: 0.02em;
+  color: #e9f0f4;
+  margin-bottom: 30px;
+}
