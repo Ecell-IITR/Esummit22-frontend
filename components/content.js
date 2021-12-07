@@ -28,7 +28,7 @@ export const Content = () => {
         >
           ELIGIBILITY CRITERIA
         </a>
-        <img className="content-main-elements-img" src="circle.png" />
+        <img className="content-main-elements-img-mobile" src="circle.png" />
         <a
           className="content-main-elements-links"
           href="#"
