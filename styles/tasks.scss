@@ -37,9 +37,7 @@
     justify-content: space-around;
   }
   .tasks-container-share-button {
-   
     width: 99px;
-    
   }
   .tasks-container-share-score {
     font-family: Blinker;
@@ -55,21 +53,21 @@
 }
 
 @media screen and (max-width: 768px) {
-    .tasks-container {
-        width: 90%;
-        height: 270px;
-        margin-left: 5%;
-    }
-    .tasks-container-discription {
-        display: flex;
-        width: 90%;
-        justify-content: center;
-        font-family: Raleway;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 23px;
-        letter-spacing: 0.01em;
-        text-align: left;
-      }
+  .tasks-container {
+    width: 90%;
+    height: 270px;
+    margin-left: 5%;
+  }
+  .tasks-container-discription {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
 }

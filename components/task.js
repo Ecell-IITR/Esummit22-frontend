@@ -11,7 +11,7 @@ export const Task = () => {
       <div className="tasks-container-date">Due Date: 25/11/20</div>
       <div className="tasks-container-share">
         <div className="tasks-container-share-button">
-          <CustomGradientBtn text="Share" color="black"/>
+          <CustomGradientBtn text="Share" color="black" />
         </div>
         <div className="tasks-container-share-score">10 points</div>
         <div className="tasks-container-share-button">
