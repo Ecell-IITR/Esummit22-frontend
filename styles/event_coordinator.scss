@@ -1,44 +1,43 @@
 .main_div {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .image_div {
-    padding-right: 2rem;
+  padding-right: 2rem;
 }
 
 .info_div {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .name {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 26px;
-    letter-spacing: 0.02em;
-    text-transform: uppercase;
-    color: white;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: white;
 }
 
 .email {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 180%;
-    letter-spacing: 0.02em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 
 .contact {
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 180%;
-    letter-spacing: 0.02em;
-    font-feature-settings: 'pnum' on, 'lnum' on;
-
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0.02em;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
