@@ -1,4 +1,4 @@
-import { EventHead } from "./eventHeadcard";
+import EventHead from "./eventHeadCard";
 import { MobileEventHead } from "./mobileEventHeadCard";
 import { useMobile, useUpdateMobile } from "../../../utils/MobileContext";
 import React, { useEffect } from "react";
