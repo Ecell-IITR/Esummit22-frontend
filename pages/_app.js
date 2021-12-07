@@ -14,6 +14,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Header from "../components/Header/index";
 import PayNowCard from "../components/payNowCard";
 import MobileProvider from "../utils/MobileContext";
+
 function MyApp({ Component, pageProps }) {
   // initial_user
   initializeGA(isAuthenticated());
