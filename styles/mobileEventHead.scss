@@ -1,0 +1,100 @@
+.mobile-event-head {
+  position: relative;
+}
+
+.mobile-event-image-container {
+  width: 100vw;
+  background: linear-gradient(
+    90.09deg,
+    rgba(0, 0, 0, 0.9) 0.09%,
+    #594a32 51.76%,
+    rgba(0, 0, 0, 0.969988) 99.94%,
+    rgba(0, 0, 0, 0.9) 99.94%
+  );
+}
+
+.mobile-event-image {
+  position: relative;
+  object-fit: contain;
+  opacity: 0.25;
+  height: auto;
+}
+
+.mobile-previous-event-button {
+  display: flex;
+  position: absolute;
+  bottom: 12%;
+  padding: 2%;
+  font-family: Blinker;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  span {
+    margin-left: 3px;
+    margin-top: 2px;
+    text-align: center;
+  }
+}
+
+.mobile-next-event-button {
+  display: flex;
+  flex-direction: row-reverse;
+  position: absolute;
+  bottom: 12%;
+  right: 0;
+  padding: 2%;
+  font-family: Blinker;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  span {
+    margin-top: 2px;
+    margin-right: 3px;
+    text-align: center;
+  }
+}
+
+.mobile-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-event-name {
+  font-family: Blinker;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #e9f0f4;
+  font-size: 2.5rem;
+}
+
+.mobile-event-desc {
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: 0.02em;
+  color: #e9f0f4;
+  margin-bottom: 60px;
+}
+
+@media only screen and (height: 812px) {
+  .mobile-next-event-button {
+    bottom: 2%;
+  }
+  .mobile-previous-event-button {
+    bottom: 2%;
+  }
+}
+@media only screen and (height: 823px) {
+  .mobile-next-event-button {
+    bottom: 4%;
+  }
+  .mobile-previous-event-button {
+    bottom: 4%;
+  }
+}
