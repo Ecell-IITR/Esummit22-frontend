@@ -1,13 +1,12 @@
 .navbar-container {
-  background-color: #01070b;
+  background-color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   width: 100%;
   z-index: 100000;
-  padding: 0 10vw;
-  margin-top: 1.5vh;
+  padding: 1.5vh 10vw;
 }
 
 .navbar-active {
