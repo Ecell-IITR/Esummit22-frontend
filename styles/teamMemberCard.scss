@@ -1,56 +1,43 @@
 .member-container {
-  position: relative;
-  width: 250px;
-  height: 500px;
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 444.67px;
   color: white;
   cursor: pointer;
   text-align: center;
   margin: auto;
-}
-
-.main:hover .member-card-name {
-  height: 220px;
-  max-height: 220px;
-}
-
-.hovered {
-  transform: rotateY(180deg);
-  clip-path: polygon(0 0, 100% 0%, 100% 95%, 90% 100%, 0 100%);
-}
-
-.quotes-team-card-left {
-  z-index: -200;
-  background: transparent;
-  margin-right: -20px;
+  margin-bottom: 100px;
+  margin-left: 5%;
+  z-index: 0;
 }
 
 .member-card-image {
   object-fit: cover;
   border-radius: 27px;
+  height: 300px;
+  width: 260px;
+  z-index: 10;
 }
-.social-links-handle {
-  background: transparent;
-}
+
 .member-card-name {
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
+  letter-spacing: 2px;
   font-family: Raleway;
   overflow: hidden;
-  z-index: 5;
-  // border-image: repeating-linear-gradient(
-  //     90deg,
-  //     rgba(221, 189, 141, 0) -0.12%,
-  //     #ddbd8d 49.21%,
-  //     rgba(221, 189, 141, 0) 100%
-  //   )
-  //   8;
+  margin-bottom: 4px;
+  margin-top: 4px;
 }
 .member-card-post {
   font-family: Blinker;
   font-weight: normal;
   font-size: 1.25rem;
+  letter-spacing: 1.5px;
   border-top: 2px solid;
+  padding: 0 0 4px 0;
   border-image: repeating-linear-gradient(
       90deg,
       rgba(221, 189, 141, 0) -0.12%,
@@ -58,40 +45,30 @@
       rgba(221, 189, 141, 0) 100%
     )
     8;
-  //border-image: linear-gradient(180deg, rgba(255, 211, 140, 0) 0%, #FFD38C 48.23%, rgba(255, 211, 140, 0) 100%);
-}
-
-.member-card-quote {
-  padding-top: 17%;
-  padding-right: 4%;
-  padding-left: 4%;
-  height: 200px;
 }
 
 .team-card-box {
   margin-top: 1%;
-  width: 250px;
+  width: 260px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   z-index: 5;
-  transition: 0.5s ease;
 }
 
 .member-container:hover {
   height: auto;
   .team-card-description-hidden {
-    max-height: 150px;
+    max-height: 100px;
   }
 }
 
 .team-card-description-hidden {
   font-family: Raleway;
-  font-size: 18px;
   font-style: normal;
   color: white;
-  font-weight: 500;
-  line-height: 22px;
+  font-weight: 400;
+  line-height: 20px;
   letter-spacing: 0.02em;
   text-align: center;
   border-bottom: 2px solid;
@@ -103,33 +80,47 @@
     )
     8;
   max-height: 0;
-  transition: 0.5s ease;
+  transition: 1s ease;
 }
 
 .social-links {
   background: transparent;
   display: flex;
-
+  justify-content: center;
   margin: auto;
 }
 .social-links a {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .mb-2 {
-  font-size: 18px;
+  font-size: 14px;
   font-family: Raleway;
 }
 .twitter {
   margin-top: 7px;
-  margin-left: 80px;
+  margin-right: 10px;
 }
 .linkedin {
-  margin-left: 25px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 480px) {
   .member-container {
-    margin: unset;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (width: 768px) {
+  .member-container {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (width: 540px) {
+  .member-container {
+    margin-top: 50px;
+    margin-left: 30%;
   }
 }
