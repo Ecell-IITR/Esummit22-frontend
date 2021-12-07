@@ -13,9 +13,9 @@ const Speaker_card = ({ name, position, topic, date, time, image }) => {
         <div className="speaker-card-box-name">{name}</div>
         <div className="speaker-card-box-position">{position}</div>
         <div className="speaker-card-description-hidden">
-          <div className="mb-2">Session Type : {topic}</div>
-          <div className="mb-2">Date : {date}</div>
-          <div className="mb-2">Time : {time}</div>
+          <div>Session Type : {topic}</div>
+          <div>Date : {date}</div>
+          <div>Time : {time}</div>
         </div>
       </div>
     </div>

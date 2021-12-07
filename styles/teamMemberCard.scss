@@ -1,0 +1,126 @@
+.member-container {
+  position: inherit;
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  height: 444.67px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 100px;
+  margin-left: 5%;
+  z-index: 0;
+}
+
+.member-card-image {
+  object-fit: cover;
+  border-radius: 27px;
+  height: 300px;
+  width: 260px;
+  z-index: 10;
+}
+
+.member-card-name {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: Raleway;
+  overflow: hidden;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.member-card-post {
+  font-family: Blinker;
+  font-weight: normal;
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  border-top: 2px solid;
+  padding: 0 0 4px 0;
+  border-image: repeating-linear-gradient(
+      90deg,
+      rgba(221, 189, 141, 0) -0.12%,
+      #ddbd8d 49.21%,
+      rgba(221, 189, 141, 0) 100%
+    )
+    8;
+}
+
+.team-card-box {
+  margin-top: 1%;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.member-container:hover {
+  height: auto;
+  .team-card-description-hidden {
+    max-height: 100px;
+  }
+}
+
+.team-card-description-hidden {
+  font-family: Raleway;
+  font-style: normal;
+  color: white;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  border-bottom: 2px solid;
+  border-image: repeating-linear-gradient(
+      90deg,
+      rgba(221, 189, 141, 0) -0.12%,
+      #ddbd8d 49.21%,
+      rgba(221, 189, 141, 0) 100%
+    )
+    8;
+  max-height: 0;
+  transition: 1s ease;
+}
+
+.social-links {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.social-links a {
+  margin-bottom: 6px;
+}
+
+.mb-2 {
+  font-size: 14px;
+  font-family: Raleway;
+}
+.twitter {
+  margin-top: 7px;
+  margin-right: 10px;
+}
+.linkedin {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .member-container {
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (width: 768px) {
+  .member-container {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (width: 540px) {
+  .member-container {
+    margin-top: 50px;
+    margin-left: 30%;
+  }
+}
