@@ -6,10 +6,10 @@ export const Resources = () => {
       <div className="div_front_resources">
         <div className="pdf_div_main">
           <div className="pdf_div">
-          <img src="PDF_symbol.png" alt=""></img>
-          <p>
-            <a href="">pdf file link</a>
-          </p>
+            <img src="PDF_symbol.png" alt=""></img>
+            <p>
+              <a href="">pdf file link</a>
+            </p>
           </div>
           <div className="button_style">
             <button id="button_view">View</button>
