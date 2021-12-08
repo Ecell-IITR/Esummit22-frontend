@@ -3,11 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   width: 100%;
   z-index: 100000;
   padding: 0 10vw;
-  margin-top: 1.5vh;
+  position: fixed;
+  top: 0;
 }
 
 .navbar-active {
@@ -26,6 +26,7 @@ a {
   text-decoration: none;
   background-color: inherit;
   margin-bottom: 0 !important;
+  cursor: pointer;
 }
 .navbar-subcontent2 {
   display: flex;
@@ -34,6 +35,7 @@ a {
   align-items: center;
   text-decoration: none;
   margin-bottom: 0 !important;
+  cursor: pointer;
 }
 
 .navbar-logo {
