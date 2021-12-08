@@ -1,6 +1,8 @@
 .header {
   display: flex;
   flex-direction: row;
+  position: fixed;
+  top: 0;
 }
 
 .mobile-navbar-majorcontainer {
