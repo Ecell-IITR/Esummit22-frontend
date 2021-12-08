@@ -11,3 +11,10 @@
   font-weight: 700;
   font-size: 1vw;
 }
+
+@media screen and (max-width: 768px) {
+  .custom-gradient-btn-container {
+    font-size: 4vw;
+    border-radius: 2.5vw 1.25vw 2.5vw 0px;
+  }
+}
