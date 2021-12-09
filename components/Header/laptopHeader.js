@@ -22,7 +22,9 @@ export const LaptopHeader = () => {
                 "home" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <pre> HOME </pre>
+              <Link href="/">
+                <pre> HOME </pre>
+              </Link>
             </div>
             <div
               className={
@@ -38,7 +40,9 @@ export const LaptopHeader = () => {
                 "theme" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <pre> THEME </pre>
+              <Link href="/theme">
+                <pre> THEME </pre>
+              </Link>
 
               <div
                 className={
@@ -59,7 +63,9 @@ export const LaptopHeader = () => {
                 "events" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <pre> EVENTS </pre>
+              <Link href="/events">
+                <pre> EVENTS </pre>
+              </Link>
 
               <div
                 className={
@@ -80,7 +86,9 @@ export const LaptopHeader = () => {
                 "speakers" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <pre> SPEAKERS </pre>
+              <Link href="/speakers">
+                <pre> SPEAKERS </pre>
+              </Link>
 
               <div
                 className={
@@ -101,7 +109,9 @@ export const LaptopHeader = () => {
                 "sponsors" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <pre> SPONSORS </pre>
+              <Link href="/sponsors">
+                <pre> SPONSORS </pre>
+              </Link>
 
               <div
                 className={
@@ -121,7 +131,9 @@ export const LaptopHeader = () => {
             <div
               className={"faq" == active ? "active_hover_color" : "hover_color"}
             >
-              <pre> FAQ </pre>
+              <Link href="/faq">
+                <pre> FAQ </pre>
+              </Link>
 
               <div
                 className={

@@ -1,3 +1,4 @@
+import Link from "next/link";
 export const HeaderMobile = () => {
   return (
     <div className="mobile-navbar-majorcontainer">
@@ -17,24 +18,36 @@ export const HeaderMobile = () => {
       </div>
       <ul className="mobilenavMenu-subcontent1">
         <li className="mobilenavMenu-items">
-          <div className="mobilenavMenu-links">HOME</div>
+          <Link href="/">
+            <div className="mobilenavMenu-links">HOME</div>
+          </Link>
         </li>
         {
           <li className="mobilenavMenu-items">
-            <div className="mobilenavMenu-links">THEME</div>
+            <Link href="/theme">
+              <div className="mobilenavMenu-links">THEME</div>
+            </Link>
           </li>
         }
         <li className="mobilenavMenu-items">
-          <div className="mobilenavMenu-links">EVENTS</div>
+          <Link href="/events">
+            <div className="mobilenavMenu-links">EVENTS</div>
+          </Link>
         </li>
         <li className="mobilenavMenu-items">
-          <div className="mobilenavMenu-links">SPEAKERS</div>
+          <Link href="/speakers">
+            <div className="mobilenavMenu-links">SPEAKERS</div>
+          </Link>
         </li>
         <li className="mobilenavMenu-items">
-          <div className="mobilenavMenu-links">SPONSORS</div>
+          <Link href="/sponsors">
+            <div className="mobilenavMenu-links">SPONSORS</div>
+          </Link>
         </li>
         <li className="mobilenavMenu-items">
-          <div className="mobilenavMenu-links">FAQ</div>
+          <Link href="/faq">
+            <div className="mobilenavMenu-links">FAQ</div>
+          </Link>
         </li>
       </ul>
     </div>
