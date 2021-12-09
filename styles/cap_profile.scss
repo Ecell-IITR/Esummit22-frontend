@@ -1,28 +1,29 @@
 .profile-container {
-  width: 60%;
+  width: 100%;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 150px;
+  // margin-top: 150px;
   .profile-image {
-    width: 115px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
     border: solid #dbba89;
-    margin-right: 32px;
+    border-width: 1px;
     line-height: 100px;
     text-align: center;
   }
-  #avatar{
+  #avatar {
     width: 60px;
     height: 60px;
   }
   .profile-details {
     width: 100%;
+    margin-left: 20px;
   }
 
   .profile-details-name {
@@ -34,6 +35,12 @@
     display: flex;
     justify-content: start;
     width: 80%;
+  }
+  .profile-details-name3 {
+    display: flex;
+    justify-content: start;
+    width: 80%;
+    margin-top: 15px;
   }
   .profile-details-name-one {
     font-family: Blinker;
@@ -53,15 +60,16 @@
     letter-spacing: 0em;
     text-align: left;
     color: #dbba89;
-    margin-left: 20px;
+    margin-left: 73px;
   }
   .profile-circle {
     width: 10px;
     height: 10px;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 16px;
+    margin-left: 21px;
   }
-  .white-text {
+  .profile-white-text {
     font-family: Blinker;
     font-size: 24px;
     font-style: normal;
@@ -72,7 +80,7 @@
 
     margin-right: 10px;
   }
-  .golden-text {
+  .profile-golden-text {
     font-family: Blinker;
     font-size: 24px;
     font-style: normal;
@@ -81,14 +89,13 @@
     letter-spacing: 0em;
     text-align: left;
     color: #dbba89;
-    margin-left: 10px;
-    margin-right: 10px;
+    // margin-left: 10px;
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 768px) {
   .profile-container {
     display: flex;
-    margin-top: 150px;
     width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -97,34 +104,39 @@
       width: 80px;
       height: 80px;
     }
-    #avatar{
+    #avatar {
       width: 50px;
       height: 50px;
     }
-    .profile-details{
+    .profile-circle {
+      margin-left: 4px;
+    }
+    .profile-details {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      margin-left: 0%;
     }
-    .profile-details-name{
+    .profile-details-name {
       width: 82%;
     }
-    .profile-details-name2 {
-      width: 80%;
+
+    .profile-details-name3 {
+      margin-top: 0px;
     }
     .profile-details-name-one {
       font-size: 24px;
     }
     .profile-details-name-points {
       font-size: 18px;
+      margin-left: 18px;
     }
-    .white-text {
+    .profile-white-text {
       font-size: 15px;
     }
-    .golden-text {
+    .profile-golden-text {
       font-size: 15px;
     }
   }
-  
 }
