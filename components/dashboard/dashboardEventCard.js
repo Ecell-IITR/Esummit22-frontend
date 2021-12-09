@@ -1,4 +1,4 @@
-import CustomGradientBtn from "./../customGradientBtn";
+import CustomGradientBtn from "../customGradientBtn";
 export const EventDashboardCard = () => {
   let isregistered = true;
   return (
