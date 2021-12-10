@@ -1,6 +1,16 @@
 import React from "react";
 
 export const Share = () => {
+  function copyText(id, id2) {
+    document.getElementById(id2).innerText = "Copied";
+    var range = document.createRange();
+    var index = document.getElementById(id);
+    range.selectNode(index);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand("copy");
+    window.getSelection().removeAllRanges();
+  }
   return (
     <div className="mainDiv_behind">
       <div className="mainDiv_front">
@@ -14,14 +24,18 @@ export const Share = () => {
         </div>
         <div className="subDiv_behind">
           <div className="subDiv_front">
-            <p className="para">
+            <p className="para" id="para1">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. It is the standard dummy text.Lorem Ipsum is simply
               dummy text of the printing and typesetting industry. It is the
               standard dummy text.
             </p>
             <div className="copy_btn">
-              <h1>Copy</h1>
+              <h1>
+                <button id="copy" onClick={() => copyText("para1", "copy")}>
+                  Copy
+                </button>
+              </h1>
             </div>
           </div>
         </div>
@@ -63,11 +77,7 @@ export const Share = () => {
               className="new-footer-section-contact-link"
               rel="noopener noreferrer"
             >
-              <img
-                src="Twitter_img.png"
-                // className="new-footer-section-contact-logo"
-                alt=""
-              />
+              <img src="Twitter_img.png" alt="" />
               <h1 className="media_title">Twitter</h1>
             </a>
           </div>
