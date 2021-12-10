@@ -1,0 +1,125 @@
+
+/* .form{color:white;}
+div label{
+	color:white;
+} */
+/* .select_style{
+	color:white !important;
+	margin-top :20px;
+	margin-bottom: 20px;
+}
+.select_style:hover{
+color:#6f00ff
+}
+.select_style:active{
+	color:white !important;
+} */
+.iname-header{position:relative;}
+.iname-img{position:absolute;
+top:12px;
+	right:5px;}
+.iname-img img{
+	height:20px;
+	width:20px;
+
+}
+.error_msg{
+	color: red !important;
+	margin-left: 15px;
+	font-size:13px;
+	margin-top: -10px;
+}
+.iPhone-header{position:relative;}
+.iPhone-img{position:absolute;
+top:12px;
+	right:5px;}
+.iPhone-img img{
+	height:20px;
+	width:20px;
+
+}
+input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+.iEnrollment-header{position:relative;}
+.iEnrollment-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.iEnrollment-img img{
+	height:20px;
+	width:20px;
+
+}
+.inputCollege-header{position:relative;}
+.inputCollege-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.inputCollege-img img{
+	height:20px;
+	width:20px;
+
+}
+.iIndustry-header{position:relative;}
+.iIndustry-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.iIndustry-img img{
+	height:20px;
+	width:20px;
+
+}
+.iCompany-header{position:relative;}
+.iCompany-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.iCompany-img img{
+	height:20px;
+	width:20px;
+
+}
+.iMembers-header{position:relative;}
+.iMembers-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.iMembers-img img{
+	height:20px;
+	width:20px;
+
+}
+.iStartup-header{position:relative;}
+.iStartup-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.iStartup-img img{
+	height:20px;
+	width:20px;
+
+}
+/* .reg-error{color:red;font-size:13px} */
+.mobile-submit-container{
+	margin-top:6vh;
+	display: flex;
+		justify-content: center;
+		width: 100%;
+}
+
+
+.reg-select{margin-top:10px;}
+@media screen and (max-width:480px){
+	.mobile-submit-container{
+		display: flex;
+		justify-content: center;
+		width: 100vw;
+	}
+	.mobile-container-personal-form{
+		margin-top:4vh;
+	}
+}

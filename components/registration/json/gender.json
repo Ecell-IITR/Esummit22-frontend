@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Male",
+    "value": "M"
+  },
+  {
+    "name": "Female",
+    "value": "F"
+  },
+  {
+    "name": "Other",
+    "value": "O"
+  }
+]

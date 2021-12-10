@@ -1,0 +1,284 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .registration-container {
+
+    position:relative;
+	width:100%;
+	min-height:100vh;
+    display:flex;
+    align-items: center;
+    
+  }
+  
+  .error-msg {
+    color: red !important;
+    margin-left: 15px;
+    font-size:13px;
+    margin-top: -10px;
+  }
+  
+ 
+  .register-container-box{
+    
+    position:relative;
+	left:12vw;
+	margin-top:10vh;
+	width:400px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+   
+   
+	/* height:340px; */
+	// overflow:hidden;
+    // background-color: rgb(255, 255, 255);
+    
+  }
+  .register-box-design1, 
+  .register-box-design2{
+      position:absolute;
+      height:100%;
+      top:0;
+  }
+  
+  .register-box-design1{
+      left:0px;
+  }
+  .register-box-design2{
+    right:20px;
+    top:20%;
+}
+  .register-form {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100% !important;
+    padding: 12px 5px;
+    background:inherit;
+    /* background-color: #19072c; */
+    outline: none;
+    border: none;
+    color: #929292;
+    border: 1px solid #F5E4CA;  }
+  
+    .iname-header{position:relative;}
+    .iname-img{position:absolute;
+    top:12px;
+        right:5px;}
+    .iname-img img{
+        height:20px;
+        width:20px;
+    
+    }
+    .error-msg{
+        color:red;
+        margin-left:15px;
+    }
+    .toggleeye{
+        /* margin-top: 15px; */
+        /* margin-left: 10px; */
+        float: right;
+        position: relative;
+        /* bottom: 6.8vh;
+        right: 0.7vw; */
+    }
+    .iEmail-header{position:relative;}
+    .iEmail-img{position:absolute;
+    top:12px;
+        right:5px;}
+    .iEmail-img img{
+        height:20px;
+        width:20px;
+    
+    }
+    .iPassword-header{position:relative;}
+    .iPassword-img{position:absolute;
+    top:12px;
+        right:5px;}
+        .iPassword-img:nth-child(2){position:absolute;
+    top:12px;
+        right:34px;}
+    .iPassword-img img{
+        height:20px;
+        width:20px;
+    
+    }
+    .iPasswordCheck-header{position:relative;}
+    .iPasswordCheck-img{
+        position:absolute;
+        top:12px;
+        right:5px;
+    }
+    .iPasswordCheck-img:nth-child(2){
+        position:absolute;
+        top:12px;
+        right:34px;
+    }
+    .iPasswordCheck-img img{
+        height:20px;
+        width:20px;
+    }
+    .next-mobile-container{
+        margin-top: 8vh;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .register-already-login{
+        /* margin: 0 auto; */
+        text-align: center;
+        color: white;
+        margin-top: 4vh;
+    }
+    .register-already-login a{
+        text-decoration: none;
+    }
+  
+    
+    .reg-error{color:red;font-size: 13px;}
+    .iname-header{position:relative;}
+.iname-img{position:absolute;
+top:12px;
+	right:5px;}
+.iname-img img{
+	height:20px;
+	width:20px;
+
+}
+.error_msg{
+	color: red !important;
+	margin-left: 15px;
+	font-size:13px;
+	margin-top: -10px;
+}
+.iPhone-header{position:relative;}
+.iPhone-img{position:absolute;
+top:12px;
+	right:5px;}
+.iPhone-img img{
+	height:20px;
+	width:20px;
+
+}
+input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  }
+.iEnrollment-header{position:relative;}
+.iEnrollment-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.iEnrollment-img img{
+	height:20px;
+	width:20px;
+
+}
+.inputCollege-header{position:relative;}
+.inputCollege-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.inputCollege-img img{
+	height:20px;
+	width:20px;
+
+}
+.iIndustry-header{position:relative;}
+.iIndustry-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.iIndustry-img img{
+	height:20px;
+	width:20px;
+
+}
+.iCompany-header{position:relative;}
+.iCompany-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.iCompany-img img{
+	height:20px;
+	width:20px;
+
+}
+.iMembers-header{position:relative;}
+.iMembers-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.iMembers-img img{
+	height:20px;
+	width:20px;
+
+}
+.iStartup-header{position:relative;}
+.iStartup-img{position:absolute;
+top:12px;
+	right:5px;}
+	
+.iStartup-img img{
+	height:20px;
+	width:20px;
+
+}
+/* .reg-error{color:red;font-size:13px} */
+.mobile-submit-container{
+	margin-top:6vh;
+	display: flex;
+		justify-content: center;
+		width: 100%;
+}
+
+
+.reg-select{margin-top:10px;}
+
+.select_style{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    width: 100% !important;
+    background:inherit;
+    padding:0;
+    color: #929292;
+
+
+    /* background-color: #19072c; */
+    outline: none;
+    border: none;
+    // border: 1px solid #F5E4CA;
+}
+@media screen and (max-width:480px){
+	.mobile-submit-container{
+		display: flex;
+		justify-content: center;
+		width: 100vw;
+        
+	}
+	.mobile-container-personal-form{
+		margin-top:4vh;
+        width:100%;
+        padding-left: 3%;
+        padding-right: 3%;
+      
+	}
+    .register-box-design1, 
+  .register-box-design2{
+      display:none;
+  }
+  .register-container-box{
+      left:0;
+      overflow: hidden;
+      width:100%;
+  }
+
+  
+}

@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.registration-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.registration-container-bck {
+  position: relative;
+  width: 70%;
+  height: 100%;
+}
+.error-msg {
+  color: red !important;
+  margin-left: 15px;
+  font-size:13px;
+  margin-top: -10px;
+}
+.bcki {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /*z-index:1000;*/
+  width: 68%;
+  height: 100%;
+  clip-path: polygon(0 0%, 84% 0, 65% 100%, 0 100%);
+}
+.wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  float: right;
+  width: 38%;
+  height: 100vh;
+  margin: 10vh 4vw 0 10vw;
+  padding: 5vh 3vw;
+  /* margin-top: 160px;
+  margin-right: 100px;
+  margin-bottom: 100px; */
+}
+.form {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: block;
+  width: 100% !important;
+  padding: 12px 5px;
+  /* background-color: #19072c; */
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #5300bf;
+}
+.sub {
+  margin-top: 40px;
+  padding: 12px 5px;
+  width: 400px;
+  background-color: #6f006f;
+}
+.form input :focus ~ :placeholder-shown {
+  transform: translateY(-20px);
+  font-size: 15px;
+  margin-bottom: 300px;
+}
+.button {
+  background: #5300bf !important;
+  color: white !important;
+}
+.Toastify__toast-container {
+ margin-top: 10vh;
+}
+.Toastify__toast-body {
+  background-color: inherit;
+  
+}
+.Toastify__close-button > svg {
+  background-color: inherit;
+}
+@media screen and (max-width:480px){
+   .bcki{
+    display:none;
+  }
+  
+  .wrap{
+    float: none;
+    width:100vw;
+    margin:0px;
+    padding-top: 35vh;
+  }
+}
