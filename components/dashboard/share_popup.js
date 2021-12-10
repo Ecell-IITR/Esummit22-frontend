@@ -1,6 +1,7 @@
 import React from "react";
 
 export const Share = () => {
+  //function for copying text
   function copyText(id, id2) {
     document.getElementById(id2).innerText = "Copied";
     var range = document.createRange();
@@ -9,7 +10,7 @@ export const Share = () => {
     window.getSelection().removeAllRanges();
     window.getSelection().addRange(range);
     document.execCommand("copy");
-    window.getSelection().remo
+    window.getSelection().remo;
   }
   return (
     <div className="mainDiv_behind">
