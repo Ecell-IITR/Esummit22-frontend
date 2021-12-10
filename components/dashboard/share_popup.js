@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Share = () => {
-  //function for copying text
+  //function for copyBtn
   function copyText(id, id2) {
     document.getElementById(id2).innerText = "Copied";
     var range = document.createRange();
