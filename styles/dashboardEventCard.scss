@@ -1,0 +1,106 @@
+.dashboard-event-main-container {
+  z-index: 0;
+  display: inline-block;
+  position: relative;
+  margin: 0 30px;
+  width: 25%;
+  min-width: 400px;
+  min-height: 240px;
+  border: 1px solid;
+  border-radius: 16px 8px 16px 0;
+  padding: 0.5%;
+}
+
+// .dashboard-event-main-container::before {
+//   padding: 2px;
+//   z-index: -1;
+//   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+//   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+//   -webkit-mask-composite: destination-out;
+//   mask-composite: exclude;
+// }
+
+.dashboard-event-head {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.dashboard-event-name {
+  margin-left: 6px;
+  font-family: Blinker;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.dashboard-event-desc {
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+.dashboard-event-visit-page {
+  display: flex;
+  justify-content: center;
+}
+.dashboard-event-CustomGradientBtn {
+  display: flex;
+  height: 30px;
+}
+
+.dashboard-registered-event {
+  position: absolute;
+  font-size: 0.75rem;
+  font-family: Blinker;
+  font-weight: 600;
+  line-height: 0.66rem;
+  height: 18px;
+  width: 100px;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  p {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 3.5px;
+  }
+  top: 20px;
+  right: -20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .dashboard-event-main-container {
+    min-width: 250px;
+    min-height: 360px;
+    padding: 0.5%;
+  }
+  .dashboard-registered-event {
+    top: 20px;
+    height: 15px;
+    width: 70px;
+    font-size: 0.7rem;
+    line-height: 0.5rem;
+    font-weight: 500;
+    .p {
+      margin-top: 1px;
+    }
+  }
+}
+
+@media only screen and (width: 768px) {
+  .dashboard-event-main-container {
+    width: 300px;
+    min-width: 360px;
+    min-height: 240px;
+  }
+
+  .dashboard-registered-event {
+    top: 20px;
+    height: 15px;
+    width: 70px;
+    font-size: 0.7rem;
+    line-height: 0.5rem;
+    font-weight: 500;
+  }
+}

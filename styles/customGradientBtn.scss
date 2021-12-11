@@ -12,9 +12,16 @@
   font-size: 1vw;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
   .custom-gradient-btn-container {
     font-size: 4vw;
     border-radius: 2.5vw 1.25vw 2.5vw 0px;
+  }
+}
+
+@media screen and (width: 768px) {
+  .custom-gradient-btn-container {
+    font-size: 2vw;
+    border-radius: 8px 4px 8px 0px;
   }
 }
