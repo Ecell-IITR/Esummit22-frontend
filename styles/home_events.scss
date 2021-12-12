@@ -1,0 +1,47 @@
+.Home_Events_page_container {
+    background: rgba(2, 7, 11, 1);
+  }
+  
+  .Home_Events_Card_Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+  }
+  .Home_Events_Card_Loop {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+  }
+  .home-view-all-button{
+    width: 166px;
+    height: 56px;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+  
+  .Home_Events_page_title {
+    font-family: Blinker;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 117px;
+    margin-top: 140px;
+    text-align: center;
+    letter-spacing: 0.02em;
+  
+    /* Theme Light Blue */
+  
+    color: #e9f0f4;
+  }
+  
+  @media screen and (max-width: 1430) {
+    .Home_Events_Card_Loop {
+      margin-left: 0px;
+      margin-right: 0px;
+      margin-bottom: 100px;
+    }
+  }
+  

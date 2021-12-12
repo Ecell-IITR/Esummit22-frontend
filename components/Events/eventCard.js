@@ -23,18 +23,17 @@
 
 import Link from "next/link";
 
-export const EventCard = () => {
+export const EventCard = ({ background_image, event_name, card_description }) => {
   return (
     <div className="event-container">
-      <img src="eventImg.png" className="event-card-image" alt="event" />
+      <img src={background_image} className="event-card-image" alt="event" />
       <div className="event-hovered">
-        <div className="event-card-name">IDEASTORM</div>
+        <div className="event-card-name">{event_name}</div>
         <div className="event-card-para">
           <div
             className="event-card-para-des"
             dangerouslySetInnerHTML={{
-              __html:
-                "Lorem Ispum ajfbiau augfhuas asuifau aiusfa ajwo abjfia asbfja afbjoa  jafsaf",
+              __html: card_description,
             }}
           />
           <div className="View_more">View More</div>
