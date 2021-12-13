@@ -15,14 +15,14 @@
   border-radius: 64px 16px 64px 0px;
   object-fit: cover;
   display: block;
-  height: auto;
+  height: 370px;
 }
 
 .event-card-name {
-  font-size: 20px;
+  font-size: 19px;
   color: black;
   font-weight: 550;
-  line-height: 150%;
+  line-height: 160%;
   text-align: left;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -50,7 +50,7 @@
 // }
 
 .event-card-para-des {
-  overflow-y: scroll;
+  // overflow-y: scroll;
   color: black;
   font-size: 12.8px;
   padding: 0% 10%;
@@ -105,7 +105,7 @@
   .event-card-name {
     border-radius: 0 0 64px 0;
     padding: 5%;
-    font-size: 16px;
+    font-size: 12px;
     height: 44.5px;
     width: 211px;
     background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
