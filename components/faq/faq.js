@@ -44,7 +44,6 @@ function Faq() {
         "Apart from an awesome learning experience, you are in for exciting cash prizes and goodies and certificates from E-Cell IIT Roorkee",
     },
   ];
-  console.log(faqs)
 
   return (
     <div style={styles}>
@@ -69,8 +68,8 @@ function Faq() {
         title="The dates are 6th to 10th of January, but what about COVID?"
         content="E-Summit being the flagship event of ECell, is held annually brings together the academic community, venture capitalists, new age entrepreneurs and all those passionate about entrepreneurship to common grounds. "
       /> */}
-      {faqs.map(faq => (
-          <Accordion title={faq.question} content={faq.answer} />
+      {faqs.map((faq, id) => (
+        <Accordion title={faq.question} content={faq.answer} key={id} />
       ))}
     </div>
   );

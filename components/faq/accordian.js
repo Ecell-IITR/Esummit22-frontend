@@ -35,7 +35,8 @@ export default function Accordion(props) {
         </div>
       </button>
 
-      <div className="accordian-answer"
+      <div
+        className="accordian-answer"
         style={{
           display: isShowing ? "block" : "none",
           padding: "5px",

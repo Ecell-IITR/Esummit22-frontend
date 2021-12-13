@@ -1,31 +1,13 @@
 import Speaker_card from "../speaker-card";
 import React, { useEffect, useState } from "react";
 
-import FetchApi from "../../utils/fetchAPI";
-import { SPEAKERS_API } from "../../utils/APIs";
-
-export default function HomeSpeakers() {
-  const [Speakers_Arr, setSpeakers_Arr] = useState([]);
-  const [Speakers_Arr_caller, setSpeakers_Arr_caller] = useState(true);
-
-  FetchApi("get", SPEAKERS_API, null, null)
-    .then((res) => {
-      this;
-      if (Speakers_Arr_caller) {
-        setSpeakers_Arr(res.data.slice(0,4));
-        setSpeakers_Arr_caller(false);
-      }
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-
+export default function HomeSpeakers({ allSpeakers }) {
   return (
     <div>
       <div className="bg-black text-white  Home_Speaker_page_container">
         <div className="Home_Speaker_page_title">Speaker</div>
         <div className="Home_Speaker_Card_Container">
-          {Speakers_Arr.map((det, id) => {
+          {allSpeakers.map((det, id) => {
             return (
               <div className="Home_Speaker_Card_Loop" key={id}>
                 <Speaker_card
