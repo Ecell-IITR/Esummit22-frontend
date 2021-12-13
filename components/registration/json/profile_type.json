@@ -1,0 +1,22 @@
+[
+  {
+    "name": "IITR Student",
+    "value": "Student"
+  },
+  {
+    "name": "Non IITR Student",
+    "value": "Student"
+  },
+  {
+    "name": "Campus Ambassador",
+    "value": "CA"
+  },
+  {
+    "name": "Professional",
+    "value": "Professional"
+  },
+  {
+    "name": "School Student",
+    "value": "SchoolStudent"
+  }
+]

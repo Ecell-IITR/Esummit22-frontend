@@ -1,0 +1,145 @@
+.form {
+  color: white;
+}
+div label {
+  color: white;
+}
+.headerImg {
+  font-size: 2.3vw;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  margin-top: 4vh;
+  margin-bottom: 10vh;
+}
+
+.iname-header {
+  position: relative;
+}
+.iname-img {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+}
+.iname-img img {
+  height: 20px;
+  width: 20px;
+}
+.error-msg {
+  color: red;
+  margin-left: 15px;
+}
+.toggleeye {
+  /* margin-top: 15px; */
+  /* margin-left: 10px; */
+  float: right;
+  position: relative;
+  /* bottom: 6.8vh;
+	right: 0.7vw; */
+}
+.iEmail-header {
+  position: relative;
+}
+.iEmail-img {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+}
+.iEmail-img img {
+  height: 20px;
+  width: 20px;
+}
+.iPassword-header {
+  position: relative;
+}
+.iPassword-img {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+}
+.iPassword-img:nth-child(2) {
+  position: absolute;
+  top: 12px;
+  right: 34px;
+}
+.iPassword-img img {
+  height: 20px;
+  width: 20px;
+}
+.iPasswordCheck-header {
+  position: relative;
+}
+.iPasswordCheck-img {
+  position: absolute;
+  top: 12px;
+  right: 5px;
+}
+.iPasswordCheck-img:nth-child(2) {
+  position: absolute;
+  top: 12px;
+  right: 34px;
+}
+.iPasswordCheck-img img {
+  height: 20px;
+  width: 20px;
+}
+.next-mobile-container {
+  margin-top: 8vh;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.register-already-login {
+  /* margin: 0 auto; */
+  text-align: center;
+  color: white;
+  margin-top: 4vh;
+}
+.register-already-login a {
+  text-decoration: none;
+}
+.buttonSubmit {
+  background-color: #5300bf;
+  color: white !important;
+  font-weight: bold;
+  line-height: 2.3rem;
+  width: 100% !important;
+  clip-path: polygon(2% 0, 100% 0, 100% 75%, 98% 100%, 0 100%, 0 25%);
+}
+
+.reg-error {
+  color: red;
+  font-size: 13px;
+}
+
+@media screen and (max-width: 480px) {
+  .wrap {
+    padding-top: 18vh !important;
+  }
+  .headerImg {
+    font-size: 9vw;
+  }
+
+  .next-mobile-container {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .buttonSubmit {
+    /* padding: 0 auto; */
+    /* width: 100px !important; */
+    margin: 0 40%;
+  }
+  .toggleeye {
+    /* margin-top: 15px;
+		margin-left: 10px; */
+    float: right;
+    position: relative;
+    /* bottom: 8.8vh;
+		right: 2vw; */
+  }
+}
