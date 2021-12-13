@@ -1,0 +1,25 @@
+.events-page-heading {
+  margin: 10% 0% 5% 0%;
+  color: white;
+  font-size: 60px;
+  font-family: Blinker;
+  font-weight: 500;
+  display: flex;
+  letter-spacing: 2px;
+  justify-content: center;
+}
+
+.esummit-events-page {
+  margin: 0 5% 5% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 540px) {
+  .events-page-heading {
+    font-size: 32px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+  }
+}
