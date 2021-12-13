@@ -45,5 +45,5 @@ export const isLocalHost = (hostname) => {
 export const isStagingHost = (hostname) => {
   let host = hostname;
   if (typeof window !== "undefined") host = window.location.hostname;
-  return host === "staging.retrera.com" ? true : false;
+  return host === "new.esummit.in" ? true : false;
 };

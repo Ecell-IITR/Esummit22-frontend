@@ -8,15 +8,7 @@ export default function Accordion(props) {
   };
 
   return (
-    <div
-      className="accordian"
-      style={{
-        width: "80%",
-        marginBottom: "15px",
-        lineHeight: "15px",
-        border: "1px solid rgba(209, 213, 219, 0.5)",
-      }}
-    >
+    <div className="accordian">
       <button
         style={{
           width: "90%",
@@ -31,27 +23,27 @@ export default function Accordion(props) {
           justifyContent: "space-between",
           alignItems: "center",
           marginLeft: "5%",
-          fontFamily: "Raleway",
-          fontSize: "22px",
-          fontStyle: "normal",
-          fontWeight: "500",
         }}
         onClick={toggle}
         type="button"
       >
-        <p>{props.title}</p>
-        <img src="arrow.svg" />
+        <div className="accordian-button">
+          <p>{props.title}</p>
+        </div>
+        <div className="accordian-image">
+          <img src="arrow.svg" />
+        </div>
       </button>
+
       <div
+        className="accordian-answer"
         style={{
           display: isShowing ? "block" : "none",
           padding: "5px",
           marginLeft: "5%",
           marginRight: "5%",
           fontFamily: "Raleway",
-          fontSize: "20px",
           fontWeight: "400",
-          lineHeight: "36px",
           textAlign: "left",
         }}
         dangerouslySetInnerHTML={{
