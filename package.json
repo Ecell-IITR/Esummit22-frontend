@@ -32,7 +32,15 @@
   },
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/Ecell-IITR/Esummit22-frontend.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ecell-IITR/Esummit22-frontend.git"
+  },
   "author": "pranav <pranav_a@ece.iitr.ac.in>",
-  "license": "MIT"
+  "license": "MIT",
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "bugs": {
+    "url": "https://github.com/Ecell-IITR/Esummit22-frontend/issues"
+  },
+  "homepage": "https://github.com/Ecell-IITR/Esummit22-frontend#readme"
 }
