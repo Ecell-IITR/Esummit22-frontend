@@ -1,56 +1,56 @@
 [
-    {
-        "name": "Applied Mathematics"
-    },
-    {
-        "name": "Chemical Engineering"
-    },
-    {
-        "name": "Civil Engineering"
-    },
-    {
-        "name": "Communication Systems"
-    },
-    {
-        "name": "Computer Science and Engineering"
-    },
-    {
-        "name": "Electrical Engineering"
-    },
-    {
-        "name": "Electronics & Communication Engineering "
-    },
-    {
-        "name": "Engineering Physics"
-    },
-    {
-        "name": "Geological Technology"
-    },
-    {
-        "name": "Geophysical Technology"
-    },
-    {
-        "name": "Instrumentation and Signal Processing"
-    },
-    {
-        "name": "Mechanical Engineering"
-    },
-    {
-        "name": "Metallurgical & Materials Engineering"
-    },
-    {
-        "name": "Micro Electronic and VLSI"
-    },
-    {
-        "name": "Biotechnology"
-    },
-    {
-        "name": "Polymer Science and Engineering"
-    },
-    {
-        "name": "Production and Industrial Engineering"
-    },
-    {
-        "name": "System and Control"
-    }
+  {
+    "name": "Applied Mathematics"
+  },
+  {
+    "name": "Chemical Engineering"
+  },
+  {
+    "name": "Civil Engineering"
+  },
+  {
+    "name": "Communication Systems"
+  },
+  {
+    "name": "Computer Science and Engineering"
+  },
+  {
+    "name": "Electrical Engineering"
+  },
+  {
+    "name": "Electronics & Communication Engineering "
+  },
+  {
+    "name": "Engineering Physics"
+  },
+  {
+    "name": "Geological Technology"
+  },
+  {
+    "name": "Geophysical Technology"
+  },
+  {
+    "name": "Instrumentation and Signal Processing"
+  },
+  {
+    "name": "Mechanical Engineering"
+  },
+  {
+    "name": "Metallurgical & Materials Engineering"
+  },
+  {
+    "name": "Micro Electronic and VLSI"
+  },
+  {
+    "name": "Biotechnology"
+  },
+  {
+    "name": "Polymer Science and Engineering"
+  },
+  {
+    "name": "Production and Industrial Engineering"
+  },
+  {
+    "name": "System and Control"
+  }
 ]

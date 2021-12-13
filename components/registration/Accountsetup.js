@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import Axios from "axios";
-import { Link } from  'next/link';
-import CustomGradientBtn from "../customGradientBtn"
+import { Link } from "next/link";
+import CustomGradientBtn from "../customGradientBtn";
 
-export  class AccountSetup extends Component {
-  
+export class AccountSetup extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -222,34 +221,32 @@ export  class AccountSetup extends Component {
       confirmpass_error_bool,
       confirm_pass_ok,
     } = this.state;
-   return (
-      <div >
-      <div id="login-heading">CREATE AN ACCOUNT</div>
-      
-      <div className="login-iEmail-header">
-        <input
-          id="iname"
-          className="register-form"
-          type="text"
-          placeholder="Enter your Full name"
-          name="full_name"
-          autoCorrect="off"
-          autoComplete="off"
-          autoCapitalize="off"
-          value={full_name}
-          onChange={(event) => {
-            this.nameValidate();
-            this.onChange(event);
-          }}
-          spellCheck="false"
-          required
-        />
-      </div>
-      <div className="error-msg">{name_error}</div>
-      
-      
-      <div className="login-iEmail-header">
-       
+    return (
+      <div>
+        <div id="login-heading">CREATE AN ACCOUNT</div>
+
+        <div className="login-iEmail-header">
+          <input
+            id="iname"
+            className="register-form"
+            type="text"
+            placeholder="Enter your Full name"
+            name="full_name"
+            autoCorrect="off"
+            autoComplete="off"
+            autoCapitalize="off"
+            value={full_name}
+            onChange={(event) => {
+              this.nameValidate();
+              this.onChange(event);
+            }}
+            spellCheck="false"
+            required
+          />
+        </div>
+        <div className="error-msg">{name_error}</div>
+
+        <div className="login-iEmail-header">
           <input
             id="iEmail"
             type="email"
@@ -275,8 +272,7 @@ export  class AccountSetup extends Component {
           />
         </div>
         <div className="error-msg">{email_error}</div>
-      
-      
+
         <div className="login-iPassword-header">
           <input
             id="iPassword"
@@ -302,8 +298,8 @@ export  class AccountSetup extends Component {
               src={"login/login-password-eye.svg"}
             />
           </span>
-          </div>
-          {/* <span>
+        </div>
+        {/* <span>
             {pass_error_bool === "" ? null : (
               <img
                 alt="correc/wrong"
@@ -317,52 +313,40 @@ export  class AccountSetup extends Component {
               />
             )}
           </span> */}
-        
+
         <div className="error-msg">{pass_error}</div>
-     
-      {confirm_pass_ok ? (
-        <div className="">
-          <div
-            className="login-iPassword-header"
-          
-          >
-            <input
-              id="iConfirmPassword"
-              type="password"
-              className="register-form"
-              placeholder="Enter your password again"
-              name="confirm_password"
-              autoCorrect="off"
-              autoComplete="off"
-              autoCapitalize="off"
-              value={confirm_password}
-              onChange={(event) => {
-                this.confirmPassValidate();
-                this.onChange(event);
-              }}
-              spellCheck="false"
-              required
-            />
+
+        {confirm_pass_ok ? (
+          <div className="">
+            <div className="login-iPassword-header">
+              <input
+                id="iConfirmPassword"
+                type="password"
+                className="register-form"
+                placeholder="Enter your password again"
+                name="confirm_password"
+                autoCorrect="off"
+                autoComplete="off"
+                autoCapitalize="off"
+                value={confirm_password}
+                onChange={(event) => {
+                  this.confirmPassValidate();
+                  this.onChange(event);
+                }}
+                spellCheck="false"
+                required
+              />
             </div>
             <div className="error-msg">{confirmpass_error}</div>
           </div>
         ) : null}
-        
-        <div
-            style={{ paddingTop: "1.2vh" }}
-            className="next-mobile-container"
-          >
+
+        <div style={{ paddingTop: "1.2vh" }} className="next-mobile-container">
           <div className="login-button" onClick={this.handleNext}>
-          <CustomGradientBtn  text={"NEXT"} />
-                      </div>
-                      
-              
-               
-                     
+            <CustomGradientBtn text={"NEXT"} />
+          </div>
         </div>
-                      </div>
-    
-   
+      </div>
     );
   }
 }

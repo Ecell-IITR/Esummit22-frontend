@@ -8,8 +8,7 @@ import role_type_option from "./json/profile_type.json";
 import college_option from "./json/colleges.json";
 import year_option from "./json/year.json";
 import programme_option from "./json/programmes.json";
-import CustomGradientBtn from "../customGradientBtn"
-
+import CustomGradientBtn from "../customGradientBtn";
 
 //CSS styling for react-select
 const customStyle = {
@@ -17,7 +16,11 @@ const customStyle = {
     ...provided,
     borderBottom: "1px solid #F5E4CA !important",
     // color:state.isFocused?"#6f00ff":"white",
-    color: state.isSelected ? "#02070B" : state.isFocused ? "#02070B" : "#F5E4CA",
+    color: state.isSelected
+      ? "#02070B"
+      : state.isFocused
+      ? "#02070B"
+      : "#F5E4CA",
     backgroundColor: state.isFocused ? "#F5E4CA" : "transparent",
   }),
   control: (provided, state) => ({
@@ -85,8 +88,7 @@ export class PersonalDetails extends Component {
       industry_error: "",
       inviteCode_error_bool: "",
       inviteCode_error: "",
-      student_type:""
-
+      student_type: "",
     };
   }
   EmptyValidation = (data) => {
@@ -623,7 +625,7 @@ export class PersonalDetails extends Component {
 
     return (
       <div>
-      <div id="login-heading">PERSONAL DETAILS</div>
+        <div id="login-heading">PERSONAL DETAILS</div>
         {/* <div>
           <input
             id="iname"
@@ -659,7 +661,7 @@ export class PersonalDetails extends Component {
         </div> */}
         {/* <div>{name_error}</div> */}
         <div className="mobile-container-personal-form">
-          <div >
+          <div>
             <input
               id="iPhone"
               type="number"
@@ -1178,7 +1180,6 @@ export class PersonalDetails extends Component {
                   this.onChange(event);
                   this.classNameValidate();
                   handleDataChange(event);
-
                 }}
                 spellCheck="false"
                 required
@@ -1324,9 +1325,8 @@ export class PersonalDetails extends Component {
             />
           ) : (
             <div className="login-button" onClick={this.handleSubmit}>
-            <CustomGradientBtn  text={"SUBMIT"} />
-                      </div>
-            
+              <CustomGradientBtn text={"SUBMIT"} />
+            </div>
           )}
         </div>
       </div>

@@ -1,176 +1,168 @@
-.login-container{
-	position:relative;
-	width:100%;
-	height:100vh;
-    
-	
-		
+.login-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 .login-form {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: block;
-    width: 100% !important;
-    padding: 12px 5px;
-    color: #929292;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: block;
+  width: 100% !important;
+  padding: 12px 5px;
+  color: #929292;
 
-
-    /* background-color: #19072c; */
-    outline: none;
-    border: none;
-    border: 1px solid #F5E4CA;
-    
-   
+  /* background-color: #19072c; */
+  outline: none;
+  border: none;
+  border: 1px solid #f5e4ca;
+}
+.login-container-bck {
+  position: absolute;
+  right: 0;
+  height: 80vh;
+  top: 15vh;
+  img {
+    height: 100%;
   }
-  .login-container-bck{
-      position: absolute;
-      right:0;
-      height:80vh;
-      top:15vh;
-      img{
-          height:100%;
-      }
-  }
+}
 .Toastify__toast-container {
-	margin-top: 10vh;
-	
-  }
-.login-container-box{
-	position:absolute;
-	left:12vw;
-	top:40%;
-	width:400px;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	flex-direction:column;
-	/* height:340px; */
-	// overflow:hidden;
-	color:white !important ;
+  margin-top: 10vh;
 }
-.login-box-design1{
-    position: absolute;
-    left:-50px;
+.login-container-box {
+  position: absolute;
+  left: 12vw;
+  top: 40%;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* height:340px; */
+  // overflow:hidden;
+  color: white !important ;
 }
-.login-box-design2{
-    position: absolute;
-    right:-50px;
+.login-box-design1 {
+  position: absolute;
+  left: -50px;
 }
-#login-heading{
-	color:white;
-	font-weight:700;
-	font-size:25px;
-	background-color:inherit;
-	padding-top:6px;
-    margin-bottom: 5vh;;
+.login-box-design2 {
+  position: absolute;
+  right: -50px;
+}
+#login-heading {
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+  background-color: inherit;
+  padding-top: 6px;
+  margin-bottom: 5vh;
 }
 .login-iEmail-header {
-    background-color:inherit;
-	width:90%;
-	display:flex;
-	justify-content:center;
-	box-sizing:border-box;
-	position:relative;
-	padding-bottom:6px;}
+  background-color: inherit;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  position: relative;
+  padding-bottom: 6px;
+}
 
-.login-iEmail-header input{background-color:inherit;}
+.login-iEmail-header input {
+  background-color: inherit;
+}
 .login-iEmail-img {
-	background-color:inherit;
-	position:absolute;
-	right:5px;
-	top:23px;
-
+  background-color: inherit;
+  position: absolute;
+  right: 5px;
+  top: 23px;
 }
-.reg-error{color:red;font-size: 13px;}
-.login-iEmail-img img{
-	background-color:inherit;
-	height:20px;
-	width:20px;
-
+.reg-error {
+  color: red;
+  font-size: 13px;
 }
-
+.login-iEmail-img img {
+  background-color: inherit;
+  height: 20px;
+  width: 20px;
+}
 
 .login-iPassword-header {
-	position:relative;background-color:inherit;
-	width:90%;
-	display:flex;
-	justify-content:center;
-	box-sizing:border-box;
-    padding-bottom:0px;
-    margin-bottom:-3px;}
+  position: relative;
+  background-color: inherit;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-bottom: 0px;
+  margin-bottom: -3px;
+}
 
-.login-iPassword-header input{background-color:inherit;}
+.login-iPassword-header input {
+  background-color: inherit;
+}
 .login-iPassword-img {
-	background-color:inherit;
-	position:absolute;
-	right:10px;
-	top:23px;
-    cursor: pointer;
-
+  background-color: inherit;
+  position: absolute;
+  right: 10px;
+  top: 23px;
+  cursor: pointer;
 }
 .login-iPassword-img:nth-child(3) {
-	background-color:inherit;
-	position:absolute;
-	right:5px;
-	
-
+  background-color: inherit;
+  position: absolute;
+  right: 5px;
 }
-.login-iPassword-img img{
-	background-color:inherit;
-	height:20px;
-	width:20px;
-
+.login-iPassword-img img {
+  background-color: inherit;
+  height: 20px;
+  width: 20px;
 }
 
-.login-button{
-    margin-top:10px;
-	// background: linear-gradient(124.76deg, #F5E4CA 12.61%, #DBBA89 63.66%);
-    width: 100px;
-    color:#01070B;
-    font-weight: bold;   
-    cursor: pointer;
-    display: flex;
+.login-button {
+  margin-top: 10px;
+  // background: linear-gradient(124.76deg, #F5E4CA 12.61%, #DBBA89 63.66%);
+  width: 100px;
+  color: #01070b;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* letter-spacing: 0.038em; */
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  line-height: 1.52rem;
+  text-align: center;
+  // border-radius: 0.5vw 0.25vw 0.5vw 0px;
+  // clip-path: polygon(10% 0, 100% 0, 100% 65%, 90% 100%, 0 100%, 0 33%);
+}
+
+@media screen and (max-width: 480px) {
+  .registration-container-bck {
+    display: none;
+  }
+  .Toastify__toast-container {
+    margin-top: 2vh;
+  }
+  .login-container-box {
+    position: static;
     align-items: center;
+    padding-top: 20vh;
+    width: 100vw;
+  }
+  .login-button {
+    font-size: 13px !important;
+    width: 90vw;
+    display: flex;
     justify-content: center;
-    /* letter-spacing: 0.038em; */
-    text-transform: uppercase;
-    font-size: 0.9rem ;
-    line-height: 1.52rem;
-    text-align: center;
-    // border-radius: 0.5vw 0.25vw 0.5vw 0px;
-    // clip-path: polygon(10% 0, 100% 0, 100% 65%, 90% 100%, 0 100%, 0 33%);
-
-    
-	}
-
-@media screen and (max-width:480px){
-	.registration-container-bck{
-		display: none;
-	}
-	.Toastify__toast-container{
-		margin-top: 2vh;
-	}
-	.login-container-box{
-		position:static;
-        align-items: center;
-		padding-top:20vh;
-		width:100vw;	
-	}
-	.login-button{
-		font-size: 13px !important;
-		width:90vw;
-		display: flex;
-		justify-content: center;
-	}
-	.login-container-bck{
-        display:none;
-    }
-    .login-box-design1{
-        display:none; 
-    }
-    .login-box-design2{
-        display:none; 
-    }
-    
-    
+  }
+  .login-container-bck {
+    display: none;
+  }
+  .login-box-design1 {
+    display: none;
+  }
+  .login-box-design2 {
+    display: none;
+  }
 }

@@ -146,20 +146,20 @@ export const LaptopHeader = () => {
       </ul>
 
       <ul className="navbar-subcontent2">
-      <Link href="/login">
-        <li className="navbar-items register-login">
-          <span>LOG IN</span>
-        </li>
+        <Link href="/login">
+          <li className="navbar-items register-login">
+            <span>LOG IN</span>
+          </li>
         </Link>
 
         <li className="navbar-items">
           <p className="or-navbar">or</p>
         </li>
         <li>
-        <Link href="/register">
-          <div className="navbar-items register-navbar">
-            <CustomGradientBtn text={"REGISTER"} />
-          </div>
+          <Link href="/register">
+            <div className="navbar-items register-navbar">
+              <CustomGradientBtn text={"REGISTER"} />
+            </div>
           </Link>
         </li>
       </ul>

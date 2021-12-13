@@ -16,7 +16,7 @@
 .error-msg {
   color: red !important;
   margin-left: 15px;
-  font-size:13px;
+  font-size: 13px;
   margin-top: -10px;
 }
 .bcki {
@@ -68,24 +68,23 @@
   color: white !important;
 }
 .Toastify__toast-container {
- margin-top: 10vh;
+  margin-top: 10vh;
 }
 .Toastify__toast-body {
   background-color: inherit;
-  
 }
 .Toastify__close-button > svg {
   background-color: inherit;
 }
-@media screen and (max-width:480px){
-   .bcki{
-    display:none;
+@media screen and (max-width: 480px) {
+  .bcki {
+    display: none;
   }
-  
-  .wrap{
+
+  .wrap {
     float: none;
-    width:100vw;
-    margin:0px;
+    width: 100vw;
+    margin: 0px;
     padding-top: 35vh;
   }
 }
