@@ -3,7 +3,7 @@
   top: 0px;
   left: 0px;
   width: 12.35vw;
-  margin-top:11vh;
+  margin-top: 11vh;
   border: solid 1px;
   border-image: linear-gradient(#dbba89 0%, rgba(219, 186, 137, 0.33) 124.76%);
   border-image-slice: 1;
@@ -51,28 +51,22 @@
 }
 
 @media only screen and (max-width: 768px) {
-
   .nav-items {
     margin-top: 10.9vh;
     //z-index: 1000000;
-    width: 30vw;}
-    .Ca_sidebar {
-      width: 30vw;
-    
-
-    }
-    .nav-text-container-active {
-
-      width: 30vw;}
-    .nav-text-container-inactive {
-
-      width: 30vw;
-
-    
-    }
-    .nav_item_text {
-      width: 28vw;
-      font-size: 5vw;}
-
-
+    width: 30vw;
+  }
+  .Ca_sidebar {
+    width: 30vw;
+  }
+  .nav-text-container-active {
+    width: 30vw;
+  }
+  .nav-text-container-inactive {
+    width: 30vw;
+  }
+  .nav_item_text {
+    width: 28vw;
+    font-size: 5vw;
+  }
 }
