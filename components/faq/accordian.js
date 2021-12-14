@@ -30,15 +30,15 @@ export default function Accordion(props) {
         <div className="accordian-button">
           <p>{props.title}</p>
         </div>
-        <div className="accordian-image">
+        <div className={`accordian-image ${isShowing && "accordian-image-up"}`}>
           <img src="arrow.svg" />
         </div>
       </button>
 
       <div
-        className="accordian-answer"
+        className={isShowing ? "accordian-answer" : "accordian-answer-hidden"}
         style={{
-          display: isShowing ? "block" : "none",
+          // display: isShowing ? "block" : "none",
           padding: "5px",
           marginLeft: "5%",
           marginRight: "5%",

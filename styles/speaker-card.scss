@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #02070b;
+    background-color: #000000;
   }
   .speaker-card-box1-background {
     z-index: 1;
@@ -24,7 +24,7 @@
     height: 332.31px;
     border-radius: 50%;
     border-width: 3px;
-    border: solid #01070b;
+    border: solid #000000;
     z-index: 2;
     position: absolute;
     object-fit: cover;
@@ -48,12 +48,6 @@
     overflow: hidden;
     z-index: 5;
     transition: 0.5s ease;
-  }
-  .speaker-card-box:hover {
-    height: auto;
-    .speaker-card-description-hidden {
-      max-height: 100px;
-    }
   }
 
   .speaker-card-box-name {
@@ -97,5 +91,12 @@
     margin-top: 0.5rem;
     transition: 0.5s ease;
     text-align: left;
+  }
+}
+
+.speaker-card:hover {
+  height: auto;
+  .speaker-card-description-hidden {
+    max-height: 100px;
   }
 }

@@ -1,19 +1,46 @@
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import Link from "next/link";
-import { useState } from "react";
 import CustomGradientBtn from "../customGradientBtn";
 
 export const LaptopHeader = () => {
-  //const [active, setactive] = useState("home")
-  const active = "";
+  const [active, setActive] = useState("");
+
+  const router = useRouter();
+  useEffect(() => {
+    console.log(router);
+    switch (router.asPath) {
+      case "/":
+        setActive("home");
+        break;
+      case "/sponsors":
+        setActive("sponsors");
+        break;
+      case "/events":
+        setActive("events");
+        break;
+      case "/speakers":
+        setActive("speakers");
+        break;
+      case "/team":
+        setActive("team");
+        break;
+      case "/#faq":
+        setActive("faq");
+        break;
+      default:
+        setActive("");
+    }
+  });
   return (
     <div className="navbar-container" id="navbar">
-      <div className="navbar-logo-link">
+      <Link href="/" className="navbar-logo-link">
         <img
           src="fete-of-fortitude.png"
           className="navbar-logo"
           alt="E summit 22 fete of fortitude"
         />
-      </div>
+      </Link>
       <ul className="navbar-subcontent1">
         <li className="navbar-items">
           <div id="heading">
@@ -37,16 +64,16 @@ export const LaptopHeader = () => {
           <div id="heading">
             <div
               className={
-                "theme" == active ? "active_hover_color" : "hover_color"
+                "team" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <Link href="/theme">
-                <pre> THEME </pre>
+              <Link href="/team">
+                <pre> TEAM </pre>
               </Link>
 
               <div
                 className={
-                  "theme" == active
+                  "team" == active
                     ? "active_hover_underline"
                     : "hover_underline"
                 }
@@ -131,7 +158,7 @@ export const LaptopHeader = () => {
             <div
               className={"faq" == active ? "active_hover_color" : "hover_color"}
             >
-              <Link href="/faq">
+              <Link href="/#faq">
                 <pre> FAQ </pre>
               </Link>
 
@@ -167,4 +194,4 @@ export const LaptopHeader = () => {
   );
 };
 
-export default LaptopHeader();
+export default LaptopHeader;
