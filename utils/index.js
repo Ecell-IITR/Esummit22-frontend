@@ -5,7 +5,15 @@ export const isAuthenticated = () => {
   const userJSON = localStorage.getItem("user");
   const user = userJSON ? JSON.parse(userJSON) : null;
   const token = localStorage.getItem("authToken");
-  return !!(user && token) ? user : false;
+  return !!(user && token) ? { user } : false;
+};
+
+export const getAuthToken = () => {
+  if (typeof window === "undefined") return false;
+  const userJSON = localStorage.getItem("user");
+  const user = userJSON ? JSON.parse(userJSON) : null;
+  const token = localStorage.getItem("authToken");
+  return !!(user && token) ? token : false;
 };
 
 export const unAuthenticate = () => {
