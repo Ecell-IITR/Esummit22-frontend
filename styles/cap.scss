@@ -1,0 +1,62 @@
+.profile_postion {
+  margin-top: 150px;
+  margin-bottom: 71px;
+  margin-left: 328px;
+}
+.cap_container {
+  display: flex;
+  flex-direction: row;
+}
+.CapHeader {
+  width: 168px;
+  height: 36px;
+  left: 328px;
+  top: 307px;
+
+  font-family: Blinker;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #e9f0f4;
+}
+.Task_cap_underline {
+    width: 160px;
+    height: 100px;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  clip-path: polygon(5% 10%, 95% 10%, 100% 50%, 0% 50%);
+  margin-bottom: 50px;
+  height: 10px;
+}
+
+.Cap_Nav_cotainer {
+  flex: 0.2;
+}
+.Cap_Content_cotainer {
+    margin-left: -150px;
+  flex: 0.8;
+  font-family: Blinker;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(233, 240, 244, 1);
+}
+.Task_flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+.Task_flex_card {
+  margin-left: 32px;
+}
+
+.cap_container {
+  margin-top: 100px;
+}
