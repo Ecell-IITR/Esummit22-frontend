@@ -185,7 +185,7 @@ export const LaptopHeader = () => {
         <li>
           <Link href="/register">
             <div className="navbar-items register-navbar">
-              <CustomGradientBtn text={"REGISTER"} />
+              <CustomGradientBtn size="sm" text={"REGISTER"} />
             </div>
           </Link>
         </li>

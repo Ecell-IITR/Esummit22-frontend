@@ -39,7 +39,6 @@ export default function Accordion(props) {
         className={isShowing ? "accordian-answer" : "accordian-answer-hidden"}
         style={{
           // display: isShowing ? "block" : "none",
-          padding: "5px",
           marginLeft: "5%",
           marginRight: "5%",
           fontFamily: "Raleway",
