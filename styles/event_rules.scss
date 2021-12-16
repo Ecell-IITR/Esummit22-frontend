@@ -1,15 +1,3 @@
-.Event-rules-head {
-  font-family: Blinker;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.66vw;
-  line-height: 2vw;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  margin-bottom: 2.3vw;
-
-  color: #e9f0f4;
-}
 .Event-rules-list {
   font-family: Raleway;
   font-style: normal;
@@ -23,6 +11,9 @@
 
   color: #e9f0f4;
 }
+.Event_rule_text{
+  margin-left: 1%;
+}
 
 .event_rule_loop {
   display: flex;
@@ -33,13 +24,6 @@
   margin-top: 0.4vw;
 }
 @media screen and (max-width: 768px) {
-  .Event-rules-head {
-    margin-left: 4vw;
-    font-size: 3vw;
-    line-height: 2vw;
-    letter-spacing: 0.02em;
-  }
-
   .event_rule_loop {
     font-size: 4vw;
     line-height: 4vw;
@@ -52,5 +36,8 @@
     height: 3vw;
     margin-top: 0.4vw;
     margin-left: 4vw;
+  }
+  .Event_rule_text{
+    font-size: 14px;
   }
 }

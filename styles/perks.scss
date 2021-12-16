@@ -1,17 +1,19 @@
 .perks-container-behind {
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
-  width: 31vw;
+  width: 17vw;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.2vh;
   border-radius: 0px 18px 7px 18px;
+  margin: 1.5%;
 }
 
 .perks-container-front {
-  background-color: black;
-  width: 30.8vw;
+  background-color: #02070b;
+  width: 16.8vw;
+  height: 100%;
   align-items: center;
   border-radius: 0px 18px 7px 18px;
   display: flex;
@@ -29,7 +31,7 @@
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  width: 25vw;
+  width: 15vw;
   // padding-left: 8vw;
   padding-top: 3vh;
   display: flex;
@@ -61,7 +63,7 @@
 // }
 
 .content_div {
-  width: 26vw;
+  width: 15vw;
   padding-top: 2vh;
 }
 
@@ -88,16 +90,18 @@
 
 @media screen and (max-width: 768px) {
   .perks-container-behind {
-    min-width: 50%;
+    width: 90%;
   }
 
   .perks-container-front {
-    min-width: 100%;
+    width: 100%;
   }
   .content_div {
-    width: 40vw;
+    width: 90%;
   }
-
+  .title_div {
+    width: 90%;
+  }
   .content_style {
     padding-bottom: 4vh;
     font-size: 1rem;
