@@ -1,5 +1,5 @@
 import EventCard from "../Events/eventCard";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export default function HomeEvents({ allEvents }) {
   return (
@@ -11,7 +11,7 @@ export default function HomeEvents({ allEvents }) {
             return (
               <div className="Home_Events_Card_Loop" key={id}>
                 <EventCard
-                  background_image={det.background_image}
+                  background_image={det.card_image}
                   event_name={det.event_name}
                   card_description={det.card_description}
                   slug={det.end_point}

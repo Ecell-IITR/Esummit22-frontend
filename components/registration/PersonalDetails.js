@@ -17,9 +17,9 @@ const customStyle = {
     borderBottom: "1px solid #F5E4CA !important",
     // color:state.isFocused?"#6f00ff":"white",
     color: state.isSelected
-      ? "#02070B"
+      ? "#000000"
       : state.isFocused
-      ? "#02070B"
+      ? "#000000"
       : "#F5E4CA",
     backgroundColor: state.isFocused ? "#F5E4CA" : "transparent",
   }),

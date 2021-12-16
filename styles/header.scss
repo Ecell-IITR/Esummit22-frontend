@@ -1,11 +1,11 @@
 .navbar-container {
-  background-color: #01070b;
+  background-color: #000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   z-index: 100000;
-  padding: 0 10vw;
+  padding: 15px 10vw;
   position: fixed;
   top: 0;
 }
@@ -40,8 +40,7 @@ a {
 
 .navbar-logo {
   padding-top: 0.05vw;
-  margin: 6% 0;
-  width: 12vw;
+  width: 210px;
 }
 
 .navbar-container ul {
@@ -68,12 +67,10 @@ a {
   text-decoration: none;
   font-weight: bold;
   font-style: normal;
-  font-size: 2vh;
+  font-size: 20px;
   line-height: 2vh;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-.navbar-items {
   font-weight: 1000;
 }
 
@@ -208,10 +205,20 @@ a {
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .navbar-items {
+    margin-right: 0.5vw;
+    font-size: 15px;
+  }
+  .navbar-logo {
+    width: 180px;
+  }
+}
+
 .register-navbar {
   width: 7vw;
   border-radius: 0.5vw 0.25vw 0.5vw 0px;
-  color: #01070b;
+  color: #000000;
 }
 
 .register-login {
