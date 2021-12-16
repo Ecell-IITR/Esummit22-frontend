@@ -31,7 +31,7 @@ export default function Accordion(props) {
           <p>{props.title}</p>
         </div>
         <div className="accordian-image">
-          <img src="arrow.svg" />
+          <img src="/arrow.svg" />
         </div>
       </button>
 

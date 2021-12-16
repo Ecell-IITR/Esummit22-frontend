@@ -1,5 +1,5 @@
-import EventCard from "../components/Events/eventCard";
-import { ALL_EVENTS_API } from "../utils/APIs";
+import EventCard from "../../components/Events/eventCard";
+import { ALL_EVENTS_API } from "../../utils/APIs";
 
 export const Events = ({
   CompetitiveEvents,
