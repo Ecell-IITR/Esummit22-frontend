@@ -3,35 +3,22 @@ import FetchApi from "../../utils/fetchAPI";
 import { useEffect, useState } from "react";
 import { getAuthToken } from "../../utils";
 import Leaderboard from "../../components/dashboard/leaderboard";
-import Profile from "../../components/cap/cap_profile";
-import Navbar from "../../components/dashboard/Navbar";
-import CustomGradientBtn from "../../components/customGradientBtn";
-import { useMobile, useUpdateMobile } from "../../utils/MobileContext";
+import CapLayout from "../../components/cap/capLayout";
 
-export const capLeaderboard = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [leaderboard_data, setLeaderboardData] = useState([]);
-  FetchApi("get", CA_LEADERBOARD, null, getAuthToken()).then((res) => {
-    setLeaderboardData(res.data);
-  });
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const setMobile = useUpdateMobile();
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+const CapLeaderboard = () => {
+  const [leaderboardData, setLeaderboardData] = useState([]);
+
   useEffect(() => {
-    setMobile();
-  });
+    FetchApi("get", CA_LEADERBOARD, null, getAuthToken()).then((res) => {
+      setLeaderboardData(res.data);
+    });
+  }, []);
 
   return (
-    <div className="main-leaderboard-page">
-      {useMobile().isMobile ? null : <Navbar />}
-      <div className="sub-leaderboard-page">
-        <div className="leaderboard-page-profile">
-          <Profile />
-        </div>
-        <Leaderboard allCompetitors={leaderboard_data} />
-      </div>
-    </div>
+    <CapLayout>
+      <Leaderboard allCompetitors={leaderboardData} />
+    </CapLayout>
   );
 };
 
-export default capLeaderboard;
+export default CapLeaderboard;

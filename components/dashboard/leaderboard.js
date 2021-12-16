@@ -1,4 +1,4 @@
-export const LeaderboardEntry = (leaderboardData) => {
+const LeaderboardEntry = (leaderboardData) => {
   return (
     <div className="leaderboard-entry-main-container">
       <div className="leaderboard-entry-subcontainer">
