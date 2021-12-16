@@ -9,13 +9,13 @@ export const HeaderMobile = () => {
         <div className="bar2"></div>
         <div className="bar3"></div>
       </div>
-      <div className="image">
+      <Link href="/" className="image">
         <img
           src="fete-of-fortitude.png"
           alt="navbar-log"
           className="navbar-logo-mobile"
         />
-      </div>
+      </Link>
       <ul className="mobilenavMenu-subcontent1">
         <li className="mobilenavMenu-items">
           <Link href="/">
@@ -24,8 +24,8 @@ export const HeaderMobile = () => {
         </li>
         {
           <li className="mobilenavMenu-items">
-            <Link href="/theme">
-              <div className="mobilenavMenu-links">THEME</div>
+            <Link href="/team">
+              <div className="mobilenavMenu-links">TEAM</div>
             </Link>
           </li>
         }
@@ -45,7 +45,7 @@ export const HeaderMobile = () => {
           </Link>
         </li>
         <li className="mobilenavMenu-items">
-          <Link href="/faq">
+          <Link href="/#faq">
             <div className="mobilenavMenu-links">FAQ</div>
           </Link>
         </li>

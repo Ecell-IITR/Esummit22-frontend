@@ -1,5 +1,8 @@
 .main-leaderboard-container {
-  width: 70vw;
+  right: 0;
+  margin-top: 80px;
+  width: 80vw;
+  margin-bottom: 80px;
 }
 
 .leaderboard-head-container {
@@ -28,6 +31,7 @@
 .leaderboard-head-item {
   font-size: 18px;
   font-family: Blinker;
+  font-weight: 600;
   color: #e9f0f4;
 }
 
@@ -62,7 +66,7 @@
 }
 
 .leaderboard-entry-main-container {
-  width: 70vw;
+  width: 80vw;
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   padding-bottom: 1px;
 }
@@ -110,5 +114,14 @@
   }
   .leaderboard-points {
     font-size: 16px;
+  }
+}
+
+@media only screen and (width: 768px) {
+  .main-leaderboard-container {
+    width: 60vw;
+  }
+  .leaderboard-entry-main-container {
+    width: 60vw;
   }
 }

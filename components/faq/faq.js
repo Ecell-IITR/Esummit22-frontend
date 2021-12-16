@@ -8,7 +8,7 @@ function Faq() {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    backgroundColor: "#02070b",
+    backgroundColor: "#000000",
   };
 
   const faqs = [
@@ -46,7 +46,7 @@ function Faq() {
   ];
 
   return (
-    <div style={styles}>
+    <div style={styles} id="faq">
       <div
         style={{
           width: "80%",

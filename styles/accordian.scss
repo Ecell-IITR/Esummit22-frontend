@@ -14,10 +14,26 @@
 }
 .accordian-image {
   width: 3vh;
+  transition: ease-out 1s;
+}
+
+.accordian-image-up {
+  transform: rotateZ(-180deg);
+  transition: ease-out 1s;
+}
+
+.accordian-answer-hidden {
+  opacity: 0;
+  padding: 0px;
+  line-height: 0px;
+  transition: ease-out 1s;
 }
 .accordian-answer {
+  opacity: 1;
+  padding: 5px;
   font-size: 20px;
   line-height: 36px;
+  transition: ease-out 1s;
 }
 
 @media screen and (max-width: 480px) {
