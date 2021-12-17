@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { getAuthToken } from "../../utils";
 import Leaderboard from "../../components/dashboard/leaderboard";
 import CapLayout from "../../components/cap/capLayout";
+import withAuth from "../../utils/withAuth";
 
 const CapLeaderboard = () => {
   const [leaderboardData, setLeaderboardData] = useState([]);
@@ -23,4 +24,4 @@ const CapLeaderboard = () => {
   );
 };
 
-export default CapLeaderboard;
+export default withAuth(CapLeaderboard);

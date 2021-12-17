@@ -8,7 +8,6 @@ export const LaptopHeader = () => {
 
   const router = useRouter();
   useEffect(() => {
-    console.log(router);
     switch (router.asPath) {
       case "/":
         setActive("home");

@@ -1,12 +1,31 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
+
 export default function Navbar() {
   const [activelist, setactivelist] = useState([true, false, false]);
+  const router = useRouter();
+
+  useEffect(() => {
+    console.log(router.asPath);
+    switch (router.asPath) {
+      case "/cap/tasks":
+        setactivelist([true, false, false]);
+        break;
+      case "/cap/leaderboard":
+        setactivelist([false, true, false]);
+        break;
+      case "/cap/resources":
+        setactivelist([false, false, true]);
+        break;
+    }
+  });
 
   return (
     <div className="Ca_sidebar">
       <div className="nav-items">
         <ul>
-          <li>
+          <Link href="/cap/tasks">
             <div
               className={
                 activelist[0]
@@ -23,9 +42,9 @@ export default function Navbar() {
                 <div className={activelist[0] ? "text_black" : ""}>Tasks</div>
               </div>
             </div>
-          </li>
+          </Link>
 
-          <li>
+          <Link href="/cap/leaderboard">
             <div
               className={
                 activelist[1]
@@ -44,8 +63,8 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-          </li>
-          <li>
+          </Link>
+          <Link href="/cap/resources">
             <div
               className={
                 activelist[2]
@@ -64,7 +83,7 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-          </li>
+          </Link>
         </ul>
       </div>
     </div>

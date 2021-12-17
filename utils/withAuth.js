@@ -12,7 +12,7 @@ const withAuth = (Component) => {
     useEffect(() => {
       if (!user)
         Router.push({
-          pathname: "/signup",
+          pathname: "/login",
           query: {
             from: router.pathname,
           },

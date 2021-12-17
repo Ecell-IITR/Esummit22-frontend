@@ -11,8 +11,8 @@ export const HeaderMobile = () => {
       </div>
       <Link href="/" className="image">
         <img
-          src="fete-of-fortitude.png"
-          alt="navbar-log"
+          src="/fete-of-fortitude.png"
+          alt="navbar-logo"
           className="navbar-logo-mobile"
         />
       </Link>

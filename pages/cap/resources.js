@@ -5,6 +5,8 @@ import { getAuthToken } from "../../utils";
 import CapLayout from "../../components/cap/capLayout";
 import CA_Resources from "../../components/cap/ca_resources";
 
+import withAuth from "../../utils/withAuth";
+
 const ResourcesPage = () => {
   const [resourcesList, setResourcesList] = useState([]);
 
@@ -22,4 +24,4 @@ const ResourcesPage = () => {
   );
 };
 
-export default ResourcesPage;
+export default withAuth(ResourcesPage);
