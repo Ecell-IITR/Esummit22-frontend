@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import caRulebook from "../../public/CA-Resources/ca-rulebook.pdf";
 
-export class Resources extends Component {
+export class ResourcesCard extends Component {
   constructor(props) {
     super(props);
     this.state = { pdfFile: null, fileName: "" };
@@ -49,7 +49,7 @@ export class Resources extends Component {
   }
 }
 
-export default Resources;
+export default ResourcesCard;
 
 {
   /* <img src="View_button.png" alt=""></img> */

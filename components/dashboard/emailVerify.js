@@ -1,14 +1,14 @@
 import TransparentGradientButton from "../transparentGradientButton";
 
-export const VerifyEmailForTask = () => {
+export const VerifyEmailForTask = ({ type }) => {
   return (
     <div className="email-verify-main-container">
       <div className="email-verify-subcontianer">
         <div className="email-verify-imgcontainer">
-          <img src="viewTask.png" alt="EmailVerificationForTask" />
+          <img src="viewTask.png" alt="EmailVerification" />
         </div>
         <div className="email-verify-text">
-          Verify Your Email to View Tasks.
+          Verify Your Email to View {type}.
         </div>
         <div className="email-verify-btn-container">
           <TransparentGradientButton text="Verify Now" />

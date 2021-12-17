@@ -9,9 +9,11 @@ const CapLeaderboard = () => {
   const [leaderboardData, setLeaderboardData] = useState([]);
 
   useEffect(() => {
-    FetchApi("get", CA_LEADERBOARD, null, getAuthToken()).then((res) => {
-      setLeaderboardData(res.data);
-    });
+    FetchApi("get", CA_LEADERBOARD, null, getAuthToken())
+      .then((res) => {
+        setLeaderboardData(res.data);
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   return (
