@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-function Eventrules({detailsEvents}) {
+function Eventrules({ detailsEvents }) {
   return (
     <div className="Event-rules-main-container">
       <div className="Event-rules-list">

@@ -1,0 +1,36 @@
+.CA_main_container {
+  padding-top: 15vh;
+}
+
+.CA_Profile_container {
+  padding-bottom: 5vh;
+}
+
+.CA_Profile_heading {
+  color: white;
+  font-family: Blinker;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5em;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  //   padding-bottom: 2vh;
+}
+
+.CA_Profile_heading_underline {
+  //   height: 0.2vw;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  width: 50%;
+  //   position: relative;
+  top: 12px;
+  padding-bottom: 0.5vh;
+}
+
+.CA_Profile_content {
+  padding-bottom: 8vh;
+}
+
+.CA_Profile_Resources_container {
+  padding-top: 3vh;
+}
