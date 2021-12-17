@@ -1,0 +1,56 @@
+.Task_cap_underline {
+  width: 7vw;
+  height: 10vw;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  clip-path: polygon(5% 10%, 95% 10%, 100% 50%, 0% 50%);
+  margin-bottom: 5vw;
+  height: 10px;
+  margin-left: 1.3vw;
+}
+
+.Cap_Content_cotainer {
+  font-family: Blinker;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3vw;
+  line-height: 1.56vw;
+  color: rgba(233, 240, 244, 1);
+  margin-left: 17.5vw;
+  margin-top: 2vw;
+}
+.Task_flex {
+  display: flex;
+  flex-direction: row;
+}
+.Task_flex_card {
+  margin-left: 1vw;
+}
+
+.task_heading {
+  margin-left: 1.3vw;
+}
+@media screen and (max-width: 1000px) {
+  .task_heading {
+    margin-left: 1.3vw;
+    font-size: 3vw;
+    margin-bottom: 1vw;
+  }
+  .Task_cap_underline {
+    width: 15.6vw;
+    margin-bottom: 8vw;
+    height: 15px;
+    margin-left: 1.3vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .task_heading {
+    margin-left: 30vw;
+  }
+  .Task_cap_underline {
+    margin-left: 30vw;
+  }
+  .Task_flex {
+    margin-left: 20vw;
+  }
+}

@@ -18,7 +18,7 @@ export default function Home({ allEvents, allSpeakers }) {
           <CustomGradientBtn text="View All" color="black" />
         </div>
       </Link>
-      <Counter />
+      <Counter />{"  "}
       <HomeEvents allEvents={allEvents} />
       <Link href="/events" passHref>
         <div className="home-view-all-button">
