@@ -9,7 +9,7 @@ export const EventHead = ({ detailsEvents }) => {
           alt="ideastorm"
         />
         <div>
-          <button className="previous-event-button" >
+          <button className="previous-event-button">
             <img className="previous-next" src="/previous.png" alt="previous" />
             previous
           </button>
