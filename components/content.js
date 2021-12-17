@@ -1,69 +1,63 @@
 import React from "react";
+import { useEffect, useState } from "react";
 
-export const Content = () => {
+export const Content = ({ detailsEvents }) => {
+  const [Events_name, setEvents_name] = useState(detailsEvents[0].end_point);
   return (
     <div className="content-main">
       <div className="content-main-heading">CONTENTS</div>
       <div className="content-main-elements">
         <a
           className="content-main-elements-links"
-          href="#"
-          rel="noopener noreferrer"
-        >
-          SPEAKERS
-        </a>
-        <img className="content-main-elements-img" src="circle.png" />
-        <a
-          className="content-main-elements-links"
-          href="#"
+          href="#timeline"
           rel="noopener noreferrer"
         >
           TIMELINE
         </a>
-        <img className="content-main-elements-img" src="circle.png" />
+        <img className="content-main-elements-img" src="/circle.png" />
         <a
           className="content-main-elements-links"
-          href="#"
+          href="#criteria"
           rel="noopener noreferrer"
         >
           ELIGIBILITY CRITERIA
         </a>
-        <img className="content-main-elements-img-mobile" src="circle.png" />
+        <img className="content-main-elements-img-mobile" src="/circle.png" />
         <a
           className="content-main-elements-links"
-          href="#"
+          href="#perks"
           rel="noopener noreferrer"
         >
           PERKS
         </a>
-        <img className="content-main-elements-img" src="circle.png" />
+        <img className="content-main-elements-img" src="/circle.png" />
         <a
           className="content-main-elements-links"
-          href="#"
+          href="#rules"
           rel="noopener noreferrer"
         >
           RULES
         </a>
-        <img className="content-main-elements-img" src="circle.png" />
+        <img className="content-main-elements-img" src="/circle.png" />
         <a
           className="content-main-elements-links"
-          href="#"
+          href="#sponsors"
           rel="noopener noreferrer"
         >
           SPONSORS
         </a>
-        <img className="content-main-elements-img" src="circle.png" />
+        <img className="content-main-elements-img" src="/circle.png" />
         <a
           className="content-main-elements-links"
-          href="#"
+          href="#faqs"
           rel="noopener noreferrer"
         >
           FAQ
         </a>
-        <img className="content-main-elements-img" src="circle.png" />
+        <img className="content-main-elements-img" src="/circle.png" />
         <a
           className="content-main-elements-links"
-          href="#"
+          href="#contacts"
           rel="noopener noreferrer"
         >
           CONTACT

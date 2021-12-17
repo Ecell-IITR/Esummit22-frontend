@@ -60,14 +60,6 @@ function Faq() {
       >
         FAQs
       </div>
-      {/* <Accordion
-        title="Is it necessary to participate in a competition to be a part of the summit?"
-        content="E-Summit being the flagship event of ECell, is held annually brings together the academic community, venture capitalists, new age entrepreneurs and all those passionate about entrepreneurship to common grounds. "
-      />
-      <Accordion
-        title="The dates are 6th to 10th of January, but what about COVID?"
-        content="E-Summit being the flagship event of ECell, is held annually brings together the academic community, venture capitalists, new age entrepreneurs and all those passionate about entrepreneurship to common grounds. "
-      /> */}
       {faqs.map((faq, id) => (
         <Accordion title={faq.question} content={faq.answer} key={id} />
       ))}

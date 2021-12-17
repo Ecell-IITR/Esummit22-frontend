@@ -18,7 +18,7 @@ export const EventCard = ({
               __html: card_description,
             }}
           />
-          <Link href={`/event/${slug}`} passHref>
+          <Link href={`/events/${slug}`} passHref>
             <div className="View_more">View More</div>
           </Link>
         </div>

@@ -1,0 +1,53 @@
+.coordinator_main {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 70%;
+}
+.coordinator_name {
+  font-family: Raleway;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  width: 100%;
+}
+.coordinator_email {
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.coordinator_image {
+  display: flex;
+  width: 40%;
+}
+.coordinator_tagline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 2.5%;
+}
+
+@media only screen and (max-width: 540px) {
+  .coordinator_main {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  .coordinator_image {
+    display: none;
+  }
+  .coordinator_name {
+    font-size: 16px;
+  }
+  .coordinator_email{
+    font-size: 12px
+  }
+}
