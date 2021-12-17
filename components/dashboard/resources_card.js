@@ -50,7 +50,3 @@ export class ResourcesCard extends Component {
 }
 
 export default ResourcesCard;
-
-{
-  /* <img src="View_button.png" alt=""></img> */
-}

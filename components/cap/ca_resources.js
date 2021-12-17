@@ -1,13 +1,10 @@
 import React from "react";
 import ResourcesCard from "../dashboard/resources_card";
 
-export default function CA_Resources(resources_list) {
+export default function CA_Resources({ resources_list }) {
   return (
     <div>
       <div className="CA_main_container">
-        {/* <div className="CA_Profile_container">
-          <Profile />
-        </div> */}
         {resources_list ? (
           <div className="CA_Profile_content">
             <div className="CA_Profile_heading">Joining Letters</div>
@@ -28,16 +25,6 @@ export default function CA_Resources(resources_list) {
           <div
             className="CA_Profile_heading_underline"
             style={{ width: "6.5vw" }}
-          ></div>
-          <div className="CA_Profile_Resources_container">
-            <ResourcesCard />
-          </div>
-        </div>
-        <div className="CA_Profile_content">
-          <div className="CA_Profile_heading">Certificate</div>
-          <div
-            className="CA_Profile_heading_underline"
-            style={{ width: "7vw" }}
           ></div>
           <div className="CA_Profile_Resources_container">
             <ResourcesCard />
