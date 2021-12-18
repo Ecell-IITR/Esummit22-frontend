@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Share = ({ closeModal }) => {
+export const Share = ({ closeShareModal }) => {
   function copyText(id, id2) {
     document.getElementById(id2).innerText = "Copied";
     var range = document.createRange();
@@ -23,7 +23,7 @@ export const Share = ({ closeModal }) => {
             <div className="Share_popup_close_btn">
               <button
                 onClick={() => {
-                  closeModal(false);
+                  closeShareModal(false);
                 }}
               >
                 X

@@ -1,8 +1,8 @@
 import React from "react";
 
-const Upload = () => {
+const Upload = ({ closeUploadModal }) => {
   return (
-    <div>
+    <div className="Upload_popup_upload_background">
       <div className="Upload_popup_mainDiv_behind">
         <div className="Upload_popup_mainDiv_front">
           <div className="Upload_popup_heading">
@@ -10,7 +10,13 @@ const Upload = () => {
               <h1>Upload</h1>
             </div>
             <div className="Upload_popup_close_btn">
-              <button>X</button>
+              <button
+                onClick={() => {
+                  closeUploadModal(false);
+                }}
+              >
+                X
+              </button>
             </div>
           </div>
           <div className="Upload_popup_subDiv_behind">
