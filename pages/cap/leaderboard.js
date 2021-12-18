@@ -4,14 +4,17 @@ import { useEffect, useState } from "react";
 import { getAuthToken } from "../../utils";
 import Leaderboard from "../../components/dashboard/leaderboard";
 import CapLayout from "../../components/cap/capLayout";
+import withAuth from "../../utils/withAuth";
 
 const CapLeaderboard = () => {
   const [leaderboardData, setLeaderboardData] = useState([]);
 
   useEffect(() => {
-    FetchApi("get", CA_LEADERBOARD, null, getAuthToken()).then((res) => {
-      setLeaderboardData(res.data);
-    });
+    FetchApi("get", CA_LEADERBOARD, null, getAuthToken())
+      .then((res) => {
+        setLeaderboardData(res.data);
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   return (
@@ -21,4 +24,4 @@ const CapLeaderboard = () => {
   );
 };
 
-export default CapLeaderboard;
+export default withAuth(CapLeaderboard);

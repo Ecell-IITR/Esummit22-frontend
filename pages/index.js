@@ -19,6 +19,7 @@ export default function Home({ allEvents, allSpeakers }) {
         </div>
       </Link>
       <Counter />
+      {"  "}
       <HomeEvents allEvents={allEvents} />
       <Link href="/events" passHref>
         <div className="home-view-all-button">

@@ -2,6 +2,7 @@ import FetchApi from "../utils/fetchAPI";
 import { Login_API } from "../utils/APIs";
 import { toast } from "react-toastify";
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 import CustomGradientBtn from "../components/customGradientBtn";
 import { Authenticate } from "../utils";
 
@@ -14,6 +15,8 @@ const Login = () => {
   const [email_error_bool, setemail_error_bool] = useState("");
   const [pass_error_bool, setpass_error_bool] = useState("");
   const [toggleEye, changetoggleEye] = useState(true);
+
+  const router = useRouter();
 
   const handleToggle = () => {
     changetoggleEye(!toggleEye);
@@ -69,6 +72,11 @@ const Login = () => {
           localStorage.setItem("user_role_type", res.data.role);
         }
         Authenticate(res.data.user, res.data.token);
+        if (res.data.role === "CA") {
+          router.push("/cap/leaderboard");
+        } else {
+          router.push("/dashboard");
+        }
         // if (String(localStorage.getItem("user_role_type")) === "CA") {
         //   const { history } = this.props;
         //   history.push("/campus-ambassador");
