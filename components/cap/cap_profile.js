@@ -1,6 +1,16 @@
 import React from "react";
+import { useState } from "react";
+import FetchApi from "../../utils/fetchAPI";
+import { CA_PROFILE_API } from "../../utils/APIs";
+import { getAuthToken } from "../../utils";
+export const Profile = ({name,points,id}) => {
+  const [Api_Arr, setApi_Arr] = useState();
+  const [Api_caller, setApi_caller] = useState(true);
+  const [Loop_breaker, setLoop_breaker] = useState(true)
+  
+  
+  
 
-export const Profile = () => {
   return (
     <div className="profile-container">
       <div className="profile-image">
@@ -9,8 +19,8 @@ export const Profile = () => {
 
       <div className="profile-details">
         <div className="profile-details-name">
-          <div className="profile-details-name-one">Vaibhav Khandelwal</div>
-          <div className="profile-details-name-points">110 points</div>
+          <div className="profile-details-name-one"> { name }  </div>
+          <div className="profile-details-name-points">{points}</div>
         </div>
         <div className="profile-details-name2">
           <div className="profile-white-text">Campus Ambassador</div>
@@ -19,7 +29,7 @@ export const Profile = () => {
         </div>
         <div className="profile-details-name3">
           <div className="profile-white-text">ESummit ID</div>
-          <div className="profile-golden-text">ES21CA1234</div>
+          <div className="profile-golden-text">{id}</div>
           <img className="profile-circle" src="circle.png" />
           <div className="profile-white-text">Rank</div>
           <div className="profile-golden-text">286</div>
