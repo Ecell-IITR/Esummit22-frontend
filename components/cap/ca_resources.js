@@ -31,7 +31,6 @@ export default function CA_Resources({ resources_list }) {
             <ResourcesCard />
             <ResourcesCard />
             <ResourcesCard />
-           
           </div>
         </div>
       </div>

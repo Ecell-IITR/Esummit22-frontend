@@ -1,13 +1,14 @@
-.CA_main_container {
+.nonCA_main_container {
   padding-top: 15vh;
   width: 80vw;
+  margin-left: 18rem;
 }
 
-.CA_Profile_container {
+.nonCA_Profile_container {
   padding-bottom: 5vh;
 }
 
-.CA_Profile_heading {
+.nonCA_Profile_heading {
   color: white;
   font-family: Blinker;
   font-style: normal;
@@ -16,24 +17,26 @@
   line-height: 36px;
   display: flex;
   align-items: center;
+  margin-left: 2vw;
   //   padding-bottom: 2vh;
 }
 
-.CA_Profile_heading_underline {
+.nonCA_Profile_heading_underline {
   //   height: 0.2vw;
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   width: 50%;
   //   position: relative;
   top: 12px;
   padding-bottom: 0.5vh;
+  margin-left: 2vw;
 }
 
-.CA_Profile_content {
+.nonCA_Profile_content {
   padding-bottom: 8vh;
   width: 100%;
 }
 
-.CA_Profile_Resources_container {
+.nonCA_Profile_Resources_container {
   padding-top: 3vh;
   display: flex;
   flex-direction: row;
