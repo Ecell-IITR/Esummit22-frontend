@@ -2,9 +2,9 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 12.35vw;
-  margin-top: 11vh;
-  border: solid 1px;
+  width: 14.35vw;
+  margin-top: 12vh;
+  border: solid 2px;
   border-image: linear-gradient(#dbba89 0%, rgba(219, 186, 137, 0.33) 124.76%);
   border-image-slice: 1;
   border-left: 0px;
@@ -13,13 +13,13 @@
 .nav-items {
   margin-top: 10.9vh;
   //z-index: 1000000;
-  width: 12.35vw;
+  width: 14.35vw;
   height: 100vh;
 }
 
 .nav-text-container-active {
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
-  width: 12.35vw;
+  width: 14.35vw;
   height: 10vh;
   display: flex;
   flex-direction: row;
@@ -28,7 +28,7 @@
 }
 .nav-text-container-inactive {
   align-items: center;
-  width: 12.35vw;
+  width: 14.35vw;
   height: 10vh;
   display: flex;
   flex-direction: row;
@@ -45,9 +45,56 @@
   color: #fff;
   position: relative;
 }
-
+.noncanav-items {
+  width: 14.35vw;
+  height: 100vh;
+}
 .text_black {
   color: #000;
+}
+.nav-profile {
+  color: #fff;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.nav-profile-name {
+  font-family: Blinker;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.nav-profile-college {
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.nav-profile-summitid {
+  font-family: Blinker;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.nav-profile-photo img {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+}
+.nav-profile-summitid {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 768px) {
@@ -58,6 +105,7 @@
   }
   .Ca_sidebar {
     width: 30vw;
+    margin-top: 18vh;
   }
   .nav-text-container-active {
     width: 30vw;
@@ -68,6 +116,37 @@
   .nav_item_text {
     width: 28vw;
     font-size: 5vw;
+  }
+  .noncanav-items {
+    width: 30vw;
+    height: 100vh;
+  }
+  .nav-profile-name {
+    font-size: 16px;
+    width: 100%;
+  }
+  .nav-profile-college {
+    font-size: 12px;
+  }
+  .nav-profile-summitid {
+    font-size: 14px;
+  }
+  .nav-profile-photo img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+  }
+  .nav-profile-summitid {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-profile {
+    margin-top: 15%;
+    color: #fff;
+    height: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
 @media only screen and (max-width: 508px) {
