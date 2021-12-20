@@ -1,5 +1,5 @@
 .Task_cap_underline {
-  width: 7vw;
+  width: 3vw;
   height: 10vw;
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   clip-path: polygon(5% 10%, 95% 10%, 100% 50%, 0% 50%);
@@ -19,7 +19,7 @@
 }
 .Task_flex {
   display: flex;
-  flex-direction: row;
+  flex-direction: wrap;
 }
 .Task_flex_card {
   margin-left: 1vw;
@@ -35,7 +35,7 @@
     margin-bottom: 1vw;
   }
   .Task_cap_underline {
-    width: 15.6vw;
+    width: 7vw;
     margin-bottom: 8vw;
     height: 15px;
     margin-left: 1.3vw;
@@ -50,6 +50,27 @@
     margin-left: 30vw;
   }
   .Task_flex {
+    
     margin-left: 20vw;
+  }
+}
+@media only screen and (max-width: 508px) {
+  .task_heading {
+    margin-left: 0;
+  }
+  .Task_cap_underline {
+    margin-left:0;
+  }
+  .Cap_Content_cotainer {
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+  }
+  .Task_flex {
+    flex-direction: column;
+    
+    margin-left: 0;
+
   }
 }
