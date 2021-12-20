@@ -1,4 +1,3 @@
-
 import Task from "../../components/task";
 
 import React, { useEffect, useState } from "react";
@@ -10,17 +9,20 @@ import { getAuthToken } from "../../utils";
 export default function task() {
   const [Task_Arr, setTask_Arr] = useState([]);
   const [Task_caller, setTask_caller] = useState(true);
-  FetchApi("get", TASK_API, null, getAuthToken())
-    .then((res) => {
-      if (Task_caller) {
-        setTask_Arr(res.data);
-        console.log(res)
-        setTask_caller(false);
-      }
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  useEffect(() => {
+    FetchApi("get", TASK_API, null, getAuthToken())
+      .then((res) => {
+        if (Task_caller) {
+          setTask_Arr(res.data);
+          console.log(res);
+          setTask_caller(false);
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <CapLayout>
       <div className="Cap_Content_cotainer">

@@ -1,13 +1,13 @@
 import { useState } from "react";
 import CustomGradientBtn from "./customGradientBtn";
 import Share from "./dashboard/share_popup";
-import Upload from "./dashboard/upload_popup"
-export const Task = ({ description, Due_date, points,id }) => {
+import Upload from "./dashboard/upload_popup";
+export const Task = ({ description, Due_date, points, id }) => {
   const [changeModal, setChangeModal] = useState(false);
 
   return (
     <div className="tasks-container">
-      <div><Upload id={id}/></div>
+      {/* <div><Upload id={id} /></div> */}
       <div className="tasks-container-discription">{description}</div>
       <div className="tasks-container-date">
         Due Date: {new Date(Due_date).toDateString()}
@@ -25,7 +25,6 @@ export const Task = ({ description, Due_date, points,id }) => {
         <div className="tasks-container-share-button">
           <CustomGradientBtn text="Upload" color="black" />
         </div>
-        
       </div>
       <div>{changeModal && <Share closeModal={setChangeModal} />}</div>
     </div>

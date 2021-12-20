@@ -4,43 +4,47 @@ import Navbar from "../../components/dashboard/Navbar";
 import { useMobile, useUpdateMobile } from "../../utils/MobileContext";
 import { useEffect, useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
-import { CA_PROFILE_API } from "../../utils/APIs";
+import { CA_PROFILE_API, CA_PROFILE_RANK_API } from "../../utils/APIs";
 import { getAuthToken } from "../../utils";
 const CapLayout = ({ children }) => {
-  const [Api_Arr, setApi_Arr] = useState(5);
-
-  FetchApi("get", CA_PROFILE_API, null, getAuthToken())
-  .then((res) => {
-  
-      setApi_Arr(res.data[0]);
-      
-  
-      
-    
-  
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
-
-
-
+  const [apiArr, setApiArr] = useState({});
+  const [rank, setRank] = useState("");
 
   const setMobile = useUpdateMobile();
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     setMobile();
   });
+
+  useEffect(() => {
+    FetchApi("get", CA_PROFILE_API, null, getAuthToken())
+      .then((res) => {
+        setApiArr(res.data[0]);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    FetchApi("get", CA_PROFILE_RANK_API, null, getAuthToken())
+      .then((res) => {
+        setRank(res.data.rank);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <div className="cap-main-container">
-      {useMobile().isMobile ? null : <Navbar id={Api_Arr.esummit_id}/>}
-
+      {useMobile().isMobile ? null : <Navbar />}
       <div className="cap-right-outer-container">
- 
         <div className="cap-profile-container">
-        {   /*Api_Arr.profile.full_name*/}
-          <Profile name={ "xxx" }  points={Api_Arr.points_obtained} id={Api_Arr.esummit_id}/>
+          <Profile
+            name={apiArr?.profile?.full_name}
+            points={apiArr?.points_obtained}
+            id={apiArr?.esummit_id}
+            college={apiArr?.college}
+            rank={rank}
+          />
         </div>
         {children}
       </div>
