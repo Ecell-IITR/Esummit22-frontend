@@ -1,6 +1,6 @@
-import Profile from "../../components/cap/cap_profile";
+
 import Task from "../../components/task";
-import Navbar from "../../components/dashboard/Navbar";
+
 import React, { useEffect, useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
 import { TASK_API } from "../../utils/APIs";
@@ -14,6 +14,7 @@ export default function task() {
     .then((res) => {
       if (Task_caller) {
         setTask_Arr(res.data);
+        console.log(res)
         setTask_caller(false);
       }
     })
@@ -33,6 +34,7 @@ export default function task() {
                   description={det.headline}
                   points={det.max_points}
                   Due_date={det.end_date}
+                  id={det.id}
                 />
               </div>
             );

@@ -7,13 +7,13 @@ import FetchApi from "../../utils/fetchAPI";
 import { CA_PROFILE_API } from "../../utils/APIs";
 import { getAuthToken } from "../../utils";
 const CapLayout = ({ children }) => {
-  const [Api_Arr, setApi_Arr] = useState(3);
+  const [Api_Arr, setApi_Arr] = useState(5);
 
   FetchApi("get", CA_PROFILE_API, null, getAuthToken())
   .then((res) => {
   
       setApi_Arr(res.data[0]);
-      console.log(Api_Arr)
+      
   
       
     
@@ -34,13 +34,13 @@ const CapLayout = ({ children }) => {
   });
   return (
     <div className="cap-main-container">
-      {useMobile().isMobile ? null : <Navbar />}
+      {useMobile().isMobile ? null : <Navbar id={Api_Arr.esummit_id}/>}
 
       <div className="cap-right-outer-container">
-        {Api_Arr.length}
+ 
         <div className="cap-profile-container">
         {   /*Api_Arr.profile.full_name*/}
-          <Profile name={   Api_Arr.profile.full_name}  points={Api_Arr.points_obtained} id={Api_Arr.esummit_id}/>
+          <Profile name={ "xxx" }  points={Api_Arr.points_obtained} id={Api_Arr.esummit_id}/>
         </div>
         {children}
       </div>
