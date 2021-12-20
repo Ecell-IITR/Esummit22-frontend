@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import caRulebook from "../../public/CA-Resources/ca-rulebook.pdf";
-
+import pdfimg  from "../../public/CA-Resources/pdf.svg"
 export class ResourcesCard extends Component {
   constructor(props) {
     super(props);
@@ -22,29 +22,22 @@ export class ResourcesCard extends Component {
 
   render() {
     return (
-      <div className="div_behind_resources">
-        <div className="div_front_resources">
-          <div className="pdf_div_main">
-            <div className="pdf_div">
-              <img src="PDF_symbol.png" alt="" />
-              <p style={{ cursor: "pointer" }}>
-                <a href={this.state.pdfFile} target="_blank" rel="noreferrer">
-                  {this.state.fileName}
-                </a>
-              </p>
-            </div>
-            <div className="button_style">
-              <button id="button_view">View</button>
-            </div>
-          </div>
+      <div className="resource-Card-container">
+      <img src={pdfimg} className="pdf-img" alt="sorry" />
 
-          <div className="span_download">
-            <a href={this.state.pdfFile} download="CA-Rulebook.pdf">
-              <button className="download_button">Download</button>
-            </a>
-          </div>
-        </div>
-      </div>
+      <div className="resource-pdf-name">{this.state.fileName}</div>
+      <a href={this.state.pdfFile} target="_blank" rel="noreferrer">
+        {" "}
+        <div className=" resource-view">View</div>
+      </a>
+      <a
+        href={this.state.pdfFile}
+        className=" resource-download"
+        download="CA-Rulebook.pdf"
+      >
+        Download
+      </a>
+    </div>
     );
   }
 }
