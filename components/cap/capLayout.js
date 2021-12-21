@@ -35,6 +35,7 @@ const CapLayout = ({ children }) => {
 
   return (
     <div className="cap-main-container">
+    
       {useMobile().isMobile ? null : <Navbar />}
       <div className="cap-right-outer-container">
         <div className="cap-profile-container">
