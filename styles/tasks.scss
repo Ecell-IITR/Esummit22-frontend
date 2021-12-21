@@ -8,6 +8,7 @@
   justify-content: center;
   border: #f5e4ca solid;
   border-radius: 10px 10px 10px 0px;
+  position: relative;
   .tasks-container-discription {
     display: flex;
     width: 90%;
@@ -51,7 +52,15 @@
     align-items: center;
   }
 }
-
+.Upload_task_Poup_none{
+  display:none;
+}
+.Upload_task_Poup_in{
+  display: contents;
+  z-index: 1000000000;
+  position:relative;
+ 
+}
 @media screen and (max-width: 768px) {
   .tasks-container {
     width: 90%;

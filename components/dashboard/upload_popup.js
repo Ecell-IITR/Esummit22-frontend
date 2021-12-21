@@ -4,35 +4,35 @@ import { Submission_API } from "../../utils/APIs";
 import { toast } from "react-toastify";
 import { CA_PROFILE_API } from "../../utils/APIs";
 import { getAuthToken } from "../../utils";
-const Upload = ({ id }) => {
+import { Modal } from "react-bootstrap";
+const Upload = ({ profileId ,id ,show, setShow}) => {
   const [profile, setprofile] = useState();
   const [selectedFile, setselectedFile] = useState("");
   const [loading, setloading] = useState();
-  FetchApi("get", CA_PROFILE_API, null, getAuthToken())
-    .then((res) => {
-      setprofile(res.data[0].esummit_id);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   function handleInputChange(e) {
     setselectedFile(e.target.files[0]);
   }
   function submit() {
     if (selectedFile) {
       setloading(true);
-
+      console.log(selectedFile)
       let form_data = new FormData();
       form_data.append("uploaded_file", selectedFile, selectedFile.name);
-      form_data.append("uploaded_task", { id });
-      form_data.append("uploaded_by", profile);
+      form_data.append("uploaded_task",  id );
+      form_data.append("uploaded_by", profileId);
+      console.log("i am trying to work")
       FetchApi("post", Submission_API, form_data, getAuthToken())
         .then((res) => {
           console.log(res);
 
           setloading(false);
 
-          window.location.href = "/campus-ambassador";
+          window.location.href = "/cap/task";
         })
         .catch((err) => {
           setloading(false);
@@ -41,9 +41,12 @@ const Upload = ({ id }) => {
     } else {
       toast.error("Please Upload a Valid File/Image !");
     }
+    setShow(false)
+    
   }
   return (
-    <div>
+
+      <Modal show={show} contentClassName="Upload_Content" onHide={() => {handleClose()}}>
       <div className="Upload_popup_mainDiv_behind">
         <div className="Upload_popup_mainDiv_front">
           <div className="Upload_popup_heading">
@@ -51,7 +54,7 @@ const Upload = ({ id }) => {
               <h1>Upload</h1>
             </div>
             <div className="Upload_popup_close_btn">
-              <button>X</button>
+              <button onClick={() => {handleClose()}}>X</button>
             </div>
           </div>
           <div className="Upload_popup_subDiv_behind">
@@ -76,13 +79,13 @@ const Upload = ({ id }) => {
             </div>
           </div>
           <div className="Upload_popup_UploadBtn_div">
-            <div className="Upload_popup_UploadBtn" onClick="submit()">
+            <div className="Upload_popup_UploadBtn" onClick={() => {submit()}}>
               Upload
             </div>
           </div>
         </div>
       </div>
-    </div>
+      </Modal>
   );
 };
 

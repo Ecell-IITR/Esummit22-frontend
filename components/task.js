@@ -2,10 +2,14 @@ import { useState } from "react";
 import CustomGradientBtn from "./customGradientBtn";
 import Share from "./dashboard/share_popup";
 import Upload from "./dashboard/upload_popup";
-export const Task = ({ description, Due_date, points, id }) => {
+import { isAuthenticated } from "../utils";
+export const Task = ({ description, Due_date, points, id ,sharesesc,shareurl}) => {
   const [changeModal, setChangeModal] = useState(false);
-
-  return (
+  const [UploadToggle, setUploadToggle] = useState(false)
+  const [show, setShow] = useState(false);
+  const user = isAuthenticated();
+  console.log(user)
+  return (<><Upload profileId={user.user.id} id={id} show={show} setShow={(e) => {setShow(e)} } />
     <div className="tasks-container">
       {/* <div><Upload id={id} /></div> */}
       <div className="tasks-container-discription">{description}</div>
@@ -22,12 +26,14 @@ export const Task = ({ description, Due_date, points, id }) => {
           <CustomGradientBtn text="Share" color="black" />
         </div>
         <div className="tasks-container-share-score">{points} points</div>
-        <div className="tasks-container-share-button">
-          <CustomGradientBtn text="Upload" color="black" />
+        <div className="tasks-container-share-button" onClick={() => { setShow(true)}} >
+          <CustomGradientBtn text="Upload" color="black"/>
         </div>
+        
       </div>
-      <div>{changeModal && <Share closeModal={setChangeModal} />}</div>
-    </div>
+      <div>{changeModal && <Share closeModal={setChangeModal} sharesesc={sharesesc} shareurl={shareurl}/>}</div>
+      
+    </div></>
   );
 };
 

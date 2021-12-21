@@ -7,7 +7,12 @@
   justify-content: center;
   align-items: center;
 }
-
+.Upload_Content{
+  margin-top: -900px;
+  margin-left: 450px;
+  z-index: 100000 !important;
+  background-color: black !important;
+}
 .Upload_popup_mainDiv_front {
   background-color: black;
   width: 41.8vw;
