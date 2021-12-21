@@ -6,11 +6,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100000000000000000000 !important;
 }
 .Upload_Content{
-  margin-top: -900px;
+  margin-top: -950px;
   margin-left: 450px;
-  z-index: 100000 !important;
+  z-index: 100000000000 !important;
   background-color: black !important;
 }
 .Upload_popup_mainDiv_front {
@@ -120,6 +121,14 @@
   border-radius: 0.5vw 0.25vw 0.5vw 0px;
 }
 
+
+.poup-boder-container{border: 3px solid;
+
+  border-image-source: linear-gradient(124.76deg, #F5E4CA 12.61%, #DBBA89 63.66%);
+  width: 42vw;
+  
+height: 360px;
+  }
 @media screen and (max-width: 768px) {
   .Upload_popup_mainDiv_behind {
     margin-left: 3.4%;
@@ -138,6 +147,9 @@
   .Upload_popup_UploadBtn {
     width: 25%;
     border-radius: 1.5vw 0.75vw 1.5vw 0px;
+  }
+ input{
+    width:12vw
   }
 }
 

@@ -3,11 +3,11 @@ import { useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
 import { CA_PROFILE_API } from "../../utils/APIs";
 import { getAuthToken } from "../../utils";
-export const Profile = ({ name, points, id, college, rank }) => {
+export const Profile = ({ name="", points, id, college, rank }) => {
   return (
     <div className="profile-container">
       <div className="profile-image">
-        <img id="avatar" src="v.png" alt="" />
+        <p>{name[0]}</p>
       </div>
 
       <div className="profile-details">

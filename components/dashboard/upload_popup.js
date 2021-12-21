@@ -44,25 +44,28 @@ const Upload = ({ profileId ,id ,show, setShow}) => {
     setShow(false)
     
   }
-  return (
+  return (<>
 
       <Modal show={show} contentClassName="Upload_Content" onHide={() => {handleClose()}}>
-      <div className="Upload_popup_mainDiv_behind">
-        <div className="Upload_popup_mainDiv_front">
-          <div className="Upload_popup_heading">
-            <div className="Upload_popup_heading">
+      <div className="Share_popup_share_background">
+      <div className="Share_popup_mainDiv_behind">
+        <div className="Share_popup_mainDiv_front">
+          <div className="Share_popup_heading">
+            <div className="Share_popup_share_heading">
               <h1>Upload</h1>
             </div>
-            <div className="Upload_popup_close_btn">
-              <button onClick={() => {handleClose()}}>X</button>
+            <div className="Share_popup_close_btn">
+            <button onClick={() => {handleClose()}}>
+                X
+              </button>
             </div>
           </div>
-          <div className="Upload_popup_subDiv_behind">
-            <div className="Upload_popup_subDiv_front">
-              <div className="Upload_popup_headline">Task Headline</div>
-              <p className="Upload_popup_para">
-                Please upload screenshot of share photo of File as instructed in
-                task detail.
+          <div className="Share_popup_subDiv_behind">
+            <div className="Share_popup_subDiv_front">
+            
+              <p className="Share_popup_para" id="Share_popup_para1">
+              Please upload screenshot of share photo of File as instructed in
+                task detail.<br/><br/>
               </p>
               <div className="Upload_popup_ChooseFileContainer">
                 <div className="Upload_popup_para">File Upload:</div>
@@ -72,20 +75,26 @@ const Upload = ({ profileId ,id ,show, setShow}) => {
                     accept="image/*"
                     onChange={(e) => {
                       handleInputChange(e);
+                      className="Upload_input_Class"
                     }}
                   />
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="Upload_popup_UploadBtn_div">
+              <div className="Upload_popup_UploadBtn_div">
             <div className="Upload_popup_UploadBtn" onClick={() => {submit()}}>
               Upload
             </div>
           </div>
-        </div>
-      </div>
-      </Modal>
+            </div>
+            
+            </div>
+            <div class="Share_popup_media_div"></div>
+          </div>
+          </div>
+   
+       
+    </div>
+      </Modal></>
   );
 };
 

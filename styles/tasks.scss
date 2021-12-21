@@ -52,15 +52,9 @@
     align-items: center;
   }
 }
-.Upload_task_Poup_none{
-  display:none;
-}
-.Upload_task_Poup_in{
-  display: contents;
-  z-index: 1000000000;
-  position:relative;
+
  
-}
+
 @media screen and (max-width: 768px) {
   .tasks-container {
     width: 90%;

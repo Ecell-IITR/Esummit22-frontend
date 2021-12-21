@@ -31,7 +31,7 @@ export const Task = ({ description, Due_date, points, id ,sharesesc,shareurl}) =
         </div>
         
       </div>
-      <div>{changeModal && <Share closeModal={setChangeModal} sharesesc={sharesesc} shareurl={shareurl}/>}</div>
+      <div>{changeModal && <Share closeModal={setChangeModal} desc={sharesesc} link={shareurl}/>}</div>
       
     </div></>
   );
