@@ -30,6 +30,9 @@ export const LaptopHeader = () => {
       default:
         setActive("");
     }
+    if (router.asPath.includes("cap")) {
+      setActive("cap");
+    }
   });
   return (
     <div className="navbar-container" id="navbar">
@@ -169,6 +172,18 @@ export const LaptopHeader = () => {
             </div>
           </div>
         </li>
+
+        {active == "cap" && (
+          <li className="navbar-items">
+            <div id="heading">
+              <div className={"ca_color"}>
+                <Link href="/#faq">
+                  <pre>CAMPUS AMBASSADOR</pre>
+                </Link>
+              </div>
+            </div>
+          </li>
+        )}
       </ul>
 
       <ul className="navbar-subcontent2">

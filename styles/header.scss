@@ -174,6 +174,16 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.ca_color {
+  text-align: center;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ca_color > pre {
+  font-weight: 900;
+}
 #heading:hover .hover_underline {
   height: 0.2vw;
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
@@ -192,7 +202,7 @@ a {
 
 .active_hover_color {
   text-align: center;
-  
+
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

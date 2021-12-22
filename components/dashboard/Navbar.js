@@ -7,7 +7,6 @@ export default function Navbar() {
   const router = useRouter();
 
   useEffect(() => {
-    console.log(router.asPath);
     switch (router.asPath) {
       case "/cap/tasks":
         setactivelist([true, false, false]);
@@ -24,7 +23,7 @@ export default function Navbar() {
   return (
     <div className="Ca_sidebar">
       <div className="nav-items">
-        <ul>
+        <ul className="cursor-pointer">
           <Link href="/cap/tasks">
             <div
               className={

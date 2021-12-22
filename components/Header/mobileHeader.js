@@ -1,5 +1,16 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
+
 export const HeaderMobile = () => {
+  const [isCA, setIsCA] = useState(false);
+  const router = useRouter();
+  useEffect(() => {
+    if (localStorage.getItem("user_role_type") === "CA") setIsCA(true);
+    return () => {
+      setIsCA(false);
+    };
+  }, []);
   return (
     <div className="mobile-navbar-majorcontainer">
       <input type="checkbox" />
@@ -49,6 +60,32 @@ export const HeaderMobile = () => {
             <div className="mobilenavMenu-links">FAQ</div>
           </Link>
         </li>
+        {isCA && (
+          <>
+            <li className="mobilenavMenu-items">
+              <Link href="/#faq">
+                <div className="mobilenavMenu-links mobilenavMenu-ca-tag">
+                  CAMPUS AMBASSADOR
+                </div>
+              </Link>
+            </li>
+            <li className="mobilenavMenu-items">
+              <Link href="/cap/tasks">
+                <div className="mobilenavMenu-links">TASKS</div>
+              </Link>
+            </li>
+            <li className="mobilenavMenu-items">
+              <Link href="/cap/leaderboard">
+                <div className="mobilenavMenu-links">LEADERBOARD</div>
+              </Link>
+            </li>
+            <li className="mobilenavMenu-items">
+              <Link href="/cap/resources">
+                <div className="mobilenavMenu-links">CA RULEBOOK</div>
+              </Link>
+            </li>
+          </>
+        )}
       </ul>
     </div>
   );
