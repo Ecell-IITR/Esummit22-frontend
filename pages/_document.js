@@ -15,6 +15,10 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Blinker&display=optional"
             rel="stylesheet"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <Main />

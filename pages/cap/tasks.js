@@ -1,6 +1,5 @@
-import Profile from "../../components/cap/cap_profile";
 import Task from "../../components/task";
-import Navbar from "../../components/dashboard/Navbar";
+
 import React, { useEffect, useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
 import { TASK_API } from "../../utils/APIs";
@@ -10,16 +9,17 @@ import { getAuthToken } from "../../utils";
 export default function task() {
   const [Task_Arr, setTask_Arr] = useState([]);
   const [Task_caller, setTask_caller] = useState(true);
-  FetchApi("get", TASK_API, null, getAuthToken())
-    .then((res) => {
-      if (Task_caller) {
+  useEffect(() => {
+    FetchApi("get", TASK_API, null, getAuthToken())
+      .then((res) => {
         setTask_Arr(res.data);
-        setTask_caller(false);
-      }
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+
   return (
     <CapLayout>
       <div className="Cap_Content_cotainer">
@@ -33,6 +33,9 @@ export default function task() {
                   description={det.headline}
                   points={det.max_points}
                   Due_date={det.end_date}
+                  id={det.id}
+                  sharesesc={det.share_description}
+                  shareurl={det.share_url}
                 />
               </div>
             );
