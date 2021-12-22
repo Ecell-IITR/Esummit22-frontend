@@ -1,10 +1,13 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { AuthContext } from "../../utils/auth-context";
 
 export const HeaderMobile = () => {
   const [isCA, setIsCA] = useState(false);
   const router = useRouter();
+  const { user } = useContext(AuthContext);
+
   useEffect(() => {
     if (localStorage.getItem("user_role_type") === "CA") setIsCA(true);
     return () => {
@@ -82,6 +85,32 @@ export const HeaderMobile = () => {
             <li className="mobilenavMenu-items">
               <Link href="/cap/resources">
                 <div className="mobilenavMenu-links">CA RULEBOOK</div>
+              </Link>
+            </li>
+          </>
+        )}
+        {user ? (
+          <>
+            <li className="mobilenavMenu-items">
+              <Link href="/logout">
+                <div className="mobilenavMenu-links mobilenavMenu-ca-tag">
+                  Logout
+                </div>
+              </Link>
+            </li>
+          </>
+        ) : (
+          <>
+            <li className="mobilenavMenu-items">
+              <Link href="/login">
+                <div className="mobilenavMenu-links mobilenavMenu-ca-tag">
+                  Login
+                </div>
+              </Link>
+            </li>
+            <li className="mobilenavMenu-items">
+              <Link href="/register">
+                <div className="mobilenavMenu-links">Register</div>
               </Link>
             </li>
           </>

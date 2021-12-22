@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import CustomGradientBtn from "../customGradientBtn";
+import { AuthContext } from "../../utils/auth-context";
 
 export const LaptopHeader = () => {
   const [active, setActive] = useState("");
+  const { user } = useContext(AuthContext);
 
   const router = useRouter();
   useEffect(() => {
@@ -185,25 +187,36 @@ export const LaptopHeader = () => {
           </li>
         )}
       </ul>
-
-      <ul className="navbar-subcontent2">
-        <Link href="/login">
-          <li className="navbar-items register-login">
-            <span>LOG IN</span>
+      {user ? (
+        <ul className="navbar-subcontent2">
+          <li>
+            <Link href="/logout">
+              <div className="navbar-items register-navbar">
+                <CustomGradientBtn size="sm" text={"Logout"} />
+              </div>
+            </Link>
           </li>
-        </Link>
-
-        <li className="navbar-items">
-          <p className="or-navbar">or</p>
-        </li>
-        <li>
-          <Link href="/register">
-            <div className="navbar-items register-navbar">
-              <CustomGradientBtn size="sm" text={"REGISTER"} />
-            </div>
+        </ul>
+      ) : (
+        <ul className="navbar-subcontent2">
+          <Link href="/login">
+            <li className="navbar-items register-login">
+              <span>LOG IN</span>
+            </li>
           </Link>
-        </li>
-      </ul>
+
+          <li className="navbar-items">
+            <p className="or-navbar">or</p>
+          </li>
+          <li>
+            <Link href="/register">
+              <div className="navbar-items register-navbar">
+                <CustomGradientBtn size="sm" text={"REGISTER"} />
+              </div>
+            </Link>
+          </li>
+        </ul>
+      )}
     </div>
   );
 };
