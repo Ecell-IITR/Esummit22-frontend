@@ -12,11 +12,8 @@ export default function task() {
   useEffect(() => {
     FetchApi("get", TASK_API, null, getAuthToken())
       .then((res) => {
-      
-          setTask_Arr(res.data);
-          console.log(res);
-          
-        
+        setTask_Arr(res.data);
+        console.log(res);
       })
       .catch((err) => {
         console.log(err);
@@ -39,7 +36,6 @@ export default function task() {
                   id={det.id}
                   sharesesc={det.share_description}
                   shareurl={det.share_url}
-                  
                 />
               </div>
             );

@@ -1,93 +1,92 @@
-@media (min-width:600px){.resource-Card-container{
-	background:transparent;
-	overflow:hidden;
-	height:120px;
-	width:495px;
-	margin:20px;
-  border: #f5e4ca 2px solid ;
-  border-radius: 10px 10px 10px 0px;
-  padding:0.1rem;
-	
-	position:relative;
+@media (min-width: 600px) {
+  .resource-Card-container {
+    background: transparent;
+    overflow: hidden;
+    height: 120px;
+    width: 495px;
+    margin: 20px;
+    border: #f5e4ca 2px solid;
+    border-radius: 10px 10px 10px 0px;
+    padding: 0.1rem;
 
-}}
-.pdf-img{
-	position:absolute;
-	top:15%;
-	left:7%;
-	background-color:inherit;
-	height:28px;
-	width:22px;
-	overflow:hidden;
-
+    position: relative;
+  }
 }
-.pdf-img img{
-	background:inherit;
-	position:relative;
-	height:100%;
-	width:100%;
+.pdf-img {
+  position: absolute;
+  top: 15%;
+  left: 7%;
+  background-color: inherit;
+  height: 28px;
+  width: 22px;
+  overflow: hidden;
 }
-.resource-pdf-name{
-	/* position:absolute;
+.pdf-img img {
+  background: inherit;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.resource-pdf-name {
+  /* position:absolute;
 	top:18%;
 	left:15%; */
-	background-color:inherit;
-	font-size:1.125rem;
-	color:white;
-	overflow:hidden;
-	padding-left: 5.4vw;
-    padding-top: 2vh;
+  background-color: inherit;
+  font-size: 1.125rem;
+  color: white;
+  overflow: hidden;
+  padding-left: 5.4vw;
+  padding-top: 2vh;
 }
-.resource-view{
-	position:absolute;
-	top:18%;
-	right:7%;
-	// height:20px;
-	// width:33px;
-	cursor:pointer;
-	background-color:inherit;
-	font-size:0.9rem;
-	color:#fff;
-	}
+.resource-view {
+  position: absolute;
+  top: 18%;
+  right: 7%;
+  // height:20px;
+  // width:33px;
+  cursor: pointer;
+  background-color: inherit;
+  font-size: 0.9rem;
+  color: #fff;
+}
 
-	.resource-download{
-		position:absolute;
-	bottom:15%;
-	right:5%;
-	height:28px;
-	width:99px;
-	cursor:pointer;
-	background-color:inherit;
+.resource-download {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  height: 28px;
+  width: 99px;
+  cursor: pointer;
+  background-color: inherit;
 
-	font-size:15px;
-	color:white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow:hidden;
-	border: #f5e4ca 2px solid ;
+  font-size: 15px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: #f5e4ca 2px solid;
   border-radius: 10px 10px 10px 0px;
-	}
-	 .resource-Card-container a{
-		text-decoration:none;
-	
-	}
-@media screen and (max-width:600px){
-	.resource-Card-container{
-	background:transparent;
-	overflow:hidden;
-	height:84.95px;
-	width:300px;
-	margin-left: 2vw;
-  border: #f5e4ca 2px solid ;
-  border-radius: 10px 10px 10px 0px;
-  padding:0.1rem;
-	position:relative;
-  margin-top: 3vh;
 }
-.resource-pdf-name{
-	padding-left: 15vw;
-  padding-top: 0.5vh;
-  font-size: 1rem;
+.resource-Card-container a {
+  text-decoration: none;
 }
+@media screen and (max-width: 600px) {
+  .resource-Card-container {
+    background: transparent;
+    overflow: hidden;
+    height: 84.95px;
+    width: 300px;
+    margin-left: 2vw;
+    border: #f5e4ca 2px solid;
+    border-radius: 10px 10px 10px 0px;
+    padding: 0.1rem;
+    position: relative;
+    margin-top: 3vh;
+  }
+  .resource-pdf-name {
+    padding-left: 15vw;
+    padding-top: 0.5vh;
+    font-size: 1rem;
+  }
 }

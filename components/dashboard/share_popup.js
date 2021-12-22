@@ -10,7 +10,7 @@ import {
   LinkedinIcon,
   WhatsappIcon,
 } from "react-share";
-export const Share = ({ closeModal,desc ,link }) => {
+export const Share = ({ closeModal, desc, link }) => {
   function copyText(id, id2) {
     document.getElementById(id2).innerText = "Copied";
     var range = document.createRange();
@@ -61,40 +61,33 @@ export const Share = ({ closeModal,desc ,link }) => {
           </div>
           <div className="Share_popup_media_div">
             <div className="Share_popup_single_media_div">
-            <FacebookShareButton url={link} quote={desc}>
+              <FacebookShareButton url={link} quote={desc}>
                 <img
                   src="Facebook_img.png"
                   className="new-footer-section-contact-logo"
                   alt=""
                 />
                 <h1 className="Share_popup_media_title">Facebook</h1>
-                </FacebookShareButton>
+              </FacebookShareButton>
             </div>
             <div className="Share_popup_single_media_div">
-            <LinkedinShareButton
-          url={link}
-          title={desc}
-          
-        >
+              <LinkedinShareButton url={link} title={desc}>
                 <img
                   src="LinkedIn_img.png"
                   className="new-footer-section-contact-logo"
                   alt=""
                 />
                 <h1 className="Share_popup_media_title">LinkedIn</h1>
-                </LinkedinShareButton>
+              </LinkedinShareButton>
             </div>
             <div className="Share_popup_single_media_div">
-            <TwitterShareButton
-          url={link}
-          title={desc}
-          style={{ marginRight: "1.2vw" }}
-        >
-         
+              <TwitterShareButton
+                url={link}
+                title={desc}
+                style={{ marginRight: "1.2vw" }}
+              >
                 <h1 className="Share_popup_media_title">Twitter</h1>
-             
-        </TwitterShareButton>
-              
+              </TwitterShareButton>
             </div>
             <div className="Share_popup_single_media_div">
               <a
@@ -107,24 +100,19 @@ export const Share = ({ closeModal,desc ,link }) => {
               </a>
             </div>
             <div className="Share_popup_single_media_div">
-              
-            <WhatsappShareButton
-          url={link}
-          title={desc}
-          separator=":: "
-          style={{ marginRight: "1.2vw" }}
-        >
-          
-  
+              <WhatsappShareButton
+                url={link}
+                title={desc}
+                separator=":: "
+                style={{ marginRight: "1.2vw" }}
+              >
                 <h1 className="Share_popup_media_title">Whatsapp</h1>
-                </WhatsappShareButton>
+              </WhatsappShareButton>
             </div>
             <div className="Share_popup_single_media_div">
-            <EmailShareButton
-              url={link}
-              title={desc}>
+              <EmailShareButton url={link} title={desc}>
                 <h1 className="Share_popup_media_title">Email</h1>
-                </EmailShareButton>
+              </EmailShareButton>
             </div>
           </div>
         </div>

@@ -28,10 +28,6 @@ export default function CA_Resources({ resources_list }) {
           ></div>
           <div className="CA_Profile_Resources_container">
             <ResourcesCard />
-            <ResourcesCard />
-            <ResourcesCard />
-            <ResourcesCard />
-           
           </div>
         </div>
       </div>

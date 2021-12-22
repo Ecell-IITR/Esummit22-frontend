@@ -3,7 +3,7 @@ import { useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
 import { CA_PROFILE_API } from "../../utils/APIs";
 import { getAuthToken } from "../../utils";
-export const Profile = ({ name="", points, id, college, rank }) => {
+export const Profile = ({ name = "", points, id, college, rank }) => {
   return (
     <div className="profile-container">
       <div className="profile-image">
