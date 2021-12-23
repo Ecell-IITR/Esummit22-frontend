@@ -38,24 +38,7 @@ export default function NoncaNavbar() {
             </div>
           </li>
 
-          <li>
-            <div
-              className={
-                activelist[1]
-                  ? "nav-text-container-active"
-                  : "nav-text-container-inactive"
-              }
-            >
-              <div
-                className="nav_item_text"
-                onClick={() => {
-                  setactivelist([false, true, false, false]);
-                }}
-              >
-                <div className={activelist[1] ? "text_black" : ""}>Payment</div>
-              </div>
-            </div>
-          </li>
+          
           <li>
             <div
               className={
@@ -76,24 +59,7 @@ export default function NoncaNavbar() {
               </div>
             </div>
           </li>
-          <li>
-            <div
-              className={
-                activelist[3]
-                  ? "nav-text-container-active"
-                  : "nav-text-container-inactive"
-              }
-            >
-              <div
-                className="nav_item_text"
-                onClick={() => {
-                  setactivelist([false, false, false, true]);
-                }}
-              >
-                <div className={activelist[3] ? "text_black" : ""}>Profile</div>
-              </div>
-            </div>
-          </li>
+          
         </ul>
       </div>
     </div>
