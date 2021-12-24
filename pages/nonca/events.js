@@ -1,7 +1,7 @@
 import NoncaNavbar from "../../components/nonca/nonca_navbar";
 import React, { useEffect, useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
-import { DASHBOARD_EVENT_API,NON_CA_PROFILE_API} from "../../utils/APIs";
+import { DASHBOARD_EVENT_API, NON_CA_PROFILE_API } from "../../utils/APIs";
 import { getAuthToken } from "../../utils";
 
 import EventDashboardCard from "../../components/dashboard/dashboardEventCard";
@@ -32,34 +32,46 @@ const Event = () => {
       "7101d5e9a376cdf30961cc35a75b0bbd9ccfc393"
     )
       .then((res) => {
-        setregisteredArr(res.data[0].profile.dashboard_eventdashboardcard_registered_profile_of);
-        
+        setregisteredArr(
+          res.data[0].profile.dashboard_eventdashboardcard_registered_profile_of
+        );
       })
       .catch((err) => console.log(err));
   }, []);
   return (
     <>
+      <div className="Dashboard-event-head">Competations</div>
+      <div className="Dashboard-underline"></div>
       <div className="Dashboard-events-main-container">
         <div className="Dashboard-events-nav-container">
-      <NoncaNavbar />
-      </div>
-      <div className="Dashboard-events-content-container" >
-        {dashboardArr?.map((det, id) => {
-          function IsRegisteredChecker(){
-          for(let i=0;i<registeredArr.length;i++){
-            if( registeredArr[i].EventCompetitive.id==det.EventCompetitive.id){
-              return true
+          <NoncaNavbar />
+        </div>
+
+        <div className="Dashboard-events-content-container">
+          {dashboardArr?.map((det, id) => {
+            function IsRegisteredChecker() {
+              for (let i = 0; i < registeredArr.length; i++) {
+                if (
+                  registeredArr[i].EventCompetitive.id ==
+                  det.EventCompetitive.id
+                ) {
+                  return true;
+                }
+              }
+              return false;
             }
-          }
-          return false
-        }
-          return(<>
-            {console.log(det.EventCompetitive.id)}
-             <EventDashboardCard  title={det.EventCompetitive.event_name} desc={det.EventCompetitive.card_description} isregistered={IsRegisteredChecker()} link={det.EventCompetitive.end_point}/>
-            
-             </>
-          )
-        })}
+            return (
+              <>
+                {console.log(det.EventCompetitive.id)}
+                <EventDashboardCard
+                  title={det.EventCompetitive.event_name}
+                  desc={det.EventCompetitive.card_description}
+                  isregistered={IsRegisteredChecker()}
+                  link={det.EventCompetitive.end_point}
+                />
+              </>
+            );
+          })}
         </div>
         <br />
         <br />
@@ -70,7 +82,6 @@ const Event = () => {
         <br />
         <br />
         <br />
-        
       </div>
     </>
   );

@@ -18,7 +18,7 @@ let x="/events/"+link
       <div className="dashboard-event-visit-page">
         <div className="dashboard-event-CustomGradientBtn">
           {console.log("/events/"+link)}
-          <Link href={x}><div><CustomGradientBtn color="black" text="Visit Page" /></div></Link>
+          <Link href={x}><div className="Dashboard-events-button"  ><CustomGradientBtn color="black" text="Visit Page" /></div></Link>
         </div>
       </div>
     </div>
