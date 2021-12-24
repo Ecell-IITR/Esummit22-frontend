@@ -25,8 +25,13 @@ export default function Home({ allEvents, allSpeakers }) {
             E-summit'22
           </h1>
           <img src="/headLine.svg" id="headLine" alt="headLine" />
+          <Link href="/register" passHref>
+        <div className="landing-register-button">
+          <CustomGradientBtn text="Register Now" color="black" />
         </div>
-
+      </Link>
+        </div>
+        
         <img src="/rightLine.svg" alt="rightLine" />
       </section>
       <HomeSpeakers allSpeakers={allSpeakers} />

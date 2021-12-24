@@ -12,7 +12,33 @@
   background-repeat: no-repeat;
 	background-position: center;
 }
-
+.landing-register-button{
+  clip-path: polygon(8% 0, 100% 0, 100% 65%, 92% 100%, 0 100%, 0 33%);
+	text-align: center;
+	line-height: 2.2rem;
+  width:40vh;
+  padding: 5%;
+  margin-top: 8%;
+  font-size: 1em;
+	display:block !important;
+}
+.landing-register-button:hover{
+	animation: shake 0.8s;
+	animation-iteration-count: infinite;
+}
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 #headLine {
   width: 50vw;
 }
@@ -20,4 +46,16 @@
 .landing-logo-animate {
   animation: logoEmerge 2s ease-in-out;
   transform: translateY(-300px) rotate(180deg) scale(0.4);
+}
+@media only screen and (max-width: 540px) {
+  .landing{
+    margin-top: 15vh;
+    // height: 60vh;
+  }
+  .heading-date{
+    margin-top: 10vh;
+  }
+  .landing-register-button{
+    width:30vh;
+  }
 }
