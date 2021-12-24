@@ -1,4 +1,5 @@
 import NoncaNavbar from "../../components/nonca/nonca_navbar";
+
 import React, { useEffect, useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
 import { DASHBOARD_EVENT_API, NON_CA_PROFILE_API } from "../../utils/APIs";
