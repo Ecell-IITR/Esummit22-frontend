@@ -1,5 +1,5 @@
-import CustomGradientBtn from "../customGradientBtn";
-export const EventDashboardCard = ({title,desc,isregistered}) => {
+import CustomGradientBtn from "./../customGradientBtn";
+export const EventDashboardCard = ({title,isregistered,desc,link}) => {
   
   return (
     <div className="dashboard-event-main-container">
@@ -22,3 +22,4 @@ export const EventDashboardCard = ({title,desc,isregistered}) => {
 };
 
 export default EventDashboardCard;
+
