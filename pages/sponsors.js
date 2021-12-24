@@ -1,5 +1,6 @@
 import React from "react";
 import Sponsor from "../components/sponsors-card";
+import Footer from "../components/footer";
 
 export default function Sponsors() {
   const sponsorsPatronage = [
@@ -210,7 +211,7 @@ export default function Sponsors() {
     },
   ];
   return (
-    <>
+    <div>
       <div className="sponsorspage-title">UNDER PATRONAGE OF</div>
       <div className="sponsorpage-container">
         {sponsorsPatronage.map((d, i) => (
@@ -288,6 +289,7 @@ export default function Sponsors() {
           />
         ))}
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }

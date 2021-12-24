@@ -254,7 +254,7 @@ const Footer = () => {
             />
           </div>
           {/* <button className="new-form-submit-button" type="submit"> */}
-          <div className="clip" onClick={handleSubmit}>
+          <div className="clip_footer" onClick={handleSubmit}>
             {" "}
             SUBMIT{" "}
           </div>

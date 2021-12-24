@@ -1,6 +1,6 @@
 import Speaker_card from "../components/speaker-card";
 import React, { useEffect, useState } from "react";
-
+import Footer from "../components/footer";
 import FetchApi from "../utils/fetchAPI";
 import { SPEAKERS_API } from "../utils/APIs";
 
@@ -41,6 +41,7 @@ export default function Speakers() {
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
