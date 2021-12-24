@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import Footer from "../components/footer";
 import FetchApi from "../utils/fetchAPI";
 import { SPEAKERS_API } from "../utils/APIs";
-
 export default function Speakers() {
   const [Speakers_Arr, setSpeakers_Arr] = useState([]);
   const [Speakers_Arr_caller, setSpeakers_Arr_caller] = useState(true);
