@@ -1,5 +1,6 @@
 import TeamMemberCard from "../components/teamCard";
 import { TEAM_API } from "../utils/APIs";
+import Footer from "../components/footer";
 export const team = ({ teamMembers }) => {
   return (
     <div>
@@ -20,6 +21,7 @@ export const team = ({ teamMembers }) => {
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

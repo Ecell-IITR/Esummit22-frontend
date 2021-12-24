@@ -1,5 +1,6 @@
 import Accordion from "../faq/accordian";
 import React, { useEffect, useState } from "react";
+import Footer from "../footer";
 
 function Faq() {
   const styles = {
@@ -46,23 +47,26 @@ function Faq() {
   ];
 
   return (
-    <div style={styles} id="faq">
-      <div
-        style={{
-          width: "80%",
-          fontFamily: "Raleway",
-          fontSize: "32px",
-          fontWeight: "600",
-          lineHeight: "36px",
-          textAlign: "left",
-          marginBottom: "2%",
-        }}
-      >
-        FAQs
+    <div>
+      <div style={styles} id="faq">
+        <div
+          style={{
+            width: "80%",
+            fontFamily: "Raleway",
+            fontSize: "32px",
+            fontWeight: "600",
+            lineHeight: "36px",
+            textAlign: "left",
+            marginBottom: "2%",
+          }}
+        >
+          FAQs
+        </div>
+        {faqs.map((faq, id) => (
+          <Accordion title={faq.question} content={faq.answer} key={id} />
+        ))}
       </div>
-      {faqs.map((faq, id) => (
-        <Accordion title={faq.question} content={faq.answer} key={id} />
-      ))}
+      <Footer />
     </div>
   );
 }

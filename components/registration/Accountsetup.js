@@ -343,7 +343,7 @@ export class AccountSetup extends Component {
 
         <div style={{ paddingTop: "1.2vh" }} className="next-mobile-container">
           <div className="login-button" onClick={this.handleNext}>
-            <CustomGradientBtn text={"NEXT"} />
+            NEXT
           </div>
         </div>
       </div>
