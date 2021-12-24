@@ -21,7 +21,7 @@ export const getUserRoleType = () => {
   const userJSON = localStorage.getItem("user");
   const user = userJSON ? JSON.parse(userJSON) : null;
   const token = localStorage.getItem("authToken");
-  const role = localStorage.getItem("user_role_type");
+  const role = localStorage.getItem("userRoleType");
   return !!(user && token && role) ? role : false;
 };
 
@@ -29,7 +29,7 @@ export const unAuthenticate = () => {
   if (typeof window === "undefined") return null;
   localStorage.removeItem("authToken");
   localStorage.removeItem("user");
-  localStorage.removeItem("user_role_type");
+  localStorage.removeItem("userRoleType");
   //   logSetUser(false);
   //   logSignOut();
 };

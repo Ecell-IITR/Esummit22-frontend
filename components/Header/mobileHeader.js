@@ -10,7 +10,7 @@ export const HeaderMobile = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    if (localStorage.getItem("user_role_type") === "CA") setIsCA(true);
+    if (localStorage.getItem("userRoleType") === "CA") setIsCA(true);
     return () => {
       setIsCA(false);
     };
