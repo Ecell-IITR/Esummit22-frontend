@@ -154,3 +154,26 @@
     display: none;
   }
 }
+
+@media screen and (width: 1024px) {
+  .Ca_sidebar {
+    width: 20vw;
+  }
+  .nav-items {
+    width: 20vw;
+  }
+  .nav-text-container-active {
+    width: 20vw;
+  }
+  .nav_item_text {
+    font-size: 1.2em;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (width: 768px) {
+  .nav_item_text {
+    font-size: 1.5em;
+    margin-left: 2rem;
+  }
+}

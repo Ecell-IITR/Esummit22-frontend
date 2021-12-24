@@ -1,5 +1,4 @@
 import Task from "../../components/task";
-
 import React, { useEffect, useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
 import { TASK_API } from "../../utils/APIs";
@@ -23,7 +22,7 @@ export default function task() {
   return (
     <CapLayout>
       <div className="Cap_Content_cotainer">
-        <div className="task_heading"> Tasks</div>{" "}
+        <div className="task_heading">Tasks</div>{" "}
         <div className="Task_cap_underline"></div>
         <div className="Task_flex">
           {Task_Arr.map((det, id) => {
