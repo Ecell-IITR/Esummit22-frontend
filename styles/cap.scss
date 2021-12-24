@@ -1,11 +1,11 @@
 .Task_cap_underline {
-  width: 3vw;
-
-  height: 10vw;
+  width: 5vw;
+  height: 1.5vh;
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   clip-path: polygon(5% 10%, 95% 10%, 100% 50%, 0% 50%);
-  margin-bottom: 5vw;
-  height: 10px;
+  margin-bottom: 1vw;
+  margin-top: 1.5vh;
+  // height: 10px;
   margin-left: 1.3vw;
 }
 
@@ -19,15 +19,18 @@
   margin-top: 2vw;
 }
 .Task_flex {
-  display: flex;
-  flex-direction: wrap;
+  // display: grid;
 }
 .Task_flex_card {
-  margin-left: 1vw;
+  float: left;
+  width: 25%;
+  margin: 2rem 6rem 2rem 0;
 }
 
 .task_heading {
   margin-left: 1.3vw;
+  margin-top: 1.6vh;
+  font-size: 1.5em;
 }
 @media screen and (max-width: 1000px) {
   .task_heading {
@@ -46,31 +49,52 @@
 
 @media screen and (max-width: 768px) {
   .task_heading {
-    margin-left: 30vw;
+    margin-left: 10vw;
+    font-size: 5em;
   }
   .Task_cap_underline {
-    margin-left: 30vw;
+    margin-left: 10vw;
+    width: 16vw;
+    margin-bottom: 0;
+    margin-top: 1rem;
   }
-  .Task_flex {
-    margin-left: 20vw;
+  .Task_flex_card {
+    float: left;
+    width: 50%;
   }
 }
-@media only screen and (max-width: 508px) {
+
+@media screen and (width: 1024px) {
+  .Cap_Content_cotainer {
+    margin-left: 3rem;
+  }
+  .Task_flex_card {
+    float: left;
+    width: 35%;
+    margin-right: 6.5rem;
+  }
+
   .task_heading {
-    margin-left: 0;
+    font-size: 2.5em;
+  }
+
+  .Task_cap_underline {
+    width: 8vw;
+  }
+}
+
+@media screen and (width: 768px) {
+  .Cap_Content_cotainer {
+    margin-left: 8rem;
+  }
+
+  .task_heading {
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    font-size: 4em;
   }
   .Task_cap_underline {
-    margin-left: 0;
-  }
-  .Cap_Content_cotainer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  .Task_flex {
-    flex-direction: column;
-
-    margin-left: 0;
+    margin-left: 1rem;
+    width: 13vw;
   }
 }

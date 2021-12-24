@@ -169,7 +169,7 @@ const Login = () => {
         </div>
         <div className="reg-error">{pass_error}</div>
         {loading ? (
-          <img src={"login/login-password-eye.svg"} width="50px" alt=""/>
+          <img src={"login/login-password-eye.svg"} width="50px" alt="" />
         ) : (
           <div className="login-button" onClick={handleSubmit}>
             Login
