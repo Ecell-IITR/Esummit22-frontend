@@ -1,7 +1,7 @@
 import NoncaNavbar from "../../components/nonca/nonca_navbar";
 import React, { useEffect, useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
-import { ALL_EVENTS_API } from "../../utils/APIs";
+import { DASHBOARD_EVENT_API,NON_CA_PROFILE_API} from "../../utils/APIs";
 import { getAuthToken } from "../../utils";
 
 import EventDashboardCard from "../../components/dashboard/dashboardEventCard";
@@ -9,17 +9,31 @@ import CustomGradientBtn from "../../components/customGradientBtn";
 
 const Event = () => {
   let isregistered = true;
-  const [Dashboard_arr, setDashboard_arr] = useState();
+  const [dashboardArr, setdashboardArr] = useState([]);
+  const [registeredArr, setregisteredArr] = useState([]);
   useEffect(() => {
     FetchApi(
       "get",
-      ALL_EVENTS_API,
+      DASHBOARD_EVENT_API,
       null,
-      "25a86f755e46dc4784e1949518e0be2ce6fb45f8"
+      "7101d5e9a376cdf30961cc35a75b0bbd9ccfc393"
     )
       .then((res) => {
-        setDashboard_arr(res.data.CompetitiveEvents);
-        console.log(res.data.CompetitiveEvents);
+        setdashboardArr(res.data);
+        console.log(res.data);
+      })
+      .catch((err) => console.log(err));
+  }, []);
+  useEffect(() => {
+    FetchApi(
+      "get",
+      NON_CA_PROFILE_API,
+      null,
+      "7101d5e9a376cdf30961cc35a75b0bbd9ccfc393"
+    )
+      .then((res) => {
+        setregisteredArr(res.data[0].profile.dashboard_eventdashboardcard_registered_profile_of);
+        
       })
       .catch((err) => console.log(err));
   }, []);
@@ -30,10 +44,18 @@ const Event = () => {
       <NoncaNavbar />
       </div>
       <div className="Dashboard-events-content-container" >
-        {Dashboard_arr?.map((det, id) => {
+        {dashboardArr?.map((det, id) => {
+          function IsRegisteredChecker(){
+          for(let i=0;i<registeredArr.length;i++){
+            if( registeredArr[i].EventCompetitive.id==det.EventCompetitive.id){
+              return true
+            }
+          }
+          return false
+        }
           return(<>
-            
-             <EventDashboardCard  title={det.event_name} desc={det.description}/>
+            {console.log(det.EventCompetitive.id)}
+             <EventDashboardCard  title={det.EventCompetitive.event_name} desc={det.EventCompetitive.card_description} isregistered={IsRegisteredChecker()} link={det.EventCompetitive.end_point}/>
             
              </>
           )
