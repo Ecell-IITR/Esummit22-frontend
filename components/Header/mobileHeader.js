@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../../utils/auth-context";
+import { getUserRoleType } from "../../utils";
 
 export const HeaderMobile = () => {
   const [isCA, setIsCA] = useState(false);
@@ -9,7 +10,7 @@ export const HeaderMobile = () => {
   const { user } = useContext(AuthContext);
 
   useEffect(() => {
-    if (localStorage.getItem("user_role_type") === "CA") setIsCA(true);
+    if (localStorage.getItem("userRoleType") === "CA") setIsCA(true);
     return () => {
       setIsCA(false);
     };
@@ -23,7 +24,7 @@ export const HeaderMobile = () => {
         <div className="bar2"></div>
         <div className="bar3"></div>
       </div>
-      <Link href="/" className="image">
+      <Link href="/" className="image" passHref>
         <img
           src="/fete-of-fortitude.png"
           alt="navbar-logo"
@@ -32,58 +33,58 @@ export const HeaderMobile = () => {
       </Link>
       <ul className="mobilenavMenu-subcontent1">
         <li className="mobilenavMenu-items">
-          <Link href="/">
+          <Link href="/" passHref>
             <div className="mobilenavMenu-links">HOME</div>
           </Link>
         </li>
         {
           <li className="mobilenavMenu-items">
-            <Link href="/team">
+            <Link href="/team" passHref>
               <div className="mobilenavMenu-links">TEAM</div>
             </Link>
           </li>
         }
         <li className="mobilenavMenu-items">
-          <Link href="/events">
+          <Link href="/events" passHref>
             <div className="mobilenavMenu-links">EVENTS</div>
           </Link>
         </li>
         <li className="mobilenavMenu-items">
-          <Link href="/speakers">
+          <Link href="/speakers" passHref>
             <div className="mobilenavMenu-links">SPEAKERS</div>
           </Link>
         </li>
         <li className="mobilenavMenu-items">
-          <Link href="/sponsors">
+          <Link href="/sponsors" passHref>
             <div className="mobilenavMenu-links">SPONSORS</div>
           </Link>
         </li>
         <li className="mobilenavMenu-items">
-          <Link href="/#faq">
+          <Link href="/#faq" passHref>
             <div className="mobilenavMenu-links">FAQ</div>
           </Link>
         </li>
         {isCA && (
           <>
             <li className="mobilenavMenu-items">
-              <Link href="/#faq">
+              <Link href="/cap/tasks" passHref>
                 <div className="mobilenavMenu-links mobilenavMenu-ca-tag">
                   CAMPUS AMBASSADOR
                 </div>
               </Link>
             </li>
             <li className="mobilenavMenu-items">
-              <Link href="/cap/tasks">
+              <Link href="/cap/tasks" passHref>
                 <div className="mobilenavMenu-links">TASKS</div>
               </Link>
             </li>
             <li className="mobilenavMenu-items">
-              <Link href="/cap/leaderboard">
+              <Link href="/cap/leaderboard" passHref>
                 <div className="mobilenavMenu-links">LEADERBOARD</div>
               </Link>
             </li>
             <li className="mobilenavMenu-items">
-              <Link href="/cap/resources">
+              <Link href="/cap/resources" passHref>
                 <div className="mobilenavMenu-links">CA RULEBOOK</div>
               </Link>
             </li>
@@ -92,7 +93,7 @@ export const HeaderMobile = () => {
         {user ? (
           <>
             <li className="mobilenavMenu-items">
-              <Link href="/logout">
+              <Link href="/logout" passHref>
                 <div className="mobilenavMenu-links mobilenavMenu-ca-tag">
                   Logout
                 </div>
@@ -102,14 +103,14 @@ export const HeaderMobile = () => {
         ) : (
           <>
             <li className="mobilenavMenu-items">
-              <Link href="/login">
+              <Link href="/login" passHref>
                 <div className="mobilenavMenu-links mobilenavMenu-ca-tag">
                   Login
                 </div>
               </Link>
             </li>
             <li className="mobilenavMenu-items">
-              <Link href="/register">
+              <Link href="/register" passHref>
                 <div className="mobilenavMenu-links">Register</div>
               </Link>
             </li>

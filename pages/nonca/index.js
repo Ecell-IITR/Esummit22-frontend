@@ -1,6 +1,6 @@
 import NoncaNavbar from "../../components/nonca/nonca_navbar";
 
-const CapLeaderboard = () => {
+const Home = () => {
   return (
     <div className="nonca-main-container">
       <NoncaNavbar />
@@ -8,4 +8,4 @@ const CapLeaderboard = () => {
   );
 };
 
-export default CapLeaderboard;
+export default Home;

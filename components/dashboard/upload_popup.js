@@ -31,7 +31,7 @@ const Upload = ({ profileId, id, show, setShow }) => {
 
           setloading(false);
 
-          window.location.href = "/cap/task";
+          window.location.href = "/cap/tasks";
         })
         .catch((err) => {
           setloading(false);

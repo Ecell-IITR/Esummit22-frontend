@@ -69,7 +69,7 @@ const Login = () => {
         //   console.log(res.data);
         // }
         if (res.data.role) {
-          localStorage.setItem("user_role_type", res.data.role);
+          localStorage.setItem("userRoleType", res.data.role);
         }
         Authenticate(res.data.user, res.data.token);
         if (res.data.role === "CA") {
@@ -77,7 +77,7 @@ const Login = () => {
         } else {
           router.push("/dashboard");
         }
-        // if (String(localStorage.getItem("user_role_type")) === "CA") {
+        // if (String(localStorage.getItem("userRoleType")) === "CA") {
         //   const { history } = this.props;
         //   history.push("/campus-ambassador");
         // } else {
@@ -169,10 +169,10 @@ const Login = () => {
         </div>
         <div className="reg-error">{pass_error}</div>
         {loading ? (
-          <img src={"login/login-password-eye.svg"} width="50px" />
+          <img src={"login/login-password-eye.svg"} width="50px" alt="" />
         ) : (
           <div className="login-button" onClick={handleSubmit}>
-            <CustomGradientBtn text={"LOGIN"} />
+            Login
           </div>
         )}
       </div>

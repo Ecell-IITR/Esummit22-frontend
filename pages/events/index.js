@@ -1,5 +1,6 @@
 import EventCard from "../../components/Events/eventCard";
 import { ALL_EVENTS_API } from "../../utils/APIs";
+import Footer from "../../components/footer";
 
 export const Events = ({
   CompetitiveEvents,
@@ -22,6 +23,7 @@ export const Events = ({
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

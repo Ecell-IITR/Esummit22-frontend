@@ -1322,10 +1322,11 @@ export class PersonalDetails extends Component {
             <img
               src={LoaderSpin}
               style={{ width: "50px", backgroundColor: "#19072C" }}
+              alt=""
             />
           ) : (
             <div className="login-button" onClick={this.handleSubmit}>
-              <CustomGradientBtn text={"SUBMIT"} />
+              SUBMIT
             </div>
           )}
         </div>

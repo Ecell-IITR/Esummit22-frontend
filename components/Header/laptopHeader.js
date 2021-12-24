@@ -3,10 +3,12 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import CustomGradientBtn from "../customGradientBtn";
 import { AuthContext } from "../../utils/auth-context";
+import { getUserRoleType } from "../../utils";
 
 export const LaptopHeader = () => {
   const [active, setActive] = useState("");
   const { user } = useContext(AuthContext);
+  const roleType = getUserRoleType();
 
   const router = useRouter();
   useEffect(() => {
@@ -38,7 +40,7 @@ export const LaptopHeader = () => {
   });
   return (
     <div className="navbar-container" id="navbar">
-      <Link href="/" className="navbar-logo-link">
+      <Link href="/" className="navbar-logo-link" passHref>
         <img
           src="/fete-of-fortitude.png"
           className="navbar-logo"
@@ -53,7 +55,7 @@ export const LaptopHeader = () => {
                 "home" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <Link href="/">
+              <Link href="/" passHref>
                 <pre> HOME </pre>
               </Link>
             </div>
@@ -71,7 +73,7 @@ export const LaptopHeader = () => {
                 "team" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <Link href="/team">
+              <Link href="/team" passHref>
                 <pre> TEAM </pre>
               </Link>
 
@@ -94,7 +96,7 @@ export const LaptopHeader = () => {
                 "events" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <Link href="/events">
+              <Link href="/events" passHref>
                 <pre> EVENTS </pre>
               </Link>
 
@@ -117,7 +119,7 @@ export const LaptopHeader = () => {
                 "speakers" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <Link href="/speakers">
+              <Link href="/speakers" passHref>
                 <pre> SPEAKERS </pre>
               </Link>
 
@@ -140,7 +142,7 @@ export const LaptopHeader = () => {
                 "sponsors" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <Link href="/sponsors">
+              <Link href="/sponsors" passHref>
                 <pre> SPONSORS </pre>
               </Link>
 
@@ -162,7 +164,7 @@ export const LaptopHeader = () => {
             <div
               className={"faq" == active ? "active_hover_color" : "hover_color"}
             >
-              <Link href="/#faq">
+              <Link href="/#faq" passHref>
                 <pre> FAQ </pre>
               </Link>
 
@@ -175,11 +177,11 @@ export const LaptopHeader = () => {
           </div>
         </li>
 
-        {active == "cap" && (
+        {user && roleType && roleType === "CA" && (
           <li className="navbar-items">
             <div id="heading">
               <div className={"ca_color"}>
-                <Link href="/#faq">
+                <Link href="/cap/tasks" passHref>
                   <pre>CAMPUS AMBASSADOR</pre>
                 </Link>
               </div>
@@ -190,7 +192,7 @@ export const LaptopHeader = () => {
       {user ? (
         <ul className="navbar-subcontent2">
           <li>
-            <Link href="/logout">
+            <Link href="/logout" passHref>
               <div className="navbar-items register-navbar">
                 <CustomGradientBtn size="sm" text={"Logout"} />
               </div>
@@ -199,7 +201,7 @@ export const LaptopHeader = () => {
         </ul>
       ) : (
         <ul className="navbar-subcontent2">
-          <Link href="/login">
+          <Link href="/login" passHref>
             <li className="navbar-items register-login">
               <span>LOG IN</span>
             </li>
@@ -209,7 +211,7 @@ export const LaptopHeader = () => {
             <p className="or-navbar">or</p>
           </li>
           <li>
-            <Link href="/register">
+            <Link href="/register" passHref>
               <div className="navbar-items register-navbar">
                 <CustomGradientBtn size="sm" text={"REGISTER"} />
               </div>
