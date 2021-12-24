@@ -41,6 +41,10 @@ a {
 .navbar-logo {
   padding-top: 0.05vw;
   width: 210px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .navbar-container ul {
