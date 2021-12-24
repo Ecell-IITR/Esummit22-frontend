@@ -1,3 +1,39 @@
+.nprofile-details-name-one{
+  font-family: Blinker;
+font-style: normal;
+font-weight: 600;
+font-size: 1.2vw;
+line-height: 29px;
+/* identical to box height */
+width:100vw;
+margin-left: 4.3vw;
+margin-bottom: 10px;
+align-items: center;
+
+}
+.nprofile-white-text{
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8vw;
+  line-height: 19px;
+  margin-left: 5vw;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.nprofile-white-text2{
+
+  font-family: Blinker;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.9vw;
+  line-height: 22px;
+  display: flex;
+  margin-left: 2vw;
+}
+.nprofile-white-text3{
+  margin-right: 30px;
+}
 .profile-container {
   width: 100%;
   color: white;
@@ -98,7 +134,27 @@
     margin-right: 20px;
   }
 }
+.nprofile-container {
+  width: 100%;
+  color: white;
+  margin-top: 25px;
+
+ }
 @media screen and (max-width: 768px) {
+  .nprofile-white-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2vw;
+  }
+  .nprofile-white-text2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2.5vw;
+  }
+  .nprofile-details-name-one{
+    
+    font-size: 3vw;
+  }
   .profile-container {
     display: flex;
     width: 100%;

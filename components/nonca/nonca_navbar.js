@@ -1,23 +1,13 @@
 import React, { useState } from "react";
+import Profile from "../cap/cap_profile"
+import { NProfile } from "./noncaprofile";
 export default function NoncaNavbar() {
   const [activelist, setactivelist] = useState([true, false, false, false]);
 
   return (
     <div className="Ca_sidebar">
       <div className="noncanav-items">
-        <div className="nav-profile">
-          <div className="nav-profile-photo">
-            <img src="eventImg.png"></img>
-          </div>
-          <div className="nav-profile-name">Harpreet Singh</div>
-          <div className="nav-profile-college">
-            Indian Institute of Technology, Roorkee
-          </div>
-          <div className="nav-profile-summitid">
-            <div>ESummit ID</div>
-            <div>ES21CA1234</div>
-          </div>
-        </div>
+        <NProfile/>
         <ul>
           <li>
             <div

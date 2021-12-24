@@ -21,7 +21,7 @@ const Event = () => {
     )
       .then((res) => {
         setdashboardArr(res.data);
-        console.log(res.data);
+        
       })
       .catch((err) => console.log(err));
   }, []);
@@ -63,7 +63,7 @@ const Event = () => {
             }
             return (
               <>
-                {console.log(det.EventCompetitive.id)}
+               
                 <EventDashboardCard
                   title={det.EventCompetitive.event_name}
                   desc={det.EventCompetitive.card_description}
