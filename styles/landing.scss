@@ -1,15 +1,16 @@
-@keyframes logoEmerge {
-  0% {
-    transform: translateY(0) rotate(360deg) scale(1);
-  }
-  100% {
-    transform: translateY(-300px) rotate(180deg) scale(0.4);
-  }
+.heading-date{
+  font-size: 0.9em;
 }
-
+.heading-esummit{
+  font-size: 1.5em !important;
+}
 .landing {
   padding: 5vw 10vw;
   height: 100vh;
+  margin-top: 5vh;
+  background-image: url('/giff.gif');
+  background-repeat: no-repeat;
+	background-position: center;
 }
 
 #headLine {
