@@ -147,7 +147,7 @@ const Footer = () => {
               PHONE
             </div>
             <div className="new-footer-section-contact-subheading">
-              Vinyas: +91 98765 56789 <br /> Sharma: +91 98765 56789
+              Daksh: +91 93588 92607 <br /> Abhinandan: +91 80546 89033
             </div>
           </div>
           <div className="new-footer-section-contact-container new-footer-section-contact-container-additional-margin1">
