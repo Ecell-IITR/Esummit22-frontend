@@ -11,7 +11,7 @@ export const NProfile = ({ name = "", points, id, college, rank }) => {
       "get",
       NON_CA_PROFILE_API,
       null,
-      "7101d5e9a376cdf30961cc35a75b0bbd9ccfc393"
+      getAuthToken()
     )
       .then((res) => {
         setcaData(res.data[0]);
