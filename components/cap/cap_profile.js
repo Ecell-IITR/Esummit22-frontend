@@ -13,17 +13,17 @@ export const Profile = ({ name = "", points, id, college, rank }) => {
       <div className="profile-details">
         <div className="profile-details-name">
           <div className="profile-details-name-one"> {name} </div>
-          <div className="profile-details-name-points">{points}</div>
+          <div className="profile-details-name-points">{points} Points</div>
         </div>
         <div className="profile-details-name2">
           <div className="profile-white-text">Campus Ambassador</div>
-          <img className="profile-circle" src="circle.png" alt="" />
+          <img className="profile-circle" src="/circle.png" alt="" />
           <div className="profile-white-text"> {college}</div>
         </div>
         <div className="profile-details-name3">
-          <div className="profile-white-text">ESummit ID</div>
+          <div className="profile-white-text ca-profile-id">ESummit ID</div>
           <div className="profile-golden-text">{id}</div>
-          <img className="profile-circle" src="circle.png" alt="" />
+          <img className="profile-circle" src="/circle.png" alt="" />
           <div className="profile-white-text">Rank</div>
           <div className="profile-golden-text">{rank}</div>
         </div>

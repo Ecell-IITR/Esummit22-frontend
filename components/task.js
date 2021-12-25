@@ -3,7 +3,7 @@ import CustomGradientBtn from "./customGradientBtn";
 import Share from "./dashboard/share_popup";
 import Upload from "./dashboard/upload_popup";
 import { isAuthenticated } from "../utils";
-export const Task = ({
+export const CAPTask = ({
   description,
   Due_date,
   points,
@@ -65,4 +65,4 @@ export const Task = ({
   );
 };
 
-export default Task;
+export default CAPTask;

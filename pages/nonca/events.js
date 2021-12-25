@@ -13,15 +13,9 @@ const Event = () => {
   const [dashboardArr, setdashboardArr] = useState([]);
   const [registeredArr, setregisteredArr] = useState([]);
   useEffect(() => {
-    FetchApi(
-      "get",
-      DASHBOARD_EVENT_API,
-      null,
-      getAuthToken()
-    )
+    FetchApi("get", DASHBOARD_EVENT_API, null, getAuthToken())
       .then((res) => {
         setdashboardArr(res.data);
-        
       })
       .catch((err) => console.log(err));
   }, []);
@@ -63,7 +57,6 @@ const Event = () => {
             }
             return (
               <>
-               
                 <EventDashboardCard
                   title={det.EventCompetitive.event_name}
                   desc={det.EventCompetitive.card_description}

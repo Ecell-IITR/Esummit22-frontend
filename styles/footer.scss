@@ -117,7 +117,7 @@
     }
     .new-footer-section-esummit-logo {
       background-color: #000000;
-      background-image: url("../public/Esummit_logo.png");
+
       height: 75px;
       background-repeat: no-repeat;
       background-position: 0;
@@ -144,16 +144,17 @@
       }
       .logo-container {
         display: flex;
-
         flex-wrap: wrap;
       }
       .new-footer-section-contact-subheading {
         background-color: #000000;
-
         font-weight: normal;
         font-family: $ralewayFont;
         letter-spacing: 0.03em;
 
+        p {
+          font-family: "Roboto";
+        }
         margin-top: 1rem;
         color: #dfe0e1;
         font-size: 1.2rem;
@@ -164,7 +165,7 @@
           transition: ease-in-out 0.5s;
           .new-footer-section-contact-logo {
             background-color: #000000;
-
+            margin-top: 10px;
             margin-right: 0;
           }
           &:first-child {
@@ -274,6 +275,10 @@
     background-color: #000000;
 
     padding-top: 0rem !important;
+  }
+  .new-footer-section-contact-logo {
+    width: 30px;
+    height: 30px;
   }
 }
 
