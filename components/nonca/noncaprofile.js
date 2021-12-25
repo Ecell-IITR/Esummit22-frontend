@@ -14,8 +14,13 @@ export const NProfile = ({ name = "", points, id, college, rank }) => {
       })
       .catch((err) => console.log(err));
   }, []);
-  return (
+  return (<>
     <div className="nprofile-container">
+    <div class="dot"></div>
+    <div class="dot1"></div>
+    <div className="nprofile-image">
+        <p>{caData?.profile?.full_name[0]}</p>
+      </div>
       <div className="nprofile-details-name-one">
         {caData?.profile?.full_name}
       </div>
@@ -27,6 +32,7 @@ export const NProfile = ({ name = "", points, id, college, rank }) => {
         {caData?.esummit_id}
       </div>
     </div>
+    </>
   );
 };
 

@@ -24,7 +24,7 @@ const Event = () => {
       "get",
       NON_CA_PROFILE_API,
       null,
-      "7101d5e9a376cdf30961cc35a75b0bbd9ccfc393"
+      getAuthToken()
     )
       .then((res) => {
         setregisteredArr(
