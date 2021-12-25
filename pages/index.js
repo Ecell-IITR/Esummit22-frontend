@@ -18,20 +18,18 @@ export default function Home({ allEvents, allSpeakers }) {
         <img src="/leftLine.svg" alt="leftLine" />
 
         <div className="flex flex-col items-center text-center mx-auto">
-          <p className="text-lg text-white font-bold uppercase heading-date">
-            21-23 January
-          </p>
-          <h1 className="text-4xl text-white font-bold uppercase heading-esummit">
-            E-summit'22
-          </h1>
-          <img src="/headLine.svg" id="headLine" alt="headLine" />
-          <Link href="/register" passHref>
-        <div className="landing-register-button">
-          <CustomGradientBtn text="Register Now" color="black" />
+          <img
+            className="landing-page-text-png"
+            src="webthemepng.png"
+            alt="landing page text"
+          />
+          {/* <Link href="/register" passHref>
+            <div className="landing-register-button">
+              <CustomGradientBtn text="Register Now" color="black" />
+            </div>
+          </Link> */}
         </div>
-      </Link>
-        </div>
-        
+
         <img src="/rightLine.svg" alt="rightLine" />
       </section>
       <HomeSpeakers allSpeakers={allSpeakers} />

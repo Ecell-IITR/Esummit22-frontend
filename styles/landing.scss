@@ -8,9 +8,10 @@
   padding: 5vw 10vw;
   height: 100vh;
   margin-top: 5vh;
-  background-image: url('/giff.gif');
+  background-image: url('/webelement.png');
+  background-size: 35vw;
   background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 }
 .landing-register-button{
   clip-path: polygon(8% 0, 100% 0, 100% 65%, 92% 100%, 0 100%, 0 33%);
@@ -25,6 +26,10 @@
 .landing-register-button:hover{
 	animation: shake 0.8s;
 	animation-iteration-count: infinite;
+}
+.landing-page-text-png{
+  width: 35vw;
+  align-items: center;
 }
 @keyframes shake {
 	0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -50,6 +55,8 @@
 @media only screen and (max-width: 540px) {
   .landing{
     margin-top: 15vh;
+    background-position: center 10vh;
+    background-size: 50vw;
     // height: 60vh;
   }
   .heading-date{
@@ -57,5 +64,8 @@
   }
   .landing-register-button{
     width:30vh;
+  }
+  .landing-page-text-png{
+    width: 60vw;
   }
 }
