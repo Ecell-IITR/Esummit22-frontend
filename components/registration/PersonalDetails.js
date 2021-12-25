@@ -833,6 +833,61 @@ export class PersonalDetails extends Component {
           </div>
           <div className="error_msg">{profileType_error}</div>
         </div>
+        {role_type.label === "Campus Ambassador" ? (
+          <div className="mobile-container-personal-form">
+            <div className="">
+              <input
+                id="inputCollege"
+                type="text"
+                className="register-form"
+                placeholder="College Name"
+                name="college"
+                autoCorrect="off"
+                autoComplete="off"
+                autoCapitalize="off"
+                value={college}
+                onChange={(event) => {
+                  this.onChange(event);
+                  this.collegeValidate();
+                  handleDataChange(event);
+                }}
+                spellCheck="false"
+                required
+              />
+              {/* <span className="">
+                {college_error_bool === "" ? null : (
+                  <img
+                    alt="correc/wrong"
+                    src={
+                      college_error_bool === "true"
+                        ? null
+                        : college_error_bool === "false"
+                        ? tickMark
+                        : null
+                    }
+                  />
+                )}
+              </span> */}
+
+              {/* <span className="">
+                {college_error_bool === "" ? null : (
+                  <img
+                    alt="correc/wrong"
+                    src={
+                      college_error_bool === "true"
+                        ? null
+                        : college_error_bool === "false"
+                        ? tickMark
+                        : null
+                    }
+                  />
+                )}
+              </span> */}
+              <div className="error-msg">{college_error}</div>
+            </div>
+          </div>
+        ) : null}
+
         {role_type.label === "IITR Student" ? (
           <div>
             <div className="mobile-container-personal-form">
