@@ -16,7 +16,7 @@ export const LaptopHeader = () => {
       case "/":
         setActive("home");
         break;
-      case "/sponsors":
+      case "/comingSoonSponsors":
         setActive("sponsors");
         break;
       case "/events":
@@ -142,7 +142,7 @@ export const LaptopHeader = () => {
                 "sponsors" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <Link href="/sponsors" passHref>
+              <Link href="/comingSoonSponsors" passHref>
                 <pre> SPONSORS </pre>
               </Link>
 

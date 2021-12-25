@@ -22,7 +22,7 @@ export default function Speakers() {
   return (
     <div>
       <div className="bg-black text-white  Speaker_page_container">
-        <div className="Speaker_page_title">Speaker</div>
+        <div className="Speaker_page_title">Speakers</div>
         <div className="Speaker_Card_Container">
           {Speakers_Arr.map((det, id) => {
             return (
