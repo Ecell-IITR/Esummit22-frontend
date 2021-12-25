@@ -1,17 +1,16 @@
-.nprofile-details-name-one{
+.nprofile-details-name-one {
   font-family: Blinker;
-font-style: normal;
-font-weight: 600;
-font-size: 1.2vw;
-line-height: 29px;
-/* identical to box height */
-width:100vw;
-margin-left: 4.3vw;
-margin-bottom: 10px;
-align-items: center;
-
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2vw;
+  line-height: 29px;
+  /* identical to box height */
+  width: 100vw;
+  margin-left: 4.3vw;
+  margin-bottom: 10px;
+  align-items: center;
 }
-.nprofile-white-text{
+.nprofile-white-text {
   font-family: Raleway;
   font-style: normal;
   font-weight: normal;
@@ -21,8 +20,7 @@ align-items: center;
   margin-bottom: 25px;
   margin-top: 25px;
 }
-.nprofile-white-text2{
-
+.nprofile-white-text2 {
   font-family: Blinker;
   font-style: normal;
   font-weight: 600;
@@ -31,10 +29,11 @@ align-items: center;
   display: flex;
   margin-left: 2vw;
 }
-.nprofile-white-text3{
+.nprofile-white-text3 {
   margin-right: 30px;
 }
 .profile-container {
+  margin-top: 40px;
   width: 100%;
   color: white;
   display: flex;
@@ -43,7 +42,7 @@ align-items: center;
   // margin-top: 150px;
   .profile-image {
     width: 110px;
-    height: 110px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,10 +57,7 @@ align-items: center;
       font-family: "Varela Round";
     }
   }
-  #avatar {
-    width: 60px;
-    height: 60px;
-  }
+
   .profile-details {
     width: 100%;
     margin-left: 20px;
@@ -81,11 +77,10 @@ align-items: center;
     display: flex;
     justify-content: flex-start;
     width: 80%;
-    margin-top: 15px;
   }
   .profile-details-name-one {
     font-family: Blinker;
-    font-size: 2em;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
     line-height: 43px;
@@ -93,8 +88,9 @@ align-items: center;
     text-align: left;
   }
   .profile-details-name-points {
+    margin-top: 5px;
     font-family: Blinker;
-    font-size: 2em;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 600;
     line-height: 36px;
@@ -112,18 +108,17 @@ align-items: center;
   }
   .profile-white-text {
     font-family: Blinker;
-    font-size: 1.2em;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: 29px;
     letter-spacing: 0em;
     text-align: left;
-
     margin-right: 10px;
   }
   .profile-golden-text {
     font-family: Blinker;
-    font-size: 1.2em;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
     line-height: 29px;
@@ -138,21 +133,22 @@ align-items: center;
   width: 100%;
   color: white;
   margin-top: 25px;
-
- }
+}
+.ca-profile-id {
+  width: 90px;
+}
 @media screen and (max-width: 768px) {
-  .nprofile-white-text{
+  .nprofile-white-text {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 2vw;
   }
-  .nprofile-white-text2{
+  .nprofile-white-text2 {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 2.5vw;
   }
-  .nprofile-details-name-one{
-    
+  .nprofile-details-name-one {
     font-size: 3vw;
   }
   .profile-container {
