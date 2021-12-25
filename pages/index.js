@@ -14,25 +14,30 @@ export default function Home({ allEvents, allSpeakers }) {
 
   return (
     <div>
-      <section className="flex items-start justify-between landing overflow-hidden">
-        <img src="/leftLine.svg" alt="leftLine" />
+      <section className="flex items-start justify-center landing overflow-hidden">
+        <img src="/leftLine.svg" alt="leftLine" className="mainPage_side_img" />
 
         <div className="flex flex-col items-center text-center mx-auto">
           <p className="text-lg text-white font-bold uppercase heading-date">
             21-23 January
           </p>
           <h1 className="text-4xl text-white font-bold uppercase heading-esummit">
-            E-summit'22
+            E-summit&apos;22
           </h1>
           <img src="/headLine.svg" id="headLine" alt="headLine" />
           <Link href="/register" passHref>
-        <div className="landing-register-button">
-          <CustomGradientBtn text="Register Now" color="black" />
+            <div className="landing-register-button">
+              {/* <CustomGradientBtn text="Register Now" color="black" /> */}
+              Register Now
+            </div>
+          </Link>
         </div>
-      </Link>
-        </div>
-        
-        <img src="/rightLine.svg" alt="rightLine" />
+
+        <img
+          src="/rightLine.svg"
+          alt="rightLine"
+          className="mainPage_side_img"
+        />
       </section>
       <HomeSpeakers allSpeakers={allSpeakers} />
       <Link href="/speakers" passHref>
