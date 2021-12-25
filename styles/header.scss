@@ -41,6 +41,10 @@ a {
 .navbar-logo {
   padding-top: 0.05vw;
   width: 210px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .navbar-container ul {
@@ -55,6 +59,7 @@ a {
   color: #e9f0f4;
   /* color: linear-gradient(99.8deg, #8c20e2 0%, #7518d2 100%); */
   font-size: 0.85vw !important;
+  // font-size: 0.3vw;
   line-height: 1.02rem;
   text-align: center;
   text-decoration: none;
@@ -67,7 +72,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   font-style: normal;
-  font-size: 20px;
+  font-size: 1.1em;
   line-height: 2vh;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -140,7 +145,7 @@ a {
   text-transform: none;
 }
 
-.clip {
+.clip_header {
   width: 6.7vw !important;
   background: white;
 
@@ -160,7 +165,7 @@ a {
   transition: 0.3s;
   clip-path: polygon(10% 0, 100% 0, 100% 65%, 90% 100%, 0 100%, 0 33%);
 }
-.clip:hover {
+.clip_header:hover {
   color: white !important;
   background: #6f00ff;
 }
@@ -173,6 +178,16 @@ a {
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.ca_color {
+  text-align: center;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ca_color > pre {
+  font-weight: 900;
 }
 #heading:hover .hover_underline {
   height: 0.2vw;
@@ -192,7 +207,7 @@ a {
 
 .active_hover_color {
   text-align: center;
-  
+
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

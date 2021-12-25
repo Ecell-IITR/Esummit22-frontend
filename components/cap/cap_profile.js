@@ -1,28 +1,31 @@
 import React from "react";
-
-export const Profile = () => {
+import { useState } from "react";
+import FetchApi from "../../utils/fetchAPI";
+import { CA_PROFILE_API } from "../../utils/APIs";
+import { getAuthToken } from "../../utils";
+export const Profile = ({ name = "", points, id, college, rank }) => {
   return (
     <div className="profile-container">
       <div className="profile-image">
-        <img id="avatar" src="v.png" />
+        <p>{name[0]}</p>
       </div>
 
       <div className="profile-details">
         <div className="profile-details-name">
-          <div className="profile-details-name-one">Vaibhav Khandelwal</div>
-          <div className="profile-details-name-points">110 points</div>
+          <div className="profile-details-name-one"> {name} </div>
+          <div className="profile-details-name-points">{points} Points</div>
         </div>
         <div className="profile-details-name2">
           <div className="profile-white-text">Campus Ambassador</div>
-          <img className="profile-circle" src="circle.png" />
-          <div className="profile-white-text"> IIT Roorkee</div>
+          <img className="profile-circle" src="/circle.png" alt="" />
+          <div className="profile-white-text"> {college}</div>
         </div>
         <div className="profile-details-name3">
-          <div className="profile-white-text">ESummit ID</div>
-          <div className="profile-golden-text">ES21CA1234</div>
-          <img className="profile-circle" src="circle.png" />
+          <div className="profile-white-text ca-profile-id">ESummit ID</div>
+          <div className="profile-golden-text">{id}</div>
+          <img className="profile-circle" src="/circle.png" alt="" />
           <div className="profile-white-text">Rank</div>
-          <div className="profile-golden-text">286</div>
+          <div className="profile-golden-text">{rank}</div>
         </div>
       </div>
     </div>

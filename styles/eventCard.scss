@@ -69,6 +69,12 @@
   /* margin-right: 25px; */
   /* margin-left: -10px; */
 }
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
 .View_more {
   padding: 5%;
   text-align: center;

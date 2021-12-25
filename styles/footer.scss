@@ -81,11 +81,10 @@
         display: flex;
         justify-content: space-between;
       }
-      .clip {
+      .clip_footer {
         display: flex;
         justify-content: center;
-        height: 40px;
-        width: 100px;
+        align-items: center;
         background-color: #000000;
         margin-top: 15px;
         border: 1px solid;
@@ -100,8 +99,9 @@
         line-height: 2.2rem;
         text-align: center;
         transition: 0.3s;
+        margin-right: 15.5rem;
       }
-      .clip:hover {
+      .clip_footer:hover {
         color: #000000 !important;
         background-color: #e9f0f4;
       }
@@ -117,7 +117,7 @@
     }
     .new-footer-section-esummit-logo {
       background-color: #000000;
-      background-image: url("../public/Esummit_logo.png");
+
       height: 75px;
       background-repeat: no-repeat;
       background-position: 0;
@@ -144,16 +144,17 @@
       }
       .logo-container {
         display: flex;
-
         flex-wrap: wrap;
       }
       .new-footer-section-contact-subheading {
         background-color: #000000;
-
         font-weight: normal;
         font-family: $ralewayFont;
         letter-spacing: 0.03em;
 
+        p {
+          font-family: "Roboto";
+        }
         margin-top: 1rem;
         color: #dfe0e1;
         font-size: 1.2rem;
@@ -164,7 +165,7 @@
           transition: ease-in-out 0.5s;
           .new-footer-section-contact-logo {
             background-color: #000000;
-
+            margin-top: 10px;
             margin-right: 0;
           }
           &:first-child {
@@ -215,7 +216,7 @@
   opacity: 0.7;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 786px) {
   .new-footer-container {
     padding: 1rem;
     flex-direction: column-reverse;
@@ -252,8 +253,9 @@
     .new-footer-form {
       width: 85% !important;
     }
-    .clip {
-      margin-left: 25%;
+    .clip_footer {
+      margin-left: 35%;
+      width: 20.8vw;
     }
   }
   .new-footer-section-contact-container-additional-margin01 {
@@ -273,6 +275,10 @@
     background-color: #000000;
 
     padding-top: 0rem !important;
+  }
+  .new-footer-section-contact-logo {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -294,5 +300,11 @@
   }
   .width-99 {
     width: 100%;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .clip_footer {
+    width: 10.5vw;
   }
 }

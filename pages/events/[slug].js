@@ -20,7 +20,7 @@ export default function EventsDetails({ detailsEvents }) {
           className="details_about_content"
           id="timeline"
           dangerouslySetInnerHTML={{
-            __html: detailsEvents[0].card_description,
+            __html: detailsEvents[0].description,
           }}
         />
       </div>

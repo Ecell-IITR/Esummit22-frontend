@@ -1,14 +1,28 @@
 .Task_cap_underline {
-  width: 3vw;
+  margin-left: 1.3vw;
+  width: 5vw;
+  height: 1.5vh;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  clip-path: polygon(5% 10%, 95% 10%, 100% 50%, 0% 50%);
+  margin-bottom: 1vw;
+  margin-top: 1vh;
+}
+
+.completed_task_cap_underline {
+  width: 14vw;
   height: 10vw;
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   clip-path: polygon(5% 10%, 95% 10%, 100% 50%, 0% 50%);
-  margin-bottom: 5vw;
+  margin-top: 1vh;
+  margin-bottom: 2.5vw;
   height: 10px;
   margin-left: 1.3vw;
 }
 
 .Cap_Content_cotainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   font-family: Blinker;
   font-style: normal;
   font-weight: 600;
@@ -19,14 +33,15 @@
 }
 .Task_flex {
   display: flex;
-  flex-direction: wrap;
-}
-.Task_flex_card {
-  margin-left: 1vw;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 .task_heading {
   margin-left: 1.3vw;
+  margin-top: 6vh;
+  font-size: 1.5em;
 }
 @media screen and (max-width: 1000px) {
   .task_heading {
@@ -35,42 +50,70 @@
     margin-bottom: 1vw;
   }
   .Task_cap_underline {
-    width: 7vw;
+    width: 7.8vw;
     margin-bottom: 8vw;
     height: 15px;
     margin-left: 1.3vw;
   }
+  .completed_task_cap_underline {
+    width: 50vw;
+    margin-bottom: 4vw;
+    height: 15px;
+    margin-left: 9vw;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .Task_flex {
+    justify-content: center;
+  }
   .task_heading {
-    margin-left: 30vw;
+    margin-left: 10vw;
+    font-size: 5em;
   }
   .Task_cap_underline {
-    margin-left: 30vw;
+    margin-left: 10vw;
+    width: 16vw;
+    margin-bottom: 0;
+    margin-top: 1rem;
   }
-  .Task_flex {
-    
-    margin-left: 20vw;
+  .Task_flex_card {
+    float: left;
+    width: 50%;
   }
 }
-@media only screen and (max-width: 508px) {
-  .task_heading {
-    margin-left: 0;
+
+@media screen and (width: 1024px) {
+  .Cap_Content_cotainer {
+    margin-left: 3rem;
   }
+  .Task_flex_card {
+    float: left;
+    width: 35%;
+    margin-right: 6.5rem;
+  }
+
+  .task_heading {
+    font-size: 2.5em;
+  }
+
   .Task_cap_underline {
-    margin-left:0;
+    width: 8vw;
+  }
+  .completed_task_cap_underline {
+    margin-left: 0;
   }
   .Cap_Content_cotainer {
-    display:flex;
-    justify-content: center;
-    flex-direction:column;
-    align-items: center;
+    margin-left: 8rem;
   }
-  .Task_flex {
-    flex-direction: column;
-    
-    margin-left: 0;
 
+  .task_heading {
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    font-size: 4em;
+  }
+  .Task_cap_underline {
+    margin-left: 1rem;
+    width: 13vw;
   }
 }

@@ -12,8 +12,10 @@
   flex-direction: column;
 }
 @media only screen and (max-width: 508px) {
-  .cap-right-outer-container {margin-left: 0;}
   .cap-right-outer-container {
-    width:100vw;
+    margin-left: 0;
+  }
+  .cap-right-outer-container {
+    width: 100vw;
   }
 }

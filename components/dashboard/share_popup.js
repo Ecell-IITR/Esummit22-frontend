@@ -1,6 +1,16 @@
 import React from "react";
-
-export const Share = ({ closeModal }) => {
+import {
+  FacebookShareButton,
+  LinkedinShareButton,
+  TwitterShareButton,
+  WhatsappShareButton,
+  EmailShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  WhatsappIcon,
+} from "react-share";
+export const Share = ({ closeModal, desc, link }) => {
   function copyText(id, id2) {
     document.getElementById(id2).innerText = "Copied";
     var range = document.createRange();
@@ -33,10 +43,7 @@ export const Share = ({ closeModal }) => {
           <div className="Share_popup_subDiv_behind">
             <div className="Share_popup_subDiv_front">
               <p className="Share_popup_para" id="Share_popup_para1">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. It is the standard dummy text.Lorem Ipsum is simply
-                dummy text of the printing and typesetting industry. It is the
-                standard dummy text.
+                {desc}
               </p>
               <div className="Share_popup_copy_btn">
                 <h1>
@@ -54,94 +61,58 @@ export const Share = ({ closeModal }) => {
           </div>
           <div className="Share_popup_media_div">
             <div className="Share_popup_single_media_div">
-              <a
-                href="https://www.facebook.com/ecelliitr"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="new-footer-section-contact-link"
-              >
+              <FacebookShareButton url={link} quote={desc}>
                 <img
                   src="Facebook_img.png"
                   className="new-footer-section-contact-logo"
                   alt=""
                 />
                 <h1 className="Share_popup_media_title">Facebook</h1>
-              </a>
+              </FacebookShareButton>
             </div>
             <div className="Share_popup_single_media_div">
-              <a
-                className="new-footer-section-contact-link"
-                href="https://twitter.com/ECell_IITR"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <LinkedinShareButton url={link} title={desc}>
                 <img
                   src="LinkedIn_img.png"
                   className="new-footer-section-contact-logo"
                   alt=""
                 />
                 <h1 className="Share_popup_media_title">LinkedIn</h1>
-              </a>
+              </LinkedinShareButton>
+            </div>
+            <div className="Share_popup_single_media_div">
+              <TwitterShareButton
+                url={link}
+                title={desc}
+                style={{ marginRight: "1.2vw" }}
+              >
+                <h1 className="Share_popup_media_title">Twitter</h1>
+              </TwitterShareButton>
             </div>
             <div className="Share_popup_single_media_div">
               <a
+                className="new-footer-section-contact-link"
                 href="https://www.instagram.com/ecelliitr/"
                 target="_blank"
-                className="new-footer-section-contact-link"
                 rel="noopener noreferrer"
               >
-                <img
-                  src="Twitter_img.png"
-                  // className="new-footer-section-contact-logo"
-                  alt=""
-                />
-                <h1 className="Share_popup_media_title">Twitter</h1>
-              </a>
-            </div>
-            <div className="Share_popup_single_media_div">
-              <a
-                className="new-footer-section-contact-link"
-                href="https://www.linkedin.com/company/esummit"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="Instagram_img.png"
-                  className="new-footer-section-contact-logo"
-                  alt=""
-                />
                 <h1 className="Share_popup_media_title">Instagram</h1>
               </a>
             </div>
             <div className="Share_popup_single_media_div">
-              <a
-                className="new-footer-section-contact-link"
-                href="https://www.youtube.com/channel/UCf1py66Ov1easJAswwjxQZw"
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsappShareButton
+                url={link}
+                title={desc}
+                separator=":: "
+                style={{ marginRight: "1.2vw" }}
               >
-                <img
-                  src="Whatsapp_img.png"
-                  className="new-footer-section-contact-logo"
-                  alt=""
-                />
                 <h1 className="Share_popup_media_title">Whatsapp</h1>
-              </a>
+              </WhatsappShareButton>
             </div>
             <div className="Share_popup_single_media_div">
-              <a
-                className="new-footer-section-contact-link"
-                href="https://twitter.com/ECell_IITR"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="Email_img.png"
-                  className="new-footer-section-contact-logo"
-                  alt=""
-                />
+              <EmailShareButton url={link} title={desc}>
                 <h1 className="Share_popup_media_title">Email</h1>
-              </a>
+              </EmailShareButton>
             </div>
           </div>
         </div>

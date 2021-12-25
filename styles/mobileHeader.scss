@@ -48,7 +48,7 @@
   padding-left: 10px;
   padding-bottom: 1.8vh;
   margin-top: 112px;
-  opacity: 0.75;
+  opacity: 0.9;
   transform-origin: 0% 0%;
   transform: translate(0, -160%);
   transition: transform 0.5s cubic-bezier(0.89, -0.63, 0, 1.75);
@@ -70,6 +70,13 @@
   background: inherit;
   opacity: 1;
   margin-top: 1.2rem;
+}
+.mobilenavMenu-ca-tag {
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: #fbdaa2 !important;
+  font-weight: bolder !important;
 }
 .mobilenavMenu-links {
   background: inherit !important;
