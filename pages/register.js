@@ -138,7 +138,7 @@ export class Registration extends Component {
         // }
         Authenticate(res.data.user, res.data.token);
         if (String(localStorage.getItem("userRoleType")) === "CA") {
-          //   this.props.history.push("/campus-ambassador");
+          window.location.href = "/cap/tasks";
         }
       })
       .catch((err) => {

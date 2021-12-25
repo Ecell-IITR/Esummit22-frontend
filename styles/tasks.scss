@@ -1,13 +1,13 @@
 .tasks-container {
-  width: 25vw;
+  margin-left: 40px;
+  width: 23vw;
   height: 28vh;
   color: white;
-
   border: #f5e4ca 1px solid;
   border-radius: 10px 10px 10px 0px;
   position: relative;
+  margin-bottom: 1.8rem;
   .tasks-container-discription {
-    display: flex;
     position: relative;
     margin-top: 20px;
     margin-left: 20px;
@@ -18,13 +18,14 @@
     font-size: 0.8em;
     font-style: normal;
     font-weight: 400;
-    line-height: 23px;
     letter-spacing: 0.01em;
     text-align: left;
   }
   .tasks-container-date {
+    margin-top: 10px;
     text-align: end;
     width: 90%;
+    color: rgba(255, 255, 255, 1);
     font-family: Blinker;
     font-size: 0.8em;
     font-style: normal;
@@ -32,17 +33,7 @@
     line-height: 22px;
     letter-spacing: 0em;
   }
-  .tasks-container-share {
-    margin-left: 20px;
-    width: 90%;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 15px;
-    padding-top: 20px;
-  }
+
   .tasks-container-share-button {
     width: 99px;
     padding-bottom: 1.2rem;
@@ -59,14 +50,23 @@
     align-items: center;
   }
 }
+.tasks-container-share {
+  margin-left: 20px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
 
 @media screen and (max-width: 768px) {
   .tasks-container {
-    margin-left: 1.2rem;
+    margin-top: 2rem;
     width: 90vw;
     height: 25vh;
-    margin-bottom: 0.2vh;
-
+    margin-bottom: 1rem;
     .tasks-container-date {
       font-size: 3em;
     }
@@ -137,5 +137,11 @@
     .tasks-container-share-button {
       width: 15vw;
     }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .tasks-container {
+    margin-left: 0px;
   }
 }

@@ -31,7 +31,7 @@ const Upload = ({ profileId, id, show, setShow }) => {
 
           setloading(false);
 
-          window.location.href = "/cap/task";
+          window.location.href = "/cap/tasks";
         })
         .catch((err) => {
           setloading(false);
@@ -82,9 +82,9 @@ const Upload = ({ profileId, id, show, setShow }) => {
                       <input
                         type="file"
                         accept="image/*"
+                        className="Upload_input_Class"
                         onChange={(e) => {
                           handleInputChange(e);
-                          className = "Upload_input_Class";
                         }}
                       />
                     </div>

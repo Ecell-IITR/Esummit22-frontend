@@ -7,6 +7,6 @@ export default function Header() {
   const setMobile = useUpdateMobile();
   useEffect(() => {
     setMobile();
-  });
+  }, []);
   return <>{useMobile().isMobile ? <HeaderMobile /> : <LaptopHeader />}</>;
 }
