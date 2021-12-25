@@ -90,6 +90,27 @@ export const HeaderMobile = () => {
             </li>
           </>
         )}
+        {user && !isCA && (
+          <>
+            <li className="mobilenavMenu-items">
+              <Link href="/nonca/events" passHref>
+                <div className="mobilenavMenu-links mobilenavMenu-ca-tag">
+                  Dashboard
+                </div>
+              </Link>
+            </li>
+            <li className="mobilenavMenu-items">
+              <Link href="/nonca/events" passHref>
+                <div className="mobilenavMenu-links">EVENTS</div>
+              </Link>
+            </li>
+            <li className="mobilenavMenu-items">
+              <Link href="/nonca/resources" passHref>
+                <div className="mobilenavMenu-links">RESOURCES</div>
+              </Link>
+            </li>
+          </>
+        )}
         {user ? (
           <>
             <li className="mobilenavMenu-items">
