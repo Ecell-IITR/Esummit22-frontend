@@ -1,3 +1,4 @@
+import React, { useState, useRef, useLayoutEffect } from "react";
 import Counter from "../components/section/counter";
 import CustomGradientBtn from "../components/customGradientBtn";
 import Link from "next/link";
@@ -8,10 +9,31 @@ import { ALL_EVENTS_API, SPEAKERS_API } from "../utils/APIs";
 import FetchApi from "../utils/fetchAPI";
 
 export default function Home({ allEvents, allSpeakers }) {
+  const [animate, doAnimate] = useState(false);
+  const ourRef = useRef(null);
+
   return (
-    <div
-    // className="h-screen overflow-hidden bg-black text-white flex flex-col space-y-8 items-center justify-center"
-    >
+    <div>
+      <section className="flex items-start justify-between landing overflow-hidden">
+        <img src="/leftLine.svg" alt="leftLine" />
+
+        <div className="flex flex-col items-center text-center mx-auto">
+          <p className="text-lg text-white font-bold uppercase heading-date">
+            21-23 January
+          </p>
+          <h1 className="text-4xl text-white font-bold uppercase heading-esummit">
+            E-summit'22
+          </h1>
+          <img src="/headLine.svg" id="headLine" alt="headLine" />
+          <Link href="/register" passHref>
+        <div className="landing-register-button">
+          <CustomGradientBtn text="Register Now" color="black" />
+        </div>
+      </Link>
+        </div>
+        
+        <img src="/rightLine.svg" alt="rightLine" />
+      </section>
       <HomeSpeakers allSpeakers={allSpeakers} />
       <Link href="/speakers" passHref>
         <div className="home-view-all-button">
