@@ -37,7 +37,7 @@ export const LaptopHeader = () => {
     if (router.asPath.includes("cap")) {
       setActive("cap");
     }
-  });
+  }, []);
   return (
     <div className="navbar-container" id="navbar">
       <Link href="/" className="navbar-logo-link" passHref>

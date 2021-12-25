@@ -1,4 +1,4 @@
-import Task from "../../components/task";
+import CAPTask from "../../components/task";
 import CompletedTask from "../../components/completedTask";
 import React, { useEffect, useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
@@ -6,9 +6,10 @@ import { CA_PROFILE_API, TASK_API } from "../../utils/APIs";
 import CapLayout from "../../components/cap/capLayout";
 import { getAuthToken } from "../../utils";
 
-export default function task() {
-  const [allTasks, setTask_Arr] = useState([]);
+export default function Task() {
+  const [allTasks, setAllTasks] = useState([]);
   const [completed_task, set_completed_task] = useState([]);
+
   useEffect(() => {
     FetchApi("get", CA_PROFILE_API, null, getAuthToken())
       .then((res) => {
@@ -22,7 +23,7 @@ export default function task() {
   useEffect(() => {
     FetchApi("get", TASK_API, null, getAuthToken())
       .then((res) => {
-        setTask_Arr(res.data);
+        setAllTasks(res.data);
       })
       .catch((err) => {
         console.log(err);
@@ -49,7 +50,7 @@ export default function task() {
         <div className="Task_flex">
           {Filter()?.map((det, id) => {
             return (
-              <Task
+              <CAPTask
                 key={id}
                 description={det.headline}
                 points={det.max_points}

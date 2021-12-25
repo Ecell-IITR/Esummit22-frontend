@@ -18,13 +18,13 @@ export default function Navbar() {
         setactivelist([false, false, true]);
         break;
     }
-  });
+  }, []);
 
   return (
     <div className="Ca_sidebar">
       <div className="nav-items">
         <ul className="cursor-pointer">
-          <Link href="/cap/tasks">
+          <Link href="/cap/tasks" passHref>
             <div
               className={
                 activelist[0]
@@ -43,7 +43,7 @@ export default function Navbar() {
             </div>
           </Link>
 
-          <Link href="/cap/leaderboard">
+          <Link href="/cap/leaderboard" passHref>
             <div
               className={
                 activelist[1]
@@ -63,7 +63,7 @@ export default function Navbar() {
               </div>
             </div>
           </Link>
-          <Link href="/cap/resources">
+          <Link href="/cap/resources" passHref>
             <div
               className={
                 activelist[2]

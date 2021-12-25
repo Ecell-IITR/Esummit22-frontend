@@ -14,7 +14,7 @@ const CapLayout = ({ children }) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   useEffect(() => {
     setMobile();
-  });
+  }, []);
 
   useEffect(() => {
     FetchApi("get", CA_PROFILE_API, null, getAuthToken())
