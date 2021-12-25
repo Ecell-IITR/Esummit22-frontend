@@ -12,8 +12,6 @@ const Apply = ({ Show, setShow, detailsEvents }) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-
-
   function registerEvent() {
     if (isAgree) {
       var token = getAuthToken();
@@ -33,7 +31,7 @@ const Apply = ({ Show, setShow, detailsEvents }) => {
               toast.error("Error in Registering.Try Again !");
               console.log(err.data);
             });
-            setShow(false)
+          setShow(false);
         } else {
           toast.error("This Event is not for You !");
         }
@@ -80,15 +78,24 @@ const Apply = ({ Show, setShow, detailsEvents }) => {
                     <br />
                     <br />
                   </p>
-                  <div className="Upload_popup_ChooseFileContainer">
-                    <div className="Upload_popup_para">
-                      Click here to fill the Google Form for registration :
+                  <div className="applynow_popup_ChooseFileContainer">
+                    <div className="google-form-link">
+                      <a href={detailsEvents[0].google_form} target="_blank">
+                        Click here
+                      </a>{" "}
+                      to fill the Google Form for {detailsEvents[0].event_name}{" "}
+                      registration :{" "}
                     </div>
-                    <div className="Events-confirm-permissions">
-                      <input name="isAgree" type="checkbox" id="permissions"  value={isAgree}
-                      onInput={(e)=> setisAgree(!isAgree)} />I
-                      have filled the above mentioned form correctly and I agree
-                      to register to the event.
+                    <div className="google-form-link">
+                      <input
+                        name="isAgree"
+                        type="checkbox"
+                        id="permissions"
+                        value={isAgree}
+                        onInput={(e) => setisAgree(!isAgree)}
+                      />{" "}
+                      I have filled the above mentioned form correctly and I
+                      agree to register to the event.
                     </div>
                   </div>
                   <div className="Upload_popup_UploadBtn_div">

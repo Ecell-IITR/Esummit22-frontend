@@ -4,8 +4,6 @@ import Link from "next/link";
 export const EventHead = ({
   detailsEvents,
   CompetitiveEvents,
-  SpeakingEvents,
-  WorkshopEvents,
   Show,
   setShow,
 }) => {
