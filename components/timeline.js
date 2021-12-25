@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import moment from "moment";
 
 const Timeline_card = ({ detailsEvents }) => {
   const [round, setRound] = useState(1);
@@ -95,19 +96,28 @@ const Timeline_card = ({ detailsEvents }) => {
           </div>
           <div className="EventsTimeline-subcontainer-round-details-content">
             <div className="EventsTimeline-subcontainer-round-details-content-heading">
-              REGISTRATION
+              REGISTRATION STARTS
             </div>
             <div className="EventsTimeline-subcontainer-round-details-content-description">
-              Registrations close:{" "}
-              {detailsEvents[0].event_rounds[0].end_date_time}
+              Registrations starts:{" "}
+              {moment(
+                detailsEvents[0].event_rounds[round-1].start_date_time.toLocaleString(
+                  "en-US"
+                )
+              ).format("Do MMMM")}
             </div>
           </div>
           <div className="EventsTimeline-subcontainer-round-details-content">
             <div className="EventsTimeline-subcontainer-round-details-content-heading">
-              DATE
+            REGISTRATION CLOSES
             </div>
             <div className="EventsTimeline-subcontainer-round-details-content-description">
-              7th January
+            Registrations closes:{" "}
+              {moment(
+                detailsEvents[0].event_rounds[round-1].end_date_time.toLocaleString(
+                  "en-US"
+                )
+              ).format("Do MMMM")}
             </div>
           </div>
         </div>
