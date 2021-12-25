@@ -14,8 +14,8 @@ export default function Home({ allEvents, allSpeakers }) {
 
   return (
     <div>
-      <section className="flex items-start justify-between landing overflow-hidden">
-        <img src="/leftLine.svg" alt="leftLine" />
+      <section className="flex items-start justify-center landing overflow-hidden">
+        <img src="/leftLine.svg" alt="leftLine" className="mainPage_side_img" />
 
         <div className="flex flex-col items-center text-center mx-auto">
           <img
@@ -23,11 +23,11 @@ export default function Home({ allEvents, allSpeakers }) {
             src="webthemepng.png"
             alt="landing page text"
           />
-          {/* <Link href="/register" passHref>
+          <Link href="/register" passHref>
             <div className="landing-register-button">
-              <CustomGradientBtn text="Register Now" color="black" />
+              Register Now
             </div>
-          </Link> */}
+          </Link>
         </div>
 
         <img src="/rightLine.svg" alt="rightLine" />
