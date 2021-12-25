@@ -188,6 +188,17 @@ export const LaptopHeader = () => {
             </div>
           </li>
         )}
+        {user && roleType && roleType != "CA" && (
+          <li className="navbar-items">
+            <div id="heading">
+              <div className={"ca_color"}>
+                <Link href="/nonca/events" passHref>
+                  <pre>DashBoard</pre>
+                </Link>
+              </div>
+            </div>
+          </li>
+        )}
       </ul>
       {user ? (
         <ul className="navbar-subcontent2">

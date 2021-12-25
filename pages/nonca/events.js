@@ -3,12 +3,14 @@ import NoncaNavbar from "../../components/nonca/nonca_navbar";
 import React, { useEffect, useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
 import { DASHBOARD_EVENT_API, NON_CA_PROFILE_API } from "../../utils/APIs";
+
 import { getAuthToken } from "../../utils";
 
 import EventDashboardCard from "../../components/dashboard/dashboardEventCard";
 import CustomGradientBtn from "../../components/customGradientBtn";
 
 const Event = () => {
+
   let isregistered = true;
   const [dashboardArr, setdashboardArr] = useState([]);
   const [registeredArr, setregisteredArr] = useState([]);
