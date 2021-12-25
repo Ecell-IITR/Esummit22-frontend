@@ -35,7 +35,7 @@ const Event = () => {
   }, []);
   return (
     <>
-      <div className="Dashboard-event-head">competition</div>
+      <div className="Dashboard-event-head">Competitions</div>
       <div className="Dashboard-underline"></div>
       <div className="Dashboard-events-main-container">
         <div className="Dashboard-events-nav-container">
