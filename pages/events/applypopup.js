@@ -80,11 +80,18 @@ const Apply = ({ Show, setShow, detailsEvents }) => {
                   </p>
                   <div className="applynow_popup_ChooseFileContainer">
                     <div className="google-form-link">
-                      <a href={detailsEvents[0].google_form} target="_blank">
-                        Click here
-                      </a>{" "}
-                      to fill the Google Form for {detailsEvents[0].event_name}{" "}
-                      registration :{" "}
+                      {detailsEvents && (
+                        <>
+                          <a
+                            href={detailsEvents[0].google_form}
+                            target="_blank"
+                          >
+                            Click here
+                          </a>{" "}
+                          to fill the Google Form for{" "}
+                          {detailsEvents[0].event_name} registration :{" "}
+                        </>
+                      )}
                     </div>
                     <div className="google-form-link">
                       <input
