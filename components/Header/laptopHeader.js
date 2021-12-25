@@ -193,7 +193,7 @@ export const LaptopHeader = () => {
             <div id="heading">
               <div className={"ca_color"}>
                 <Link href="/nonca/events" passHref>
-                  <pre>DashBoard</pre>
+                  <pre>Dashboard</pre>
                 </Link>
               </div>
             </div>
