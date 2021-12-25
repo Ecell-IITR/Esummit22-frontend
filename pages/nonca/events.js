@@ -24,7 +24,7 @@ const Event = () => {
       "get",
       NON_CA_PROFILE_API,
       null,
-      "7101d5e9a376cdf30961cc35a75b0bbd9ccfc393"
+      getAuthToken()
     )
       .then((res) => {
         setregisteredArr(
@@ -35,7 +35,7 @@ const Event = () => {
   }, []);
   return (
     <>
-      <div className="Dashboard-event-head">Competition</div>
+      <div className="Dashboard-event-head">Competitions</div>
       <div className="Dashboard-underline"></div>
       <div className="Dashboard-events-main-container">
         <div className="Dashboard-events-nav-container">
