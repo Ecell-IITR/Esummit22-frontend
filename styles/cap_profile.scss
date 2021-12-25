@@ -8,15 +8,49 @@
   width: 100vw;
   margin-left: 4.3vw;
   margin-bottom: 10px;
+  margin-top: -37.5px;
   align-items: center;
+}
+.dot {
+  height: 3.5vw;
+  width: 3.5vw;
+  background: linear-gradient(
+    124.76deg,
+    #f5e4ca 12.61%,
+    #dbba89 63.66%
+  );
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot1 {
+  height: 3.2vw;
+  width: 3.2vw;
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: -3.35vw;
+  margin-bottom: 2.5px;
+}
+.nprofile-image{
+  color:#fff;
+  font-weight:500;
+  font-size: 2vw;
+  margin-top: -3.6vw;
+  margin-left: 1.2vw;
+
+}
+.nprofile-circle{
+  width: 10px;
+  height: 10px;
 }
 .nprofile-white-text {
   font-family: Raleway;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 0.8vw;
+  color: #fff;
+
+  font-weight: 600;
+  font-size: 12px;
   line-height: 19px;
-  margin-left: 5vw;
+  margin-left: 1vw;
   margin-bottom: 25px;
   margin-top: 25px;
 }
@@ -27,7 +61,8 @@
   font-size: 0.9vw;
   line-height: 22px;
   display: flex;
-  margin-left: 2vw;
+  margin-left: 1vw;
+  margin-bottom:20px ;
 }
 .nprofile-white-text3 {
   margin-right: 30px;
@@ -138,8 +173,19 @@
   width: 90px;
 }
 @media screen and (max-width: 768px) {
+  .dot {
+    
+    display: none;
+  }
+  .dot1 {
+   display: none;
+  }
+  .nprofile-image{
+    display: none;
+  
+  }
   .nprofile-white-text {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
     font-size: 2vw;
   }
@@ -150,6 +196,7 @@
   }
   .nprofile-details-name-one {
     font-size: 3vw;
+    margin-top: 5vw;
   }
   .profile-container {
     display: flex;

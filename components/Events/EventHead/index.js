@@ -3,7 +3,14 @@ import { MobileEventHead } from "./mobileEventHeadCard";
 import { useMobile, useUpdateMobile } from "../../../utils/MobileContext";
 import React, { useEffect } from "react";
 
-export default function EventHeader({ detailsEvents }) {
+export default function EventHeader({
+  detailsEvents,
+  CompetitiveEvents,
+  SpeakingEvents,
+  WorkshopEvents,
+  show,
+  setShow,
+}) {
   const setMobile = useUpdateMobile();
   useEffect(() => {
     setMobile();
@@ -11,9 +18,21 @@ export default function EventHeader({ detailsEvents }) {
   return (
     <>
       {useMobile().isMobile ? (
-        <MobileEventHead detailsEvents={detailsEvents} />
+        <MobileEventHead
+          detailsEvents={detailsEvents}
+          CompetitiveEvents={CompetitiveEvents}
+          SpeakingEvents={SpeakingEvents}
+          WorkshopEvents={WorkshopEvents}
+        />
       ) : (
-        <EventHead detailsEvents={detailsEvents} />
+        <EventHead
+          detailsEvents={detailsEvents}
+          CompetitiveEvents={CompetitiveEvents}
+          SpeakingEvents={SpeakingEvents}
+          WorkshopEvents={WorkshopEvents}
+          show={show}
+          setShow={setShow}
+        />
       )}
     </>
   );

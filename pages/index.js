@@ -1,4 +1,4 @@
-import React, { useState, useRef, useLayoutEffect } from "react";
+import React, { useState, useRef, useContext } from "react";
 import Counter from "../components/section/counter";
 import CustomGradientBtn from "../components/customGradientBtn";
 import Link from "next/link";
@@ -7,10 +7,14 @@ import HomeEvents from "../components/home_page/home_events";
 import Faq from "../components/faq/faq";
 import { ALL_EVENTS_API, SPEAKERS_API } from "../utils/APIs";
 import FetchApi from "../utils/fetchAPI";
+import { getUserRoleType } from "../utils";
+import { AuthContext } from "../utils/auth-context";
 
 export default function Home({ allEvents, allSpeakers }) {
   const [animate, doAnimate] = useState(false);
   const ourRef = useRef(null);
+  const { user } = useContext(AuthContext);
+  const roleType = getUserRoleType();
 
   return (
     <div>
@@ -25,12 +29,32 @@ export default function Home({ allEvents, allSpeakers }) {
             E-summit&apos;22
           </h1>
           <img src="/headLine.svg" id="headLine" alt="headLine" />
-          <Link href="/register" passHref>
-            <div className="landing-register-button">
-              {/* <CustomGradientBtn text="Register Now" color="black" /> */}
-              Register Now
-            </div>
-          </Link>
+          {!user ? (
+            <Link href="/register" passHref>
+              <div className="landing-register-button">
+                {/* <CustomGradientBtn text="Register Now" color="black" /> */}
+                Register Now
+              </div>
+            </Link>
+          ) : (
+            <>
+              {roleType === "CA" ? (
+                <Link href="/cap/tasks" passHref>
+                  <div className="landing-register-button">
+                    {/* <CustomGradientBtn text="Register Now" color="black" /> */}
+                    Dashboard
+                  </div>
+                </Link>
+              ) : (
+                <Link href="/nonca/events" passHref>
+                  <div className="landing-register-button">
+                    {/* <CustomGradientBtn text="Register Now" color="black" /> */}
+                    Dashboard
+                  </div>
+                </Link>
+              )}
+            </>
+          )}
         </div>
 
         <img
