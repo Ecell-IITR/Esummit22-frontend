@@ -81,11 +81,12 @@ export const Share = ({ closeModal, desc, link }) => {
               </LinkedinShareButton>
             </div>
             <div className="Share_popup_single_media_div">
-              <TwitterShareButton
-                url={link}
-                title={desc}
-                style={{ marginRight: "1.2vw" }}
-              >
+              <TwitterShareButton url={link} title={desc}>
+                <img
+                  src="Twitter_img.png"
+                  className="new-footer-section-contact-logo"
+                  alt=""
+                />
                 <h1 className="Share_popup_media_title">Twitter</h1>
               </TwitterShareButton>
             </div>
@@ -96,21 +97,31 @@ export const Share = ({ closeModal, desc, link }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <img
+                  src="Instagram_img.png"
+                  className="new-footer-section-contact-logo"
+                  alt=""
+                />
                 <h1 className="Share_popup_media_title">Instagram</h1>
               </a>
             </div>
             <div className="Share_popup_single_media_div">
-              <WhatsappShareButton
-                url={link}
-                title={desc}
-                separator=":: "
-                style={{ marginRight: "1.2vw" }}
-              >
+              <WhatsappShareButton url={link} title={desc}>
+                <img
+                  src="Whatsapp_img.png"
+                  className="new-footer-section-contact-logo"
+                  alt=""
+                />
                 <h1 className="Share_popup_media_title">Whatsapp</h1>
               </WhatsappShareButton>
             </div>
             <div className="Share_popup_single_media_div">
               <EmailShareButton url={link} title={desc}>
+                <img
+                  src="Email_img.png"
+                  className="new-footer-section-contact-logo"
+                  alt=""
+                />
                 <h1 className="Share_popup_media_title">Email</h1>
               </EmailShareButton>
             </div>
