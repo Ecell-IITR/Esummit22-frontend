@@ -82,9 +82,9 @@ const Upload = ({ profileId, id, show, setShow }) => {
                       <input
                         type="file"
                         accept="image/*"
+                        className="Upload_input_Class"
                         onChange={(e) => {
                           handleInputChange(e);
-                          className = "Upload_input_Class";
                         }}
                       />
                     </div>
