@@ -8,7 +8,7 @@ export const EventDashboardCard = ({ title, isregistered, desc, link }) => {
       <div className="dashboard-event-head">
         <div className="dashboard-event-name">{title}</div>
         <div className={isregistered ? "dashboard-registered-event" : null}>
-          <p>{isregistered ? "Registered" : null}</p>
+          <div>{isregistered ? <img src="/verified.png" alt=""/> : null}</div>
         </div>
       </div>
 
