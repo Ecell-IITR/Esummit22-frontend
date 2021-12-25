@@ -2,6 +2,8 @@
 import CountUp, { useCountUp } from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
+import Divider from "../Divider";
+
 export const Counter = () => {
   const countertabs = [
     { number: 20, text: "EVENTS", suffix: "+" },
