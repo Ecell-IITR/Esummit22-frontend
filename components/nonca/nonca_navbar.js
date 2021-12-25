@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Profile from "../cap/cap_profile"
+import Profile from "../cap/cap_profile";
 import { NProfile } from "./noncaprofile";
 export default function NoncaNavbar() {
   const [activelist, setactivelist] = useState([true, false, false, false]);
@@ -7,7 +7,7 @@ export default function NoncaNavbar() {
   return (
     <div className="Ca_sidebar">
       <div className="noncanav-items">
-        <NProfile/>
+        <NProfile />
         <ul>
           <li>
             <div
@@ -28,7 +28,6 @@ export default function NoncaNavbar() {
             </div>
           </li>
 
-          
           <li>
             <div
               className={
@@ -49,7 +48,6 @@ export default function NoncaNavbar() {
               </div>
             </div>
           </li>
-          
         </ul>
       </div>
     </div>

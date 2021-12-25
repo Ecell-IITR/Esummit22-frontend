@@ -51,9 +51,10 @@ const Footer = () => {
           href="https://ecelliitr.org/"
           target="_blank"
           rel="noopener noreferrer"
-        >
-          <div className="new-footer-section-esummit-logo" />
-        </a>
+        ></a>
+        <div className="new-footer-section-esummit-logo">
+          <img src="summitlogo.png" alt="summitLogo" />
+        </div>
         <div>
           <div className="new-footer-section-contact-container new-footer-section-contact-container-additional-margin0">
             <div className="new-footer-section-contact-heading blinker-font">
@@ -147,7 +148,8 @@ const Footer = () => {
               PHONE
             </div>
             <div className="new-footer-section-contact-subheading">
-              Daksh: +91 93588 92607 <br /> Abhinandan: +91 80546 89033
+              Vinyas: <br /> <p>+91 98765 56789 </p> <br /> Sharma: <br />{" "}
+              <p> +91 98765 56789 </p>
             </div>
           </div>
           <div className="new-footer-section-contact-container new-footer-section-contact-container-additional-margin1">
