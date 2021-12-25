@@ -2,13 +2,12 @@ import CustomGradientBtn from "./../customGradientBtn";
 import Link from "next/link";
 export const EventDashboardCard = ({ title, isregistered, desc, link }) => {
   let x = "/events/" + link;
-
   return (
     <div className="dashboard-event-main-container">
       <div className="dashboard-event-head">
         <div className="dashboard-event-name">{title}</div>
         <div className={isregistered ? "dashboard-registered-event" : null}>
-          <div>{isregistered ? <img src="/verified.png" alt=""/> : null}</div>
+          <p>{isregistered ? "Registered" : null}</p>
         </div>
       </div>
 

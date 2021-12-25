@@ -77,8 +77,15 @@
   line-height: 0.66rem;
   height: 22px;
   width: 100px;
-  top: 10px;
-  right: -60px;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  p {
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 6px;
+  }
+  top: 20px;
+  right: -20px;
 }
 
 @media only screen and (max-width: 480px) {
