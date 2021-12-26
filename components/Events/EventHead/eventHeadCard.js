@@ -81,7 +81,9 @@ export const EventHead = ({
                 alt="previous"
               />
             </Link>
-            {getPreviousEventName()}
+            <Link href={`/events/${getPreviousEventLink()}`} passHref>
+              {getPreviousEventName()}
+            </Link>
           </button>
         </div>
         <div>
@@ -89,7 +91,9 @@ export const EventHead = ({
             <Link href={`/events/${getNextEventLink()}`} passHref>
               <img className="previous-next" src="/next.png" alt="next" />
             </Link>
-            {getNextEventName()}
+            <Link href={`/events/${getNextEventLink()}`} passHref>
+              {getNextEventName()}
+            </Link>
           </button>
         </div>
         <div className="centered">
