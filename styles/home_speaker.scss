@@ -17,8 +17,10 @@
 .home-view-all-button {
   width: 166px;
   height: 56px;
-  margin: auto;
-  margin-bottom: 100px;
+  margin: auto auto 100px;
+  
+  display: flex;
+  justify-content: center;
 }
 
 .Home_Speaker_page_title {
