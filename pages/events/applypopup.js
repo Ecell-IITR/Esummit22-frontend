@@ -83,13 +83,16 @@ const Apply = ({ Show, setShow, detailsEvents }) => {
                       {detailsEvents && (
                         <>
                           <a
+                            className="blue-link-google-form"
                             href={detailsEvents[0].google_form}
                             target="_blank"
+                            rel="noreferrer"
                           >
-                            Click here
+                            CLICK HERE
                           </a>{" "}
-                          to fill the Google Form for{" "}
-                          {detailsEvents[0].event_name} registration :{" "}
+                          {""}
+                          to fill the Google Form for
+                          {detailsEvents[0].event_name} registration.
                         </>
                       )}
                     </div>
