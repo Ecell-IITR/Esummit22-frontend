@@ -83,12 +83,21 @@
 .EventsTimeline-subcontainer-round-details {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:space-around;
   margin-left: 3%;
   margin-right: 3%;
 }
+.EventsTimeline-subcontainer-round-details2 {
+ 
+  justify-content:start;
+
+}
 .display-none{
   display:none;
+}
+.EventsTimeline-subcontainer-margin{
+  width:4rem;
+  margin-right:15rem
 }
 .EventsTimeline-subcontainer-round-details-content {
   width: 300px;
