@@ -6,7 +6,7 @@ export const getServerSideProps = async (ctx) => {
   const { data } = await FetchApi("GET", ALL_EVENTS_API, null);
 
   const fields = data.CompetitiveEvents.map(({ end_point }) => ({
-    loc: `${HOST_URL}/event/${end_point}`,
+    loc: `${HOST_URL}/events/${end_point}`,
     lastmod: new Date().toISOString(),
   }));
 
