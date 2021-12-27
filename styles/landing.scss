@@ -15,13 +15,14 @@
 }
 
 .rotate {
-  background-size: 35vh;
-  opacity: 0.7;
+  background-size: 30vh;
+  opacity: 0.6;
   height: 70vh;
   z-index: -1;
   position: absolute;
   background-image: url("/webelement.png");
-  animation: rotate 10s infinite linear;
+  animation: rotate 20s infinite linear;
+  transition-timing-function: ease;
 }
 
 @keyframes rotate {
