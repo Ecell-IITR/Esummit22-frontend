@@ -1,6 +1,6 @@
 .EventsTimeline-container {
   // width: 100%;
-  height: 70vh;
+  height: 55vh;
   color: white;
   position: relative;
 }
@@ -49,7 +49,7 @@
   flex-direction: column;
   padding: 2%;
   width: 546px;
-  height: 455px;
+  height: 50vh;
   overflow-y: scroll;
 }
 // .Timeline-Intersect {
@@ -136,7 +136,7 @@
 
 @media screen and (max-width: 1024px), screen and (min-height: 800px) {
   .EventsTimeline-container {
-    height: 35vh;
+    height: 57vh;
   }
   .EventsTimeline-subcontainer-round-logo {
     display: none;
