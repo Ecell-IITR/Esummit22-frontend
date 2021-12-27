@@ -62,8 +62,9 @@
 .details_sponsors {
   display: flex;
   flex-direction: row;
+  
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   color: white;
   margin-top: 3%;
   width: 70%;

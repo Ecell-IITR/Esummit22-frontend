@@ -91,7 +91,14 @@ const Timeline_card = ({ detailsEvents }) => {
             }}
           />
         </div>
+
         <div className={x==="12th August"? "display-none": "EventsTimeline-subcontainer-round-details"}>
+
+
+        <div className={x==="12th August"? "display-none": "EventsTimeline-subcontainer-round-details"}>
+        
+
+
           <div className="EventsTimeline-subcontainer-round-details-content">
             <div className="EventsTimeline-subcontainer-round-details-content-heading">
               EVENT TYPE
