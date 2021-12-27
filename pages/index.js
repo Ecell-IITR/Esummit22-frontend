@@ -57,6 +57,7 @@ export default function Home({ allEvents, allSpeakers }) {
 
         <img src="/rightLine.svg" alt="rightLine" />
       </section>
+      <hr />
       <HomeSpeakers allSpeakers={allSpeakers} />
       <Link href="/speakers" passHref>
         <div className="home-view-all-button">
