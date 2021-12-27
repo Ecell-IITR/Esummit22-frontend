@@ -22,13 +22,11 @@ export default function Home({ allEvents, allSpeakers }) {
         <img src="/leftLine.svg" alt="leftLine" className="mainPage_side_img" />
 
         <div className="flex flex-col items-center text-center mx-auto">
-          <p className="text-lg text-white font-bold uppercase heading-date">
-            21-23 January
-          </p>
-          <h1 className="text-4xl text-white font-bold uppercase heading-esummit">
-            E-summit&apos;22
-          </h1>
-          <img src="/headLine.svg" id="headLine" alt="headLine" />
+          <img
+            className="landing-page-text-png"
+            src="webthemepng.png"
+            alt="landing page text"
+          />
           {!user ? (
             <Link href="/register" passHref>
               <div className="landing-register-button">
@@ -57,11 +55,7 @@ export default function Home({ allEvents, allSpeakers }) {
           )}
         </div>
 
-        <img
-          src="/rightLine.svg"
-          alt="rightLine"
-          className="mainPage_side_img"
-        />
+        <img src="/rightLine.svg" alt="rightLine" />
       </section>
       <HomeSpeakers allSpeakers={allSpeakers} />
       <Link href="/speakers" passHref>

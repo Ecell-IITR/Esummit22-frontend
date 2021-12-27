@@ -8,9 +8,10 @@
   padding: 5vw 10vw;
   height: 100vh;
   margin-top: 5vh;
-  background-image: url("/giff.gif");
+  background-image: url('/giff.gif');
+  background-size: 35vw;
   background-repeat: no-repeat;
-  background-position: center;
+	background-position: center center;
 }
 .landing-register-button {
   background: transparent;
@@ -39,6 +40,10 @@
   animation-iteration-count: infinite;
   color: black;
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+}
+.landing-page-text-png{
+  width: 35vw;
+  align-items: center;
 }
 @keyframes shake {
   0% {
@@ -86,6 +91,8 @@
 @media only screen and (max-width: 768px) {
   .landing {
     margin-top: 15vh;
+    background-position: center 10vh;
+    background-size: 50vw;
     // height: 60vh;
     background-size: 80%;
   }
@@ -97,7 +104,11 @@
     margin-top: 7rem;
     border-radius: 3vw 1.5vw 3vw 0px;
   }
+  .landing-page-text-png{
+    width: 60vw;
+  }
 }
+
 
 @media screen and (width: 768px) {
   .mainPage_side_img {
