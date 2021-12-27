@@ -63,7 +63,7 @@ export default function Home({ allEvents, allSpeakers }) {
           className="mainPage_side_img"
         />
       </section>
-      <hr/>
+      <hr />
       <HomeSpeakers allSpeakers={allSpeakers} />
       <Link href="/speakers" passHref>
         <div className="home-view-all-button">
