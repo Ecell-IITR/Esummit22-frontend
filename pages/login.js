@@ -75,7 +75,7 @@ const Login = () => {
         if (res.data.role === "CA") {
           router.push("/cap/leaderboard");
         } else {
-          router.push("/dashboard");
+          router.push("/nonca/events");
         }
         // if (String(localStorage.getItem("userRoleType")) === "CA") {
         //   const { history } = this.props;

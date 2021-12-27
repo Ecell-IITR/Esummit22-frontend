@@ -8,11 +8,28 @@ import EventHeader from "../../components/Events/EventHead";
 import Eventrules from "../../components/Events/eventRules";
 import Perk from "../../components/perks";
 import Timeline_card from "../../components/timeline";
+import { ALL_EVENTS_API } from "../../utils/APIs";
+import React, { useState } from "react";
+import Apply from "./applypopup";
 
-export default function EventsDetails({ detailsEvents }) {
+export default function EventsDetails({
+  detailsEvents,
+  CompetitiveEvents,
+  SpeakingEvents,
+  WorkshopEvents,
+}) {
+  const [Show, setShow] = useState(false);
   return (
     <div className="event_detail_container">
-      <EventHeader detailsEvents={detailsEvents} />
+      <EventHeader
+        detailsEvents={detailsEvents}
+        CompetitiveEvents={CompetitiveEvents}
+        SpeakingEvents={SpeakingEvents}
+        WorkshopEvents={WorkshopEvents}
+        Show={Show}
+        setShow={setShow}
+      />
+      <Apply Show={Show} setShow={setShow} detailsEvents={detailsEvents} />
       <Content detailsEvents={detailsEvents} />
       <div className="details_container">
         <div className="details_about">ABOUT</div>
@@ -79,7 +96,12 @@ export default function EventsDetails({ detailsEvents }) {
         </div>
       ) : null}
       <div className="details_apply_now_button">
-        <div className="details_apply_now">
+        <div
+          onClick={() => {
+            setShow(true);
+          }}
+          className="details_apply_now"
+        >
           <CustomGradientBtn text="Apply Now" color="Black" />
         </div>
       </div>
@@ -96,10 +118,15 @@ export default function EventsDetails({ detailsEvents }) {
 export async function getServerSideProps({ params }) {
   const response = await fetch(`https://api.esummit.in/events/${params.slug}`);
   const detailsEvents = await response.json();
-
+  const res = await fetch(ALL_EVENTS_API);
+  const { CompetitiveEvents, SpeakingEvents, WorkshopEvents } =
+    await res.json();
   return {
     props: {
       detailsEvents,
+      CompetitiveEvents,
+      SpeakingEvents,
+      WorkshopEvents,
     },
   };
 }

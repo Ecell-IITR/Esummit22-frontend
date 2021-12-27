@@ -3,12 +3,14 @@ import NoncaNavbar from "../../components/nonca/nonca_navbar";
 import React, { useEffect, useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
 import { DASHBOARD_EVENT_API, NON_CA_PROFILE_API } from "../../utils/APIs";
+
 import { getAuthToken } from "../../utils";
 
 import EventDashboardCard from "../../components/dashboard/dashboardEventCard";
 import CustomGradientBtn from "../../components/customGradientBtn";
 
 const Event = () => {
+
   let isregistered = true;
   const [dashboardArr, setdashboardArr] = useState([]);
   const [registeredArr, setregisteredArr] = useState([]);
@@ -24,7 +26,7 @@ const Event = () => {
       "get",
       NON_CA_PROFILE_API,
       null,
-      "7101d5e9a376cdf30961cc35a75b0bbd9ccfc393"
+      getAuthToken()
     )
       .then((res) => {
         setregisteredArr(
@@ -35,7 +37,7 @@ const Event = () => {
   }, []);
   return (
     <>
-      <div className="Dashboard-event-head">Competations</div>
+      <div className="Dashboard-event-head">Competitions</div>
       <div className="Dashboard-underline"></div>
       <div className="Dashboard-events-main-container">
         <div className="Dashboard-events-nav-container">

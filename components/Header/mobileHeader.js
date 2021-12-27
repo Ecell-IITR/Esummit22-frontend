@@ -55,7 +55,7 @@ export const HeaderMobile = () => {
           </Link>
         </li>
         <li className="mobilenavMenu-items">
-          <Link href="/sponsors" passHref>
+          <Link href="/coming-soon-sponsors" passHref>
             <div className="mobilenavMenu-links">SPONSORS</div>
           </Link>
         </li>
@@ -86,6 +86,27 @@ export const HeaderMobile = () => {
             <li className="mobilenavMenu-items">
               <Link href="/cap/resources" passHref>
                 <div className="mobilenavMenu-links">CA RULEBOOK</div>
+              </Link>
+            </li>
+          </>
+        )}
+        {user && !isCA && (
+          <>
+            <li className="mobilenavMenu-items">
+              <Link href="/nonca/events" passHref>
+                <div className="mobilenavMenu-links mobilenavMenu-ca-tag">
+                  Dashboard
+                </div>
+              </Link>
+            </li>
+            <li className="mobilenavMenu-items">
+              <Link href="/nonca/events" passHref>
+                <div className="mobilenavMenu-links">EVENTS</div>
+              </Link>
+            </li>
+            <li className="mobilenavMenu-items">
+              <Link href="/nonca/resources" passHref>
+                <div className="mobilenavMenu-links">RESOURCES</div>
               </Link>
             </li>
           </>

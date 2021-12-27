@@ -25,6 +25,7 @@
   flex-direction: row;
   clip-path: polygon(0 20%, 90% 20%, 100% 0%, 100% 100%, 90% 80%, 0 80%);
   align-items: center;
+  cursor: pointer;
 }
 .nav-text-container-inactive {
   align-items: center;
@@ -32,6 +33,7 @@
   height: 10vh;
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 
 .nav_item_text {

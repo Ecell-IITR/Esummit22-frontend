@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Profile from "../cap/cap_profile";
+import Link from "next/link";
 import { NProfile } from "./noncaprofile";
 export default function NoncaNavbar() {
   const [activelist, setactivelist] = useState([true, false, false, false]);
@@ -23,7 +24,11 @@ export default function NoncaNavbar() {
                   setactivelist([true, false, false, false]);
                 }}
               >
-                <div className={activelist[0] ? "text_black" : ""}>Events</div>
+                <Link href={`/nonca/events`} passHref>
+                  <div className={activelist[0] ? "text_black" : ""}>
+                    Events
+                  </div>
+                </Link>
               </div>
             </div>
           </li>
@@ -42,9 +47,11 @@ export default function NoncaNavbar() {
                   setactivelist([false, false, true, false]);
                 }}
               >
-                <div className={activelist[2] ? "text_black" : ""}>
-                  Resources
-                </div>
+                <Link href={`/nonca/resources`} passHref>
+                  <div className={activelist[2] ? "text_black" : ""}>
+                    Resources
+                  </div>
+                </Link>
               </div>
             </div>
           </li>
