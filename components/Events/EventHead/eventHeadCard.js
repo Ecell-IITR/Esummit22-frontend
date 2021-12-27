@@ -73,24 +73,24 @@ export const EventHead = ({
           alt="ideastorm"
         />
         <div>
-          <button className="previous-event-button">
-            <Link href={`/events/${getPreviousEventLink()}`} passHref>
+          <Link href={`/events/${getPreviousEventLink()}`} passHref>
+            <button className="previous-event-button">
               <img
                 className="previous-next"
                 src="/previous.png"
                 alt="previous"
               />
-            </Link>
-            {getPreviousEventName()}
-          </button>
+              {getPreviousEventName()}
+            </button>
+          </Link>
         </div>
         <div>
-          <button className="next-event-button">
-            <Link href={`/events/${getNextEventLink()}`} passHref>
+          <Link href={`/events/${getNextEventLink()}`} passHref>
+            <button className="next-event-button">
               <img className="previous-next" src="/next.png" alt="next" />
-            </Link>
-            {getNextEventName()}
-          </button>
+              {getNextEventName()}
+            </button>
+          </Link>
         </div>
         <div className="centered">
           <div className="event-name">{detailsEvents[0].event_name}</div>
