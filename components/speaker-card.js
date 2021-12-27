@@ -13,10 +13,9 @@ const Speaker_card = ({ name, position, topic, date, time, image }) => {
         <div className="speaker-card-box-name">{name}</div>
         <div className="speaker-card-box-position">{position}</div>
         <div className="speaker-card-description-hidden">
-        {console.log(date)}
-          <div>Session Type : {topic != 'null' ? topic : "TBD"}</div>
-          <div>Date : {date != '2020-01-01' ? date : "TBD"}</div>
-          <div>Time : {time != '00:00:00' ? time : "TBD"}</div>
+          <div>Session Type : {topic != "null" ? topic : "TBD"}</div>
+          <div>Date : {date != "2020-01-01" ? date : "TBD"}</div>
+          <div>Time : {time != "00:00:00" ? time : "TBD"}</div>
         </div>
       </div>
     </div>
