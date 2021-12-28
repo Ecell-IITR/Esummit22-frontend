@@ -19,6 +19,7 @@ export default function Home({ allEvents, allSpeakers }) {
   return (
     <div>
       <section className="flex items-start justify-center landing overflow-hidden">
+        <div className="landing rotate "></div>
         <img src="/leftLine.svg" alt="leftLine" className="mainPage_side_img" />
 
         <div className="flex flex-col items-center text-center mx-auto">

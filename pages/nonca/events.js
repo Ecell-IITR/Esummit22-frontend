@@ -10,7 +10,6 @@ import EventDashboardCard from "../../components/dashboard/dashboardEventCard";
 import CustomGradientBtn from "../../components/customGradientBtn";
 
 const Event = () => {
-
   let isregistered = true;
   const [dashboardArr, setdashboardArr] = useState([]);
   const [registeredArr, setregisteredArr] = useState([]);
@@ -22,12 +21,7 @@ const Event = () => {
       .catch((err) => console.log(err));
   }, []);
   useEffect(() => {
-    FetchApi(
-      "get",
-      NON_CA_PROFILE_API,
-      null,
-      getAuthToken()
-    )
+    FetchApi("get", NON_CA_PROFILE_API, null, getAuthToken())
       .then((res) => {
         setregisteredArr(
           res.data[0].profile.dashboard_eventdashboardcard_registered_profile_of

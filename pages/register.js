@@ -140,6 +140,8 @@ export class Registration extends Component {
         if (String(localStorage.getItem("userRoleType")) === "CA") {
           window.location.href = "/cap/tasks";
         }
+        else 
+          window.location.href ="/nonca/events";
       })
       .catch((err) => {
         this.setState({

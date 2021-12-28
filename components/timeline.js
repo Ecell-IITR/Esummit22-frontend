@@ -92,10 +92,9 @@ const Timeline_card = ({ detailsEvents }) => {
           />
         </div>
 
+
         <div className="EventsTimeline-subcontainer-round-details">
          {console.log(x)}
-
-      
 
           <div className="EventsTimeline-subcontainer-round-details-content">
             <div className="EventsTimeline-subcontainer-round-details-content-heading">
@@ -112,21 +111,23 @@ const Timeline_card = ({ detailsEvents }) => {
             <div className="EventsTimeline-subcontainer-round-details-content-description">
               Registrations starts:{" "}
               {moment(
-                detailsEvents[0].event_rounds[round-1].start_date_time.toLocaleString(
-                  "en-US"
-                )
+                detailsEvents[0].event_rounds[
+                  round - 1
+                ].start_date_time.toLocaleString("en-US")
               ).format("Do MMMM")}
             </div>
           </div>
           <div className={x==="12th August"? "display-none": "EventsTimeline-subcontainer-round-details-content"}>
             <div className="EventsTimeline-subcontainer-round-details-content-heading">
-            REGISTRATION CLOSES
+              REGISTRATION CLOSES
             </div>
             <div className="EventsTimeline-subcontainer-round-details-content-description">
-            Registrations closes:{moment(
-                detailsEvents[0].event_rounds[round-1].end_date_time.toLocaleString(
-                  "en-US"
-                )
+
+              Registrations closes:{" "}
+              {moment(
+                detailsEvents[0].event_rounds[
+                  round - 1
+                ].end_date_time.toLocaleString("en-US")
               ).format("Do MMMM")}
                          </div>
           </div>
