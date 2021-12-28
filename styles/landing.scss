@@ -5,14 +5,38 @@
   font-size: 1.5em !important;
 }
 .landing {
+  z-index: 1;
   padding: 5vw 10vw;
   height: 100vh;
   margin-top: 5vh;
-  background-image: url("/giff.gif");
-  background-size: 35vw;
+  position: relative;
   background-repeat: no-repeat;
   background-position: center center;
 }
+
+.rotate {
+  background-size: 30vh;
+  opacity: 0.6;
+  height: 70vh;
+  z-index: -1;
+  position: absolute;
+  background-image: url("/webelement.png");
+  animation: rotate 20s infinite linear;
+  transition-timing-function: ease;
+}
+
+@keyframes rotate {
+  0%{
+    transform: scale(1.0) rotate(0deg);
+  }
+  50%{
+    transform: scale(2.0) rotate(360deg);
+  }
+  100% {
+    transform: scale(1.0) rotate(720deg);
+  }
+}
+
 .landing-register-button {
   background: transparent;
   border: solid 1px #f5e4ca;
@@ -31,9 +55,6 @@
   font-weight: 800;
   font-size: 1em;
   border-radius: 0.5vw 0.25vw 0.5vw 0px;
-  // background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
   color: #f5e4ca;
   white-space: nowrap;
 }
@@ -91,15 +112,17 @@
 }
 @media only screen and (max-width: 768px) {
   .landing {
-    margin-top: 15vh;
-    background-position: center 10vh;
-    background-size: 50vw;
-    // height: 60vh;
+    margin-top: 5vh;
     background-size: 80%;
   }
   .heading-date {
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
+
+  .rotate {
+    width: 50vw;
+  }
+
   .landing-register-button {
     width: 25vh;
     margin-top: 7rem;
@@ -113,5 +136,11 @@
 @media screen and (width: 768px) {
   .mainPage_side_img {
     width: 9vw;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .rotate {
+    width: 40vw;
   }
 }
