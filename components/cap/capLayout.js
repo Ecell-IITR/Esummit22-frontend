@@ -44,6 +44,7 @@ const CapLayout = ({ children }) => {
             id={apiArr?.esummit_id}
             college={apiArr?.college}
             rank={rank}
+            invite_id={apiArr?.invite_id}
           />
         </div>
         {children}
