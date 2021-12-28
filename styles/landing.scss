@@ -8,10 +8,10 @@
   padding: 5vw 10vw;
   height: 100vh;
   margin-top: 5vh;
-  background-image: url('/giff.gif');
+  background-image: url("/giff.gif");
   background-size: 35vw;
   background-repeat: no-repeat;
-	background-position: center center;
+  background-position: center center;
 }
 .landing-register-button {
   background: transparent;
@@ -42,7 +42,7 @@
   color: black;
   background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
 }
-.landing-page-text-png{
+.landing-page-text-png {
   width: 35vw;
   align-items: center;
 }
@@ -105,11 +105,10 @@
     margin-top: 7rem;
     border-radius: 3vw 1.5vw 3vw 0px;
   }
-  .landing-page-text-png{
+  .landing-page-text-png {
     width: 60vw;
   }
 }
-
 
 @media screen and (width: 768px) {
   .mainPage_side_img {

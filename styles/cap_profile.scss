@@ -14,11 +14,7 @@
 .dot {
   height: 3.5vw;
   width: 3.5vw;
-  background: linear-gradient(
-    124.76deg,
-    #f5e4ca 12.61%,
-    #dbba89 63.66%
-  );
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   border-radius: 50%;
   display: inline-block;
 }
@@ -31,15 +27,14 @@
   margin-left: -3.35vw;
   margin-bottom: 2.5px;
 }
-.nprofile-image{
-  color:#fff;
-  font-weight:500;
+.nprofile-image {
+  color: #fff;
+  font-weight: 500;
   font-size: 2vw;
   margin-top: -3.6vw;
   margin-left: 1.2vw;
-
 }
-.nprofile-circle{
+.nprofile-circle {
   width: 10px;
   height: 10px;
 }
@@ -62,7 +57,7 @@
   line-height: 22px;
   display: flex;
   margin-left: 1vw;
-  margin-bottom:20px ;
+  margin-bottom: 20px;
 }
 .nprofile-white-text3 {
   margin-right: 30px;
@@ -73,8 +68,7 @@
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  // margin-top: 150px;
+  justify-content: center;
   .profile-image {
     width: 110px;
     height: 100px;
@@ -174,15 +168,13 @@
 }
 @media screen and (max-width: 768px) {
   .dot {
-    
     display: none;
   }
   .dot1 {
-   display: none;
-  }
-  .nprofile-image{
     display: none;
-  
+  }
+  .nprofile-image {
+    display: none;
   }
   .nprofile-white-text {
     margin-top: 20px;

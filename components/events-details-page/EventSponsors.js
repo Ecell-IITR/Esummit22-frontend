@@ -1,6 +1,6 @@
 import React from "react";
 
-export const EventSponsor = ({ img , title }) => {
+export const EventSponsor = ({ img, title }) => {
   return (
     <div className="sponsor_main">
       <div className="img_div_behind">

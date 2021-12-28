@@ -22,7 +22,7 @@
   flex-basis: 30%;
 }
 
-.sponsorspage-coming-soon{
+.sponsorspage-coming-soon {
   display: flex;
   height: 73vh;
   justify-content: center;
@@ -30,24 +30,24 @@
   margin-left: 20px;
   margin-right: 20px;
   position: relative;
-  img{
+  img {
     position: absolute;
     width: 44vw;
     top: -100px;
   }
 }
 
-@media only  screen and (max-width:540px) {
-  .sponsorspage-coming-soon{
-    img{
+@media only screen and (max-width: 540px) {
+  .sponsorspage-coming-soon {
+    img {
       width: 90vw;
     }
   }
 }
 
-@media only  screen and (width:768px) {
-  .sponsorspage-coming-soon{
-    img{
+@media only screen and (width: 768px) {
+  .sponsorspage-coming-soon {
+    img {
       width: 70vw;
     }
   }
