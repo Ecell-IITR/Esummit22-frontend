@@ -5,7 +5,7 @@ export const SITE_DESCRIPTION = `E-Cell IIT Roorkee is Asia's one of the Largest
 const defaultSEOConfig = {
   defaultTitle: "E-Summit 22 | IIT Roorkee ",
   description: SITE_DESCRIPTION,
-
+  authorName: 'Tech Team 2021-22 | E-Cell IIT Roorkee',
   openGraph: {
     type: "website",
     locale: "en_IN",
