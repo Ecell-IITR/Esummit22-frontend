@@ -83,7 +83,6 @@ export default function EventsDetails({
           <div className="details_about">SPONSORS</div>
           <div className="details_sponsors">
             {detailsEvents[0].event_partners.map((det, id) => {
-              console.log(det);
               return <EventSponsor img={det.image} title={det.title} />;
             })}
           </div>
@@ -122,7 +121,6 @@ export async function getServerSideProps({ params }) {
   const response = await fetch(`https://api.esummit.in/events/${params.slug}`);
   const detailsEvents = await response.json();
   const res = await fetch(ALL_EVENTS_API);
-  console.log("i work");
   const { CompetitiveEvents, SpeakingEvents, WorkshopEvents } =
     await res.json();
 

@@ -60,7 +60,6 @@ export const MobileEventHead = ({ detailsEvents, CompetitiveEvents }) => {
   return (
     <div className="mobile-event-head">
       <div className="mobile-event-image-container">
-        {console.log(detailsEvents[0].event_name)}
         <img
           className="mobile-event-image"
           src={detailsEvents[0].background_image}

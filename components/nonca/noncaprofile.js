@@ -10,7 +10,7 @@ export const NProfile = ({ name = "", points, id, college, rank }) => {
     FetchApi("get", NON_CA_PROFILE_API, null, getAuthToken())
       .then((res) => {
         setcaData(res.data[0]);
-        console.log(res.data[0]);
+       // console.log(res.data[0]);
       })
       .catch((err) => console.log(err));
   }, []);
