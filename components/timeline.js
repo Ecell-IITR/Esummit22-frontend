@@ -3,12 +3,12 @@ import moment from "moment";
 
 const Timeline_card = ({ detailsEvents }) => {
   const [round, setRound] = useState(1);
-  let x=moment(
+  let roundDate=moment(
     detailsEvents[0].event_rounds[round-1].start_date_time.toLocaleString(
       "en-US"
     )
   ).format("Do MMMM")
-  console.log(x)
+  
   return (
     <div className="EventsTimeline-container">
       <div className="EventsTimeline-subcontainer">
@@ -94,7 +94,7 @@ const Timeline_card = ({ detailsEvents }) => {
 
 
         <div className="EventsTimeline-subcontainer-round-details">
-         {console.log(x)}
+       
 
           <div className="EventsTimeline-subcontainer-round-details-content">
             <div className="EventsTimeline-subcontainer-round-details-content-heading">
@@ -104,7 +104,7 @@ const Timeline_card = ({ detailsEvents }) => {
               {detailsEvents[0].tagline}
             </div>
           </div>
-          <div className={x==="12th August"? "display-none" :"EventsTimeline-subcontainer-round-details-content"}>
+          <div className={roundDate==="12th August"? "display-none" :"EventsTimeline-subcontainer-round-details-content"}>
             <div className="EventsTimeline-subcontainer-round-details-content-heading">
               REGISTRATION STARTS
             </div>
@@ -117,7 +117,7 @@ const Timeline_card = ({ detailsEvents }) => {
               ).format("Do MMMM")}
             </div>
           </div>
-          <div className={x==="12th August"? "display-none": "EventsTimeline-subcontainer-round-details-content"}>
+          <div className={roundDate==="12th August"? "display-none": "EventsTimeline-subcontainer-round-details-content"}>
             <div className="EventsTimeline-subcontainer-round-details-content-heading">
               REGISTRATION CLOSES
             </div>
