@@ -11,6 +11,8 @@ import Timeline_card from "../../components/timeline";
 import { ALL_EVENTS_API } from "../../utils/APIs";
 import React, { useState } from "react";
 import Apply from "./applypopup";
+import { NextSeo } from "next-seo";
+import { stripHtml } from "string-strip-html";
 
 export default function EventsDetails({
   detailsEvents,
@@ -21,6 +23,24 @@ export default function EventsDetails({
   const [Show, setShow] = useState(false);
   return (
     <div className="event_detail_container">
+      <NextSeo
+        title={"E-Summit 22 | " + detailsEvents[0].event_name}
+        description={stripHtml(detailsEvents[0].card_description).result}
+        canonical={`https://www.esummit.in/events/${detailsEvents[0].end_point}`}
+        openGraph={{
+          url: `https://www.esummit.in/events/${detailsEvents[0].end_point}`,
+          title: detailsEvents[0].card_name,
+          description: stripHtml(detailsEvents[0].card_description).result,
+          images: [
+            {
+              url: detailsEvents[0].background_image,
+              alt: detailsEvents[0].end_point,
+              type: "image/jpeg/png",
+            },
+          ],
+          site_name: `${detailsEvents[0].event_name} | E-Summit 22 IITR`,
+        }}
+      />
       <EventHeader
         detailsEvents={detailsEvents}
         CompetitiveEvents={CompetitiveEvents}
@@ -83,7 +103,9 @@ export default function EventsDetails({
           <div className="details_about">SPONSORS</div>
           <div className="details_sponsors">
             {detailsEvents[0].event_partners.map((det, id) => {
-              return <EventSponsor img={det.image} title={det.title} />;
+              return (
+                <EventSponsor img={det.image} title={det.title} key={id} />
+              );
             })}
           </div>
         </div>
@@ -113,6 +135,7 @@ export default function EventsDetails({
           <EventCoordinator detailsEvents={detailsEvents} />
         </div>
       ) : null}
+      {console.log(detailsEvents[0])}
     </div>
   );
 }

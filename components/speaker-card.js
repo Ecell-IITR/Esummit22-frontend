@@ -5,9 +5,13 @@ const Speaker_card = ({ name, position, topic, date, time, image }) => {
         <img
           src="Ellipse.png"
           className="speaker-card-box1-background"
-          alt=""
+          alt="speaker background image"
         />
-        <img src={image} className="speaker-card-box1-photo" alt="" />
+        <img
+          src={image}
+          className="speaker-card-box1-photo"
+          alt={`${name} speaker image`}
+        />
       </div>
       <div className="speaker-card-box">
         <div className="speaker-card-box-name">{name}</div>
