@@ -2,19 +2,27 @@ import React from "react";
 import Sponsor from "../components/sponsors-card";
 import Footer from "../components/footer";
 import { NextSeo } from "next-seo";
+import Content from "../components/content";
 
 export default function Sponsors() {
   <NextSeo
     title="E-Summit'22 Sponsors"
-    description="GeeksforGeeks, Codingal, Divami Labs, Amar Ujala and Venture Folks are the companies partnering with E-Cell to conduct E-Summit'22."
+    description=" Our grand event of E-summit'22 is organised under patronage of Start-up India, UNESCO with TIDES IITR Alumni Association etc. as principal sponsors, Codingal, Callido etc. as event partners and many other companies as service, platform,     community and media partners."
     canonical={`https://www.esummit.in/sponsors`}
     openGraph={{
       url: `https://www.esummit.in/sponsors`,
       title: "Sponsors",
       description:
-        "GeeksforGeeks, Codingal, Divami Labs, Amar Ujala and Venture Folks are the companies partnering with E-Cell to conduct E-Summit'22.",
+        "GeeksforGeeks, Codingal, Divami Labs, Amar Ujala and Venture Folks are the companies partnering with E-Cell to conduct E-Summit'22. ",
       site_name: `Sponsors E-Summit'22`,
     }}
+    additionalMetaTags={[
+      {
+        name: "Sponsors Page",
+        content:
+          "Principal Sponsors, Media Sponsors, Event Sponsors, Service Sponsors, Platform Sponsors, Community Sponsors.",
+      },
+    ]}
   />;
   const sponsorsPatronage = [
     {
