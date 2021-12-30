@@ -14,7 +14,11 @@ export const Content = ({ detailsEvents }) => {
         >
           TIMELINE
         </a>
-        <img className="content-main-elements-img" src="/circle.png" />
+        <img
+          className="content-main-elements-img"
+          src="/circle.png"
+          alt="circle image"
+        />
         <a
           className="content-main-elements-links"
           href="#criteria"
@@ -22,7 +26,11 @@ export const Content = ({ detailsEvents }) => {
         >
           ELIGIBILITY CRITERIA
         </a>
-        <img className="content-main-elements-img-mobile" src="/circle.png" />
+        <img
+          className="content-main-elements-img-mobile"
+          src="/circle.png"
+          alt="circle image"
+        />
         <a
           className="content-main-elements-links"
           href="#perks"
@@ -30,7 +38,11 @@ export const Content = ({ detailsEvents }) => {
         >
           PERKS
         </a>
-        <img className="content-main-elements-img" src="/circle.png" />
+        <img
+          className="content-main-elements-img"
+          src="/circle.png"
+          alt="circle image"
+        />
         <a
           className="content-main-elements-links"
           href="#rules"
@@ -38,7 +50,11 @@ export const Content = ({ detailsEvents }) => {
         >
           RULES
         </a>
-        <img className="content-main-elements-img" src="/circle.png" />
+        <img
+          className="content-main-elements-img"
+          src="/circle.png"
+          alt="circle image"
+        />
         <a
           className="content-main-elements-links"
           href="#sponsors"
@@ -46,7 +62,11 @@ export const Content = ({ detailsEvents }) => {
         >
           SPONSORS
         </a>
-        <img className="content-main-elements-img" src="/circle.png" />
+        <img
+          className="content-main-elements-img"
+          src="/circle.png"
+          alt="circle image"
+        />
         <a
           className="content-main-elements-links"
           href="#faqs"
@@ -54,7 +74,11 @@ export const Content = ({ detailsEvents }) => {
         >
           FAQ
         </a>
-        <img className="content-main-elements-img" src="/circle.png" />
+        <img
+          className="content-main-elements-img"
+          src="/circle.png"
+          alt="circle image"
+        />
         <a
           className="content-main-elements-links"
           href="#contacts"
