@@ -16,6 +16,7 @@ const Timeline_card = ({ detailsEvents }) => {
                 round === 1 ? "Timeline-img" : "Timeline-nodisplay"
               }`}
               src="/Group.svg"
+              alt="timeline icon"
             />
             <div
               className={`Rounds-container ${
@@ -27,7 +28,11 @@ const Timeline_card = ({ detailsEvents }) => {
           </div>
           {detailsEvents[0].event_rounds.length - 1 > 0 ? (
             <>
-              <img className="Timeline-Intersect" src="/Intersect.svg" />
+              <img
+                className="Timeline-Intersect"
+                src="/Intersect.svg"
+                alt="timeline intersect image"
+              />
 
               <div
                 className="EventsTimeline-subcontainer-rounds-heading-icon"
@@ -38,6 +43,7 @@ const Timeline_card = ({ detailsEvents }) => {
                     round === 2 ? "Timeline-img" : "Timeline-nodisplay"
                   }`}
                   src="/Group.svg"
+                  alt="timeline icon"
                 />
                 <div
                   className={`Rounds-container ${
@@ -60,6 +66,7 @@ const Timeline_card = ({ detailsEvents }) => {
                         round === 3 ? "Timeline-img" : "Timeline-nodisplay"
                       }`}
                       src="/Group.svg"
+                      alt="timeline icon"
                     />
                     <div
                       className={`Rounds-container ${
@@ -126,6 +133,7 @@ const Timeline_card = ({ detailsEvents }) => {
           <img
             className="EventsTimeline-subcontainer-round-logo-image"
             src="/timelineicon.png"
+            alt="timeline icon"
           />
         </div>
       </div>

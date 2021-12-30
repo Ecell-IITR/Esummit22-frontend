@@ -78,7 +78,7 @@ const Footer = () => {
                 <img
                   src="facebook.png"
                   className="new-footer-section-contact-logo"
-                  alt=""
+                  alt="facebook icon"
                 />
               </a>
               <a
@@ -90,7 +90,7 @@ const Footer = () => {
                 <img
                   src="Twitter.png"
                   className="new-footer-section-contact-logo"
-                  alt=""
+                  alt="twitter icon"
                 />
               </a>
 
@@ -103,7 +103,7 @@ const Footer = () => {
                 <img
                   src="Instagram.png"
                   className="new-footer-section-contact-logo"
-                  alt=""
+                  alt=" instagram icon"
                 />
               </a>
               <a
@@ -115,7 +115,7 @@ const Footer = () => {
                 <img
                   src="LinkedIN.png"
                   className="new-footer-section-contact-logo"
-                  alt=""
+                  alt="linkedin icon"
                 />
               </a>
               <a
@@ -127,7 +127,7 @@ const Footer = () => {
                 <img
                   src="Youtube.png"
                   className="new-footer-section-contact-logo"
-                  alt=""
+                  alt="youtube icon"
                 />
               </a>
             </div>
