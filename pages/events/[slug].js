@@ -41,13 +41,14 @@ export default function EventsDetails({
           ],
           site_name: `${detailsEvents[0].event_name} | E-Summit 22 IITR`,
         }}
-        additionalMetaTags= {[
+        
+      />
+    { detailsEvents[0].event_seo!="" || detailsEvents[0].event_seo!=null ? <NextSeo additionalMetaTags= {[
           {
             name: "keywords",
             content: detailsEvents[0].event_seo,
               
-          }]}
-      />
+          }]}/>:""}
       <EventHeader
         detailsEvents={detailsEvents}
         CompetitiveEvents={CompetitiveEvents}
@@ -142,7 +143,7 @@ export default function EventsDetails({
           <EventCoordinator detailsEvents={detailsEvents} />
         </div>
       ) : null}
-      {console.log(detailsEvents[0])}
+    
     </div>
   );
 }
