@@ -4,12 +4,11 @@ import Footer from "../components/footer";
 import { SPEAKERS_API } from "../utils/APIs";
 import { NextSeo } from "next-seo";
 
-
 export default function Speakers({ speakers }) {
   return (
     <div>
       <div className="bg-black text-white  Speaker_page_container">
-        <div className="Speaker_page_title">Speakers</div>
+        <h1 className="Speaker_page_title">Speakers</h1>
         <div className="Speaker_Card_Container">
           {speakers.map((det, id) => {
             return (
