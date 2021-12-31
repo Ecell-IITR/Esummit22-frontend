@@ -30,9 +30,7 @@ export const team = ({ teamMembers }) => {
   />;
   return (
     <div>
-      <div className="esummit-team">
-        <p>E-SUMMIT TEAM</p>
-      </div>
+      <h1 className="esummit-team">E-SUMMIT TEAM</h1>
       <div className="team-members">
         {teamMembers.map((member) => (
           <TeamMemberCard
