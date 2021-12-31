@@ -42,7 +42,7 @@ export const LaptopHeader = () => {
     <div className="navbar-container" id="navbar">
       <Link href="/" className="navbar-logo-link" passHref>
         <img
-          src="/fete-of-fortitude.png"
+          src="/Esummitlogofinal.png"
           className="navbar-logo"
           alt="E summit 22 fete of fortitude"
         />
