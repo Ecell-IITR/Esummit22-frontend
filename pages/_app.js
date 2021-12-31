@@ -43,8 +43,7 @@ function MyApp({ Component, pageProps }) {
         </Script>
         <Header />
         <Component {...pageProps} />
-        {/* <Footer /> */}
-        {/* <PayNowCard /> */}
+        <PayNowCard />
       </MobileProvider>
     </AuthContext.Provider>
   );

@@ -9,6 +9,7 @@ import { ALL_EVENTS_API, SPEAKERS_API } from "../utils/APIs";
 import FetchApi from "../utils/fetchAPI";
 import { getUserRoleType } from "../utils";
 import { AuthContext } from "../utils/auth-context";
+import PayNowPopup from "../components/payNowPopup";
 
 export default function Home({ allEvents, allSpeakers }) {
   const [animate, doAnimate] = useState(false);
@@ -66,6 +67,7 @@ export default function Home({ allEvents, allSpeakers }) {
         </div>
       </Link>
       <Counter />
+      <PayNowPopup />
       {"  "}
       <HomeEvents allEvents={allEvents} />
       <Link href="/events" passHref>
