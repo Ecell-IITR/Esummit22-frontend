@@ -23,7 +23,6 @@ export default function EventsDetails({
   const [Show, setShow] = useState(false);
   return (
     <div className="event_detail_container">
-      {console.log(detailsEvents[0])}
       <NextSeo
         title={"E-Summit 22 | " + detailsEvents[0].event_name}
         description={stripHtml(detailsEvents[0].card_description).result}
@@ -48,7 +47,7 @@ export default function EventsDetails({
             name: "keywords",
             content: detailsEvents[0].event_seo,
               
-          }]}/>:""}
+          }]}/>: null}
       <EventHeader
         detailsEvents={detailsEvents}
         CompetitiveEvents={CompetitiveEvents}
