@@ -9,6 +9,7 @@
     "lint": "pre-commit run --all-files"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.11.0",
     "@types/react-select": "^5.0.1",
     "axios": "^0.24.0",
     "bootstrap": "^5.1.3",
