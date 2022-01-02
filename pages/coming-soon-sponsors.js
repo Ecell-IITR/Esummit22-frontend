@@ -4,7 +4,7 @@ import Footer from "../components/footer";
 export default function Sponsors() {
   return (
     <div>
-      <div className="sponsorspage-title">SPONSORS</div>
+      <h1 className="sponsorspage-title">SPONSORS</h1>
       <div className="sponsorspage-coming-soon">
         <img src="/COM.png" alt="coming soon" />
       </div>

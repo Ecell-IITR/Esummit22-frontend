@@ -1,12 +1,36 @@
 import TeamMemberCard from "../components/teamCard";
 import { TEAM_API } from "../utils/APIs";
 import Footer from "../components/footer";
+import { NextSeo } from "next-seo";
 export const team = ({ teamMembers }) => {
+  <NextSeo
+    title="E-summit Team"
+    description="This is our enthusiastic team of E-summit'22 IIT Roorkee having unmatched qualilities of hardwork and teamwork. It includes Conveners, Co-Conveners, Technical and Design Heads, ESOC and Managers of Esummit."
+    canonical="https://www.esummit.in/team"
+    openGraph={{
+      url: "https://www.esummit.in/team",
+      title: "E-summit Team",
+      description: "A blend of devoted,hardworking and smart members.",
+      images: [
+        {
+          url: "teamPage.png",
+          alt: "E-summit'22 Team",
+          type: "image/jpeg/png",
+        },
+      ],
+      site_name: "E-summit'22 Team-Page",
+    }}
+    additionalMetaTags={[
+      {
+        name: "Team Page",
+        content:
+          "Convener, Co-Convener, Technical Head, Head of Designs, ESOC, Manager.",
+      },
+    ]}
+  />;
   return (
     <div>
-      <div className="esummit-team">
-        <p>E-SUMMIT TEAM</p>
-      </div>
+      <h1 className="esummit-team">E-SUMMIT TEAM</h1>
       <div className="team-members">
         {teamMembers.map((member) => (
           <TeamMemberCard
