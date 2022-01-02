@@ -53,9 +53,7 @@ const Footer = () => {
           rel="noopener noreferrer"
         ></a>
         <div className="new-footer-section-esummit-logo">
-
           <img src="Esummitlogofinal.png" alt="summitLogo" />
-
         </div>
         <div>
           <div className="new-footer-section-contact-container new-footer-section-contact-container-additional-margin0">
