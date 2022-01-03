@@ -18,11 +18,10 @@ export const PayNowPopup = ({show, setshow}) => {
             <form className="pay-now-popup-form">
               <div className="pay-now-popup-rows">
                 <input
-                onChange={()=>{setValue("https://rzp.io/l/student-pass")}}
+                onChange={()=>{setValue("https://rzp.io/l/tB65bay")}}
                   type="radio"
                   id="college-student"
                   name="payment"
-                  value="https://rzp.io/l/student-pass"
                 ></input>
                 <span className="pay-now-popup-checkmark"></span>
                 <label for="college-student" className="pay-now-popup-links">
@@ -31,11 +30,10 @@ export const PayNowPopup = ({show, setshow}) => {
               </div>
               <div className="pay-now-popup-rows">
                 <input
-                    onChange={()=>{setValue("https://rzp.io/l/esummit")}}
+                    onChange={()=>{setValue("https://rzp.io/l/PMWNWVjZ6")}}
                   type="radio"
                   id="professional"
                   name="payment"
-                  value="https://rzp.io/l/esummit"
                 ></input>
                 <span className="pay-now-popup-checkmark"></span>
                 <label for="professional" className="pay-now-popup-links">
@@ -44,11 +42,10 @@ export const PayNowPopup = ({show, setshow}) => {
               </div>
               <div className="pay-now-popup-rows">
                 <input
-                onChange={()=>{setValue("https://rzp.io/l/Expo-ESummit")}}
+                onChange={()=>{setValue("https://rzp.io/l/DTrTzvX")}}
                   type="radio"
                   id="startup-expo"
                   name="payment"
-                  value="https://rzp.io/l/Expo-ESummit"
                 ></input>
                 <span className="pay-now-popup-checkmark"></span>
                 <label for="startup-expo" className="pay-now-popup-links">
