@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  padding: 2.5%;
+  padding: 1% 2.5%;
   border: 1px solid wheat;
   border-radius: 24px 16px 16px 0px;
   background: black;
@@ -51,11 +51,14 @@
 }
 
 .pay-now-popup-cross {
+  font-size: 30px;
+  font-weight: 1000;
   position: absolute;
   width: 50px;
   right: 5%;
   background-color: inherit;
   cursor: pointer;
+  margin-top: 8px;
 }
 
 .pay-now-popup-rows {
@@ -91,16 +94,25 @@
 
 .pay-now-popup-links {
   background-color: inherit;
-  padding: 3% 10px;
+  padding: 3% 0px;
   cursor: pointer;
 }
-
+.pay-now-popup-rows input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    top: 29px;
+    left: 0;
+    z-index: 5;
+}
 .pay-now-popup-rows:hover input ~ .pay-now-popup-checkmark {
   background-color: #ccc !important;
 }
 
 .pay-now-popup-rows input:checked ~ .pay-now-popup-checkmark {
-  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+  background: wheat;
   border: 2px solid wheat;
 }
 
@@ -157,6 +169,7 @@
     left: 10%;
     right: 10%;
     height: 260px;
+    padding-top: 20px;
   }
   .pay-now-popup-header {
     font-size: 1rem;
@@ -184,9 +197,11 @@
     padding: 0rem 0.5rem;
   }
   .pay-now-popup-cross {
+    margin-top: 4px;
     top: 6.5%;
     right: 5.5%;
     width: 14px;
+    font-size: 16px;
   }
 }
 
