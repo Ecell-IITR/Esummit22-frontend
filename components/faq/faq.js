@@ -19,7 +19,7 @@ function Faq() {
         "E-Summit, being the flagship event of E-Cell IIT Roorkee, is held annually bringing together the academic community, new age entrepreneurs, industry leaders and investors on a common a platform",
     },
     {
-      question: "The dates are 6th to 10th of January, but what about COVID?",
+      question: "The dates are 21st to 23rd of January, but what about COVID?",
       answer:
         "Don't worry we've got you covered. This edition of E-Summit is completely online and you can attend it from any part of the world!",
     },
@@ -54,7 +54,7 @@ function Faq() {
             width: "80%",
             fontFamily: "Raleway",
             fontSize: "32px",
-            fontWeight: "600",
+            fontWeight: "500",
             lineHeight: "36px",
             textAlign: "left",
             marginBottom: "2%",
