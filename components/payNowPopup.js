@@ -21,7 +21,7 @@ export const PayNowPopup = ({show, setshow}) => {
               <div className="pay-now-popup-rows">
               <label for="college-student" className="pay-now-popup-links" >
                 <input
-                onChange={()=>{setValue("https://rzp.io/l/tB65bay")}}
+                onChange={()=>{setValue("https://rzp.io/l/kOZcOsguQ6")}}
                   type="radio"
                   id="college-student"
                   name="payment"
@@ -47,7 +47,7 @@ export const PayNowPopup = ({show, setshow}) => {
               <div className="pay-now-popup-rows">
               <label for="startup-expo" className="pay-now-popup-links" >
                 <input
-                onChange={()=>{setValue("https://rzp.io/l/DTrTzvX")}}
+                onChange={()=>{setValue("https://rzp.io/l/iitrstartupexpo")}}
                   type="radio"
                   id="startup-expo"
                   name="payment"
