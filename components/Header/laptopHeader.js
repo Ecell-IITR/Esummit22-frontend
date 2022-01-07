@@ -142,7 +142,7 @@ export const LaptopHeader = () => {
                 "sponsors" == active ? "active_hover_color" : "hover_color"
               }
             >
-              <Link href="/coming-soon-sponsors" passHref>
+              <Link href="/sponsors" passHref>
                 <pre> SPONSORS </pre>
               </Link>
 
