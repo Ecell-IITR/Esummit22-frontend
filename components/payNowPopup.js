@@ -17,6 +17,7 @@ export const PayNowPopup = ({show, setshow}) => {
             <div className="pay-now-popup-cross" onClick={()=>{setshow(false)}}>X</div>
             <form className="pay-now-popup-form">
               <div className="pay-now-popup-rows">
+              <label for="college-student" className="pay-now-popup-links">
                 <input
                 onChange={()=>{setValue("https://rzp.io/l/tB65bay")}}
                   type="radio"
@@ -24,11 +25,12 @@ export const PayNowPopup = ({show, setshow}) => {
                   name="payment"
                 ></input>
                 <span className="pay-now-popup-checkmark"></span>
-                <label for="college-student" className="pay-now-popup-links">
+                
                   College Student
                 </label>
               </div>
               <div className="pay-now-popup-rows">
+              <label for="professional" className="pay-now-popup-links">
                 <input
                     onChange={()=>{setValue("https://rzp.io/l/PMWNWVjZ6")}}
                   type="radio"
@@ -36,11 +38,12 @@ export const PayNowPopup = ({show, setshow}) => {
                   name="payment"
                 ></input>
                 <span className="pay-now-popup-checkmark"></span>
-                <label for="professional" className="pay-now-popup-links">
+                
                   A Professional
                 </label>
               </div>
               <div className="pay-now-popup-rows">
+              <label for="startup-expo" className="pay-now-popup-links">
                 <input
                 onChange={()=>{setValue("https://rzp.io/l/DTrTzvX")}}
                   type="radio"
@@ -48,7 +51,7 @@ export const PayNowPopup = ({show, setshow}) => {
                   name="payment"
                 ></input>
                 <span className="pay-now-popup-checkmark"></span>
-                <label for="startup-expo" className="pay-now-popup-links">
+                
                   Startup Expo Participant
                 </label>
               </div>
