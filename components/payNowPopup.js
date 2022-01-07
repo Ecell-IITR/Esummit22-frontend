@@ -13,7 +13,7 @@ export const PayNowPopup = ({show, setshow}) => {
         <div className="pay-now-popup-container">
           <div className="pay-now-popup-inner-container">
             <div className="pay-now-popup-flex-container">
-            <span className="pay-now-popup-header">I am a {text}</span>
+            <span className="pay-now-popup-header">I am a</span>
             {/* <img src="" alt="" className="pay-now-popup-cross" ></img> */}
             <div className="pay-now-popup-cross" onClick={()=>{setshow(false)}}>X</div>
             </div>
