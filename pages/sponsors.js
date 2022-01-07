@@ -55,7 +55,7 @@ export default function Sponsors() {
     },
     {
       title: "The Engineer Jokes",
-      format: ".png",
+      format: ".jpg",
     },
   ];
   const KnowledgePartner = [
@@ -71,7 +71,7 @@ export default function Sponsors() {
     },
     {
       title: "Sahicoin",
-      format: ".png",
+      format: ".jpg",
     },
   ];
   const CaseChallenge  = [
