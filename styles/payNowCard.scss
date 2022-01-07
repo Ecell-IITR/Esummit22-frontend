@@ -48,3 +48,15 @@
   z-index: 10000000000;
   margin-right: 3vh;
 }
+
+@media screen and (max-width: 540px) {
+  .pp-button{
+    min-width: 8rem;
+  }
+  .pp-text-1{
+    font-size: 0.6rem;
+  }
+  .pp-text-2{
+    font-size: 0.5rem;
+  }
+}
