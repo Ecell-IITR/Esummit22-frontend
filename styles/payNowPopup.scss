@@ -49,18 +49,32 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-
+.pay-now-popup-flex-container{
+  display: flex;
+  
+}
 .pay-now-popup-cross {
   font-size: 30px;
   font-weight: 1000;
-  position: absolute;
-  width: 50px;
+ 
+  width: 5%;
   right: 5%;
+  
   background-color: inherit;
   cursor: pointer;
-  margin-top: 8px;
+  padding-top: 5px;
 }
+body.modal-open {
+  
+  position: fixed;
+}
+body.viewport-lg {
 
+  position: absolute; 
+}
+body.modal-open {
+  overflow: hidden !important;
+}
 .pay-now-popup-rows {
   width: 100%;
   font-size: 1.4rem;
@@ -94,8 +108,9 @@
 
 .pay-now-popup-links {
   background-color: inherit;
-  padding: 3% 0px;
+  padding: 2% 0px;
   cursor: pointer;
+  z-index: 5;
 }
 .pay-now-popup-rows input{
     position: absolute;

@@ -4,6 +4,7 @@ export default function PayNowCard() {
   const [show, setShow] = useState(false);
   return (
     <>
+    <PayNowPopup show = {show} setshow={setShow} />
       <div className="pay-outer-container" onClick={()=>{setShow(true)}}>
         <div className="pp-button">
           <div className="pp-text">
@@ -12,7 +13,7 @@ export default function PayNowCard() {
           </div>
         </div>
       </div>
-      <PayNowPopup show = {show} setshow={setShow} />
+      
     </>
   );
 }
