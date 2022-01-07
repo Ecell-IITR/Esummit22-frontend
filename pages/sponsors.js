@@ -24,289 +24,158 @@ export default function Sponsors() {
       },
     ]}
   />;
-  const sponsorsPatronage = [
+  const AssociateSponsors = [
     {
-      type: "Startup India",
-      title: "Startup India",
+      title: "TIH",
       format: ".png",
-      link: "https://www.startupindia.gov.in/",
-    },
-    {
-      type: "UNESCO",
-      title: "UNESCO",
-      format: ".jpg",
-      link: "https://en.unesco.org/",
     },
   ];
-  const Principalsponsors = [
+  const CertificatePartner = [
     {
-      type: "Business Partner",
-      title: "Tides",
+      title: "Give My Certificate",
+      format: ".png",
+    },
+  ];
+  const LegaLconsultingPartner = [
+    {
+      title: "Startupstartkaro",
+      format: ".png",
+    },
+  ];
+  const TravellingPartner = [
+    {
+      title: "Zingbus",
       format: ".jpeg",
-      link: "http://tides.iitr.ac.in/",
-    },
-    {
-      type: "Title Partner",
-      title: "IITR Heritage Foundation",
-      format: ".png",
-      link: "http://www.iitr-heritagefund.org/",
-    },
-    {
-      type: "Golden Partner",
-      title: "IITR Alumni Association",
-      format: ".jpg",
-      link: "http://iitraa.in/",
     },
   ];
-  const EventPartners = [
+  const MediaPartners = [
     {
-      type: "Event Partner",
-      title: "Let's Transport",
-      format: ".svg",
-      link: "https://letstransport.in/",
-    },
-    { type: "Event Partner", title: "Codingal", format: ".png", link: "" },
-    {
-      type: "Knowledge Partner",
-      title: "Clever Harvey",
+      title: "Amar Ujala",
       format: ".png",
-      link: "",
     },
     {
-      type: "Title & Event Partner",
-      title: "Callido",
+      title: "The Engineer Jokes",
       format: ".png",
-      link: "",
+    },
+  ];
+  const KnowledgePartner = [
+    {
+      title: "Venture Folks",
+      format: ".png",
+    },
+  ];
+  const Poductathon  = [
+    {
+      title: "GeeksforGeeks",
+      format: ".png",
     },
     {
-      type: "Event Partner",
-      title: "Sanskrit Club",
+      title: "Sahicoin",
+      format: ".png",
+    },
+  ];
+  const CaseChallenge  = [
+    {
+      title: "Divami Labs",
       format: ".jpeg",
-      link: "https://www.iitr.ac.in/sanskritclub/",
     },
   ];
-  const ServicesPartners = [
+  const JuniorHackathonPartner  = [
     {
-      type: "Cashback & Coupons Partner",
-      title: "CashKaro",
+      title: "Codingal",
       format: ".png",
-      link: "https://cashkaro.com/",
-    },
-    {
-      type: "Services Partner",
-      title: "AWS",
-      format: ".png",
-      link: "https://aws.amazon.com/",
-    },
-    {
-      type: "Services Partner",
-      title: "MyWays",
-      format: ".png",
-      link: "https://www.myways.in/",
-    },
-    {
-      type: "Video Editing Partner",
-      title: "InVideo",
-      format: ".png",
-      link: "https://invideo.io/",
-    },
-    {
-      type: "Services Partner",
-      title: "FreshWorks",
-      format: ".png",
-      link: "https://www.freshworks.com/",
-    },
-    {
-      type: "Workspace Partner",
-      title: "OYO Workspaces",
-      format: ".png",
-      link: "#",
-    },
-  ];
-  const PlatformPartners = [
-    {
-      type: "Platform Partner",
-      title: "Hubilo",
-      format: ".png",
-      link: "https://hubilo.com/",
-    },
-    {
-      type: "Platform Partner",
-      title: "Hackerearth",
-      format: ".png",
-      link: "https://www.hackerearth.com/challenges/",
-    },
-  ];
-  const CommunityPartners = [
-    {
-      type: "Community Partner",
-      title: "Creators of Product",
-      format: ".png",
-      link: "https://meet.google.com/linkredirect?authuser=0&dest=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fcreatorsofproducts%2F%3ForiginalSubdomain%3Din",
-    },
-    {
-      type: "Community Partner",
-      title: "The Product Folks",
-      format: ".jpeg",
-      link: "https://www.theproductfolks.com/",
-    },
-    {
-      type: "Community Partner",
-      title: "A Junior VC",
-      format: ".png",
-      link: "https://ajuniorvc.com/",
-    },
-    {
-      type: "Community Partner",
-      title: "Coding Ninjas",
-      format: ".png",
-      link: "https://www.codingninjas.com/",
-    },
-    {
-      type: "Community Partner",
-      title: "Facebook Developer Circles",
-      format: ".jpeg",
-      link: "https://developers.facebook.com/developercircles/",
-    },
-    {
-      type: "Community Partner",
-      title: "Google Developers Group",
-      format: ".png",
-      link: "https://developers.google.com/community/gdg",
-    },
-    {
-      type: "Community Partner",
-      title: "Coding Blocks",
-      format: ".png",
-      link: "https://codingblocks.com/",
-    },
-  ];
-  const MediaandOutreachPartners = [
-    {
-      type: "Outreach Partner",
-      title: "Womennovator",
-      format: ".jpeg",
-      link: "http://www.womennovator.co.in/",
-    },
-    {
-      type: "Blog Partner",
-      title: "ED Times",
-      format: ".png",
-      link: "https://edtimes.in/",
-    },
-    {
-      type: "Media and Outreach Partner",
-      title: "Startup Talky",
-      format: ".png",
-      link: "https://startuptalky.com/",
-    },
-    {
-      type: "Media and Outreach Partner",
-      title: "DU Express",
-      format: ".png",
-      link: "https://duexpress.in/",
-    },
-    {
-      type: "Magazine Partner",
-      title: "entrepreneur India",
-      format: ".jpg",
-      link: "https://www.entrepreneur.com/in",
-    },
-    {
-      type: "Media and Outreach Partner",
-      title: "StartupNews.fyi",
-      format: ".png",
-      link: "https://www.startupnews.fyi/",
-    },
-    {
-      type: "Media and Outreach Partner",
-      title: "DU Beat",
-      format: ".png",
-      link: "https://dubeat.com/",
-    },
-    {
-      type: "Media and Outreach Partner",
-      title: "Youth Inc",
-      format: ".png",
-      link: "https://youthincmag.com/",
     },
   ];
   return (
     <div>
-      <h1 className="sponsorspage-title">UNDER PATRONAGE OF</h1>
+      <h1 className="sponsorspage-title">ASSOCIATE SPONSORS</h1>
       <div className="sponsorpage-container">
-        {sponsorsPatronage.map((d, i) => (
+        {AssociateSponsors.map((d, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={d.title}
             format={d.format}
-            link={d.link}
           />
         ))}
       </div>
-      <h1 className="sponsorspage-title">PRINCIPAL SPONSORS</h1>
+      <h1 className="sponsorspage-title">CERTIFICATE PARTNERS</h1>
       <div className="sponsorpage-container">
-        {Principalsponsors.map((c, i) => (
+        {CertificatePartner.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
             format={c.format}
-            link={c.link}
           />
         ))}
       </div>
-      <h1 className="sponsorspage-title">EVENT PARTNERS</h1>
+      <h1 className="sponsorspage-title">LEGAL AND CONSULTING PARTNERS</h1>
       <div className="sponsorpage-container">
-        {EventPartners.map((c, i) => (
+        {LegaLconsultingPartner.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
             format={c.format}
-            link={c.link}
           />
         ))}
       </div>
-      <h1 className="sponsorspage-title">SERVICES PARTNERS</h1>
+      <h1 className="sponsorspage-title">PRODUCTATHON PARTNERS</h1>
       <div className="sponsorpage-container">
-        {ServicesPartners.map((c, i) => (
+        {Poductathon.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
             format={c.format}
-            link={c.link}
           />
         ))}
       </div>
-      <h1 className="sponsorspage-title">PLATFORM PARTNERS</h1>
+      <h1 className="sponsorspage-title">CASE CHALLENGE PARTNERS</h1>
       <div className="sponsorpage-container">
-        {PlatformPartners.map((c, i) => (
+        {CaseChallenge.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
             format={c.format}
-            link={c.link}
           />
         ))}
       </div>
-      <h1 className="sponsorspage-title">COMMUNITY PARTNERS</h1>
+      <h1 className="sponsorspage-title">JUNIOR HACKATHON PARTNERS</h1>
       <div className="sponsorpage-container">
-        {CommunityPartners.map((c, i) => (
+        {JuniorHackathonPartner.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
             format={c.format}
-            link={c.link}
           />
         ))}
       </div>
-      <h1 className="sponsorspage-title">MEDIA AND OUTREACH PARTNERS</h1>
+
+      <h1 className="sponsorspage-title">TRAVELLING PARTNERS</h1>
       <div className="sponsorpage-container">
-        {MediaandOutreachPartners.map((c, i) => (
+        {TravellingPartner.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
             format={c.format}
-            link={c.link}
+          />
+        ))}
+      </div>
+      <h1 className="sponsorspage-title">MEDIA PARTNERS</h1>
+      <div className="sponsorpage-container">
+        {MediaPartners.map((c, i) => (
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
+        ))}
+      </div>
+      <h1 className="sponsorspage-title">KNOWLEDGE PARTNERS</h1>
+      <div className="sponsorpage-container">
+        {KnowledgePartner.map((c, i) => (
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
           />
         ))}
       </div>
