@@ -1,34 +1,34 @@
 export const TeamMemberCard = (member) => {
   return (
-    <div className="member-container">
-      <div className="main">
-        <div className="member-card-post">{member.post}</div>
+    <div className='member-container'>
+      <div className='main'>
+        <div className='member-card-post'>{member.post}</div>
         <img
           src={member.pic}
-          className="member-card-image"
+          className='member-card-image'
           alt={`${member.name} image`}
         />
       </div>
-      <div className="team-card-box">
-        <div className="member-card-name">{member.name}</div>
-        <div className="team-card-description-hidden">
-          <div className="mb-2">{member.mail}</div>
-          <div className="mb-2">{member.phone}</div>
-          <div className="social-links">
-            <a href={member.twitter} target="_blank" rel="noreferrer">
+      <div className='team-card-box'>
+        <div className='member-card-name'>{member.name}</div>
+        <div className='team-card-description-hidden'>
+          <div className='mb-2'>{member.mail}</div>
+          <div className='mb-2'>{member.phone}</div>
+          <div className='social-links'>
+            <a href={member.twitter} target='_blank' rel='noreferrer'>
               <img
-                className="twitter"
-                src="memberTwitter.png"
-                alt="twitter icon"
+                className='twitter'
+                src='memberTwitter.png'
+                alt='twitter icon'
               />
             </a>
             <a
-              className="linkedin"
+              className='linkedin'
               href={member.linkedin}
-              target="_blank"
-              rel="noreferrer"
+              target='_blank'
+              rel='noreferrer'
             >
-              <img src="memberLinkedin.png" alt="linkedin icon" />
+              <img src='memberLinkedin.png' alt='linkedin icon' />
             </a>
           </div>
         </div>

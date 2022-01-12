@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export const EventCard = ({
   background_image,
@@ -7,19 +7,19 @@ export const EventCard = ({
   slug,
 }) => {
   return (
-    <div className="event-container">
-      <img src={background_image} className="event-card-image" alt="event" />
-      <div className="event-hovered">
-        <div className="event-card-name">{event_name}</div>
-        <div className="event-card-para">
+    <div className='event-container'>
+      <img src={background_image} className='event-card-image' alt='event' />
+      <div className='event-hovered'>
+        <div className='event-card-name'>{event_name}</div>
+        <div className='event-card-para'>
           <div
-            className="event-card-para-des"
+            className='event-card-para-des'
             dangerouslySetInnerHTML={{
               __html: card_description,
             }}
           />
           <Link href={`/events/${slug}`} passHref>
-            <div className="View_more">View More</div>
+            <div className='View_more'>View More</div>
           </Link>
         </div>
       </div>

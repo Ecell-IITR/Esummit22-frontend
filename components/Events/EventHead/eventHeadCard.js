@@ -1,5 +1,5 @@
-import TransparentGradientButton from "../../transparentGradientButton";
-import Link from "next/link";
+import TransparentGradientButton from '../../transparentGradientButton';
+import Link from 'next/link';
 
 export const EventHead = ({
   detailsEvents,
@@ -8,7 +8,7 @@ export const EventHead = ({
   setShow,
 }) => {
   const getPreviousEventLink = () => {
-    let previousLink = "";
+    let previousLink = '';
     CompetitiveEvents.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === 0) {
@@ -22,7 +22,7 @@ export const EventHead = ({
     return previousLink;
   };
   const getPreviousEventName = () => {
-    let previousName = "";
+    let previousName = '';
     CompetitiveEvents.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === 0) {
@@ -37,7 +37,7 @@ export const EventHead = ({
   };
 
   const getNextEventLink = () => {
-    let NextLink = "";
+    let NextLink = '';
     CompetitiveEvents.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === CompetitiveEvents.length - 1) {
@@ -51,7 +51,7 @@ export const EventHead = ({
   };
 
   const getNextEventName = () => {
-    let NextName = "";
+    let NextName = '';
     CompetitiveEvents.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === CompetitiveEvents.length - 1) {
@@ -65,20 +65,20 @@ export const EventHead = ({
   };
 
   return (
-    <div className="event-head">
-      <div className="event-image-container">
+    <div className='event-head'>
+      <div className='event-image-container'>
         <img
-          className="event-image"
+          className='event-image'
           src={detailsEvents[0].background_image}
-          alt="ideastorm"
+          alt='ideastorm'
         />
         <div>
           <Link href={`/events/${getPreviousEventLink()}`} passHref>
-            <button className="previous-event-button">
+            <button className='previous-event-button'>
               <img
-                className="previous-next"
-                src="/previous.png"
-                alt="previous"
+                className='previous-next'
+                src='/previous.png'
+                alt='previous'
               />
               {getPreviousEventName()}
             </button>
@@ -86,16 +86,16 @@ export const EventHead = ({
         </div>
         <div>
           <Link href={`/events/${getNextEventLink()}`} passHref>
-            <button className="next-event-button">
-              <img className="previous-next" src="/next.png" alt="next" />
+            <button className='next-event-button'>
+              <img className='previous-next' src='/next.png' alt='next' />
               {getNextEventName()}
             </button>
           </Link>
         </div>
-        <div className="centered">
-          <div className="event-name">{detailsEvents[0].event_name}</div>
+        <div className='centered'>
+          <div className='event-name'>{detailsEvents[0].event_name}</div>
           <div
-            className="event-desc"
+            className='event-desc'
             dangerouslySetInnerHTML={{
               __html: detailsEvents[0].card_description,
             }}
@@ -105,7 +105,7 @@ export const EventHead = ({
               setShow(true);
             }}
           >
-            <TransparentGradientButton text="apply now" />
+            <TransparentGradientButton text='apply now' />
           </div>
         </div>
       </div>

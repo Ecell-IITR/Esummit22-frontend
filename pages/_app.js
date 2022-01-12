@@ -1,19 +1,19 @@
-import "../styles/globals.css";
-import "../styles/index.scss";
-import { AuthContext } from "../utils/auth-context";
-import { isAuthenticated, isLocalHost, unAuthenticate } from "../utils";
-import router, { useRouter } from "next/router";
-import { initializeGA, logPageView } from "../utils/Analytics";
-import { DefaultSeo } from "next-seo";
-import defaultSEOConfig from "../seo.config";
-import Script from "next/script";
-import config from "../config";
-import Footer from "../components/footer";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
-import Header from "../components/Header/index";
-import PayNowCard from "../components/payNowCard";
-import MobileProvider from "../utils/MobileContext";
+import '../styles/globals.css';
+import '../styles/index.scss';
+import { AuthContext } from '../utils/auth-context';
+import { isAuthenticated, isLocalHost, unAuthenticate } from '../utils';
+import router, { useRouter } from 'next/router';
+import { initializeGA, logPageView } from '../utils/Analytics';
+import { DefaultSeo } from 'next-seo';
+import defaultSEOConfig from '../seo.config';
+import Script from 'next/script';
+import config from '../config';
+import Footer from '../components/footer';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Header from '../components/Header/index';
+import PayNowCard from '../components/payNowCard';
+import MobileProvider from '../utils/MobileContext';
 
 function MyApp({ Component, pageProps }) {
   // initial_user
@@ -29,10 +29,10 @@ function MyApp({ Component, pageProps }) {
         <DefaultSeo {...defaultSEOConfig} />
         <ToastContainer />
         <Script
-          strategy="lazyOnload"
+          strategy='lazyOnload'
           src={`"https://www.googletagmanager.com/gtag/js?id=${config.GOOGLE_ANALYTICS_ID}"`}
         />
-        <Script id="initialize-gtag" strategy="lazyOnload">
+        <Script id='initialize-gtag' strategy='lazyOnload'>
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}

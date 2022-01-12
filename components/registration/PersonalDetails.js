@@ -1,210 +1,210 @@
-import React, { Component } from "react";
-import Select from "react-select";
+import React, { Component } from 'react';
+import Select from 'react-select';
 
-import state_option from "./json/states.json";
-import gender_option from "./json/gender.json";
-import citys from "./json/citys.json";
-import role_type_option from "./json/profile_type.json";
-import college_option from "./json/colleges.json";
-import year_option from "./json/year.json";
-import programme_option from "./json/programmes.json";
-import CustomGradientBtn from "../customGradientBtn";
+import state_option from './json/states.json';
+import gender_option from './json/gender.json';
+import citys from './json/citys.json';
+import role_type_option from './json/profile_type.json';
+import college_option from './json/colleges.json';
+import year_option from './json/year.json';
+import programme_option from './json/programmes.json';
+import CustomGradientBtn from '../customGradientBtn';
 
 //CSS styling for react-select
 const customStyle = {
   option: (provided, state) => ({
     ...provided,
-    borderBottom: "1px solid #F5E4CA !important",
+    borderBottom: '1px solid #F5E4CA !important',
     // color:state.isFocused?"#6f00ff":"white",
     color: state.isSelected
-      ? "#000000"
+      ? '#000000'
       : state.isFocused
-      ? "#000000"
-      : "#F5E4CA",
-    backgroundColor: state.isFocused ? "#F5E4CA" : "transparent",
+      ? '#000000'
+      : '#F5E4CA',
+    backgroundColor: state.isFocused ? '#F5E4CA' : 'transparent',
   }),
   control: (provided, state) => ({
     ...provided,
-    marginBottom: "20px",
-    background: "inherit",
-    border: "1px solid #F5E4CA",
+    marginBottom: '20px',
+    background: 'inherit',
+    border: '1px solid #F5E4CA',
   }),
   menu: (provided, state) => ({
     // ...provided,
     // borderBottom:"2px solid blue",
-    color: "white",
+    color: 'white',
   }),
 
-  singleValue: (style) => ({ ...style, color: "white" }),
+  singleValue: (style) => ({ ...style, color: 'white' }),
 };
 export class PersonalDetails extends Component {
   constructor(props) {
     super(props);
     this.state = {
       //   name: "",
-      school: "",
-      current_class: "",
-      phone_number: "",
-      gender: "",
-      enrollment_no: "",
-      state: "",
-      city: "",
-      college: "",
-      programme: "",
-      year: "",
-      organisation_name: "",
-      industry: "",
-      invite_code: "",
-      members: "",
-      startupName: "",
-      name_error_bool: "",
-      name_error: "",
-      enroll_error_bool: "",
-      enroll_error: "",
-      phone_error_bool: "",
-      phone_error: "",
-      gender_error_bool: "",
-      gender_error: "",
-      role_type: "",
-      profileType_error: "",
-      profileType_error_bool: "",
-      state_error_bool: "",
-      state_error: "",
-      city_error_bool: "",
-      city_error: "",
-      college_error_bool: "",
-      college_error: "",
-      programme_error_bool: "",
-      programme_error: "",
-      year_error_bool: "",
-      year_error: "",
-      organisation_error_bool: "",
-      organisation_error: "",
-      members_error_bool: "",
-      members_error: "",
-      startupName_error_bool: "",
-      startupName_error: "",
-      industry_error_bool: "",
-      industry_error: "",
-      inviteCode_error_bool: "",
-      inviteCode_error: "",
-      student_type: "",
+      school: '',
+      current_class: '',
+      phone_number: '',
+      gender: '',
+      enrollment_no: '',
+      state: '',
+      city: '',
+      college: '',
+      programme: '',
+      year: '',
+      organisation_name: '',
+      industry: '',
+      invite_code: '',
+      members: '',
+      startupName: '',
+      name_error_bool: '',
+      name_error: '',
+      enroll_error_bool: '',
+      enroll_error: '',
+      phone_error_bool: '',
+      phone_error: '',
+      gender_error_bool: '',
+      gender_error: '',
+      role_type: '',
+      profileType_error: '',
+      profileType_error_bool: '',
+      state_error_bool: '',
+      state_error: '',
+      city_error_bool: '',
+      city_error: '',
+      college_error_bool: '',
+      college_error: '',
+      programme_error_bool: '',
+      programme_error: '',
+      year_error_bool: '',
+      year_error: '',
+      organisation_error_bool: '',
+      organisation_error: '',
+      members_error_bool: '',
+      members_error: '',
+      startupName_error_bool: '',
+      startupName_error: '',
+      industry_error_bool: '',
+      industry_error: '',
+      inviteCode_error_bool: '',
+      inviteCode_error: '',
+      student_type: '',
     };
   }
   EmptyValidation = (data) => {
     setTimeout(() => {
       switch (data) {
-        case "phone_number":
+        case 'phone_number':
           this.setState({
-            phone_error: "Phone Number Cannot be Blank!",
-            phone_error_bool: "true",
+            phone_error: 'Phone Number Cannot be Blank!',
+            phone_error_bool: 'true',
           });
           break;
-        case "gender":
+        case 'gender':
           this.setState({
-            gender_error: "Choose a Gender!",
-            gender_error_bool: "true",
+            gender_error: 'Choose a Gender!',
+            gender_error_bool: 'true',
           });
           break;
-        case "enroll":
+        case 'enroll':
           this.setState({
-            enroll_error: "Enter Enrollment Number !",
-            enroll_error_bool: "true",
+            enroll_error: 'Enter Enrollment Number !',
+            enroll_error_bool: 'true',
           });
           break;
-        case "state":
+        case 'state':
           this.setState({
-            state_error: "Select A State !",
-            state_error_bool: "true",
+            state_error: 'Select A State !',
+            state_error_bool: 'true',
           });
           break;
-        case "city":
+        case 'city':
           this.setState({
-            city_error: "Select A City !",
-            city_error_bool: "true",
+            city_error: 'Select A City !',
+            city_error_bool: 'true',
           });
           break;
-        case "college":
+        case 'college':
           this.setState({
-            college_error: "Enter College Name",
-            college_error_bool: "true",
+            college_error: 'Enter College Name',
+            college_error_bool: 'true',
           });
           break;
-        case "programme":
+        case 'programme':
           this.setState({
-            programme_error: "Select Program",
-            programme_error_bool: "true",
+            programme_error: 'Select Program',
+            programme_error_bool: 'true',
           });
           break;
-        case "year":
+        case 'year':
           this.setState({
-            year_error: "Select Year",
-            year_error_bool: "true",
+            year_error: 'Select Year',
+            year_error_bool: 'true',
           });
           break;
-        case "role_type":
+        case 'role_type':
           this.setState({
-            profileType_error: "Select Profile Type",
-            profileType_error_bool: "true",
+            profileType_error: 'Select Profile Type',
+            profileType_error_bool: 'true',
           });
           break;
       }
     }, 100);
   };
   handleSubmit = () => {
-    if (this.state.phone_number === "") {
-      return this.EmptyValidation("phone_number");
+    if (this.state.phone_number === '') {
+      return this.EmptyValidation('phone_number');
     }
     if (this.state.phone_number.length !== 10) {
       return this.phoneValidate();
     }
-    if (this.state.gender === "") {
-      return this.EmptyValidation("gender");
+    if (this.state.gender === '') {
+      return this.EmptyValidation('gender');
     }
 
     if (
-      this.state.enrollment_no === "" &&
-      this.state.role_type === "IITR Student"
+      this.state.enrollment_no === '' &&
+      this.state.role_type === 'IITR Student'
     ) {
-      return this.EmptyValidation("enroll");
+      return this.EmptyValidation('enroll');
     }
-    if (this.state.state === "" && this.state.role_type !== "IITR Student") {
-      return this.EmptyValidation("state");
+    if (this.state.state === '' && this.state.role_type !== 'IITR Student') {
+      return this.EmptyValidation('state');
     }
-    if (this.state.city === "" && this.state.role_type !== "IITR Student") {
-      return this.EmptyValidation("city");
+    if (this.state.city === '' && this.state.role_type !== 'IITR Student') {
+      return this.EmptyValidation('city');
     }
-    if (this.state.role_type === "") {
-      return this.EmptyValidation("role_type");
+    if (this.state.role_type === '') {
+      return this.EmptyValidation('role_type');
     }
     if (
-      (this.state.college === "" && this.state.role_type === "Startup Expo") ||
-      this.state.role_type === "Professional"
+      (this.state.college === '' && this.state.role_type === 'Startup Expo') ||
+      this.state.role_type === 'Professional'
     ) {
-      return this.EmptyValidation("college");
+      return this.EmptyValidation('college');
     }
     if (
-      this.state.programme === "" &&
-      (this.state.role_type === "Non IITR Student" ||
-        this.state.role_type === "CampusAmbassador")
+      this.state.programme === '' &&
+      (this.state.role_type === 'Non IITR Student' ||
+        this.state.role_type === 'CampusAmbassador')
     ) {
-      return this.EmptyValidation("programme");
+      return this.EmptyValidation('programme');
     }
     if (
-      this.state.year === "" &&
-      (this.state.role_type === "Non IITR Student" ||
-        this.state.role_type === "CampusAmbassador")
+      this.state.year === '' &&
+      (this.state.role_type === 'Non IITR Student' ||
+        this.state.role_type === 'CampusAmbassador')
     ) {
-      return this.EmptyValidation("year");
+      return this.EmptyValidation('year');
     }
     if (
-      this.state.organisation_name === "" &&
-      this.state.role_type === "Professional"
+      this.state.organisation_name === '' &&
+      this.state.role_type === 'Professional'
     ) {
-      return this.EmptyValidation("organisation");
+      return this.EmptyValidation('organisation');
     }
-    if (this.state.industry === "" && this.state.role_type === "Professional") {
-      return this.EmptyValidation("industry");
+    if (this.state.industry === '' && this.state.role_type === 'Professional') {
+      return this.EmptyValidation('industry');
     }
     const {
       name,
@@ -261,12 +261,12 @@ export class PersonalDetails extends Component {
     });
     const height = window.innerHeight;
     let push = 0 * height;
-    window.scroll({ top: push, behavior: "auto" });
-    if (this.props.handleState.phone_number !== "") this.phoneValidate();
-    if (this.props.handleState.gender !== "") this.genderValidate();
-    if (this.props.handleState.state !== "") this.stateValidate();
-    if (this.props.handleState.city !== "") this.cityValidate();
-    if (this.props.handleState.role_type !== "") this.profileTypeValidate();
+    window.scroll({ top: push, behavior: 'auto' });
+    if (this.props.handleState.phone_number !== '') this.phoneValidate();
+    if (this.props.handleState.gender !== '') this.genderValidate();
+    if (this.props.handleState.state !== '') this.stateValidate();
+    if (this.props.handleState.city !== '') this.cityValidate();
+    if (this.props.handleState.role_type !== '') this.profileTypeValidate();
   }
   onChange = (e) => {
     const name = e.target.name;
@@ -335,57 +335,57 @@ export class PersonalDetails extends Component {
 
   EmptyValidate = (data) => {
     let variable;
-    if (data === "phone_number") {
+    if (data === 'phone_number') {
       variable = data.substring(0, 5);
     } else {
       variable = data;
     }
-    let variable_error = variable + "_error";
-    let variable_error_bool = variable + "_error_bool";
+    let variable_error = variable + '_error';
+    let variable_error_bool = variable + '_error_bool';
     let error_value = variable;
     let rest_value;
-    if (data === "phone_number") {
-      rest_value = " number cannot be empty";
-    } else if (data === "enroll") {
-      rest_value = "Enrollment number cannot be empty";
-    } else if (data === "about_esummit" || data === "tshirt") {
-      rest_value = "This field cannot be empty";
-      error_value = "";
-      variable = "";
+    if (data === 'phone_number') {
+      rest_value = ' number cannot be empty';
+    } else if (data === 'enroll') {
+      rest_value = 'Enrollment number cannot be empty';
+    } else if (data === 'about_esummit' || data === 'tshirt') {
+      rest_value = 'This field cannot be empty';
+      error_value = '';
+      variable = '';
     } else {
-      rest_value = " cannot be empty!";
+      rest_value = ' cannot be empty!';
     }
     this.setState({
       [variable_error]:
         error_value.charAt(0).toUpperCase() + variable.slice(1) + rest_value,
-      [variable_error_bool]: "true",
+      [variable_error_bool]: 'true',
     });
     const height = window.innerHeight;
     let push;
     if (
-      data === "city" ||
-      data === "programme" ||
-      data === "year" ||
-      data === "college"
+      data === 'city' ||
+      data === 'programme' ||
+      data === 'year' ||
+      data === 'college'
     ) {
       push = 1.4 * height;
     } else {
       push = 0.5 * height;
     }
-    window.scroll({ top: push, behavior: "smooth" });
+    window.scroll({ top: push, behavior: 'smooth' });
   };
   nameValidate = () => {
     setTimeout(() => {
-      if (this.state.name !== "") {
+      if (this.state.name !== '') {
         if (this.state.name.length < 3) {
           this.setState({
-            name_error_bool: "true",
-            name_error: "* Name should be more than 3 letters",
+            name_error_bool: 'true',
+            name_error: '* Name should be more than 3 letters',
           });
         } else {
           this.setState({
-            name_error_bool: "false",
-            name_error: "",
+            name_error_bool: 'false',
+            name_error: '',
           });
           console.log(this.state.name);
         }
@@ -399,53 +399,53 @@ export class PersonalDetails extends Component {
         this.state.phone_number.length > 10
       ) {
         this.setState({
-          phone_error_bool: "true",
-          phone_error: "*Phone number must contain 10 digits",
+          phone_error_bool: 'true',
+          phone_error: '*Phone number must contain 10 digits',
         });
       } else {
         this.setState({
-          phone_error_bool: "false",
-          phone_error: "",
+          phone_error_bool: 'false',
+          phone_error: '',
         });
       }
     }, 1000);
   };
   genderValidate = () => {
     setTimeout(() => {
-      if (this.state.gender !== "") {
+      if (this.state.gender !== '') {
         this.setState({
-          gender_error_bool: "false",
-          gender_error: "",
+          gender_error_bool: 'false',
+          gender_error: '',
         });
       }
     }, 1000);
   };
   stateValidate = () => {
     setTimeout(() => {
-      if (this.state.state !== "") {
+      if (this.state.state !== '') {
         this.setState({
-          state_error_bool: "false",
-          state_error: "",
+          state_error_bool: 'false',
+          state_error: '',
         });
       }
     }, 1000);
   };
   cityValidate = () => {
     setTimeout(() => {
-      if (this.state.city !== "") {
+      if (this.state.city !== '') {
         this.setState({
-          city_error_bool: "false",
-          city_error: "",
+          city_error_bool: 'false',
+          city_error: '',
         });
       }
     }, 1000);
   };
   profileTypeValidate = () => {
     setTimeout(() => {
-      if (this.state.role_type !== "") {
+      if (this.state.role_type !== '') {
         this.setState({
-          profileType_error_bool: "false",
-          profileType_error: "",
+          profileType_error_bool: 'false',
+          profileType_error: '',
         });
       }
       // console.log(this.state.role_type)
@@ -453,100 +453,100 @@ export class PersonalDetails extends Component {
   };
   enrollValidate = () => {
     setTimeout(() => {
-      if (this.state.enrollment_no !== "") {
+      if (this.state.enrollment_no !== '') {
         this.setState({
-          enroll_error_bool: "false",
-          enroll_error: "",
+          enroll_error_bool: 'false',
+          enroll_error: '',
         });
       }
     }, 1000);
   };
   yearValidate = () => {
     setTimeout(() => {
-      if (this.state.year !== "") {
+      if (this.state.year !== '') {
         this.setState({
-          year_error_bool: "false",
-          year_error: "",
+          year_error_bool: 'false',
+          year_error: '',
         });
       }
     }, 1000);
   };
   organisationValidate = () => {
     setTimeout(() => {
-      if (this.state.organisation_name !== "") {
+      if (this.state.organisation_name !== '') {
         this.setState({
-          organisation_error_bool: "false",
-          organisation_error: "",
+          organisation_error_bool: 'false',
+          organisation_error: '',
         });
       }
     }, 1000);
   };
   programmeValidate = () => {
     setTimeout(() => {
-      if (this.state.programme !== "") {
+      if (this.state.programme !== '') {
         this.setState({
-          programme_error_bool: "false",
-          programme_error: "",
+          programme_error_bool: 'false',
+          programme_error: '',
         });
       }
     }, 1000);
   };
   collegeValidate = () => {
     setTimeout(() => {
-      if (this.state.college !== "") {
+      if (this.state.college !== '') {
         this.setState({
-          college_error_bool: "false",
-          college_error: "",
+          college_error_bool: 'false',
+          college_error: '',
         });
       }
     }, 1000);
   };
   industryValidate = () => {
     setTimeout(() => {
-      if (this.state.industry !== "") {
+      if (this.state.industry !== '') {
         this.setState({
-          industry_error_bool: "false",
-          industry_error: "",
+          industry_error_bool: 'false',
+          industry_error: '',
         });
       }
     }, 1000);
   };
   inviteCodeValidate = () => {
     setTimeout(() => {
-      if (this.state.invite_code !== "") {
+      if (this.state.invite_code !== '') {
         this.setState({
-          industry_error_bool: "false",
-          industry_error: "",
+          industry_error_bool: 'false',
+          industry_error: '',
         });
       }
     }, 1000);
   };
   membersValidate = () => {
     setTimeout(() => {
-      if (this.state.members !== "") {
+      if (this.state.members !== '') {
         this.setState({
-          members_error_bool: "false",
-          members_error: "",
+          members_error_bool: 'false',
+          members_error: '',
         });
       }
     }, 1000);
   };
   startupNameValidate = () => {
     setTimeout(() => {
-      if (this.state.startupName !== "") {
+      if (this.state.startupName !== '') {
         this.setState({
-          startupName_error_bool: "false",
-          startupName_error: "",
+          startupName_error_bool: 'false',
+          startupName_error: '',
         });
       }
     }, 1000);
   };
   schoolNameValidate = () => {
     setTimeout(() => {
-      if (this.state.school !== "") {
+      if (this.state.school !== '') {
         this.setState({
-          schoolName_error_bool: "false",
-          schoolName_error: "",
+          schoolName_error_bool: 'false',
+          schoolName_error: '',
         });
       }
     }, 1000);
@@ -555,13 +555,13 @@ export class PersonalDetails extends Component {
     setTimeout(() => {
       if (this.state.current_class >= 1 && this.state.current_class <= 12) {
         this.setState({
-          phone_error_bool: "false",
-          phone_error: "",
+          phone_error_bool: 'false',
+          phone_error: '',
         });
       } else {
         this.setState({
-          phone_error_bool: "true",
-          phone_error: "*Class should lie between 1-12",
+          phone_error_bool: 'true',
+          phone_error: '*Class should lie between 1-12',
         });
       }
     }, 1000);
@@ -625,7 +625,7 @@ export class PersonalDetails extends Component {
 
     return (
       <div>
-        <div id="login-heading">PERSONAL DETAILS</div>
+        <div id='login-heading'>PERSONAL DETAILS</div>
         {/* <div>
           <input
             id="iname"
@@ -660,24 +660,24 @@ export class PersonalDetails extends Component {
           </snap>
         </div> */}
         {/* <div>{name_error}</div> */}
-        <div className="mobile-container-personal-form">
+        <div className='mobile-container-personal-form'>
           <div>
             <input
-              id="iPhone"
-              type="number"
-              className="register-form"
-              placeholder="Phone no."
-              name="phone_number"
-              autoCorrect="off"
-              autoComplete="off"
-              autoCapitalize="off"
+              id='iPhone'
+              type='number'
+              className='register-form'
+              placeholder='Phone no.'
+              name='phone_number'
+              autoCorrect='off'
+              autoComplete='off'
+              autoCapitalize='off'
               value={phone_number}
               onChange={(event) => {
                 this.onChange(event);
                 this.phoneValidate();
                 handleDataChange(event);
               }}
-              spellCheck="false"
+              spellCheck='false'
               required
             />
             {/* <span className="">
@@ -695,9 +695,9 @@ export class PersonalDetails extends Component {
               )}
             </span> */}
           </div>
-          <div className="error_msg">{phone_error}</div>
+          <div className='error_msg'>{phone_error}</div>
         </div>
-        <div className="mobile-container-personal-form">
+        <div className='mobile-container-personal-form'>
           <div>
             <Select
               styles={customStyle}
@@ -705,11 +705,11 @@ export class PersonalDetails extends Component {
               onChange={(event) => {
                 this.handleGenderChange(event);
                 this.genderValidate();
-                handleSelectDataChange("gender", event.value);
+                handleSelectDataChange('gender', event.value);
               }}
               options={this.getGender()}
-              placeholder="Gender"
-              name="gender"
+              placeholder='Gender'
+              name='gender'
             />
             {/* <span>
               {gender_error_bool === "" ? null : (
@@ -726,22 +726,22 @@ export class PersonalDetails extends Component {
               )}
             </span> */}
           </div>
-          <div className="error_msg">{gender_error}</div>
+          <div className='error_msg'>{gender_error}</div>
         </div>
-        <div className="mobile-container-personal-form">
+        <div className='mobile-container-personal-form'>
           <div>
             <Select
               styles={customStyle}
               value={state}
-              className="select_style"
+              className='select_style'
               onChange={(event) => {
                 this.handleStateChange(event);
                 this.stateValidate();
-                handleSelectDataChange("state", event.value);
+                handleSelectDataChange('state', event.value);
               }}
               options={this.getstate()}
-              placeholder="State"
-              name="state"
+              placeholder='State'
+              name='state'
             />
             {/* <span>
               {state_error_bool === "" ? null : (
@@ -758,22 +758,22 @@ export class PersonalDetails extends Component {
               )}
             </span> */}
           </div>
-          <div className="error_msg">{state_error}</div>
+          <div className='error_msg'>{state_error}</div>
         </div>
-        <div className="mobile-container-personal-form">
+        <div className='mobile-container-personal-form'>
           <div>
             <Select
               styles={customStyle}
-              className="select_style"
+              className='select_style'
               value={city}
               onChange={(event) => {
                 this.handleCityChange(event);
                 this.cityValidate();
-                handleSelectDataChange("city", event.value);
+                handleSelectDataChange('city', event.value);
               }}
-              options={state === "" ? [] : this.getCities(state.value)}
-              placeholder="City"
-              name="city"
+              options={state === '' ? [] : this.getCities(state.value)}
+              placeholder='City'
+              name='city'
             />
             {/* <span>
               {city_error_bool === "" ? null : (
@@ -790,31 +790,31 @@ export class PersonalDetails extends Component {
               )}
             </span> */}
           </div>
-          <div className="error_msg">{city_error}</div>
+          <div className='error_msg'>{city_error}</div>
         </div>
 
-        <div className="mobile-container-personal-form">
+        <div className='mobile-container-personal-form'>
           <div>
             <Select
               styles={customStyle}
-              className="select_style"
-              id="irole_type"
+              className='select_style'
+              id='irole_type'
               value={role_type}
               onChange={(event) => {
                 this.handleProfileTypeChange(event);
                 this.profileTypeValidate();
-                handleSelectDataChange("role_type", event.value);
-                if (event.label == "Non IITR Student") {
-                  handleSelectDataChange("student_type", "NONIITR");
+                handleSelectDataChange('role_type', event.value);
+                if (event.label == 'Non IITR Student') {
+                  handleSelectDataChange('student_type', 'NONIITR');
                 }
-                if (event.label == "IITR Student") {
-                  handleSelectDataChange("student_type", "IITR");
-                  handleSelectDataChange("college", "IITR");
+                if (event.label == 'IITR Student') {
+                  handleSelectDataChange('student_type', 'IITR');
+                  handleSelectDataChange('college', 'IITR');
                 }
               }}
               options={this.getProfileType()}
-              placeholder="Profile Type"
-              name="role_type"
+              placeholder='Profile Type'
+              name='role_type'
             />
             {/* <span>
               {profileType_error_bool === "" ? null : (
@@ -831,27 +831,27 @@ export class PersonalDetails extends Component {
               )}
             </span> */}
           </div>
-          <div className="error_msg">{profileType_error}</div>
+          <div className='error_msg'>{profileType_error}</div>
         </div>
-        {role_type.label === "Campus Ambassador" ? (
-          <div className="mobile-container-personal-form">
-            <div className="">
+        {role_type.label === 'Campus Ambassador' ? (
+          <div className='mobile-container-personal-form'>
+            <div className=''>
               <input
-                id="inputCollege"
-                type="text"
-                className="register-form"
-                placeholder="College Name"
-                name="college"
-                autoCorrect="off"
-                autoComplete="off"
-                autoCapitalize="off"
+                id='inputCollege'
+                type='text'
+                className='register-form'
+                placeholder='College Name'
+                name='college'
+                autoCorrect='off'
+                autoComplete='off'
+                autoCapitalize='off'
                 value={college}
                 onChange={(event) => {
                   this.onChange(event);
                   this.collegeValidate();
                   handleDataChange(event);
                 }}
-                spellCheck="false"
+                spellCheck='false'
                 required
               />
               {/* <span className="">
@@ -883,31 +883,31 @@ export class PersonalDetails extends Component {
                   />
                 )}
               </span> */}
-              <div className="error-msg">{college_error}</div>
+              <div className='error-msg'>{college_error}</div>
             </div>
           </div>
         ) : null}
 
-        {role_type.label === "IITR Student" ? (
+        {role_type.label === 'IITR Student' ? (
           <div>
-            <div className="mobile-container-personal-form">
+            <div className='mobile-container-personal-form'>
               <div>
                 <input
-                  id="iEnrollment"
-                  type="number"
-                  className="register-form"
-                  placeholder="Enrollment no."
-                  name="enrollment_no"
-                  autoCorrect="off"
-                  autoComplete="off"
-                  autoCapitalize="off"
+                  id='iEnrollment'
+                  type='number'
+                  className='register-form'
+                  placeholder='Enrollment no.'
+                  name='enrollment_no'
+                  autoCorrect='off'
+                  autoComplete='off'
+                  autoCapitalize='off'
                   value={enrollment_no}
                   onChange={(event) => {
                     this.onChange(event);
                     this.enrollValidate();
                     handleDataChange(event);
                   }}
-                  spellCheck="false"
+                  spellCheck='false'
                   required
                 />
                 {/* <span>
@@ -924,21 +924,21 @@ export class PersonalDetails extends Component {
                     />
                   )}
                 </span> */}
-                <div className="error_msg">{enroll_error}</div>
+                <div className='error_msg'>{enroll_error}</div>
               </div>
             </div>
-            <div className="mobile-container-personal-form">
+            <div className='mobile-container-personal-form'>
               <Select
                 styles={customStyle}
-                className="select_style"
+                className='select_style'
                 value={year}
                 onChange={(event) => {
                   this.handleYearChange(event);
                   this.yearValidate();
                 }}
                 options={this.getYear()}
-                placeholder="Year"
-                name="year"
+                placeholder='Year'
+                name='year'
               />
               {/* <span className="">
                 {year_error_bool === "" ? null : (
@@ -955,18 +955,18 @@ export class PersonalDetails extends Component {
                 )}
               </span> */}
             </div>
-            <div className="error_msg">{year_error}</div>
-            <div className="mobile-container-personal-form">
+            <div className='error_msg'>{year_error}</div>
+            <div className='mobile-container-personal-form'>
               <Select
                 styles={customStyle}
-                className="select_style"
+                className='select_style'
                 value={programme}
                 onChange={(event) => {
                   this.handleProgrammeChange(event);
                   this.programmeValidate();
                 }}
                 options={this.getProgrammes()}
-                placeholder="Branch"
+                placeholder='Branch'
               />
               {/* <span className="">
                 {programme_error_bool === "" ? null : (
@@ -983,29 +983,29 @@ export class PersonalDetails extends Component {
                 )}
               </span> */}
             </div>
-            <div className="error-msg">{programme_error}</div>
+            <div className='error-msg'>{programme_error}</div>
           </div>
         ) : null}
-        {role_type.label === "Non IITR Student" ||
-        role_type.label === "CampusAmbassador" ? (
-          <div className="mobile-container-personal-form">
-            <div className="">
+        {role_type.label === 'Non IITR Student' ||
+        role_type.label === 'CampusAmbassador' ? (
+          <div className='mobile-container-personal-form'>
+            <div className=''>
               <input
-                id="inputCollege"
-                type="text"
-                className="register-form"
-                placeholder="College Name"
-                name="college"
-                autoCorrect="off"
-                autoComplete="off"
-                autoCapitalize="off"
+                id='inputCollege'
+                type='text'
+                className='register-form'
+                placeholder='College Name'
+                name='college'
+                autoCorrect='off'
+                autoComplete='off'
+                autoCapitalize='off'
                 value={college}
                 onChange={(event) => {
                   this.onChange(event);
                   this.collegeValidate();
                   handleDataChange(event);
                 }}
-                spellCheck="false"
+                spellCheck='false'
                 required
               />
               {/* <span className="">
@@ -1037,20 +1037,20 @@ export class PersonalDetails extends Component {
                   />
                 )}
               </span> */}
-              <div className="error-msg">{college_error}</div>
+              <div className='error-msg'>{college_error}</div>
             </div>
 
-            <div className="mobile-container-personal-form">
+            <div className='mobile-container-personal-form'>
               <Select
                 styles={customStyle}
-                className="select_style"
+                className='select_style'
                 value={year}
                 onChange={(event) => {
                   this.handleYearChange(event);
                   this.yearValidate();
                 }}
                 options={this.getYear()}
-                placeholder="Year of study"
+                placeholder='Year of study'
               />
               {/* <span className="">
                 {year_error_bool === "" ? null : (
@@ -1066,25 +1066,25 @@ export class PersonalDetails extends Component {
                   />
                 )}
               </span> */}
-              <div className="error-msg">{year_error}</div>
+              <div className='error-msg'>{year_error}</div>
             </div>
-            <div className="mobile-container-personal-form">
+            <div className='mobile-container-personal-form'>
               <input
-                id="inviteCode"
-                type="text"
-                className="register-form"
-                placeholder="Invite Code"
-                name="invite_code"
-                autoCorrect="off"
-                autoComplete="off"
-                autoCapitalize="off"
+                id='inviteCode'
+                type='text'
+                className='register-form'
+                placeholder='Invite Code'
+                name='invite_code'
+                autoCorrect='off'
+                autoComplete='off'
+                autoCapitalize='off'
                 value={invite_code}
                 onChange={(event) => {
                   this.onChange(event);
                   this.inviteCodeValidate();
                   handleDataChange(event);
                 }}
-                spellCheck="false"
+                spellCheck='false'
                 required
               />
               {/* <span className="">
@@ -1101,30 +1101,30 @@ export class PersonalDetails extends Component {
                   />
                 )}
               </span> */}
-              <div className="error-msg">{year_error}</div>
+              <div className='error-msg'>{year_error}</div>
             </div>
           </div>
         ) : null}
-        {role_type.label === "Professional" ? (
+        {role_type.label === 'Professional' ? (
           <div>
-            <div className="mobile-container-personal-form">
+            <div className='mobile-container-personal-form'>
               <div>
                 <input
-                  id="iCompany"
-                  type="text"
-                  className="register-form"
-                  placeholder="Organization/Company Name"
-                  name="organisation_name"
-                  autoCorrect="off"
-                  autoComplete="off"
-                  autoCapitalize="off"
+                  id='iCompany'
+                  type='text'
+                  className='register-form'
+                  placeholder='Organization/Company Name'
+                  name='organisation_name'
+                  autoCorrect='off'
+                  autoComplete='off'
+                  autoCapitalize='off'
                   value={organisation_name}
                   onChange={(event) => {
                     this.onChange(event);
                     this.organisationValidate();
                     handleDataChange(event);
                   }}
-                  spellCheck="false"
+                  spellCheck='false'
                   required
                 />
                 {/* <span className="">
@@ -1142,26 +1142,26 @@ export class PersonalDetails extends Component {
                   )}
                 </span> */}
               </div>
-              <div className="error-msg">{organisation_error}</div>
+              <div className='error-msg'>{organisation_error}</div>
             </div>
-            <div className="mobile-container-personal-form">
+            <div className='mobile-container-personal-form'>
               <div>
                 <input
-                  id="iIndustry"
-                  type="text"
-                  className="register-form"
-                  placeholder="Industry"
-                  name="industry"
-                  autoCorrect="off"
-                  autoComplete="off"
-                  autoCapitalize="off"
+                  id='iIndustry'
+                  type='text'
+                  className='register-form'
+                  placeholder='Industry'
+                  name='industry'
+                  autoCorrect='off'
+                  autoComplete='off'
+                  autoCapitalize='off'
                   value={industry}
                   onChange={(event) => {
                     this.onChange(event);
                     this.industryValidate();
                     handleDataChange(event);
                   }}
-                  spellCheck="false"
+                  spellCheck='false'
                   required
                 />
                 {/* <span className="">
@@ -1179,29 +1179,29 @@ export class PersonalDetails extends Component {
                   )}
                 </span> */}
               </div>
-              <div className="error-msg">{industry_error}</div>
+              <div className='error-msg'>{industry_error}</div>
             </div>
           </div>
         ) : null}
-        {role_type.label === "School Student" ? (
-          <div className="mobile-container-personal-form">
+        {role_type.label === 'School Student' ? (
+          <div className='mobile-container-personal-form'>
             <div>
               <input
-                id="iSchoolName"
-                type="text"
-                placeholder="School Name"
-                className="register-form"
-                name="school"
-                autoCorrect="off"
-                autoComplete="off"
-                autoCapitalize="off"
+                id='iSchoolName'
+                type='text'
+                placeholder='School Name'
+                className='register-form'
+                name='school'
+                autoCorrect='off'
+                autoComplete='off'
+                autoCapitalize='off'
                 value={school}
                 onChange={(event) => {
                   this.onChange(event);
                   this.schoolNameValidate();
                   handleDataChange(event);
                 }}
-                spellCheck="false"
+                spellCheck='false'
                 required
               />
               {/* <span className="">
@@ -1219,24 +1219,24 @@ export class PersonalDetails extends Component {
                 )}
               </span> */}
             </div>
-            <div className="error-msg">{schoolName_error}</div>
-            <div className="mobile-container-personal-form">
+            <div className='error-msg'>{schoolName_error}</div>
+            <div className='mobile-container-personal-form'>
               <input
-                id="iClassName"
-                type="text"
-                placeholder="Class(1-12)"
-                className="register-form"
-                name="current_class"
-                autoCorrect="off"
-                autoComplete="off"
-                autoCapitalize="off"
+                id='iClassName'
+                type='text'
+                placeholder='Class(1-12)'
+                className='register-form'
+                name='current_class'
+                autoCorrect='off'
+                autoComplete='off'
+                autoCapitalize='off'
                 value={current_class}
                 onChange={(event) => {
                   this.onChange(event);
                   this.classNameValidate();
                   handleDataChange(event);
                 }}
-                spellCheck="false"
+                spellCheck='false'
                 required
               />
               {/* <span className="">
@@ -1254,29 +1254,29 @@ export class PersonalDetails extends Component {
                 )}
               </span> */}
             </div>
-            <div className="error-msg">{startupName_error}</div>
+            <div className='error-msg'>{startupName_error}</div>
 
-            <div className="error-msg">{schoolStudent_error}</div>
+            <div className='error-msg'>{schoolStudent_error}</div>
           </div>
         ) : null}
-        {role_type.label === "Startup Expo" ? (
-          <div className="mobile-container-personal-form">
+        {role_type.label === 'Startup Expo' ? (
+          <div className='mobile-container-personal-form'>
             <div>
               <input
-                id="iMembers"
-                type="text"
-                placeholder="Members"
-                className="register-form"
-                name="members"
-                autoCorrect="off"
-                autoComplete="off"
-                autoCapitalize="off"
+                id='iMembers'
+                type='text'
+                placeholder='Members'
+                className='register-form'
+                name='members'
+                autoCorrect='off'
+                autoComplete='off'
+                autoCapitalize='off'
                 value={members}
                 onChange={(event) => {
                   this.onChange(event);
                   this.membersValidate();
                 }}
-                spellCheck="false"
+                spellCheck='false'
                 required
               />
               {/* <span className="">
@@ -1294,23 +1294,23 @@ export class PersonalDetails extends Component {
                 )}
               </span> */}
             </div>
-            <div className="error-msg">{members_error}</div>
-            <div className="mobile-container-personal-form">
+            <div className='error-msg'>{members_error}</div>
+            <div className='mobile-container-personal-form'>
               <input
-                id="iStartup"
-                type="text"
-                placeholder="Startup Name"
-                className="register-form"
-                name="startup"
-                autoCorrect="off"
-                autoComplete="off"
-                autoCapitalize="off"
+                id='iStartup'
+                type='text'
+                placeholder='Startup Name'
+                className='register-form'
+                name='startup'
+                autoCorrect='off'
+                autoComplete='off'
+                autoCapitalize='off'
                 value={startupName}
                 onChange={(event) => {
                   this.onChange(event);
                   this.startupNameValidate();
                 }}
-                spellCheck="false"
+                spellCheck='false'
                 required
               />
               {/* <span className="">
@@ -1328,23 +1328,23 @@ export class PersonalDetails extends Component {
                 )}
               </span> */}
             </div>
-            <div className="error-msg">{startupName_error}</div>
+            <div className='error-msg'>{startupName_error}</div>
             <div>
               <input
-                id="iIndustry"
-                type="text"
-                placeholder="Industry"
-                className="register-form"
-                name="industry"
-                autoCorrect="off"
-                autoComplete="off"
-                autoCapitalize="off"
+                id='iIndustry'
+                type='text'
+                placeholder='Industry'
+                className='register-form'
+                name='industry'
+                autoCorrect='off'
+                autoComplete='off'
+                autoCapitalize='off'
                 value={industry}
                 onChange={(event) => {
                   this.onChange(event);
                   this.industryValidate();
                 }}
-                spellCheck="false"
+                spellCheck='false'
                 required
               />
               {/* <span className="">
@@ -1362,10 +1362,10 @@ export class PersonalDetails extends Component {
                 )}
               </span> */}
             </div>
-            <div className="error-msg">{industry_error}</div>
+            <div className='error-msg'>{industry_error}</div>
           </div>
         ) : null}
-        <div className="mobile-submit-container">
+        <div className='mobile-submit-container'>
           {/* <Button
                     class_name="button"
                     onClick={this.handleBack}
@@ -1376,11 +1376,11 @@ export class PersonalDetails extends Component {
           {this.props.loading ? (
             <img
               src={LoaderSpin}
-              style={{ width: "50px", backgroundColor: "#19072C" }}
-              alt=""
+              style={{ width: '50px', backgroundColor: '#19072C' }}
+              alt=''
             />
           ) : (
-            <div className="login-button" onClick={this.handleSubmit}>
+            <div className='login-button' onClick={this.handleSubmit}>
               SUBMIT
             </div>
           )}

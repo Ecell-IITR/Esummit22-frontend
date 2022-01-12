@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 export class ResourcesCard extends Component {
   constructor(props) {
     super(props);
-    this.state = { pdfFile: null, fileName: "" };
+    this.state = { pdfFile: null, fileName: '' };
   }
   componentDidMount() {
     if (this.props.file_) {
@@ -13,13 +13,13 @@ export class ResourcesCard extends Component {
     } else {
       if (this.props.nonca) {
         this.setState({
-          pdfFile: "/brochure.pdf",
-          fileName: "E-Summit Brochure.pdf",
+          pdfFile: '/brochure.pdf',
+          fileName: 'E-Summit Brochure.pdf',
         });
       } else {
         this.setState({
-          pdfFile: "/ca-rulebook.pdf",
-          fileName: "CA-Rulebook.pdf",
+          pdfFile: '/ca-rulebook.pdf',
+          fileName: 'CA-Rulebook.pdf',
         });
       }
     }
@@ -27,18 +27,18 @@ export class ResourcesCard extends Component {
 
   render() {
     return (
-      <div className="resource-Card-container">
-        <img src="/CA-Resources/pdf.svg" className="pdf-img" alt="sorry" />
+      <div className='resource-Card-container'>
+        <img src='/CA-Resources/pdf.svg' className='pdf-img' alt='sorry' />
 
-        <div className="resource-pdf-name">{this.state.fileName}</div>
-        <a href={this.state.pdfFile} target="_blank" rel="noreferrer">
-          {" "}
-          <div className=" resource-view">View</div>
+        <div className='resource-pdf-name'>{this.state.fileName}</div>
+        <a href={this.state.pdfFile} target='_blank' rel='noreferrer'>
+          {' '}
+          <div className=' resource-view'>View</div>
         </a>
         <a
           href={this.state.pdfFile}
-          className=" resource-download"
-          download="brochure.pdf"
+          className=' resource-download'
+          download='brochure.pdf'
         >
           Download
         </a>

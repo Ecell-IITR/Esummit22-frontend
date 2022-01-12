@@ -1,28 +1,28 @@
-import React, { Component } from "react";
-import Axios from "axios";
-import { Link } from "next/link";
-import CustomGradientBtn from "../customGradientBtn";
+import React, { Component } from 'react';
+import Axios from 'axios';
+import { Link } from 'next/link';
+import CustomGradientBtn from '../customGradientBtn';
 
 export class AccountSetup extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      full_name: "",
-      email: "",
-      password: "",
-      confirm_password: "",
+      full_name: '',
+      email: '',
+      password: '',
+      confirm_password: '',
       social_signup: false,
-      toggleEye: "",
-      toggleConfirmEye: "",
-      image_url: "",
-      name_error: "",
+      toggleEye: '',
+      toggleConfirmEye: '',
+      image_url: '',
+      name_error: '',
       name_error_bool: false,
-      email_error: "",
+      email_error: '',
       email_error_bool: false,
-      pass_error: "",
+      pass_error: '',
       pass_error_bool: false,
       confirm_pass_ok: false,
-      confirmpass_error: "",
+      confirmpass_error: '',
       confirmpass_error_bool: false,
     };
   }
@@ -30,28 +30,28 @@ export class AccountSetup extends Component {
     setTimeout(
       function () {
         switch (data) {
-          case "full_name":
+          case 'full_name':
             this.setState({
               name_error_bool: true,
-              name_error: "Name cannot be Empty !",
+              name_error: 'Name cannot be Empty !',
             });
             break;
-          case "email":
+          case 'email':
             this.setState({
               email_error_bool: true,
-              email_error: "Email cannot be Empty !",
+              email_error: 'Email cannot be Empty !',
             });
             break;
-          case "password":
+          case 'password':
             this.setState({
               pass_error_bool: true,
-              pass_error: "Password cannot be blank !",
+              pass_error: 'Password cannot be blank !',
             });
             break;
-          case "confirm_password":
+          case 'confirm_password':
             this.setState({
               confirmpass_error_bool: true,
-              confirmpass_error: "Confirm Password cannot be blank !",
+              confirmpass_error: 'Confirm Password cannot be blank !',
             });
             break;
           default:
@@ -67,12 +67,12 @@ export class AccountSetup extends Component {
         if (this.state.full_name.length < 3) {
           this.setState({
             name_error_bool: true,
-            name_error: "  *Name should be more than 3 letters",
+            name_error: '  *Name should be more than 3 letters',
           });
         } else {
           this.setState({
             name_error_bool: false,
-            name_error: "",
+            name_error: '',
           });
         }
       }.bind(this),
@@ -86,12 +86,12 @@ export class AccountSetup extends Component {
         if (!this.state.email.match(re)) {
           this.setState({
             email_error_bool: true,
-            email_error: "  *Email is not valid",
+            email_error: '  *Email is not valid',
           });
         } else {
           this.setState({
             email_error_bool: false,
-            email_error: "",
+            email_error: '',
           });
         }
       }.bind(this),
@@ -104,13 +104,13 @@ export class AccountSetup extends Component {
         if (this.state.password.length < 7) {
           this.setState({
             pass_error_bool: true,
-            pass_error: "  *Password should be more than 8 letters",
+            pass_error: '  *Password should be more than 8 letters',
             confirm_pass_ok: false,
           });
         } else {
           this.setState({
             pass_error_bool: false,
-            pass_error: "",
+            pass_error: '',
             confirm_pass_ok: true,
           });
         }
@@ -124,12 +124,12 @@ export class AccountSetup extends Component {
         if (this.state.password !== this.state.confirm_password) {
           this.setState({
             confirmpass_error_bool: true,
-            confirmpass_error: " *Both passwords do not match",
+            confirmpass_error: ' *Both passwords do not match',
           });
         } else {
           this.setState({
             confirmpass_error_bool: false,
-            confirmpass_error: "",
+            confirmpass_error: '',
           });
         }
       }.bind(this),
@@ -145,20 +145,20 @@ export class AccountSetup extends Component {
     this.setState({
       toggleEye: !this.state.toggleEye,
     });
-    if (document.getElementById("iPassword").type === "password") {
-      document.getElementById("iPassword").type = "text";
+    if (document.getElementById('iPassword').type === 'password') {
+      document.getElementById('iPassword').type = 'text';
     } else {
-      document.getElementById("iPassword").type = "password";
+      document.getElementById('iPassword').type = 'password';
     }
   };
   handleConfirmToggle = () => {
     this.setState({
       toggleConfirmEye: !this.state.toggleConfirmEye,
     });
-    if (document.getElementById("iConfirmPassword").type === "password") {
-      document.getElementById("iConfirmPassword").type = "text";
+    if (document.getElementById('iConfirmPassword').type === 'password') {
+      document.getElementById('iConfirmPassword').type = 'text';
     } else {
-      document.getElementById("iConfirmPassword").type = "password";
+      document.getElementById('iConfirmPassword').type = 'password';
     }
   };
   handleNext = () => {
@@ -178,18 +178,18 @@ export class AccountSetup extends Component {
       confirmpass_error_bool,
     } = this.state;
     if (!full_name) {
-      return this.emptyValidate("full_name");
+      return this.emptyValidate('full_name');
     }
     if (!email) {
-      return this.emptyValidate("email");
+      return this.emptyValidate('email');
     } else if (email && email_error) return this.emailValidate();
 
     if (!password) {
-      return this.emptyValidate("password");
+      return this.emptyValidate('password');
     } else if (password && pass_error) return this.passValidate();
 
     if (!confirm_password) {
-      return this.emptyValidate("confirm_password");
+      return this.emptyValidate('confirm_password');
     } else if (confirm_password && confirmpass_error)
       return this.confirmPassValidate();
     let data = {
@@ -223,39 +223,39 @@ export class AccountSetup extends Component {
     } = this.state;
     return (
       <div>
-        <div id="login-heading">CREATE AN ACCOUNT</div>
+        <div id='login-heading'>CREATE AN ACCOUNT</div>
 
-        <div className="login-iEmail-header">
+        <div className='login-iEmail-header'>
           <input
-            id="iname"
-            className="register-form"
-            type="text"
-            placeholder="Enter your Full name"
-            name="full_name"
-            autoCorrect="off"
-            autoComplete="off"
-            autoCapitalize="off"
+            id='iname'
+            className='register-form'
+            type='text'
+            placeholder='Enter your Full name'
+            name='full_name'
+            autoCorrect='off'
+            autoComplete='off'
+            autoCapitalize='off'
             value={full_name}
             onChange={(event) => {
               this.nameValidate();
               this.onChange(event);
             }}
-            spellCheck="false"
+            spellCheck='false'
             required
           />
         </div>
-        <div className="error-msg">{name_error}</div>
+        <div className='error-msg'>{name_error}</div>
 
-        <div className="login-iEmail-header">
+        <div className='login-iEmail-header'>
           <input
-            id="iEmail"
-            type="email"
-            className="register-form"
-            placeholder="Enter Email id"
-            name="email"
-            autoCorrect="off"
-            autoComplete="off"
-            autoCapitalize="off"
+            id='iEmail'
+            type='email'
+            className='register-form'
+            placeholder='Enter Email id'
+            name='email'
+            autoCorrect='off'
+            autoComplete='off'
+            autoCapitalize='off'
             value={email}
             onChange={(event) => {
               if (this.state.social_signup) {
@@ -267,35 +267,35 @@ export class AccountSetup extends Component {
                 this.onChange(event);
               }
             }}
-            spellCheck="false"
+            spellCheck='false'
             required
           />
         </div>
-        <div className="error-msg">{email_error}</div>
+        <div className='error-msg'>{email_error}</div>
 
-        <div className="login-iPassword-header">
+        <div className='login-iPassword-header'>
           <input
-            id="iPassword"
-            type="password"
-            className="register-form"
-            placeholder="Enter password"
-            name="password"
-            autoCorrect="off"
-            autoComplete="off"
-            autoCapitalize="off"
+            id='iPassword'
+            type='password'
+            className='register-form'
+            placeholder='Enter password'
+            name='password'
+            autoCorrect='off'
+            autoComplete='off'
+            autoCapitalize='off'
             value={password}
             onChange={(event) => {
               this.passValidate();
               this.onChange(event);
             }}
-            spellCheck="false"
+            spellCheck='false'
             required
           />
-          <span className="login-iPassword-img" onClick={this.handleToggle}>
+          <span className='login-iPassword-img' onClick={this.handleToggle}>
             <img
-              alt="eye confirm"
-              className="toggleeye"
-              src={"login/login-password-eye.svg"}
+              alt='eye confirm'
+              className='toggleeye'
+              src={'login/login-password-eye.svg'}
             />
           </span>
         </div>
@@ -314,35 +314,35 @@ export class AccountSetup extends Component {
             )}
           </span> */}
 
-        <div className="error-msg">{pass_error}</div>
+        <div className='error-msg'>{pass_error}</div>
 
         {confirm_pass_ok ? (
-          <div className="">
-            <div className="login-iPassword-header">
+          <div className=''>
+            <div className='login-iPassword-header'>
               <input
-                id="iConfirmPassword"
-                type="password"
-                className="register-form"
-                placeholder="Enter your password again"
-                name="confirm_password"
-                autoCorrect="off"
-                autoComplete="off"
-                autoCapitalize="off"
+                id='iConfirmPassword'
+                type='password'
+                className='register-form'
+                placeholder='Enter your password again'
+                name='confirm_password'
+                autoCorrect='off'
+                autoComplete='off'
+                autoCapitalize='off'
                 value={confirm_password}
                 onChange={(event) => {
                   this.confirmPassValidate();
                   this.onChange(event);
                 }}
-                spellCheck="false"
+                spellCheck='false'
                 required
               />
             </div>
-            <div className="error-msg">{confirmpass_error}</div>
+            <div className='error-msg'>{confirmpass_error}</div>
           </div>
         ) : null}
 
-        <div style={{ paddingTop: "1.2vh" }} className="next-mobile-container">
-          <div className="login-button" onClick={this.handleNext}>
+        <div style={{ paddingTop: '1.2vh' }} className='next-mobile-container'>
+          <div className='login-button' onClick={this.handleNext}>
             NEXT
           </div>
         </div>

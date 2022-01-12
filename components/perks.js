@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const Perk = ({ detailsEvents }) => {
   return (
@@ -6,16 +6,16 @@ export const Perk = ({ detailsEvents }) => {
       {detailsEvents[0].event_perks.map((det, id) => {
         return (
           <>
-            <div className="perks-container-behind">
-              <div className="perks-container-front">
-                <div className="title_div">
+            <div className='perks-container-behind'>
+              <div className='perks-container-front'>
+                <div className='title_div'>
                   <h1>{det.heading}</h1>
 
-                  <img src="/border_perks.png" alt="no image perks icon"></img>
+                  <img src='/border_perks.png' alt='no image perks icon'></img>
                 </div>
-                <div className="content_div">
+                <div className='content_div'>
                   <div
-                    className="content_style"
+                    className='content_style'
                     dangerouslySetInnerHTML={{
                       __html: det.description,
                     }}

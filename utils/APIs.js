@@ -1,15 +1,15 @@
 export let API_URL;
-if (process.env.ENV === "prod") {
-  API_URL = "https://api.esummit.in";
+if (process.env.ENV === 'prod') {
+  API_URL = 'https://api.esummit.in';
 } else {
-  API_URL = "https://api.esummit.in"; // Change this to your local API URL
+  API_URL = 'https://api.esummit.in'; // Change this to your local API URL
 }
 
 export let HOST_URL;
-if (process.env.ENV === "prod") {
-  HOST_URL = "https://www.esummit.in";
+if (process.env.ENV === 'prod') {
+  HOST_URL = 'https://www.esummit.in';
 } else {
-  HOST_URL = "http://localhost:3000";
+  HOST_URL = 'http://localhost:3000';
 }
 
 export const TASK_API = `${API_URL}/cap/tasks`;

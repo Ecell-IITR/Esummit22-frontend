@@ -1,15 +1,15 @@
-import EventCard from "../Events/eventCard";
-import React from "react";
+import EventCard from '../Events/eventCard';
+import React from 'react';
 
 export default function HomeEvents({ allEvents }) {
   return (
     <div>
-      <div className="bg-black text-white  Home_Events_page_container">
-        <div className="Home_Events_page_title">Events</div>
-        <div className="Home_Events_Card_Container">
+      <div className='bg-black text-white  Home_Events_page_container'>
+        <div className='Home_Events_page_title'>Events</div>
+        <div className='Home_Events_Card_Container'>
           {allEvents.CompetitiveEvents.map((det, id) => {
             return (
-              <div className="Home_Events_Card_Loop" key={id}>
+              <div className='Home_Events_Card_Loop' key={id}>
                 <EventCard
                   background_image={det.card_image}
                   event_name={det.event_name}

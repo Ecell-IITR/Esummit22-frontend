@@ -1,8 +1,8 @@
-import { NextPage } from "next";
-import Router from "next/router";
-import React, { useContext, useEffect } from "react";
-import { AuthContext } from "./auth-context";
-import { useRouter } from "next/router";
+import { NextPage } from 'next';
+import Router from 'next/router';
+import React, { useContext, useEffect } from 'react';
+import { AuthContext } from './auth-context';
+import { useRouter } from 'next/router';
 
 const withAuth = (Component) => {
   const Auth = (props) => {
@@ -12,7 +12,7 @@ const withAuth = (Component) => {
     useEffect(() => {
       if (!user)
         Router.push({
-          pathname: "/login",
+          pathname: '/login',
           query: {
             from: router.pathname,
           },

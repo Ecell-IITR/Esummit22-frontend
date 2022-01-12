@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from 'axios';
 
 const FetchApi = (method, url, params, TokenValue) => {
   //url = "http://localhost:" + process.env.REACT_APP_SERVER_PORT + url;
@@ -10,9 +10,9 @@ const FetchApi = (method, url, params, TokenValue) => {
         url: url,
         data: params,
         headers: {
-          Authorization: "Token " + TokenValue,
+          Authorization: 'Token ' + TokenValue,
         },
-        responseType: "json",
+        responseType: 'json',
       })
         .then((res) => resolve(res))
         .catch((err) => reject(err));
@@ -21,7 +21,7 @@ const FetchApi = (method, url, params, TokenValue) => {
         method: method,
         url: url,
         data: params,
-        responseType: "json",
+        responseType: 'json',
       })
         .then((res) => resolve(res))
         .catch((err) => reject(err));

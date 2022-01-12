@@ -7,13 +7,11 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "pre-commit run --all-files",
-    "format": "pretty-quick",
-    "lint:fix": "eslint --fix ."
+    "format": "pretty-quick"
   },
   "lint-staged": {
     "*.{js,jsx,scss,css,md}": [
       "prettier --write --single-quote",
-      "eslint --fix",
       "git add"
     ]
   },

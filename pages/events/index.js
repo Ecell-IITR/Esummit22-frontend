@@ -1,7 +1,7 @@
-import EventCard from "../../components/Events/eventCard";
-import { ALL_EVENTS_API } from "../../utils/APIs";
-import Footer from "../../components/footer";
-import { NextSeo } from "next-seo";
+import EventCard from '../../components/Events/eventCard';
+import { ALL_EVENTS_API } from '../../utils/APIs';
+import Footer from '../../components/footer';
+import { NextSeo } from 'next-seo';
 
 export const Events = ({
   CompetitiveEvents,
@@ -11,37 +11,37 @@ export const Events = ({
   return (
     <div>
       <NextSeo
-        title={"E-Summit 22 | Events "}
+        title={'E-Summit 22 | Events '}
         description={
           "Events including but not limted to Productathon, Ideastorm, Sale-Able, Investors' Vista, Startup Expo, Design Case Challenge"
         }
         canonical={`https://www.esummit.in/events`}
         openGraph={{
           url: `https://www.esummit.in/events`,
-          title: "E-Summit 22 | Events ",
+          title: 'E-Summit 22 | Events ',
           description:
             "Events including but not limted to Productathon, Ideastorm, Sale-Able, Investors' Vista, Startup Expo, Design Case Challenge",
           images: [
             {
-              url: "https://www.esummit.in/Esummit_logo.png",
-              alt: "logo",
-              type: "image/jpeg/png",
+              url: 'https://www.esummit.in/Esummit_logo.png',
+              alt: 'logo',
+              type: 'image/jpeg/png',
             },
           ],
           site_name: `Events | E-Summit 22 IITR`,
         }}
         additionalMetaTags={[
           {
-            name: "keywords",
+            name: 'keywords',
             content:
-              "esummit, e-summit, iit roorkee, conclave, Startup expo, Ideastorm, Investors Vista, Saleable, product-a-thon, speaker, events ",
+              'esummit, e-summit, iit roorkee, conclave, Startup expo, Ideastorm, Investors Vista, Saleable, product-a-thon, speaker, events ',
           },
         ]}
       />
-      <div className="events-page-heading">
+      <div className='events-page-heading'>
         <h1>EVENTS</h1>
       </div>
-      <div className="esummit-events-page">
+      <div className='esummit-events-page'>
         {CompetitiveEvents.map((event) => (
           <EventCard
             key={event.id}

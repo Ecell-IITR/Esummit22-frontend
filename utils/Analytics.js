@@ -1,13 +1,13 @@
-import ReactGA from "react-ga4";
-import config from "../config";
-import { isLocalHost, isStagingHost } from "../utils";
+import ReactGA from 'react-ga4';
+import config from '../config';
+import { isLocalHost, isStagingHost } from '../utils';
 
 const USER_DEFAULT_ID = -1;
 
 export const initializeGA = (initialUser) => {
   const trackingId =
     isLocalHost() || isStagingHost()
-      ? "DO_NOT_TRACK_LOCALHOST"
+      ? 'DO_NOT_TRACK_LOCALHOST'
       : config.GOOGLE_ANALYTICS_ID;
 
   ReactGA.initialize(trackingId, {
@@ -15,7 +15,7 @@ export const initializeGA = (initialUser) => {
       userId: initialUser ? initialUser.id : USER_DEFAULT_ID, // default ID
     },
   });
-  console.log("Initializing google analytics");
+  console.log('Initializing google analytics');
 
   // const advancedMatching = {};
   // const options = {
@@ -66,18 +66,18 @@ export const logPageView = (pathname) => {
 export const logAttemptSignIn = () => {
   // console.log("Attempting Sign In");
   ReactGA.event({
-    category: "Authentication",
-    action: "Attempt Sign In",
-    label: "Attempt Sign In",
+    category: 'Authentication',
+    action: 'Attempt Sign In',
+    label: 'Attempt Sign In',
   });
 };
 
 export const logSignIn = () => {
   // console.log("Signed In");
   ReactGA.event({
-    category: "Authentication",
-    action: "Signed In",
-    label: "Signed In",
+    category: 'Authentication',
+    action: 'Signed In',
+    label: 'Signed In',
   });
 };
 
@@ -85,8 +85,8 @@ export const logSignIn = () => {
 export const logAttemptSignUp = () => {
   // console.log("Attempting Sign Up");
   ReactGA.event({
-    category: "Authentication",
-    action: "Attempt Sign Up",
-    label: "Attempt Sign Up",
+    category: 'Authentication',
+    action: 'Attempt Sign Up',
+    label: 'Attempt Sign Up',
   });
 };
