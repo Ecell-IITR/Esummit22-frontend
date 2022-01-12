@@ -1,6 +1,6 @@
 import { DefaultSeoProps } from "next-seo";
 
-export const SITE_DESCRIPTION = `E-Summit is organised by E-Cell IIT Roorkee is Asia's one of the Largest Entrepreneurship Promoting college body. Our flagship event E-Summit, has hosted some of the most prominent stalwarts of the industry over the years including but not limited to Startup expo, Ideastorm, Investors Vista, Saleable, product-a-thon, speaker events and much more `;
+export const SITE_DESCRIPTION = `E-Summit 22 is organised by E-Cell IIT Roorkee is Asia's one of the Largest Entrepreneurship Promoting college body.E-Summit has hosted some of the most prominent stalwarts of the industry over the years including but not limited to Startup expo, Ideastorm, Investors Vista, Saleable, product-a-thon, speaker events and much more `;
 
 const defaultSEOConfig = {
   defaultTitle: "E-Summit 22 | IIT Roorkee ",
@@ -26,7 +26,7 @@ const defaultSEOConfig = {
     {
       name: "keywords",
       content:
-        "esummit, e-summit, ecell, entrepreneurship, global, summit, esummit iit, esummit iitr, esummit iit roorkee, e summit, 2022, iitr, startup, iit, roorkee, entrepreneur, fest, conference, conclave, Startup, expo, Ideastorm, Investors' Vista, Saleable, product-a-thon, speaker, events",
+        "e summit esummit e-summit ecell entrepreneurship global summit esummit iit esummit iitr esummit iit roorkee e summit 2022 iitr startup iit roorkee entrepreneur fest conference conclave Startup expo Ideastorm Investors' Vista Saleable product-a-thon speaker events",
     },
     {
       name: "hashtags",
