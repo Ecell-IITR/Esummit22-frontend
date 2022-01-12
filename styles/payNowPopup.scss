@@ -49,28 +49,25 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
-.pay-now-popup-flex-container{
+.pay-now-popup-flex-container {
   display: flex;
-  
 }
 .pay-now-popup-cross {
   font-size: 30px;
   font-weight: 1000;
- 
+
   width: 5%;
   right: 5%;
-  
+
   background-color: inherit;
   cursor: pointer;
   padding-top: 5px;
 }
 body.modal-open {
-  
   position: fixed;
 }
 body.viewport-lg {
-
-  position: absolute; 
+  position: absolute;
 }
 body.modal-open {
   overflow: hidden !important;
@@ -112,15 +109,15 @@ body.modal-open {
   cursor: pointer;
   z-index: 5;
 }
-.pay-now-popup-rows input{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    top: 29px;
-    left: 0;
-    z-index: 5;
+.pay-now-popup-rows input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  top: 29px;
+  left: 0;
+  z-index: 5;
 }
 .pay-now-popup-rows:hover input ~ .pay-now-popup-checkmark {
   background-color: #ccc !important;

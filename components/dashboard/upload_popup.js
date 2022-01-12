@@ -79,7 +79,6 @@ const Upload = ({ profileId, id, show, setShow }) => {
                     <div className="Upload_popup_Btn_ChooseFile">
                       <input
                         type="file"
-                      
                         className="Upload_input_Class"
                         onChange={(e) => {
                           handleInputChange(e);

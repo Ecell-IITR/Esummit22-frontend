@@ -40,14 +40,18 @@ export default function EventsDetails({
           ],
           site_name: `${detailsEvents[0].event_name} | E-Summit 22 IITR`,
         }}
-        
       />
-    { detailsEvents[0].event_seo!="" || detailsEvents[0].event_seo!=null ? <NextSeo additionalMetaTags= {[
-          {
-            name: "keywords",
-            content: detailsEvents[0].event_seo,
-              
-          }]}/>: null}
+      {detailsEvents[0].event_seo != "" ||
+      detailsEvents[0].event_seo != null ? (
+        <NextSeo
+          additionalMetaTags={[
+            {
+              name: "keywords",
+              content: detailsEvents[0].event_seo,
+            },
+          ]}
+        />
+      ) : null}
       <EventHeader
         detailsEvents={detailsEvents}
         CompetitiveEvents={CompetitiveEvents}
@@ -142,7 +146,6 @@ export default function EventsDetails({
           <EventCoordinator detailsEvents={detailsEvents} />
         </div>
       ) : null}
-    
     </div>
   );
 }

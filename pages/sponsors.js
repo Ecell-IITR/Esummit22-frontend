@@ -64,7 +64,7 @@ export default function Sponsors() {
       format: ".png",
     },
   ];
-  const Poductathon  = [
+  const Poductathon = [
     {
       title: "GeeksforGeeks",
       format: ".png",
@@ -74,13 +74,13 @@ export default function Sponsors() {
       format: ".jpg",
     },
   ];
-  const CaseChallenge  = [
+  const CaseChallenge = [
     {
       title: "Divami Labs",
       format: ".jpeg",
     },
   ];
-  const JuniorHackathonPartner  = [
+  const JuniorHackathonPartner = [
     {
       title: "Codingal",
       format: ".png",
@@ -91,92 +91,56 @@ export default function Sponsors() {
       <h1 className="sponsorspage-title">ASSOCIATE SPONSORS</h1>
       <div className="sponsorpage-container">
         {AssociateSponsors.map((d, i) => (
-          <Sponsor
-            key={i}
-            sponsorsTitle={d.title}
-            format={d.format}
-          />
+          <Sponsor key={i} sponsorsTitle={d.title} format={d.format} />
         ))}
       </div>
       <h1 className="sponsorspage-title">CERTIFICATE PARTNERS</h1>
       <div className="sponsorpage-container">
         {CertificatePartner.map((c, i) => (
-          <Sponsor
-            key={i}
-            sponsorsTitle={c.title}
-            format={c.format}
-          />
+          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
       <h1 className="sponsorspage-title">LEGAL AND CONSULTING PARTNERS</h1>
       <div className="sponsorpage-container">
         {LegaLconsultingPartner.map((c, i) => (
-          <Sponsor
-            key={i}
-            sponsorsTitle={c.title}
-            format={c.format}
-          />
+          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
       <h1 className="sponsorspage-title">PRODUCTATHON PARTNERS</h1>
       <div className="sponsorpage-container">
         {Poductathon.map((c, i) => (
-          <Sponsor
-            key={i}
-            sponsorsTitle={c.title}
-            format={c.format}
-          />
+          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
       <h1 className="sponsorspage-title">CASE CHALLENGE PARTNERS</h1>
       <div className="sponsorpage-container">
         {CaseChallenge.map((c, i) => (
-          <Sponsor
-            key={i}
-            sponsorsTitle={c.title}
-            format={c.format}
-          />
+          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
       <h1 className="sponsorspage-title">JUNIOR HACKATHON PARTNERS</h1>
       <div className="sponsorpage-container">
         {JuniorHackathonPartner.map((c, i) => (
-          <Sponsor
-            key={i}
-            sponsorsTitle={c.title}
-            format={c.format}
-          />
+          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
 
       <h1 className="sponsorspage-title">TRAVELLING PARTNERS</h1>
       <div className="sponsorpage-container">
         {TravellingPartner.map((c, i) => (
-          <Sponsor
-            key={i}
-            sponsorsTitle={c.title}
-            format={c.format}
-          />
+          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
       <h1 className="sponsorspage-title">MEDIA PARTNERS</h1>
       <div className="sponsorpage-container">
         {MediaPartners.map((c, i) => (
-          <Sponsor
-            key={i}
-            sponsorsTitle={c.title}
-            format={c.format}
-          />
+          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
       <h1 className="sponsorspage-title">KNOWLEDGE PARTNERS</h1>
       <div className="sponsorpage-container">
         {KnowledgePartner.map((c, i) => (
-          <Sponsor
-            key={i}
-            sponsorsTitle={c.title}
-            format={c.format}
-          />
+          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
       <Footer />
