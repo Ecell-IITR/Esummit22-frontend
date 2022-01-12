@@ -11,10 +11,17 @@ export class ResourcesCard extends Component {
         fileName: this.props.fileName_,
       });
     } else {
-      this.setState({
-        pdfFile: "/ca-rulebook.pdf",
-        fileName: "CA-Rulebook.pdf",
-      });
+      if (this.props.nonca) {
+        this.setState({
+          pdfFile: "/brochure.pdf",
+          fileName: "E-Summit Brochure.pdf",
+        });
+      } else {
+        this.setState({
+          pdfFile: "/ca-rulebook.pdf",
+          fileName: "CA-Rulebook.pdf",
+        });
+      }
     }
   }
 
@@ -31,7 +38,7 @@ export class ResourcesCard extends Component {
         <a
           href={this.state.pdfFile}
           className=" resource-download"
-          download="CA-Rulebook.pdf"
+          download="brochure.pdf"
         >
           Download
         </a>

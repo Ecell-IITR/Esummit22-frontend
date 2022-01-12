@@ -12,7 +12,7 @@ const NonCAResources = () => {
             style={{ width: "16%" }}
           ></div>
           <div className="nonCA_Profile_Resources_container">
-            <ResourcesCard />
+            <ResourcesCard nonca={true}/>
           </div>
         </div>
       </div>
