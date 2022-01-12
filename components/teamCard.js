@@ -3,7 +3,11 @@ export const TeamMemberCard = (member) => {
     <div className="member-container">
       <div className="main">
         <div className="member-card-post">{member.post}</div>
-        <img src={member.pic} className="member-card-image" alt="member" />
+        <img
+          src={member.pic}
+          className="member-card-image"
+          alt={`${member.name} image`}
+        />
       </div>
       <div className="team-card-box">
         <div className="member-card-name">{member.name}</div>
@@ -12,7 +16,11 @@ export const TeamMemberCard = (member) => {
           <div className="mb-2">{member.phone}</div>
           <div className="social-links">
             <a href={member.twitter} target="_blank" rel="noreferrer">
-              <img className="twitter" src="memberTwitter.png" alt="twitter" />
+              <img
+                className="twitter"
+                src="memberTwitter.png"
+                alt="twitter icon"
+              />
             </a>
             <a
               className="linkedin"
@@ -20,7 +28,7 @@ export const TeamMemberCard = (member) => {
               target="_blank"
               rel="noreferrer"
             >
-              <img src="memberLinkedin.png" alt="linkedin" />
+              <img src="memberLinkedin.png" alt="linkedin icon" />
             </a>
           </div>
         </div>

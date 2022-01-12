@@ -1,7 +1,6 @@
 import React from "react";
 
 export const CustomGradientBtn = ({ text, color = "black", size }) => {
-  console.log(text, color, size);
   return (
     <div
       className="custom-gradient-btn-container"

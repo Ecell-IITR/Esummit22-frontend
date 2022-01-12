@@ -16,7 +16,7 @@ export const LaptopHeader = () => {
       case "/":
         setActive("home");
         break;
-      case "/sponsors":
+      case "/comingSoonSponsors":
         setActive("sponsors");
         break;
       case "/events":
@@ -42,7 +42,7 @@ export const LaptopHeader = () => {
     <div className="navbar-container" id="navbar">
       <Link href="/" className="navbar-logo-link" passHref>
         <img
-          src="/fete-of-fortitude.png"
+          src="/Esummitlogofinal.png"
           className="navbar-logo"
           alt="E summit 22 fete of fortitude"
         />
@@ -183,6 +183,17 @@ export const LaptopHeader = () => {
               <div className={"ca_color"}>
                 <Link href="/cap/tasks" passHref>
                   <pre>CAMPUS AMBASSADOR</pre>
+                </Link>
+              </div>
+            </div>
+          </li>
+        )}
+        {user && roleType && roleType != "CA" && (
+          <li className="navbar-items">
+            <div id="heading">
+              <div className={"ca_color"}>
+                <Link href="/nonca/events" passHref>
+                  <pre>Dashboard</pre>
                 </Link>
               </div>
             </div>

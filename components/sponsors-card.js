@@ -5,7 +5,10 @@ export const Sponsor = ({ sponsorsTitle, format }) => {
     <div className="sponsor_main">
       <div className="img_div_behind">
         <div className="img_div_front">
-          <img src={"sponsors/" + sponsorsTitle + format} alt=" "></img>
+          <img
+            src={"sponsors/" + sponsorsTitle + format}
+            alt={`${sponsorsTitle} image`}
+          ></img>
         </div>
       </div>
       <div className="title_sponsor">

@@ -1,43 +1,106 @@
-.heading-date{
+.heading-date {
   font-size: 0.9em;
 }
-.heading-esummit{
+.heading-esummit {
   font-size: 1.5em !important;
 }
 .landing {
+  z-index: 1;
   padding: 5vw 10vw;
   height: 100vh;
   margin-top: 5vh;
-  background-image: url('/giff.gif');
+  position: relative;
   background-repeat: no-repeat;
-	background-position: center;
+  background-position: center center;
 }
-.landing-register-button{
-  clip-path: polygon(8% 0, 100% 0, 100% 65%, 92% 100%, 0 100%, 0 33%);
-	text-align: center;
-	line-height: 2.2rem;
-  width:40vh;
-  padding: 5%;
-  margin-top: 8%;
+
+.rotate {
+  background-size: 30vh;
+  opacity: 0.6;
+  height: 70vh;
+  z-index: -1;
+  position: absolute;
+  background-image: url("/webelement.png");
+  animation: rotate 10s infinite linear;
+  transition-timing-function: ease;
+}
+
+@keyframes rotate {
+  0%{
+    transform: scale(1.0) rotate(0deg);
+  }
+  50%{
+    transform: scale(2.0) rotate(360deg);
+  }
+  100% {
+    transform: scale(1.0) rotate(720deg);
+  }
+}
+
+.landing-register-button {
+  background: transparent;
+  border: solid 1px #f5e4ca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  cursor: pointer;
+  margin: 4rem 2rem 2rem 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.7em;
+  padding-top: 0.7em;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
   font-size: 1em;
-	display:block !important;
+  border-radius: 0.5vw 0.25vw 0.5vw 0px;
+  color: #f5e4ca;
+  white-space: nowrap;
 }
-.landing-register-button:hover{
-	animation: shake 0.8s;
-	animation-iteration-count: infinite;
+.landing-register-button:hover {
+  animation-iteration-count: infinite;
+  color: black;
+  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
+}
+.landing-page-text-png {
+  width: 35vw;
+  align-items: center;
 }
 @keyframes shake {
-	0% { transform: translate(1px, 1px) rotate(0deg); }
-	10% { transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { transform: translate(-3px, 0px) rotate(1deg); }
-	30% { transform: translate(3px, 2px) rotate(0deg); }
-	40% { transform: translate(1px, -1px) rotate(1deg); }
-	50% { transform: translate(-1px, 2px) rotate(-1deg); }
-	60% { transform: translate(-3px, 1px) rotate(0deg); }
-	70% { transform: translate(3px, 1px) rotate(-1deg); }
-	80% { transform: translate(-1px, -1px) rotate(1deg); }
-	90% { transform: translate(1px, 2px) rotate(0deg); }
-	100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 #headLine {
   width: 50vw;
@@ -47,15 +110,37 @@
   animation: logoEmerge 2s ease-in-out;
   transform: translateY(-300px) rotate(180deg) scale(0.4);
 }
-@media only screen and (max-width: 540px) {
-  .landing{
-    margin-top: 15vh;
-    // height: 60vh;
+@media only screen and (max-width: 768px) {
+  .landing {
+    margin-top: 5vh;
+    background-size: 80%;
   }
-  .heading-date{
-    margin-top: 10vh;
+  .heading-date {
+    margin-top: 5vh;
   }
-  .landing-register-button{
-    width:30vh;
+
+  .rotate {
+    width: 50vw;
+  }
+
+  .landing-register-button {
+    width: 25vh;
+    margin-top: 7rem;
+    border-radius: 3vw 1.5vw 3vw 0px;
+  }
+  .landing-page-text-png {
+    width: 60vw;
+  }
+}
+
+@media screen and (width: 768px) {
+  .mainPage_side_img {
+    width: 9vw;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .rotate {
+    width: 40vw;
   }
 }

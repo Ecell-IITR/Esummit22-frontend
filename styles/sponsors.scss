@@ -2,15 +2,14 @@
   font-family: Blinker;
   font-style: normal;
   font-weight: 600;
-  font-size: 1.5em;
+  font-size: 48px;
   line-height: 58px;
+  margin-bottom: 117px;
+  margin-top: 140px;
+  text-align: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: white;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
+  color: #e9f0f4;
 }
 
 .sponsorpage-container {
@@ -19,4 +18,42 @@
   margin: 1% 13%;
   justify-content: space-evenly;
   flex-basis: 30%;
+}
+
+.sponsorspage-coming-soon {
+  display: flex;
+  height: 73vh;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  img {
+    position: absolute;
+    width: 44vw;
+    top: -100px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .sponsorspage-coming-soon {
+    img {
+      width: 90vw;
+    }
+  }
+}
+
+@media only screen and (width: 768px) {
+  .sponsorspage-coming-soon {
+    img {
+      width: 70vw;
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+  .sponsorspage-title {
+    font-size: 32px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+  }
 }

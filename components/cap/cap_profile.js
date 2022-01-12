@@ -3,7 +3,14 @@ import { useState } from "react";
 import FetchApi from "../../utils/fetchAPI";
 import { CA_PROFILE_API } from "../../utils/APIs";
 import { getAuthToken } from "../../utils";
-export const Profile = ({ name = "", points, id, college, rank }) => {
+export const Profile = ({
+  name = "",
+  points,
+  id,
+  college,
+  rank,
+  invite_id,
+}) => {
   return (
     <div className="profile-container">
       <div className="profile-image">
@@ -23,6 +30,9 @@ export const Profile = ({ name = "", points, id, college, rank }) => {
         <div className="profile-details-name3">
           <div className="profile-white-text ca-profile-id">ESummit ID</div>
           <div className="profile-golden-text">{id}</div>
+          <img className="profile-circle" src="/circle.png" alt="" />
+          <div className="profile-white-text">Invite ID</div>
+          <div className="profile-golden-text">{invite_id}</div>
           <img className="profile-circle" src="/circle.png" alt="" />
           <div className="profile-white-text">Rank</div>
           <div className="profile-golden-text">{rank}</div>

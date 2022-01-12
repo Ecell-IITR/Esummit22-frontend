@@ -19,12 +19,10 @@ const Upload = ({ profileId, id, show, setShow }) => {
   function submit() {
     if (selectedFile) {
       setloading(true);
-      console.log(selectedFile);
       let form_data = new FormData();
       form_data.append("uploaded_file", selectedFile, selectedFile.name);
       form_data.append("uploaded_task", id);
       form_data.append("uploaded_by", profileId);
-      console.log("i am trying to work");
       FetchApi("post", Submission_API, form_data, getAuthToken())
         .then((res) => {
           console.log(res);
@@ -81,7 +79,7 @@ const Upload = ({ profileId, id, show, setShow }) => {
                     <div className="Upload_popup_Btn_ChooseFile">
                       <input
                         type="file"
-                        accept="image/*"
+                      
                         className="Upload_input_Class"
                         onChange={(e) => {
                           handleInputChange(e);

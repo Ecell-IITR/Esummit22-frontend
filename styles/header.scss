@@ -72,7 +72,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   font-style: normal;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 2vh;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -191,7 +191,6 @@ a {
 }
 #heading:hover .hover_underline {
   height: 0.2vw;
-  background: linear-gradient(124.76deg, #f5e4ca 12.61%, #dbba89 63.66%);
   width: 100%;
   position: relative;
   top: 12px;
@@ -239,4 +238,5 @@ a {
 
 .register-login {
   font-size: 1vw;
+  white-space: nowrap;
 }

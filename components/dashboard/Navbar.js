@@ -18,7 +18,7 @@ export default function Navbar() {
         setactivelist([false, false, true]);
         break;
     }
-  },);
+  });
 
   return (
     <div className="Ca_sidebar">

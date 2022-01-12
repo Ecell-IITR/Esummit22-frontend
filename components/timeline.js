@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import moment from "moment";
 
 const Timeline_card = ({ detailsEvents }) => {
   const [round, setRound] = useState(1);
@@ -15,6 +16,7 @@ const Timeline_card = ({ detailsEvents }) => {
                 round === 1 ? "Timeline-img" : "Timeline-nodisplay"
               }`}
               src="/Group.svg"
+              alt="timeline icon"
             />
             <div
               className={`Rounds-container ${
@@ -26,7 +28,11 @@ const Timeline_card = ({ detailsEvents }) => {
           </div>
           {detailsEvents[0].event_rounds.length - 1 > 0 ? (
             <>
-              <img className="Timeline-Intersect" src="/Intersect.svg" />
+              <img
+                className="Timeline-Intersect"
+                src="/Intersect.svg"
+                alt="timeline intersect image"
+              />
 
               <div
                 className="EventsTimeline-subcontainer-rounds-heading-icon"
@@ -37,6 +43,7 @@ const Timeline_card = ({ detailsEvents }) => {
                     round === 2 ? "Timeline-img" : "Timeline-nodisplay"
                   }`}
                   src="/Group.svg"
+                  alt="timeline icon"
                 />
                 <div
                   className={`Rounds-container ${
@@ -59,6 +66,7 @@ const Timeline_card = ({ detailsEvents }) => {
                         round === 3 ? "Timeline-img" : "Timeline-nodisplay"
                       }`}
                       src="/Group.svg"
+                      alt="timeline icon"
                     />
                     <div
                       className={`Rounds-container ${
@@ -84,7 +92,8 @@ const Timeline_card = ({ detailsEvents }) => {
             }}
           />
         </div>
-        <div className="EventsTimeline-subcontainer-round-details">
+
+        <div className={"EventsTimeline-subcontainer-round-details"}>
           <div className="EventsTimeline-subcontainer-round-details-content">
             <div className="EventsTimeline-subcontainer-round-details-content-heading">
               EVENT TYPE
@@ -95,19 +104,28 @@ const Timeline_card = ({ detailsEvents }) => {
           </div>
           <div className="EventsTimeline-subcontainer-round-details-content">
             <div className="EventsTimeline-subcontainer-round-details-content-heading">
-              REGISTRATION
+              REGISTRATION STARTS
             </div>
             <div className="EventsTimeline-subcontainer-round-details-content-description">
-              Registrations close:{" "}
-              {detailsEvents[0].event_rounds[0].end_date_time}
+              Registrations starts:{" "}
+              {moment(
+                detailsEvents[0].event_rounds[
+                  round - 1
+                ].start_date_time.toLocaleString("en-US")
+              ).format("Do MMMM")}
             </div>
           </div>
           <div className="EventsTimeline-subcontainer-round-details-content">
             <div className="EventsTimeline-subcontainer-round-details-content-heading">
-              DATE
+              REGISTRATION CLOSES
             </div>
             <div className="EventsTimeline-subcontainer-round-details-content-description">
-              7th January
+              Registrations closes:{" "}
+              {moment(
+                detailsEvents[0].event_rounds[
+                  round - 1
+                ].end_date_time.toLocaleString("en-US")
+              ).format("Do MMMM")}
             </div>
           </div>
         </div>
@@ -115,6 +133,7 @@ const Timeline_card = ({ detailsEvents }) => {
           <img
             className="EventsTimeline-subcontainer-round-logo-image"
             src="/timelineicon.png"
+            alt="timeline icon"
           />
         </div>
       </div>

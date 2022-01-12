@@ -19,11 +19,11 @@
   width: 70%;
 }
 .details_apply_now_button {
-  width: 100%;
   display: flex;
   justify-content: center;
 }
 .details_apply_now {
+  margin: 10px 0;
   width: 14%;
 }
 .details_about {
@@ -61,8 +61,9 @@
 .details_sponsors {
   display: flex;
   flex-direction: row;
+
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   color: white;
   margin-top: 3%;
   width: 70%;
