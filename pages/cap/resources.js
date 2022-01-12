@@ -4,7 +4,6 @@ import { CA_PROFILE_API } from "../../utils/APIs";
 import { getAuthToken } from "../../utils";
 import CapLayout from "../../components/cap/capLayout";
 import CA_Resources from "../../components/cap/ca_resources";
-
 import withAuth from "../../utils/withAuth";
 
 const ResourcesPage = () => {
