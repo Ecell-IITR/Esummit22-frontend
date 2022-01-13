@@ -24,6 +24,6 @@ export const FOOTER_QUERY_API = `${API_URL}/utilities/contact-form/`;
 export const EVENT_API = (eventSlug) => `${API_URL}/events/${eventSlug}`;
 export const DASHBOARD_EVENT_API = `${API_URL}/dash/eventdashboard/all`;
 export const SPEAKERS_API = `${API_URL}/events/speakers`;
-export const TEAM_API = `${API_URL}/utilities/team-members/`;
+export const TEAM_API = `${API_URL}/utilities/team-members/?ordering=-order_id`;
 export const ALL_EVENTS_API = `${API_URL}/events/all`;
 export const DASHBOARD_EVENT_REGISTER_API = `${API_URL}/dash/eventdashboard/register`;
