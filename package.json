@@ -6,7 +6,19 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "pre-commit run --all-files"
+    "lint": "pre-commit run --all-files",
+    "format": "pretty-quick"
+  },
+  "lint-staged": {
+    "*.{js,jsx,scss,css,md}": [
+      "prettier --write --single-quote",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^15.11.0",
@@ -35,8 +47,12 @@
     "autoprefixer": "^10.4.0",
     "eslint": "<8.0.0",
     "eslint-config-next": "12.0.4",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.7",
     "postcss": "^8.4.4",
     "pre-commit": "^1.2.2",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.3",
     "tailwindcss": "^2.2.19"
   },
   "version": "1.0.0",

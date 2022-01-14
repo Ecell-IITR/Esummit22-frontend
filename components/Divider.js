@@ -1,3 +1,3 @@
-const Divider = () => <hr className="divider" />;
+const Divider = () => <hr className='divider' />;
 
 export default Divider;

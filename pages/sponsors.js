@@ -1,8 +1,8 @@
-import React from "react";
-import Sponsor from "../components/sponsors-card";
-import Footer from "../components/footer";
-import { NextSeo } from "next-seo";
-import Content from "../components/content";
+import React from 'react';
+import Sponsor from '../components/sponsors-card';
+import Footer from '../components/footer';
+import { NextSeo } from 'next-seo';
+import Content from '../components/content';
 
 export default function Sponsors() {
   <NextSeo
@@ -11,16 +11,16 @@ export default function Sponsors() {
     canonical={`https://www.esummit.in/sponsors`}
     openGraph={{
       url: `https://www.esummit.in/sponsors`,
-      title: "Sponsors",
+      title: 'Sponsors',
       description:
         "GeeksforGeeks, Codingal, Divami Labs, Amar Ujala and Venture Folks are the companies partnering with E-Cell to conduct E-Summit'22. ",
       site_name: `Sponsors E-Summit'22`,
     }}
     additionalMetaTags={[
       {
-        name: "Sponsors Page",
+        name: 'Sponsors Page',
         content:
-          "Principal Sponsors, Media Sponsors, Event Sponsors, Service Sponsors, Platform Sponsors, Community Sponsors.",
+          'Principal Sponsors, Media Sponsors, Event Sponsors, Service Sponsors, Platform Sponsors, Community Sponsors.',
       },
     ]}
   />;

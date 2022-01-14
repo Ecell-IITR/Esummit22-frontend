@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import FetchApi from "../utils/fetchAPI";
-import { TASK_API, CA_PROFILE_API, Register_API } from "../utils/APIs";
-import { toast } from "react-toastify";
-import { AccountSetup } from "../components/registration/Accountsetup.js";
-import PersonalDetails from "../components/registration/PersonalDetails.js";
-import { Authenticate } from "../utils";
+import React, { Component } from 'react';
+import FetchApi from '../utils/fetchAPI';
+import { TASK_API, CA_PROFILE_API, Register_API } from '../utils/APIs';
+import { toast } from 'react-toastify';
+import { AccountSetup } from '../components/registration/Accountsetup.js';
+import PersonalDetails from '../components/registration/PersonalDetails.js';
+import { Authenticate } from '../utils';
 
 export class Registration extends Component {
   constructor(props) {
@@ -14,31 +14,31 @@ export class Registration extends Component {
       activeStep: 0,
       toggleEye: false,
       toggleConfirmEye: false,
-      full_name: "",
-      email: "",
-      image_url: "",
-      password: "",
-      token: "",
-      confirm_password: "",
-      resend_email: "",
-      year: "",
-      programme: "",
-      role_type: "",
-      country: "",
-      phone_number: "",
-      gender: "",
-      enrollment_no: "",
-      college: "",
-      city: "",
-      state: "",
-      organisation_name: "",
-      industry: "",
-      members: "",
-      startupName: "",
+      full_name: '',
+      email: '',
+      image_url: '',
+      password: '',
+      token: '',
+      confirm_password: '',
+      resend_email: '',
+      year: '',
+      programme: '',
+      role_type: '',
+      country: '',
+      phone_number: '',
+      gender: '',
+      enrollment_no: '',
+      college: '',
+      city: '',
+      state: '',
+      organisation_name: '',
+      industry: '',
+      members: '',
+      startupName: '',
       social_signup: false,
-      school: "",
-      current_class: "",
-      student_type: "",
+      school: '',
+      current_class: '',
+      student_type: '',
     };
   }
   handleAccountSetup = (data) => {
@@ -118,30 +118,28 @@ export class Registration extends Component {
     this.setState({
       loading: false,
     });
-    FetchApi("post", Register_API, this.state, null)
+    FetchApi('post', Register_API, this.state, null)
       .then((res) => {
         this.setState({
           loading: false,
         });
-        toast.success("Succesfully Registered");
-        console.log("Succesfully Registered", res.data);
+        toast.success('Succesfully Registered');
+        console.log('Succesfully Registered', res.data);
         // if (res.data.token) {
         //   localStorage.setItem("authToken", res.data.token);
         //   //   this.props.history.push("/dashboard");
         // }
         if (res.data.role_type) {
-          localStorage.setItem("userRoleType", res.data.role_type);
+          localStorage.setItem('userRoleType', res.data.role_type);
         }
 
         // if (res.data.user) {
         //   localStorage.setItem("user", res.data.user);
         // }
         Authenticate(res.data.user, res.data.token);
-        if (String(localStorage.getItem("userRoleType")) === "CA") {
-          window.location.href = "/cap/tasks";
-        }
-        else 
-          window.location.href ="/nonca/events";
+        if (String(localStorage.getItem('userRoleType')) === 'CA') {
+          window.location.href = '/cap/tasks';
+        } else window.location.href = '/nonca/events';
       })
       .catch((err) => {
         this.setState({
@@ -158,23 +156,23 @@ export class Registration extends Component {
     const { activeStep } = this.state;
 
     return (
-      <div className="registration-container">
-        <div className="login-container-bck">
-          <img src={"login/login-bck-img.png"} className="bcki" alt="bcki" />
+      <div className='registration-container'>
+        <div className='login-container-bck'>
+          <img src={'login/login-bck-img.png'} className='bcki' alt='bcki' />
         </div>
-        <div className="register-container-box">
-          <div className="register-box-design1">
+        <div className='register-container-box'>
+          <div className='register-box-design1'>
             <img
-              alt="design"
-              className=""
-              src={"login/login-bck-design1.svg"}
+              alt='design'
+              className=''
+              src={'login/login-bck-design1.svg'}
             />
           </div>
-          <div className="register-box-design2">
+          <div className='register-box-design2'>
             <img
-              alt="design"
-              className=""
-              src={"login/login-bck-design2.svg"}
+              alt='design'
+              className=''
+              src={'login/login-bck-design2.svg'}
             />
           </div>
           <form

@@ -1,17 +1,17 @@
-import CAPTask from "../../components/task";
-import CompletedTask from "../../components/completedTask";
-import React, { useEffect, useState } from "react";
-import FetchApi from "../../utils/fetchAPI";
-import { CA_PROFILE_API, TASK_API } from "../../utils/APIs";
-import CapLayout from "../../components/cap/capLayout";
-import { getAuthToken } from "../../utils";
+import CAPTask from '../../components/task';
+import CompletedTask from '../../components/completedTask';
+import React, { useEffect, useState } from 'react';
+import FetchApi from '../../utils/fetchAPI';
+import { CA_PROFILE_API, TASK_API } from '../../utils/APIs';
+import CapLayout from '../../components/cap/capLayout';
+import { getAuthToken } from '../../utils';
 
 export default function Task() {
   const [allTasks, setAllTasks] = useState([]);
   const [completed_task, set_completed_task] = useState([]);
 
   useEffect(() => {
-    FetchApi("get", CA_PROFILE_API, null, getAuthToken())
+    FetchApi('get', CA_PROFILE_API, null, getAuthToken())
       .then((res) => {
         set_completed_task(res.data[0]?.tasks_uploaded);
       })
@@ -21,7 +21,7 @@ export default function Task() {
   }, []);
 
   useEffect(() => {
-    FetchApi("get", TASK_API, null, getAuthToken())
+    FetchApi('get', TASK_API, null, getAuthToken())
       .then((res) => {
         setAllTasks(res.data);
       })
@@ -44,10 +44,10 @@ export default function Task() {
 
   return (
     <CapLayout>
-      <div className="Cap_Content_cotainer">
-        <div className="task_heading">Tasks</div>{" "}
-        <div className="Task_cap_underline"></div>
-        <div className="Task_flex">
+      <div className='Cap_Content_cotainer'>
+        <div className='task_heading'>Tasks</div>{' '}
+        <div className='Task_cap_underline'></div>
+        <div className='Task_flex'>
           {Filter()?.map((det, id) => {
             return (
               <CAPTask
@@ -62,10 +62,10 @@ export default function Task() {
             );
           })}
         </div>
-        <div className="cap-completed-task-container">
-          <div className="task_heading">Completed Tasks</div>{" "}
-          <div className="completed_task_cap_underline"></div>
-          <div className="completed-task-flex">
+        <div className='cap-completed-task-container'>
+          <div className='task_heading'>Completed Tasks</div>{' '}
+          <div className='completed_task_cap_underline'></div>
+          <div className='completed-task-flex'>
             {completed_task.map((det, id) => {
               return (
                 <div key={id}>

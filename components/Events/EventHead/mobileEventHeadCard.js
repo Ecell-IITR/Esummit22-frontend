@@ -1,7 +1,7 @@
-import TransparentGradientButton from "../../transparentGradientButton";
+import TransparentGradientButton from '../../transparentGradientButton';
 export const MobileEventHead = ({ detailsEvents, CompetitiveEvents }) => {
   const getPreviousEventLink = () => {
-    let previousLink = "";
+    let previousLink = '';
     CompetitiveEvents.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === 0) {
@@ -15,7 +15,7 @@ export const MobileEventHead = ({ detailsEvents, CompetitiveEvents }) => {
     return previousLink;
   };
   const getPreviousEventName = () => {
-    let previousName = "";
+    let previousName = '';
     CompetitiveEvents.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === 0) {
@@ -30,7 +30,7 @@ export const MobileEventHead = ({ detailsEvents, CompetitiveEvents }) => {
   };
 
   const getNextEventLink = () => {
-    let NextLink = "";
+    let NextLink = '';
     CompetitiveEvents.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === CompetitiveEvents.length - 1) {
@@ -44,7 +44,7 @@ export const MobileEventHead = ({ detailsEvents, CompetitiveEvents }) => {
   };
 
   const getNextEventName = () => {
-    let NextName = "";
+    let NextName = '';
     CompetitiveEvents.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === CompetitiveEvents.length - 1) {
@@ -58,12 +58,12 @@ export const MobileEventHead = ({ detailsEvents, CompetitiveEvents }) => {
   };
 
   return (
-    <div className="mobile-event-head">
-      <div className="mobile-event-image-container">
+    <div className='mobile-event-head'>
+      <div className='mobile-event-image-container'>
         <img
-          className="mobile-event-image"
+          className='mobile-event-image'
           src={detailsEvents[0].background_image}
-          alt="ideastorm"
+          alt='ideastorm'
         />
         {/* <div>
           <button className="previous-event-button">
@@ -85,16 +85,16 @@ export const MobileEventHead = ({ detailsEvents, CompetitiveEvents }) => {
             {getNextEventName()}
           </button>
         </div> */}
-        <div className="mobile-centered">
-          <div className="mobile-event-name">{detailsEvents[0].event_name}</div>
+        <div className='mobile-centered'>
+          <div className='mobile-event-name'>{detailsEvents[0].event_name}</div>
           <div
-            className="mobile-event-desc"
+            className='mobile-event-desc'
             dangerouslySetInnerHTML={{
               __html: detailsEvents[0].card_description,
             }}
           />
-          <div className="transparent_apply_now">
-            <TransparentGradientButton text="apply now" />
+          <div className='transparent_apply_now'>
+            <TransparentGradientButton text='apply now' />
           </div>
         </div>
       </div>

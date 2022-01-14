@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from "react";
-import FetchApi from "../../utils/fetchAPI";
-import { CA_PROFILE_API } from "../../utils/APIs";
-import { getAuthToken } from "../../utils";
-import CapLayout from "../../components/cap/capLayout";
-import CA_Resources from "../../components/cap/ca_resources";
-
-import withAuth from "../../utils/withAuth";
+import React, { useEffect, useState } from 'react';
+import FetchApi from '../../utils/fetchAPI';
+import { CA_PROFILE_API } from '../../utils/APIs';
+import { getAuthToken } from '../../utils';
+import CapLayout from '../../components/cap/capLayout';
+import CA_Resources from '../../components/cap/ca_resources';
+import withAuth from '../../utils/withAuth';
 
 const ResourcesPage = () => {
   const [resourcesList, setResourcesList] = useState([]);
 
   useEffect(() => {
-    FetchApi("get", CA_PROFILE_API, null, getAuthToken())
+    FetchApi('get', CA_PROFILE_API, null, getAuthToken())
       .then((res) => {
         setResourcesList(res.data[0].resources_uploaded);
       })

@@ -20,20 +20,20 @@
   height: 70vh;
   z-index: -1;
   position: absolute;
-  background-image: url("/webelement.png");
+  background-image: url('/webelement.png');
   animation: rotate 10s infinite linear;
   transition-timing-function: ease;
 }
 
 @keyframes rotate {
-  0%{
-    transform: scale(1.0) rotate(0deg);
+  0% {
+    transform: scale(1) rotate(0deg);
   }
-  50%{
-    transform: scale(2.0) rotate(360deg);
+  50% {
+    transform: scale(2) rotate(360deg);
   }
   100% {
-    transform: scale(1.0) rotate(720deg);
+    transform: scale(1) rotate(720deg);
   }
 }
 

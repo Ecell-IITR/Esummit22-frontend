@@ -1,20 +1,20 @@
 const LeaderboardEntry = (leaderboardData) => {
   return (
-    <div className="leaderboard-entry-main-container">
-      <div className="leaderboard-entry-subcontainer">
-        <div className="leaderboard-entry-subcontainer1">
-          <div className="leaderboard-entry-item leaderboard-entry-rank">
+    <div className='leaderboard-entry-main-container'>
+      <div className='leaderboard-entry-subcontainer'>
+        <div className='leaderboard-entry-subcontainer1'>
+          <div className='leaderboard-entry-item leaderboard-entry-rank'>
             {leaderboardData.rank}
           </div>
-          <div className="leaderboard-entry-item leaderboard-entry-name">
+          <div className='leaderboard-entry-item leaderboard-entry-name'>
             {leaderboardData.name}
           </div>
         </div>
-        <div className="leaderboard-entry-subcontainer2">
-          <div className="leaderboard-entry-item">
+        <div className='leaderboard-entry-subcontainer2'>
+          <div className='leaderboard-entry-item'>
             {leaderboardData.college}
           </div>
-          <div className="leaderboard-points">{leaderboardData.points}</div>
+          <div className='leaderboard-points'>{leaderboardData.points}</div>
         </div>
       </div>
     </div>
@@ -23,16 +23,16 @@ const LeaderboardEntry = (leaderboardData) => {
 
 export const Leaderboard = ({ allCompetitors }) => {
   return (
-    <div className="main-leaderboard-container">
-      <div className="leaderboard-head-container">
-        <div className="leaderboard-head-subcontainer">
-          <div className="leaderboard-head-subcontainer1">
-            <div className="leaderboard-head-item">Rank</div>
-            <div className="leaderboard-head-item leaderboard-name">Name</div>
+    <div className='main-leaderboard-container'>
+      <div className='leaderboard-head-container'>
+        <div className='leaderboard-head-subcontainer'>
+          <div className='leaderboard-head-subcontainer1'>
+            <div className='leaderboard-head-item'>Rank</div>
+            <div className='leaderboard-head-item leaderboard-name'>Name</div>
           </div>
-          <div className="leaderboard-head-subcontainer2">
-            <div className="leaderboard-head-item">College</div>
-            <div className="leaderboard-head-item">Points</div>
+          <div className='leaderboard-head-subcontainer2'>
+            <div className='leaderboard-head-item'>College</div>
+            <div className='leaderboard-head-item'>Points</div>
           </div>
         </div>
       </div>

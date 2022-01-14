@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext } from 'react';
 
 const MobileContext = React.createContext();
 
@@ -26,17 +26,17 @@ export const handleTextImgSize = (
 
 const MobileProvider = ({ children }) => {
   const [isMobile, setIsMobile] = useState(true);
-  const [isStyleMobile, setIsStyleMobile] = useState("");
+  const [isStyleMobile, setIsStyleMobile] = useState('');
 
   const setMobile = () => {
     if (window.innerWidth < 768) {
       setIsMobile(true);
       // console.log("I am mobile !");
-      setIsStyleMobile("mobile");
+      setIsStyleMobile('mobile');
     } else {
       setIsMobile(false);
       // console.log("I am not mobile!");
-      setIsStyleMobile("not-mobile");
+      setIsStyleMobile('not-mobile');
     }
   };
 

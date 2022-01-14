@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   FacebookShareButton,
   LinkedinShareButton,
@@ -9,28 +9,28 @@ import {
   TwitterIcon,
   LinkedinIcon,
   WhatsappIcon,
-} from "react-share";
+} from 'react-share';
 export const Share = ({ closeModal, desc, link }) => {
   function copyText(id, id2) {
-    document.getElementById(id2).innerText = "Copied";
+    document.getElementById(id2).innerText = 'Copied';
     var range = document.createRange();
     var index = document.getElementById(id);
     range.selectNode(index);
     window.getSelection().removeAllRanges();
     window.getSelection().addRange(range);
-    document.execCommand("copy");
+    document.execCommand('copy');
     window.getSelection().remo;
   }
 
   return (
-    <div className="Share_popup_share_background">
-      <div className="Share_popup_mainDiv_behind">
-        <div className="Share_popup_mainDiv_front">
-          <div className="Share_popup_heading">
-            <div className="Share_popup_share_heading">
+    <div className='Share_popup_share_background'>
+      <div className='Share_popup_mainDiv_behind'>
+        <div className='Share_popup_mainDiv_front'>
+          <div className='Share_popup_heading'>
+            <div className='Share_popup_share_heading'>
               <h1>Share</h1>
             </div>
-            <div className="Share_popup_close_btn">
+            <div className='Share_popup_close_btn'>
               <button
                 onClick={() => {
                   closeModal(false);
@@ -40,17 +40,17 @@ export const Share = ({ closeModal, desc, link }) => {
               </button>
             </div>
           </div>
-          <div className="Share_popup_subDiv_behind">
-            <div className="Share_popup_subDiv_front">
-              <p className="Share_popup_para" id="Share_popup_para1">
+          <div className='Share_popup_subDiv_behind'>
+            <div className='Share_popup_subDiv_front'>
+              <p className='Share_popup_para' id='Share_popup_para1'>
                 {desc}
               </p>
-              <div className="Share_popup_copy_btn">
+              <div className='Share_popup_copy_btn'>
                 <h1>
                   <button
-                    id="Share_popup_copy"
+                    id='Share_popup_copy'
                     onClick={() =>
-                      copyText("Share_popup_para1", "Share_popup_copy")
+                      copyText('Share_popup_para1', 'Share_popup_copy')
                     }
                   >
                     Copy
@@ -59,70 +59,70 @@ export const Share = ({ closeModal, desc, link }) => {
               </div>
             </div>
           </div>
-          <div className="Share_popup_media_div">
-            <div className="Share_popup_single_media_div">
+          <div className='Share_popup_media_div'>
+            <div className='Share_popup_single_media_div'>
               <FacebookShareButton url={link} quote={desc}>
                 <img
-                  src="/Facebook_img.png"
-                  className="new-footer-section-contact-logo"
-                  alt=""
+                  src='/Facebook_img.png'
+                  className='new-footer-section-contact-logo'
+                  alt=''
                 />
-                <h1 className="Share_popup_media_title">Facebook</h1>
+                <h1 className='Share_popup_media_title'>Facebook</h1>
               </FacebookShareButton>
             </div>
-            <div className="Share_popup_single_media_div">
+            <div className='Share_popup_single_media_div'>
               <LinkedinShareButton url={link} title={desc}>
                 <img
-                  src="/LinkedIn_img.png"
-                  className="new-footer-section-contact-logo"
-                  alt=""
+                  src='/LinkedIn_img.png'
+                  className='new-footer-section-contact-logo'
+                  alt=''
                 />
-                <h1 className="Share_popup_media_title">LinkedIn</h1>
+                <h1 className='Share_popup_media_title'>LinkedIn</h1>
               </LinkedinShareButton>
             </div>
-            <div className="Share_popup_single_media_div">
+            <div className='Share_popup_single_media_div'>
               <TwitterShareButton url={link} title={desc}>
                 <img
-                  src="/Twitter_img.png"
-                  className="new-footer-section-contact-logo"
-                  alt=""
+                  src='/Twitter_img.png'
+                  className='new-footer-section-contact-logo'
+                  alt=''
                 />
-                <h1 className="Share_popup_media_title">Twitter</h1>
+                <h1 className='Share_popup_media_title'>Twitter</h1>
               </TwitterShareButton>
             </div>
-            <div className="Share_popup_single_media_div">
+            <div className='Share_popup_single_media_div'>
               <a
-                className="new-footer-section-contact-link"
-                href="https://www.instagram.com/ecelliitr/"
-                target="_blank"
-                rel="noopener noreferrer"
+                className='new-footer-section-contact-link'
+                href='https://www.instagram.com/ecelliitr/'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 <img
-                  src="/Instagram_img.png"
-                  className="new-footer-section-contact-logo"
-                  alt=""
+                  src='/Instagram_img.png'
+                  className='new-footer-section-contact-logo'
+                  alt=''
                 />
-                <h1 className="Share_popup_media_title">Instagram</h1>
+                <h1 className='Share_popup_media_title'>Instagram</h1>
               </a>
             </div>
-            <div className="Share_popup_single_media_div">
+            <div className='Share_popup_single_media_div'>
               <WhatsappShareButton url={link} title={desc}>
                 <img
-                  src="/Whatsapp_img.png"
-                  className="new-footer-section-contact-logo"
-                  alt=""
+                  src='/Whatsapp_img.png'
+                  className='new-footer-section-contact-logo'
+                  alt=''
                 />
-                <h1 className="Share_popup_media_title">Whatsapp</h1>
+                <h1 className='Share_popup_media_title'>Whatsapp</h1>
               </WhatsappShareButton>
             </div>
-            <div className="Share_popup_single_media_div">
+            <div className='Share_popup_single_media_div'>
               <EmailShareButton url={link} title={desc}>
                 <img
-                  src="/Email_img.png"
-                  className="new-footer-section-contact-logo"
-                  alt=""
+                  src='/Email_img.png'
+                  className='new-footer-section-contact-logo'
+                  alt=''
                 />
-                <h1 className="Share_popup_media_title">Email</h1>
+                <h1 className='Share_popup_media_title'>Email</h1>
               </EmailShareButton>
             </div>
           </div>
