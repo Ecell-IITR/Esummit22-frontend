@@ -28,6 +28,10 @@ const defaultSEOConfig = {
       content:
         "e summit esummit e-summit ecell entrepreneurship global summit esummit iit esummit iitr esummit iit roorkee e summit 2022 iitr startup iit roorkee entrepreneur fest conference conclave Startup expo Ideastorm Investors' Vista Saleable product-a-thon speaker events",
     },
+    {name:"google-site-verification",
+    content: "FQHsZrx4X62phcVvSuVBGSFfqsuv-iXAvShh7fh681A"
+  },
+
     {
       name: 'hashtags',
       content:
