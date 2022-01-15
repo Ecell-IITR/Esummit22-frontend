@@ -100,9 +100,16 @@ body.modal-open {
   height: 25px;
   width: 25px;
   border: 2px solid white;
-  border-radius: 10%;
+  border-radius: 50%;
 }
-
+// .pay-now-inside{
+//   top: 9px;
+//   left: 9px;
+//   width: 8px;
+//   height: 8px;
+//   border-radius: 50%;
+//   background: white !important;
+// }
 .pay-now-popup-links {
   background-color: inherit;
   padding: 2% 0px;
@@ -124,8 +131,17 @@ body.modal-open {
 }
 
 .pay-now-popup-rows input:checked ~ .pay-now-popup-checkmark {
-  background: wheat;
+  background: black;
   border: 2px solid wheat;
+}
+.pay-now-popup-rows input:checked ~ .pay-now-popup-checkmark .pay-now-inside {
+  
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  margin: 5px;
+  background: wheat !important;
+  
 }
 
 .pay-now-pop-up-rows:after {
@@ -138,14 +154,6 @@ body.modal-open {
   display: block;
 }
 
-.pay-now-popup-rows .pay-now-popup-checkmark:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white !important;
-}
 
 .pay-now-popup-proceed-button {
   width: 20%;
