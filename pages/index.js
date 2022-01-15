@@ -12,7 +12,7 @@ import { AuthContext } from '../utils/auth-context';
 import PayNowPopup from '../components/payNowPopup';
 import Image from 'next/image';
 
-export default function Home({ allEvents, allSpeakers }) {
+export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
   const [animate, doAnimate] = useState(false);
   const ourRef = useRef(null);
   const { user } = useContext(AuthContext);
@@ -61,7 +61,7 @@ export default function Home({ allEvents, allSpeakers }) {
         <img src='/rightLine.svg' alt='rightLine' />
       </section>
       <hr />
-      <HomeSpeakers allSpeakers={allSpeakers} />
+      <HomeSpeakers fourSpeakers={fourSpeakers} allSpeakers={allSpeakers} />
       <Link href='/speakers' passHref>
         <div className='home-view-all-button'>
           <CustomGradientBtn text='View All' color='black' />
@@ -91,11 +91,12 @@ export async function getServerSideProps({ req, res }) {
 
   const allEvents = await get_all_events.json();
   const allSpeakers = await get_all_speakers.json();
-
+  const fourSpeakers = allSpeakers.slice(0,4);
   return {
     props: {
       allEvents,
       allSpeakers,
+      fourSpeakers,
     },
   };
 }
