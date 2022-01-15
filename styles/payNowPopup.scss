@@ -205,9 +205,16 @@ body.modal-open {
     margin-bottom: 30px;
   }
   .pay-now-popup-checkmark {
-    height: 12px;
-    width: 12px;
-    top: 5px;
+    height: 15px;
+    width: 15px;
+  }
+  .pay-now-popup-rows input:checked ~ .pay-now-popup-checkmark .pay-now-inside {
+    width: 7px;
+    height: 7px;
+    margin: 2px;
+  }
+  .pay-now-popup-links {
+   margin-left: 10px;
   }
   .pay-now-popup-rows input {
     height: 12px;
