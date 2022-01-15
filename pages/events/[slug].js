@@ -150,12 +150,16 @@ export default function EventsDetails({
   );
 }
 
-export async function getServerSideProps({ params }) {
+export async function getServerSideProps({ params, req, res }) {
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  );
   const response = await fetch(`https://api.esummit.in/events/${params.slug}`);
   const detailsEvents = await response.json();
-  const res = await fetch(ALL_EVENTS_API);
+  const resp = await fetch(ALL_EVENTS_API);
   const { CompetitiveEvents, SpeakingEvents, WorkshopEvents } =
-    await res.json();
+    await resp.json();
 
   return {
     props: {
