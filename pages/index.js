@@ -12,6 +12,7 @@ import { AuthContext } from '../utils/auth-context';
 import PayNowPopup from '../components/payNowPopup';
 import Image from 'next/image';
 import Head from 'next/head';
+import { EventJsonLd } from 'next-seo';
 export default function Home({ allEvents, allSpeakers }) {
   const [animate, doAnimate] = useState(false);
   const ourRef = useRef(null);
@@ -20,6 +21,42 @@ export default function Home({ allEvents, allSpeakers }) {
 
   return (
     <div>
+       <EventJsonLd
+      name="E-summit"
+      startDate="2022-01-21T00:00:00.000Z"
+      endDate="2022-01-23T00:00:00.000Z"
+      location={{
+        name: 'remote',
+        address: {
+
+          addressCountry: 'India',
+        },
+      }}
+      url="https://www.esummit.in"
+      images={['https://www.esummit.in/_next/image?url=%2Fwebthemepng.png&w=640&q=75']}
+      description="My event @ my place"
+      
+      performers={[
+        {
+          name: 'VARUN MAYYA ( AVALON META )',
+        },
+        {
+          name: 'RAJ SHAMANI ( SHAMANI INDUSTRIES )',
+        },
+        {
+          name: 'NEERAJ KHANDELWAL ( COINDCX )',
+        },
+        {
+          name: 'RAHUL SHARMA ( ZETWERK )',
+        },
+        {
+          name: 'AMITABH KANT ( NITI AAYOG )',
+        },
+        {
+          name: 'SAURABH KAUSHIK (  PEOPLEIST ) ',
+        },
+      ]}
+    />
       <section className='flex items-start justify-center landing overflow-hidden'>
         <div className='landing rotate '></div>
         <img src='/leftLine.svg' alt='leftLine' className='mainPage_side_img' />
