@@ -24,125 +24,233 @@ export default function Sponsors() {
       },
     ]}
   />;
+
+  const TitleSponsors = [
+    {
+      title: "Westbridge Capital",
+      format: ".png",
+    },
+  ];
+  const UnderPertro = [
+    {
+      title: "UNESCO",
+      format: ".jpeg",
+    },
+  ];
+  const SponsorPartner = [
+    {
+      title: "Sponsor Bull",
+      format: ".png",
+    },
+  ];
+  const StreamingPartner = [
+    {
+      title: "Crater.club",
+      format: ".jpg",
+    },
+  ];
   const AssociateSponsors = [
     {
-      title: 'TIH',
-      format: '.png',
+      title: "TIH",
+      format: ".png",
     },
   ];
   const CertificatePartner = [
     {
-      title: 'Give My Certificate',
-      format: '.png',
+      title: "Give My Certificate",
+      format: ".png",
     },
   ];
   const LegaLconsultingPartner = [
     {
-      title: 'Startupstartkaro',
-      format: '.png',
+      title: "Startupstartkaro",
+      format: ".png",
     },
   ];
   const TravellingPartner = [
     {
-      title: 'Zingbus',
-      format: '.jpeg',
+      title: "Zingbus",
+      format: ".jpeg",
     },
   ];
   const MediaPartners = [
     {
-      title: 'Amar Ujala',
-      format: '.png',
+      title: "Amar Ujala",
+      format: ".png",
     },
     {
-      title: 'The Engineer Jokes',
-      format: '.jpg',
+      title: "The Engineer Jokes",
+      format: ".jpg",
     },
   ];
   const KnowledgePartner = [
     {
-      title: 'Venture Folks',
-      format: '.png',
+      title: "Venture Folks",
+      format: ".png",
     },
   ];
-  const Poductathon = [
+  const Poductathon  = [
     {
-      title: 'GeeksforGeeks',
-      format: '.png',
+      title: "GeeksforGeeks",
+      format: ".png",
     },
     {
-      title: 'Sahicoin',
-      format: '.jpg',
+      title: "Sahicoin",
+      format: ".jpg",
     },
-  ];
-  const CaseChallenge = [
     {
-      title: 'Divami Labs',
-      format: '.jpeg',
+      title: "Rosenfeld",
+      format: ".png",
     },
   ];
-  const JuniorHackathonPartner = [
+  const CaseChallenge  = [
     {
-      title: 'Codingal',
-      format: '.png',
+      title: "Divami Labs",
+      format: ".jpeg",
+    },
+  ];
+  const JuniorHackathonPartner  = [
+    {
+      title: "Codingal",
+      format: ".png",
     },
   ];
   return (
     <div>
-      <h1 className='sponsorspage-title'>ASSOCIATE SPONSORS</h1>
-      <div className='sponsorpage-container'>
+      <h1 className="sponsorspage-title">TITLE SPONSORS</h1>
+      <div className="sponsorpage-container">
+        {TitleSponsors.map((d, i) => (
+          <Sponsor
+            key={i}
+            sponsorsTitle={d.title}
+            format={d.format}
+          />
+        ))}
+      </div>
+      <h1 className="sponsorspage-title">ASSOCIATE SPONSORS</h1>
+      <div className="sponsorpage-container">
         {AssociateSponsors.map((d, i) => (
-          <Sponsor key={i} sponsorsTitle={d.title} format={d.format} />
+          <Sponsor
+            key={i}
+            sponsorsTitle={d.title}
+            format={d.format}
+          />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>CERTIFICATE PARTNERS</h1>
-      <div className='sponsorpage-container'>
-        {CertificatePartner.map((c, i) => (
-          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
+      <h1 className="sponsorspage-title">UNDER PATRONAGE OF</h1>
+      <div className="sponsorpage-container">
+        {UnderPertro.map((d, i) => (
+          <Sponsor
+            key={i}
+            sponsorsTitle={d.title}
+            format={d.format}
+          />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>LEGAL AND CONSULTING PARTNERS</h1>
-      <div className='sponsorpage-container'>
-        {LegaLconsultingPartner.map((c, i) => (
-          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
-        ))}
-      </div>
-      <h1 className='sponsorspage-title'>PRODUCTATHON PARTNERS</h1>
-      <div className='sponsorpage-container'>
+      <h1 className="sponsorspage-title">PRODUCTATHON PARTNERS</h1>
+      <div className="sponsorpage-container">
         {Poductathon.map((c, i) => (
-          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>CASE CHALLENGE PARTNERS</h1>
-      <div className='sponsorpage-container'>
+      <h1 className="sponsorspage-title">CASE CHALLENGE PARTNERS</h1>
+      <div className="sponsorpage-container">
         {CaseChallenge.map((c, i) => (
-          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>JUNIOR HACKATHON PARTNERS</h1>
-      <div className='sponsorpage-container'>
+      <h1 className="sponsorspage-title">KNOWLEDGE PARTNERS</h1>
+      <div className="sponsorpage-container">
+        {KnowledgePartner.map((c, i) => (
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
+        ))}
+      </div>
+      <h1 className="sponsorspage-title">STREAMING PARTNERS</h1>
+      <div className="sponsorpage-container">
+        {StreamingPartner.map((c, i) => (
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
+        ))}
+      </div>
+      <h1 className="sponsorspage-title">SPONSOR PARTNERS</h1>
+      <div className="sponsorpage-container">
+        {SponsorPartner.map((c, i) => (
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
+        ))}
+      </div>
+      <h1 className="sponsorspage-title">LEGAL AND CONSULTING PARTNERS</h1>
+      <div className="sponsorpage-container">
+        {LegaLconsultingPartner.map((c, i) => (
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
+        ))}
+      </div>
+      
+      
+      <h1 className="sponsorspage-title">JUNIOR HACKATHON PARTNERS</h1>
+      <div className="sponsorpage-container">
         {JuniorHackathonPartner.map((c, i) => (
-          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
         ))}
       </div>
 
-      <h1 className='sponsorspage-title'>TRAVELLING PARTNERS</h1>
-      <div className='sponsorpage-container'>
+      <h1 className="sponsorspage-title">TRAVELLING PARTNERS</h1>
+      <div className="sponsorpage-container">
         {TravellingPartner.map((c, i) => (
-          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>MEDIA PARTNERS</h1>
-      <div className='sponsorpage-container'>
+      <h1 className="sponsorspage-title">CERTIFICATE PARTNERS</h1>
+      <div className="sponsorpage-container">
+        {CertificatePartner.map((c, i) => (
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
+        ))}
+      </div>
+      <h1 className="sponsorspage-title">MEDIA PARTNERS</h1>
+      <div className="sponsorpage-container">
         {MediaPartners.map((c, i) => (
-          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>KNOWLEDGE PARTNERS</h1>
-      <div className='sponsorpage-container'>
-        {KnowledgePartner.map((c, i) => (
-          <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
-        ))}
-      </div>
+      
       <Footer />
     </div>
   );

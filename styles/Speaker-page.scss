@@ -11,6 +11,7 @@
   margin-bottom: 50px;
 }
 .Speaker_Card_Loop {
+  height: 66vh;
   margin-left: 100px;
   margin-right: 100px;
   margin-bottom: 100px;
@@ -32,6 +33,7 @@
 
 @media screen and (max-width: 1430) {
   .Speaker_Card_Loop {
+    height: 53vh;
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 100px;

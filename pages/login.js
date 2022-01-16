@@ -95,7 +95,11 @@ const Login = () => {
   return (
     <div className='login-container'>
       <div className='login-container-bck'>
-        <img src={'login/login-bck-img.png'} className='bcki' />
+        <img
+          src={'login/login-bck-img.png'}
+          className='bcki'
+          alt='login background'
+        />
       </div>
 
       <div className='login-container-box'>

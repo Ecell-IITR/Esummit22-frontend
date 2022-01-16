@@ -11,9 +11,13 @@ import { getUserRoleType } from '../utils';
 import { AuthContext } from '../utils/auth-context';
 import PayNowPopup from '../components/payNowPopup';
 import Image from 'next/image';
+
 import Head from 'next/head';
 import { EventJsonLd } from 'next-seo';
-export default function Home({ allEvents, allSpeakers }) {
+
+
+export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
+
   const [animate, doAnimate] = useState(false);
   const ourRef = useRef(null);
   const { user } = useContext(AuthContext);
@@ -103,7 +107,7 @@ export default function Home({ allEvents, allSpeakers }) {
         <img src='/rightLine.svg' alt='rightLine' />
       </section>
       <hr />
-      <HomeSpeakers allSpeakers={allSpeakers} />
+      <HomeSpeakers fourSpeakers={fourSpeakers} allSpeakers={allSpeakers} />
       <Link href='/speakers' passHref>
         <div className='home-view-all-button'>
           <CustomGradientBtn text='View All' color='black' />
@@ -123,17 +127,22 @@ export default function Home({ allEvents, allSpeakers }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps({ req, res }) {
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  );
   const get_all_events = await fetch(ALL_EVENTS_API);
   const get_all_speakers = await fetch(SPEAKERS_API);
 
   const allEvents = await get_all_events.json();
   const allSpeakers = await get_all_speakers.json();
-
+  const fourSpeakers = allSpeakers.slice(0,4);
   return {
     props: {
       allEvents,
       allSpeakers,
+      fourSpeakers,
     },
   };
 }
