@@ -10,7 +10,8 @@ import FetchApi from '../utils/fetchAPI';
 import { getUserRoleType } from '../utils';
 import { AuthContext } from '../utils/auth-context';
 import PayNowPopup from '../components/payNowPopup';
-
+import Image from 'next/image';
+import Head from 'next/head';
 export default function Home({ allEvents, allSpeakers }) {
   const [animate, doAnimate] = useState(false);
   const ourRef = useRef(null);
@@ -24,10 +25,15 @@ export default function Home({ allEvents, allSpeakers }) {
         <img src='/leftLine.svg' alt='leftLine' className='mainPage_side_img' />
 
         <div className='flex flex-col items-center text-center mx-auto'>
-          <img
+          <Head className='main-h1'>
+          <h1 >E-summit 22 IIT Roorkee e summit</h1></Head>
+          <Image
             className='landing-page-text-png'
-            src='webthemepng.png'
+            src='/webthemepng.png'
             alt='landing page text'
+            width = "545%"
+            height="120%"
+    
           />
           {!user ? (
             <Link href='/register' passHref>
