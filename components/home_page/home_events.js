@@ -5,7 +5,7 @@ export default function HomeEvents({ allEvents }) {
   return (
     <div>
       <div className='bg-black text-white  Home_Events_page_container'>
-        <div className='Home_Events_page_title'>Events</div>
+        <h2 className='Home_Events_page_title'>Events</h2>
         <div className='Home_Events_Card_Container'>
           {allEvents.CompetitiveEvents.map((det, id) => {
             return (

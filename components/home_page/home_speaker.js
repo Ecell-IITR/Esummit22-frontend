@@ -5,7 +5,7 @@ export default function HomeSpeakers({ fourSpeakers, allSpeakers  }) {
   return (
     <div>
       <div className='bg-black text-white  Home_Speaker_page_container'>
-        <div className='Home_Speaker_page_title'>Speakers</div>
+        <h2 className='Home_Speaker_page_title'>Speakers</h2>
         <div className='Home_Speaker_Card_Container'>
           
           {fourSpeakers.map((det, id) => {
