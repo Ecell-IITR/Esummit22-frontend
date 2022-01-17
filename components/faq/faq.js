@@ -1,7 +1,7 @@
 import Accordion from '../faq/accordian';
 import React, { useEffect, useState } from 'react';
 import Footer from '../footer';
-
+import { FAQPageJsonLd } from 'next-seo';
 function Faq() {
   const styles = {
     fontFamily: 'Raleway',
@@ -48,6 +48,9 @@ function Faq() {
 
   return (
     <div>
+      <FAQPageJsonLd
+      mainEntity={faqs}
+    />
       <div style={styles} id='faq'>
         <div
           style={{

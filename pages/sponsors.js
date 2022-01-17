@@ -239,7 +239,7 @@ export default function Sponsors() {
           />
         ))}
       </div>
-      <h1 className="sponsorspage-title">MEDIA PARTNERS</h1>
+      <h2 className="sponsorspage-title">MEDIA PARTNERS</h2>
       <div className="sponsorpage-container">
         {MediaPartners.map((c, i) => (
           <Sponsor
