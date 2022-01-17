@@ -3,12 +3,15 @@ import React, { useEffect, useState } from 'react';
 import Footer from '../components/footer';
 import { SPEAKERS_API } from '../utils/APIs';
 import { NextSeo } from 'next-seo';
-
+import Head from 'next/head';
 export default function Speakers({ speakers }) {
   return (
     <div>
       <div className='bg-black text-white  Speaker_page_container'>
-        <h1 className='Speaker_page_title'>Speakers</h1>
+      <Head className='main-h1'>
+          <h1 >E-summit 22 IIT Roorkee Speaker Page</h1>
+          <link rel="alternate" href="https://www.esummit.in/speakers" hreflang="en-in" /></Head>
+        <div className='Speaker_page_title'>Speakers</div>
         <div className='Speaker_Card_Container'>
           {speakers.map((det, id) => {
             return (

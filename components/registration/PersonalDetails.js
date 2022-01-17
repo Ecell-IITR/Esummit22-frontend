@@ -625,41 +625,7 @@ export class PersonalDetails extends Component {
 
     return (
       <div>
-        <div id='login-heading'>PERSONAL DETAILS</div>
-        {/* <div>
-          <input
-            id="iname"
-            className="form"
-            type="text"
-            placeholder="Enter your Full name"
-            name="name"
-            autoCorrect="off"
-            autoComplete="off"
-            autoCapitalize="off"
-            value={name}
-            onChange={(event) => {
-              this.onChange(event);
-              this.nameValidate();
-            }}
-            spellCheck="false"
-            required
-          />
-          <snap className="">
-            {name_error_bool === "" ? null : (
-              <img
-                alt="tick mark"
-                src={
-                  name_error_bool === "true"
-                    ? null
-                    : name_error_bool === "false"
-                    ? tickMark
-                    : null
-                }
-              />
-            )}
-          </snap>
-        </div> */}
-        {/* <div>{name_error}</div> */}
+        <h2 id='login-heading'>PERSONAL DETAILS</h2>
         <div className='mobile-container-personal-form'>
           <div>
             <input
@@ -680,20 +646,6 @@ export class PersonalDetails extends Component {
               spellCheck='false'
               required
             />
-            {/* <span className="">
-              {phone_error_bool === "" ? null : (
-                <img
-                  alt="correc/wrong"
-                  src={
-                    phone_error_bool === "true"
-                      ? null
-                      : phone_error_bool === "false"
-                      ? tickMark
-                      : null
-                  }
-                />
-              )}
-            </span> */}
           </div>
           <div className='error_msg'>{phone_error}</div>
         </div>
@@ -711,20 +663,6 @@ export class PersonalDetails extends Component {
               placeholder='Gender'
               name='gender'
             />
-            {/* <span>
-              {gender_error_bool === "" ? null : (
-                <img
-                  alt="correc/wrong"
-                  src={
-                    gender_error_bool === "true"
-                      ? null
-                      : gender_error_bool === "false"
-                      ? tickMark
-                      : null
-                  }
-                />
-              )}
-            </span> */}
           </div>
           <div className='error_msg'>{gender_error}</div>
         </div>
@@ -743,20 +681,6 @@ export class PersonalDetails extends Component {
               placeholder='State'
               name='state'
             />
-            {/* <span>
-              {state_error_bool === "" ? null : (
-                <img
-                  alt="correc/wrong"
-                  src={
-                    state_error_bool === "true"
-                      ? null
-                      : state_error_bool === "false"
-                      ? tickMark
-                      : null
-                  }
-                />
-              )}
-            </span> */}
           </div>
           <div className='error_msg'>{state_error}</div>
         </div>
@@ -775,20 +699,6 @@ export class PersonalDetails extends Component {
               placeholder='City'
               name='city'
             />
-            {/* <span>
-              {city_error_bool === "" ? null : (
-                <img
-                  alt="correc/wrong"
-                  src={
-                    city_error_bool === "true"
-                      ? null
-                      : city_error_bool === "false"
-                      ? tickMark
-                      : null
-                  }
-                />
-              )}
-            </span> */}
           </div>
           <div className='error_msg'>{city_error}</div>
         </div>
@@ -816,20 +726,6 @@ export class PersonalDetails extends Component {
               placeholder='Profile Type'
               name='role_type'
             />
-            {/* <span>
-              {profileType_error_bool === "" ? null : (
-                <img
-                  alt="tick mark"
-                  src={
-                    profileType_error_bool === "true"
-                      ? null
-                      : profileType_error_bool === "false"
-                      ? tickMark
-                      : null
-                  }
-                />
-              )}
-            </span> */}
           </div>
           <div className='error_msg'>{profileType_error}</div>
         </div>
@@ -854,35 +750,6 @@ export class PersonalDetails extends Component {
                 spellCheck='false'
                 required
               />
-              {/* <span className="">
-                {college_error_bool === "" ? null : (
-                  <img
-                    alt="correc/wrong"
-                    src={
-                      college_error_bool === "true"
-                        ? null
-                        : college_error_bool === "false"
-                        ? tickMark
-                        : null
-                    }
-                  />
-                )}
-              </span> */}
-
-              {/* <span className="">
-                {college_error_bool === "" ? null : (
-                  <img
-                    alt="correc/wrong"
-                    src={
-                      college_error_bool === "true"
-                        ? null
-                        : college_error_bool === "false"
-                        ? tickMark
-                        : null
-                    }
-                  />
-                )}
-              </span> */}
               <div className='error-msg'>{college_error}</div>
             </div>
           </div>
@@ -910,20 +777,6 @@ export class PersonalDetails extends Component {
                   spellCheck='false'
                   required
                 />
-                {/* <span>
-                  {enroll_error_bool === "" ? null : (
-                    <img
-                      alt="tick mark"
-                      src={
-                        enroll_error_bool === "true"
-                          ? null
-                          : enroll_error_bool === "false"
-                          ? tickMark
-                          : null
-                      }
-                    />
-                  )}
-                </span> */}
                 <div className='error_msg'>{enroll_error}</div>
               </div>
             </div>
@@ -940,20 +793,6 @@ export class PersonalDetails extends Component {
                 placeholder='Year'
                 name='year'
               />
-              {/* <span className="">
-                {year_error_bool === "" ? null : (
-                  <img
-                    alt="correc/wrong"
-                    src={
-                      year_error_bool === "true"
-                        ? null
-                        : year_error_bool === "false"
-                        ? tickMark
-                        : null
-                    }
-                  />
-                )}
-              </span> */}
             </div>
             <div className='error_msg'>{year_error}</div>
             <div className='mobile-container-personal-form'>
@@ -968,20 +807,6 @@ export class PersonalDetails extends Component {
                 options={this.getProgrammes()}
                 placeholder='Branch'
               />
-              {/* <span className="">
-                {programme_error_bool === "" ? null : (
-                  <img
-                    alt="correc/wrong"
-                    src={
-                      programme_error_bool === "true"
-                        ? null
-                        : programme_error_bool === "false"
-                        ? tickMark
-                        : null
-                    }
-                  />
-                )}
-              </span> */}
             </div>
             <div className='error-msg'>{programme_error}</div>
           </div>
@@ -1008,35 +833,6 @@ export class PersonalDetails extends Component {
                 spellCheck='false'
                 required
               />
-              {/* <span className="">
-                {college_error_bool === "" ? null : (
-                  <img
-                    alt="correc/wrong"
-                    src={
-                      college_error_bool === "true"
-                        ? null
-                        : college_error_bool === "false"
-                        ? tickMark
-                        : null
-                    }
-                  />
-                )}
-              </span> */}
-
-              {/* <span className="">
-                {college_error_bool === "" ? null : (
-                  <img
-                    alt="correc/wrong"
-                    src={
-                      college_error_bool === "true"
-                        ? null
-                        : college_error_bool === "false"
-                        ? tickMark
-                        : null
-                    }
-                  />
-                )}
-              </span> */}
               <div className='error-msg'>{college_error}</div>
             </div>
 
@@ -1052,20 +848,6 @@ export class PersonalDetails extends Component {
                 options={this.getYear()}
                 placeholder='Year of study'
               />
-              {/* <span className="">
-                {year_error_bool === "" ? null : (
-                  <img
-                    alt="correc/wrong"
-                    src={
-                      year_error_bool === "true"
-                        ? null
-                        : year_error_bool === "false"
-                        ? tickMark
-                        : null
-                    }
-                  />
-                )}
-              </span> */}
               <div className='error-msg'>{year_error}</div>
             </div>
             <div className='mobile-container-personal-form'>
@@ -1087,20 +869,6 @@ export class PersonalDetails extends Component {
                 spellCheck='false'
                 required
               />
-              {/* <span className="">
-                {year_error_bool === "" ? null : (
-                  <img
-                    alt="correc/wrong"
-                    src={
-                      year_error_bool === "true"
-                        ? null
-                        : year_error_bool === "false"
-                        ? tickMark
-                        : null
-                    }
-                  />
-                )}
-              </span> */}
               <div className='error-msg'>{year_error}</div>
             </div>
           </div>
@@ -1127,20 +895,6 @@ export class PersonalDetails extends Component {
                   spellCheck='false'
                   required
                 />
-                {/* <span className="">
-                  {organisation_error_bool === "" ? null : (
-                    <img
-                      alt="correc/wrong"
-                      src={
-                        organisation_error_bool === "true"
-                          ? null
-                          : organisation_error_bool === "false"
-                          ? tickMark
-                          : null
-                      }
-                    />
-                  )}
-                </span> */}
               </div>
               <div className='error-msg'>{organisation_error}</div>
             </div>
@@ -1164,20 +918,6 @@ export class PersonalDetails extends Component {
                   spellCheck='false'
                   required
                 />
-                {/* <span className="">
-                  {industry_error_bool === "" ? null : (
-                    <img
-                      alt="correc/wrong"
-                      src={
-                        industry_error_bool === "true"
-                          ? null
-                          : industry_error === "false"
-                          ? tickMark
-                          : null
-                      }
-                    />
-                  )}
-                </span> */}
               </div>
               <div className='error-msg'>{industry_error}</div>
             </div>
@@ -1204,20 +944,6 @@ export class PersonalDetails extends Component {
                 spellCheck='false'
                 required
               />
-              {/* <span className="">
-                {members_error_bool === "" ? null : (
-                  <img
-                    alt="correc/wrong"
-                    src={
-                      members_error_bool === "true"
-                        ? null
-                        : members_error_bool === "false"
-                        ? tickMark
-                        : null
-                    }
-                  />
-                )}
-              </span> */}
             </div>
             <div className='error-msg'>{schoolName_error}</div>
             <div className='mobile-container-personal-form'>
@@ -1239,20 +965,6 @@ export class PersonalDetails extends Component {
                 spellCheck='false'
                 required
               />
-              {/* <span className="">
-                {startupName_error_bool === "" ? null : (
-                  <img
-                    alt="correc/wrong"
-                    src={
-                      startupName_error_bool === "true"
-                        ? null
-                        : startupName_error_bool === "false"
-                        ? tickMark
-                        : null
-                    }
-                  />
-                )}
-              </span> */}
             </div>
             <div className='error-msg'>{startupName_error}</div>
 
@@ -1366,12 +1078,6 @@ export class PersonalDetails extends Component {
           </div>
         ) : null}
         <div className='mobile-submit-container'>
-          {/* <Button
-                    class_name="button"
-                    onClick={this.handleBack}
-                    buttontext="Back"
-                >
-                </Button> */}
 
           {this.props.loading ? (
             <img

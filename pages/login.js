@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import CustomGradientBtn from '../components/customGradientBtn';
 import { Authenticate } from '../utils';
-
+import Head from 'next/head';
 const Login = () => {
   const [loading, setloading] = useState(false);
   const [state_email, setEmail] = useState('');
@@ -94,12 +94,15 @@ const Login = () => {
 
   return (
     <div className='login-container'>
+      <Head className='main-h1'>
+          <h1 >E-summit 22 IIT Roorkee Login Page</h1>
+          <link rel="alternate" href="https://www.esummit.in/login" hreflang="en-in" /></Head>
       <div className='login-container-bck'>
         <img src={'login/login-bck-img.png'} className='bcki' />
       </div>
 
       <div className='login-container-box'>
-        <div id='login-heading'>LOGIN</div>
+        <h2 id='login-heading'>LOGIN</h2>
         <div className='login-box-design1'>
           <img alt='design' className='' src={'login/login-bck-design1.svg'} />
         </div>
@@ -152,20 +155,7 @@ const Login = () => {
             />
           </span>
 
-          {/* <span className="login-iPassword-img">
-          {this.state.pass_error_bool === "" ? null : (
-            <img
-              alt="correc/wrong"
-              src={
-                this.state.pass_error_bool === "true"
-                  ? CrossForm
-                  : this.state.pass_error_bool === "false"
-                  ? tickMark
-                  : null
-              }
-            />
-          )}
-        </span> */}
+          
         </div>
         <div className='reg-error'>{pass_error}</div>
         {loading ? (

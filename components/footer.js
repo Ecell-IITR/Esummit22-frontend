@@ -57,17 +57,17 @@ const Footer = () => {
         </div>
         <div>
           <div className='new-footer-section-contact-container new-footer-section-contact-container-additional-margin0'>
-            <div className='new-footer-section-contact-heading blinker-font'>
+            <h2 className='new-footer-section-contact-heading blinker-font'>
               EMAIL
-            </div>
-            <div className='new-footer-section-contact-subheading'>
+            </h2>
+            <h3 className='new-footer-section-contact-subheading'>
               esummit@iitr.ac.in
-            </div>
+            </h3>
           </div>
           <div className='new-footer-section-contact-container new-footer-section-contact-container-additional-margin'>
-            <div className='new-footer-section-contact-heading blinker-font'>
+            <h2 className='new-footer-section-contact-heading blinker-font'>
               FOLLOW US AT
-            </div>
+            </h2>
             <div className='new-footer-section-contact-subheading logo-container'>
               <a
                 href='https://www.facebook.com/ecelliitr'
@@ -144,18 +144,18 @@ const Footer = () => {
         </a>
         <div>
           <div className='new-footer-section-contact-container new-footer-section-contact-container-additional-margin01'>
-            <div className='new-footer-section-contact-heading blinker-font'>
+            <h2 className='new-footer-section-contact-heading blinker-font'>
               PHONE
-            </div>
+            </h2>
             <div className='new-footer-section-contact-subheading'>
               Daksh: <br /> <p>+91 96465 83392 </p> <br /> Abhinandan: <br />{' '}
               <p> +91 80546 89033 </p>
             </div>
           </div>
           <div className='new-footer-section-contact-container new-footer-section-contact-container-additional-margin1'>
-            <div className='new-footer-section-contact-heading blinker-font'>
+            <h2 className='new-footer-section-contact-heading blinker-font'>
               OUR ADDRESS
-            </div>
+            </h2>
             <div className='new-footer-section-contact-subheading prewrap'>
               E-Cell Office SAC Building
               <br /> IIT Roorkee <br /> Roorkee, Uttrakhand-
@@ -255,19 +255,12 @@ const Footer = () => {
               required
             />
           </div>
-          {/* <button className="new-form-submit-button" type="submit"> */}
+          
           <div className='clip_footer' onClick={handleSubmit}>
             {' '}
             SUBMIT{' '}
           </div>
-          {/* {loader ? (
-                <>
-                  <i className="fa fa-circle-o-notch fa-spin"></i>
-                </>
-              ) : (
-                <>Submit</>
-              )} */}
-          {/* </button> */}
+         
         </form>
       </div>
     </div>

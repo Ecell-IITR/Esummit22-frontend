@@ -3,7 +3,7 @@ import Sponsor from '../components/sponsors-card';
 import Footer from '../components/footer';
 import { NextSeo } from 'next-seo';
 import Content from '../components/content';
-
+import Head from 'next/head';
 export default function Sponsors() {
   <NextSeo
     title="E-Summit'22 Sponsors"
@@ -88,56 +88,59 @@ export default function Sponsors() {
   ];
   return (
     <div>
-      <h1 className='sponsorspage-title'>ASSOCIATE SPONSORS</h1>
+      <Head className='main-h1'>
+          <h1 >E-summit 22 IIT Roorkee Sponsor Page</h1>
+      <link rel="alternate" href="https://www.esummit.in/Sponsor" hreflang="en-in" /></Head>
+      <h2 className='sponsorspage-title'>ASSOCIATE SPONSORS</h2>
       <div className='sponsorpage-container'>
         {AssociateSponsors.map((d, i) => (
           <Sponsor key={i} sponsorsTitle={d.title} format={d.format} />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>CERTIFICATE PARTNERS</h1>
+      <h2 className='sponsorspage-title'>CERTIFICATE PARTNERS</h2>
       <div className='sponsorpage-container'>
         {CertificatePartner.map((c, i) => (
           <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>LEGAL AND CONSULTING PARTNERS</h1>
+      <h2 className='sponsorspage-title'>LEGAL AND CONSULTING PARTNERS</h2>
       <div className='sponsorpage-container'>
         {LegaLconsultingPartner.map((c, i) => (
           <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>PRODUCTATHON PARTNERS</h1>
+      <h2 className='sponsorspage-title'>PRODUCTATHON PARTNERS</h2>
       <div className='sponsorpage-container'>
         {Poductathon.map((c, i) => (
           <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>CASE CHALLENGE PARTNERS</h1>
+      <h2 className='sponsorspage-title'>CASE CHALLENGE PARTNERS</h2>
       <div className='sponsorpage-container'>
         {CaseChallenge.map((c, i) => (
           <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>JUNIOR HACKATHON PARTNERS</h1>
+      <h2 className='sponsorspage-title'>JUNIOR HACKATHON PARTNERS</h2>
       <div className='sponsorpage-container'>
         {JuniorHackathonPartner.map((c, i) => (
           <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
 
-      <h1 className='sponsorspage-title'>TRAVELLING PARTNERS</h1>
+      <h2 className='sponsorspage-title'>TRAVELLING PARTNERS</h2>
       <div className='sponsorpage-container'>
         {TravellingPartner.map((c, i) => (
           <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>MEDIA PARTNERS</h1>
+      <h2 className='sponsorspage-title'>MEDIA PARTNERS</h2>
       <div className='sponsorpage-container'>
         {MediaPartners.map((c, i) => (
           <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />
         ))}
       </div>
-      <h1 className='sponsorspage-title'>KNOWLEDGE PARTNERS</h1>
+      <h2 className='sponsorspage-title'>KNOWLEDGE PARTNERS</h2>
       <div className='sponsorpage-container'>
         {KnowledgePartner.map((c, i) => (
           <Sponsor key={i} sponsorsTitle={c.title} format={c.format} />

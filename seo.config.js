@@ -26,7 +26,7 @@ const defaultSEOConfig = {
     {
       name: 'keywords',
       content:
-        "e summit esummit e-summit ecell entrepreneurship global summit esummit iit esummit iitr esummit iit roorkee e summit 2022 iitr startup iit roorkee entrepreneur fest conference conclave Startup expo Ideastorm Investors' Vista Saleable product-a-thon speaker events",
+        "e summit, esummit, e-summit, ecell, entrepreneurship global summit, esummit iit, esummit iitr, esummit iit roorkee, e summit 2022 ,iitr startup ,iit roorkee ,entrepreneur fest ,conference ,conclave ,Startup expo ,Ideastorm ,Investors' Vista ,Saleable ,productathon ,speaker events",
     },
     {
       name: 'hashtags',
