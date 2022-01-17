@@ -98,7 +98,11 @@ const Login = () => {
           <h1 >E-summit 22 IIT Roorkee Login Page</h1>
           <link rel="alternate" href="https://www.esummit.in/login" hreflang="en-in" /></Head>
       <div className='login-container-bck'>
-        <img src={'login/login-bck-img.png'} className='bcki' />
+        <img
+          src={'login/login-bck-img.png'}
+          className='bcki'
+          alt='login background'
+        />
       </div>
 
       <div className='login-container-box'>

@@ -62,9 +62,13 @@ export default function Speakers({ speakers }) {
   );
 }
 
-export async function getServerSideProps() {
-  const res = await fetch(SPEAKERS_API);
-  const speakers = await res.json();
+export async function getServerSideProps({ req, res }) {
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  );
+  const response = await fetch(SPEAKERS_API);
+  const speakers = await response.json();
 
   return {
     props: {

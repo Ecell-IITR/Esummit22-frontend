@@ -38,7 +38,7 @@ export const PayNowPopup = ({ show, setshow }) => {
                     id='college-student'
                     name='payment'
                   ></input>
-                  <span className='pay-now-popup-checkmark'></span>
+                  <span className='pay-now-popup-checkmark'><div className="pay-now-inside"></div></span>
                   College Student
                 </label>
               </div>
@@ -52,7 +52,7 @@ export const PayNowPopup = ({ show, setshow }) => {
                     id='professional'
                     name='payment'
                   ></input>
-                  <span className='pay-now-popup-checkmark'></span>A
+                  <span className='pay-now-popup-checkmark'><div className="pay-now-inside"></div></span>A
                   Professional
                 </label>
               </div>
@@ -66,7 +66,7 @@ export const PayNowPopup = ({ show, setshow }) => {
                     id='startup-expo'
                     name='payment'
                   ></input>
-                  <span className='pay-now-popup-checkmark'></span>
+                  <span className='pay-now-popup-checkmark'><div className="pay-now-inside"></div></span>
                   Startup Expo Participant
                 </label>
               </div>

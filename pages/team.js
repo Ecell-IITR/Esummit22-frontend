@@ -55,9 +55,13 @@ export const team = ({ teamMembers }) => {
   );
 };
 
-export async function getServerSideProps() {
-  const res = await fetch(TEAM_API);
-  const teamMembers = await res.json();
+export async function getServerSideProps({ req, res }) {
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  );
+  const response = await fetch(TEAM_API);
+  const teamMembers = await response.json();
 
   return {
     props: {

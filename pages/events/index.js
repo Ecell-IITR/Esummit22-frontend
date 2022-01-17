@@ -60,10 +60,14 @@ export const Events = ({
   );
 };
 
-export async function getServerSideProps() {
-  const res = await fetch(ALL_EVENTS_API);
+export async function getServerSideProps({ req, res }) {
+  res.setHeader(
+    'Cache-Control',
+    'public, s-maxage=10, stale-while-revalidate=59'
+  );
+  const response = await fetch(ALL_EVENTS_API);
   const { CompetitiveEvents, SpeakingEvents, WorkshopEvents } =
-    await res.json();
+    await response.json();
 
   return {
     props: {

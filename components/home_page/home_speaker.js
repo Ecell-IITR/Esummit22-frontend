@@ -1,13 +1,14 @@
 import Speaker_card from '../speaker-card';
 import React, { useEffect, useState } from 'react';
 
-export default function HomeSpeakers({ allSpeakers }) {
+export default function HomeSpeakers({ fourSpeakers, allSpeakers  }) {
   return (
     <div>
       <div className='bg-black text-white  Home_Speaker_page_container'>
         <h2 className='Home_Speaker_page_title'>Speakers</h2>
         <div className='Home_Speaker_Card_Container'>
-          {allSpeakers.map((det, id) => {
+          
+          {fourSpeakers.map((det, id) => {
             return (
               <div className='Home_Speaker_Card_Loop' key={id}>
                 <Speaker_card
