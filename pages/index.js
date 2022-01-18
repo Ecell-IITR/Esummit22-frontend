@@ -38,7 +38,7 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
       }}
       url="https://www.esummit.in"
       images={['https://www.esummit.in/_next/image?url=%2Fwebthemepng.png&w=640&q=75']}
-      description="My event @ my place"
+      description="E-summit 22 organized by e-cell IIT Roorkee.E-summit is the most awaited event pan India by both entrepreneur and entrepreneurship enthusistes. Hope to see you at E-summit "
       
       performers={[
         {
