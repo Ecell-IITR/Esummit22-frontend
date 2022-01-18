@@ -2,7 +2,7 @@ import EventCard from '../../components/Events/eventCard';
 import { ALL_EVENTS_API } from '../../utils/APIs';
 import Footer from '../../components/footer';
 import { NextSeo } from 'next-seo';
-
+import Head from 'next/head';
 export const Events = ({
   CompetitiveEvents,
   SpeakingEvents,
@@ -10,6 +10,9 @@ export const Events = ({
 }) => {
   return (
     <div>
+      <Head className='main-h1'>
+          <h1 >E-summit 22 IIT Roorkee Events Page</h1>
+          <link rel="alternate" href="https://www.esummit.in/events" hreflang="en-in" /></Head>
       <NextSeo
         title={'E-Summit 22 | Events '}
         description={

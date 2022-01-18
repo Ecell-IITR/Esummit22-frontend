@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import { AccountSetup } from '../components/registration/Accountsetup.js';
 import PersonalDetails from '../components/registration/PersonalDetails.js';
 import { Authenticate } from '../utils';
-
+import Head from 'next/head';
 export class Registration extends Component {
   constructor(props) {
     super(props);
@@ -157,6 +157,9 @@ export class Registration extends Component {
 
     return (
       <div className='registration-container'>
+        <Head className='main-h1'>
+          <h1 >E-summit 22 IIT Roorkee Register Page</h1>
+          <link rel="alternate" href="https://www.esummit.in/register" hreflang="en-in" /></Head>
         <div className='login-container-bck'>
           <img src={'login/login-bck-img.png'} className='bcki' alt='bcki' />
         </div>
@@ -198,7 +201,7 @@ export class Registration extends Component {
               />
             ) : null}
 
-            {/**activeStep === 2 ? <Loader /> : null**/}
+            
           </form>
         </div>
       </div>

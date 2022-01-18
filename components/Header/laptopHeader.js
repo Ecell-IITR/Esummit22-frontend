@@ -25,6 +25,9 @@ export const LaptopHeader = () => {
       case '/speakers':
         setActive('speakers');
         break;
+        case '/sponsors':
+          setActive('sponsors');
+          break;
       case '/team':
         setActive('team');
         break;

@@ -2,6 +2,7 @@ import TeamMemberCard from '../components/teamCard';
 import { TEAM_API } from '../utils/APIs';
 import Footer from '../components/footer';
 import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 export const team = ({ teamMembers }) => {
   <NextSeo
     title='E-summit Team'
@@ -30,7 +31,11 @@ export const team = ({ teamMembers }) => {
   />;
   return (
     <div>
-      <h1 className='esummit-team'>E-SUMMIT TEAM</h1>
+      <Head className='main-h1'>
+          <h1 >E-summit 22 IIT Roorkee Team Page</h1>
+          <link rel="alternate" href="https://www.esummit.in/team" hreflang="en-in" />
+          </Head>
+      <h2 className='esummit-team'>E-SUMMIT TEAM</h2>
       <div className='team-members'>
         {teamMembers.map((member) => (
           <TeamMemberCard

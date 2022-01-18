@@ -223,7 +223,7 @@ export class AccountSetup extends Component {
     } = this.state;
     return (
       <div>
-        <div id='login-heading'>CREATE AN ACCOUNT</div>
+        <h2 id='login-heading'>CREATE AN ACCOUNT</h2>
 
         <div className='login-iEmail-header'>
           <input

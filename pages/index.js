@@ -26,7 +26,7 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
   return (
     <div>
        <EventJsonLd
-      name="E-summit"
+      name="IIt Roorkee E-summit 22"
       startDate="2022-01-21T00:00:00.000Z"
       endDate="2022-01-23T00:00:00.000Z"
       location={{
@@ -38,7 +38,7 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
       }}
       url="https://www.esummit.in"
       images={['https://www.esummit.in/_next/image?url=%2Fwebthemepng.png&w=640&q=75']}
-      description="My event @ my place"
+      description="E-summit 22 organized by e-cell IIT Roorkee.E-summit is the most awaited event pan India by both entrepreneur and entrepreneurship enthusistes. Hope to see you at E-summit "
       
       performers={[
         {
@@ -67,7 +67,10 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
 
         <div className='flex flex-col items-center text-center mx-auto'>
           <Head className='main-h1'>
-          <h1 >E-summit 22 IIT Roorkee e summit</h1></Head>
+          <h1 >E-summit 22 IIT Roorkee</h1>
+          <link rel="alternate" href="https://www.esummit.in" hreflang="en-in" />
+
+          </Head>
           <Image
             className='landing-page-text-png'
             src='/webthemepng.png'
