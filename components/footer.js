@@ -53,7 +53,7 @@ const Footer = () => {
           rel='noopener noreferrer'
         ></a>
         <div className='new-footer-section-esummit-logo'>
-          <img src='Esummitlogofinal.png' alt='summitLogo' />
+          <img src='Esummitlogofinal.webp' alt='summitLogo' />
         </div>
         <div>
           <div className='new-footer-section-contact-container new-footer-section-contact-container-additional-margin0'>
@@ -76,7 +76,7 @@ const Footer = () => {
                 className='new-footer-section-contact-link'
               >
                 <img
-                  src='facebook.png'
+                  src='facebook.webp'
                   className='new-footer-section-contact-logo'
                   alt='facebook icon'
                 />
@@ -101,7 +101,7 @@ const Footer = () => {
                 rel='noopener noreferrer'
               >
                 <img
-                  src='Instagram.png'
+                  src='Instagram.webp'
                   className='new-footer-section-contact-logo'
                   alt=' instagram icon'
                 />
@@ -113,7 +113,7 @@ const Footer = () => {
                 rel='noopener noreferrer'
               >
                 <img
-                  src='LinkedIN.png'
+                  src='LinkedIN.webp'
                   className='new-footer-section-contact-logo'
                   alt='linkedin icon'
                 />
@@ -125,7 +125,7 @@ const Footer = () => {
                 rel='noopener noreferrer'
               >
                 <img
-                  src='Youtube.png'
+                  src='Youtube.webp'
                   className='new-footer-section-contact-logo'
                   alt='youtube icon'
                 />

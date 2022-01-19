@@ -3,7 +3,7 @@ const Speaker_card = ({ name, position, topic, date, time, image }) => {
     <div className='speaker-card'>
       <div className=' speaker-card-box1'>
         <img
-          src='Ellipse.png'
+          src='Ellipse.webp'
           className='speaker-card-box1-background'
           alt='speaker background image'
         />
