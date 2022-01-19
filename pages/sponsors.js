@@ -122,7 +122,7 @@ export default function Sponsors() {
     },
     {
       title: "Tricycle",
-      format: ".png",
+      format: ".PNG",
     },
   ];
   const LearningPartner  = [
