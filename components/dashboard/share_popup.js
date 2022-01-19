@@ -63,7 +63,7 @@ export const Share = ({ closeModal, desc, link }) => {
             <div className='Share_popup_single_media_div'>
               <FacebookShareButton url={link} quote={desc}>
                 <img
-                  src='/Facebook_img.png'
+                  src='/Facebook_img.webp'
                   className='new-footer-section-contact-logo'
                   alt=''
                 />
@@ -73,7 +73,7 @@ export const Share = ({ closeModal, desc, link }) => {
             <div className='Share_popup_single_media_div'>
               <LinkedinShareButton url={link} title={desc}>
                 <img
-                  src='/LinkedIn_img.png'
+                  src='/LinkedIn_img.webp'
                   className='new-footer-section-contact-logo'
                   alt=''
                 />
@@ -83,7 +83,7 @@ export const Share = ({ closeModal, desc, link }) => {
             <div className='Share_popup_single_media_div'>
               <TwitterShareButton url={link} title={desc}>
                 <img
-                  src='/Twitter_img.png'
+                  src='/Twitter_img.webp'
                   className='new-footer-section-contact-logo'
                   alt=''
                 />
@@ -108,7 +108,7 @@ export const Share = ({ closeModal, desc, link }) => {
             <div className='Share_popup_single_media_div'>
               <WhatsappShareButton url={link} title={desc}>
                 <img
-                  src='/Whatsapp_img.png'
+                  src='/Whatsapp_img.webp'
                   className='new-footer-section-contact-logo'
                   alt=''
                 />
@@ -118,7 +118,7 @@ export const Share = ({ closeModal, desc, link }) => {
             <div className='Share_popup_single_media_div'>
               <EmailShareButton url={link} title={desc}>
                 <img
-                  src='/Email_img.png'
+                  src='/Email_img.webp'
                   className='new-footer-section-contact-logo'
                   alt=''
                 />

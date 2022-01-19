@@ -26,7 +26,7 @@ export const HeaderMobile = () => {
       </div>
       <Link href='/' className='image' passHref>
         <img
-          src='/Esummitlogofinal.png'
+          src='/Esummitlogofinal.webp'
           alt='navbar-logo'
           className='navbar-logo-mobile'
         />

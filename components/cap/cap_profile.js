@@ -24,16 +24,16 @@ export const Profile = ({
         </div>
         <div className='profile-details-name2'>
           <div className='profile-white-text'>Campus Ambassador</div>
-          <img className='profile-circle' src='/circle.png' alt='' />
+          <img className='profile-circle' src='/circle.webp' alt='' />
           <div className='profile-white-text'> {college}</div>
         </div>
         <div className='profile-details-name3'>
           <div className='profile-white-text ca-profile-id'>ESummit ID</div>
           <div className='profile-golden-text'>{id}</div>
-          <img className='profile-circle' src='/circle.png' alt='' />
+          <img className='profile-circle' src='/circle.webp' alt='' />
           <div className='profile-white-text'>Invite ID</div>
           <div className='profile-golden-text'>{invite_id}</div>
-          <img className='profile-circle' src='/circle.png' alt='' />
+          <img className='profile-circle' src='/circle.webp' alt='' />
           <div className='profile-white-text'>Rank</div>
           <div className='profile-golden-text'>{rank}</div>
         </div>

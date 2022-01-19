@@ -28,7 +28,7 @@ export const TeamMemberCard = (member) => {
               target='_blank'
               rel='noreferrer'
             >
-              <img src='memberLinkedin.png' alt='linkedin icon' />
+              <img src='memberLinkedin.webp' alt='linkedin icon' />
             </a>
           </div>
         </div>

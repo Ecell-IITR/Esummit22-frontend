@@ -12,7 +12,7 @@ function EventCriteria({ detailsEvents }) {
               return (
                 <div className='event_rule_loop'>
                   <img
-                    src='/Ellipse91.png'
+                    src='/Ellipse91.webp'
                     className='Event_ellipse_rule'
                     alt=''
                   />{' '}

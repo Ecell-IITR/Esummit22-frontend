@@ -26,7 +26,7 @@ export const Events = ({
             "Events including but not limted to Productathon, Ideastorm, Sale-Able, Investors' Vista, Startup Expo, Design Case Challenge",
           images: [
             {
-              url: 'https://www.esummit.in/Esummit_logo.png',
+              url: 'https://www.esummit.in/Esummit_logo.webp',
               alt: 'logo',
               type: 'image/jpeg/png',
             },

@@ -5,7 +5,7 @@ export const VerifyEmailForTask = ({ type }) => {
     <div className='email-verify-main-container'>
       <div className='email-verify-subcontianer'>
         <div className='email-verify-imgcontainer'>
-          <img src='viewTask.png' alt='EmailVerification' />
+          <img src='viewTask.webp' alt='EmailVerification' />
         </div>
         <div className='email-verify-text'>
           Verify Your Email to View {type}.
