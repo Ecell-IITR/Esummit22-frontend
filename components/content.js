@@ -16,7 +16,7 @@ export const Content = ({ detailsEvents }) => {
         </a>
         <img
           className='content-main-elements-img'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
         <a
@@ -28,7 +28,7 @@ export const Content = ({ detailsEvents }) => {
         </a>
         <img
           className='content-main-elements-img-mobile'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
         <h3>
@@ -42,7 +42,7 @@ export const Content = ({ detailsEvents }) => {
         </h3>
         <img
           className='content-main-elements-img'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
         <a
@@ -54,7 +54,7 @@ export const Content = ({ detailsEvents }) => {
         </a>
         <img
           className='content-main-elements-img'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
         <a
@@ -66,7 +66,7 @@ export const Content = ({ detailsEvents }) => {
         </a>
         <img
           className='content-main-elements-img'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
         <a
@@ -78,7 +78,7 @@ export const Content = ({ detailsEvents }) => {
         </a>
         <img
           className='content-main-elements-img'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
         <a

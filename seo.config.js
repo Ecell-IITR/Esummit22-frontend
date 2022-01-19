@@ -9,7 +9,7 @@ const defaultSEOConfig = {
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    site_name: 'E-summit_22',
+    site_name: 'E-summit 22',
     title: 'E-summit 22',
     description: SITE_DESCRIPTION,
     images: [
@@ -26,7 +26,7 @@ const defaultSEOConfig = {
     {
       name: 'keywords',
       content:
-        "e summit, esummit, e-summit, ecell, entrepreneurship global summit, esummit iit, esummit iitr, esummit iit roorkee, e summit 2022 ,iitr startup ,iit roorkee ,entrepreneur fest ,conference ,conclave ,Startup expo ,Ideastorm ,Investors' Vista ,Saleable ,productathon ,speaker events",
+        "startup india ,e summit,e summit 22,e summit 2022, esummit, esummit 22 ,esummit 2022, e-summit, e-summit 22,e-summit 2022, ecell, entrepreneurship global summit, esummit iit, esummit iitr, esummit iit roorkee, e summit 2022 ,iitr startup ,iit roorkee ,entrepreneur fest ,conference ,conclave ,speaker events",
     },
     {name:"google-site-verification",
     content: "FQHsZrx4X62phcVvSuVBGSFfqsuv-iXAvShh7fh681A"

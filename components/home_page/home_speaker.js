@@ -1,7 +1,7 @@
 import Speaker_card from '../speaker-card';
 import React from 'react';
 
-export default function HomeSpeakers({ fourSpeakers, allSpeakers  }) {
+export default function HomeSpeakers({ fourSpeakers  }) {
   return (
     <div>
       <div className='bg-black text-white  Home_Speaker_page_container'>

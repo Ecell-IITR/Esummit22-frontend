@@ -18,15 +18,14 @@ import { EventJsonLd } from 'next-seo';
 
 export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
 
-  const [animate, doAnimate] = useState(false);
-  const ourRef = useRef(null);
+
   const { user } = useContext(AuthContext);
   const roleType = getUserRoleType();
 
   return (
     <div>
        <EventJsonLd
-      name="IIt Roorkee E-summit 22"
+      name="IIT Roorkee E-summit 22"
       startDate="2022-01-21T00:00:00.000Z"
       endDate="2022-01-23T00:00:00.000Z"
       location={{
@@ -110,7 +109,8 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
         <img src='/rightLine.svg' alt='rightLine' />
       </section>
       <hr />
-      <HomeSpeakers fourSpeakers={fourSpeakers} allSpeakers={allSpeakers} />
+      <div className='Seo-text'><p>E-Summit 22 is organised by E-Cell IIT Roorkee which is  one of the Largest Entrepreneurship Promoting college body in Asia.E-Summit has hosted some of the most prominent stalwarts of the industry over the years including but not limited to Startup expo, speaker events and much more </p></div>
+      <HomeSpeakers fourSpeakers={fourSpeakers}  />
       <Link href='/speakers' passHref>
         <div className='home-view-all-button'>
           <CustomGradientBtn text='View All' color='black' />
@@ -120,11 +120,15 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
       <PayNowPopup />
       {'  '}
       <HomeEvents allEvents={allEvents} />
+      <div className='Seo-text'><p>To find a way out of the darkness that has engulfed us over the past two years, the Indian youth needs to take on the mantle and show us the path to a new world where optimism, creativity, innovation, and ambition thrive. The new edition of Entrepreneurship Summit is a 3-day event that is being organized with the vision of providing a platform that stimulates discussion on ideas that possess the potential to turn the issues troubling us into an opportunity to revolutionize the world. E-Summit’22 will present rays of hope so dazzling that they penetrate even the darkness that veils our eyes. The summit is being organized from 21 Jan to 23 Jan in online mode.</p></div>
+      
       <Link href='/events' passHref>
         <div className='home-view-all-button'>
           <CustomGradientBtn text='View All' color='black' />
         </div>
       </Link>
+      <div className='Seo-text'><p>E-Summit 2022 organized by ecell IIT Roorkee will bring every one with lithora of opportunity.Esummit 2022 organized between 21 Jan to 23 Jan which promates the idea of startup india also giving opportunity of networkink funding and much more. Hope to see you in E-summit 22 organized by IIT Roorkee </p></div>
+      
       <Faq />
     </div>
   );
