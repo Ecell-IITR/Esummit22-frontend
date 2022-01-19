@@ -1,5 +1,5 @@
 import Speaker_card from '../speaker-card';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 export default function HomeSpeakers({ fourSpeakers, allSpeakers  }) {
   return (

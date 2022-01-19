@@ -73,7 +73,7 @@ export const Share = ({ closeModal, desc, link }) => {
             <div className='Share_popup_single_media_div'>
               <LinkedinShareButton url={link} title={desc}>
                 <img
-                  src='/LinkedIn_img.png'
+                  src='/LinkedIn_img.webp'
                   className='new-footer-section-contact-logo'
                   alt=''
                 />

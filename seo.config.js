@@ -14,7 +14,7 @@ const defaultSEOConfig = {
     description: SITE_DESCRIPTION,
     images: [
       {
-        url: 'https://www.esummit.in/fete-of-fortitude.png',
+        url: 'https://www.esummit.in/fete-of-fortitude.webp',
       },
     ],
   },

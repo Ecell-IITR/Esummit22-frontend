@@ -251,7 +251,7 @@ const Footer = () => {
               autoCapitalize='off'
               spellCheck='false'
               onChange={(event) => setMessage(event.target.value)}
-              //   onChange={this.onChange}
+     
               required
             />
           </div>

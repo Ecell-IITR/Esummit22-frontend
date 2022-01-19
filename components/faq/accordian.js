@@ -28,14 +28,14 @@ export default function Accordion(props) {
         type='button'
       >
         <div className='accordian-button'>
-          <p>{props.title}</p>
+          <h3>{props.title}</h3>
         </div>
         <div className={`accordian-image ${isShowing && 'accordian-image-up'}`}>
           <img src='/arrow.svg' />
         </div>
       </button>
 
-      <div
+      <h4
         className={isShowing ? 'accordian-answer' : 'accordian-answer-hidden'}
         style={{
           // display: isShowing ? "block" : "none",

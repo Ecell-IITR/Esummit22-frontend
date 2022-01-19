@@ -73,7 +73,7 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
           </Head>
           <Image
             className='landing-page-text-png'
-            src='/webthemepng.png'
+            src='/webthemepng.webp'
             alt='landing page text'
             width = "545%"
             height="120%"
