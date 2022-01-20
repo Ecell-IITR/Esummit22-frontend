@@ -64,7 +64,7 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
         <div className='landing rotate '></div>
         <img src='/leftLine.svg' alt='leftLine' className='mainPage_side_img' />
 
-        <div className='flex flex-col items-center text-center mx-auto'>
+        <div className='flex flex-col items-center text-center mx-auto' style={{marginTop:"42px"}}>
           <Head className='main-h1'>
           <h1 >E-summit 22 IIT Roorkee</h1>
           <link rel="alternate" href="https://www.esummit.in" hreflang="en-in" />
