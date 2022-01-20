@@ -131,6 +131,12 @@ export default function Sponsors() {
       format: ".jpeg",
     },
   ];
+  const CommunityPartner  = [
+    {
+      title: "Saday",
+      format: ".png",
+    },
+  ];
   return (
     <div>
 
@@ -228,7 +234,16 @@ export default function Sponsors() {
           />
         ))}
       </div>
-
+      <h1 className="sponsorspage-title">COMMUNITY PARTNERS</h1>
+      <div className="sponsorpage-container">
+        {CommunityPartner.map((c, i) => (
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
+        ))}
+      </div>
 
       <h1 className="sponsorspage-title">JUNIOR HACKATHON PARTNERS</h1>
       <div className="sponsorpage-container">
