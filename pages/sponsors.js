@@ -102,6 +102,14 @@ export default function Sponsors() {
       title: "Rosenfeld",
       format: ".png",
     },
+    {
+      title: "Wolfram Language",
+      format: ".jpg",
+    },
+    {
+      title: "D2C",
+      format: ".png",
+    },
   ];
   const CaseChallenge  = [
     {
@@ -134,6 +142,12 @@ export default function Sponsors() {
   const CommunityPartner  = [
     {
       title: "Saday",
+      format: ".png",
+    },
+  ];
+  const SavingsPartner  = [
+    {
+      title: "GrabOn",
       format: ".png",
     },
   ];
@@ -214,6 +228,17 @@ export default function Sponsors() {
           />
         ))}
       </div>
+      <h1 className="sponsorspage-title">SAVINGS PARTNERS</h1>
+      <div className="sponsorpage-container">
+        {SavingsPartner.map((c, i) => (
+          <Sponsor
+            key={i}
+            sponsorsTitle={c.title}
+            format={c.format}
+          />
+        ))}
+      </div>
+
       <h1 className="sponsorspage-title">SPONSOR PARTNERS</h1>
       <div className="sponsorpage-container">
         {SponsorPartner.map((c, i) => (
