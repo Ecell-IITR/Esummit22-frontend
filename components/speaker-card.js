@@ -3,18 +3,18 @@ const Speaker_card = ({ name, position, topic, date, time, image }) => {
     <div className='speaker-card'>
       <div className=' speaker-card-box1'>
         <img
-          src='Ellipse.png'
+          src='Ellipse.webp'
           className='speaker-card-box1-background'
           alt='speaker background image'
         />
         <img
           src={image}
           className='speaker-card-box1-photo'
-          alt={`${name} speaker image`}
+          alt={`e-summit speaker ${name}  image`}
         />
       </div>
       <div className='speaker-card-box'>
-        <div className='speaker-card-box-name'>{name}</div>
+        <h3 className='speaker-card-box-name'>{name}</h3>
         <div className='speaker-card-box-position'>{position}</div>
         <div className='speaker-card-description-hidden'>
           <div>Session Type : {topic != 'null' ? topic : 'TBD'}</div>

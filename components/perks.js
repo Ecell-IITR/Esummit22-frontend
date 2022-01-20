@@ -11,7 +11,7 @@ export const Perk = ({ detailsEvents }) => {
                 <div className='title_div'>
                   <h1>{det.heading}</h1>
 
-                  <img src='/border_perks.png' alt='no image perks icon'></img>
+                  <img src='/border_perks.webp' alt='no image perks icon'></img>
                 </div>
                 <div className='content_div'>
                   <div

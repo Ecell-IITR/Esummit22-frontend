@@ -7,7 +7,7 @@ function Eventrules({ detailsEvents }) {
         {detailsEvents[0].event_rules.map((det) => {
           return (
             <div className='event_rule_loop'>
-              <img src='/Ellipse91.png' className='Event_ellipse_rule' alt='' />{' '}
+              <img src='/Ellipse91.webp' className='Event_ellipse_rule' alt='' />{' '}
               <div className='Event_rule_text'> {det.rule}</div>
             </div>
           );

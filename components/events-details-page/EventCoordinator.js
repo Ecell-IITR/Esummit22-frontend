@@ -14,7 +14,7 @@ export const EventCoordinator = ({ detailsEvents }) => {
       })}
       <div className='coordinator_image'>
         <div>
-          <img src='/Vector_coordinator.png' />
+          <img src='/Vector_coordinator.webp' />
         </div>
         <div className='coordinator_tagline'>
           <div className='coordinator_name'>{detailsEvents[0].event_name}</div>

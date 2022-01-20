@@ -27,7 +27,7 @@ export const Counter = () => {
             </CountUp>
             <img
               className='landing-counter-svg'
-              src='vector.png'
+              src='vector.webp'
               alt='landing counter image'
             />
             <span className='landing-counter-text'>{tab.text}</span>

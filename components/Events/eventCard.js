@@ -8,9 +8,9 @@ export const EventCard = ({
 }) => {
   return (
     <div className='event-container'>
-      <img src={background_image} className='event-card-image' alt='event' />
+      <img src={background_image} className='event-card-image' alt={`e-summit's ${event_name} image `} />
       <div className='event-hovered'>
-        <div className='event-card-name'>{event_name}</div>
+        <h3 className='event-card-name'>{event_name}</h3>
         <div className='event-card-para'>
           <div
             className='event-card-para-des'

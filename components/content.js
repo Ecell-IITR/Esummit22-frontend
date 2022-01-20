@@ -16,7 +16,7 @@ export const Content = ({ detailsEvents }) => {
         </a>
         <img
           className='content-main-elements-img'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
         <a
@@ -28,9 +28,10 @@ export const Content = ({ detailsEvents }) => {
         </a>
         <img
           className='content-main-elements-img-mobile'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
+        <h3>
         <a
           className='content-main-elements-links'
           href='#perks'
@@ -38,9 +39,10 @@ export const Content = ({ detailsEvents }) => {
         >
           PERKS
         </a>
+        </h3>
         <img
           className='content-main-elements-img'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
         <a
@@ -52,7 +54,7 @@ export const Content = ({ detailsEvents }) => {
         </a>
         <img
           className='content-main-elements-img'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
         <a
@@ -64,7 +66,7 @@ export const Content = ({ detailsEvents }) => {
         </a>
         <img
           className='content-main-elements-img'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
         <a
@@ -76,7 +78,7 @@ export const Content = ({ detailsEvents }) => {
         </a>
         <img
           className='content-main-elements-img'
-          src='/circle.png'
+          src='/circle.webp'
           alt='circle image'
         />
         <a
