@@ -32,7 +32,7 @@ export const PayNowPopup = ({ show, setshow }) => {
                 >
                   <input
                     onChange={() => {
-                      setValue('https://rzp.io/l/kOZcOsguQ6');
+                      setValue('https://rzp.io/l/RJCCsvyZ9W');
                     }}
                     type='radio'
                     id='college-student'
