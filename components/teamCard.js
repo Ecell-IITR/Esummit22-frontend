@@ -18,8 +18,9 @@ export const TeamMemberCard = (member) => {
             <a href={member.twitter} target='_blank' rel='noreferrer'>
               <img
                 className='twitter'
-                src='memberTwitter.png'
+                src='Twitter.png'
                 alt='twitter icon'
+                
               />
             </a>
             <a
