@@ -120,7 +120,7 @@ export default function Sponsors() {
   const JuniorHackathonPartner  = [
     {
       title: "Codingal",
-      format: ".png",
+      format: ".jpeg",
     },
   ];
   const ServicePartner  = [
