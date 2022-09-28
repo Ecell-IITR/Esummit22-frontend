@@ -22,7 +22,6 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const location = router.pathname;
   logPageView(location);
-
   return (
     <AuthContext.Provider value={{ user: isAuthenticated() }}>
       <MobileProvider>
@@ -43,7 +42,7 @@ function MyApp({ Component, pageProps }) {
         </Script>
         <Header />
         <Component {...pageProps} />
-        <PayNowCard />
+        {router.pathname=="/form" ? <></>: <PayNowCard />}
       </MobileProvider>
     </AuthContext.Provider>
   );
