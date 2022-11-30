@@ -1,30 +1,32 @@
 import React, { useState, useRef, useContext } from 'react';
-import Counter from '../components/section/counter';
-import CustomGradientBtn from '../components/customGradientBtn';
-import Link from 'next/link';
-import HomeSpeakers from '../components/home_page/home_speaker';
-import HomeEvents from '../components/home_page/home_events';
-import Faq from '../components/faq/faq';
+// import Counter from '../components/section/counter';
+// import CustomGradientBtn from '../components/customGradientBtn';
+// import Link from 'next/link';
+// import HomeSpeakers from '../components/home_page/home_speaker';
+// import HomeEvents from '../components/home_page/home_events';
+// import Faq from '../components/faq/faq';
 import { ALL_EVENTS_API, SPEAKERS_API } from '../utils/APIs';
 import FetchApi from '../utils/fetchAPI';
 import { getUserRoleType } from '../utils';
 import { AuthContext } from '../utils/auth-context';
-import PayNowPopup from '../components/payNowPopup';
-import Image from 'next/image';
 
-import Head from 'next/head';
-import { EventJsonLd } from 'next-seo';
+// import PayNowPopup from '../components/payNowPopup';
+// import Image from 'next/image';
+
+// import Head from 'next/head';
+// import { EventJsonLd } from 'next-seo';
 
 
 export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
 
 
-  const { user } = useContext(AuthContext);
-  const roleType = getUserRoleType();
+  // const { user } = useContext(AuthContext);
+  // const roleType = getUserRoleType();
 
   return (
-    <div>
-       <EventJsonLd
+    <div style={{width:"100%", display:"flex",justifyContent: "center"}}>
+      <div style={{width:"40rem"}} ><img src='/COM.png' alt='coming soon' /></div>
+       {/* <EventJsonLd
       name="IIT Roorkee E-summit 22"
       startDate="2022-01-21T00:00:00.000Z"
       endDate="2022-01-23T00:00:00.000Z"
@@ -82,23 +84,23 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
             <Link href='/register' passHref>
               <div className='landing-register-button'>
                 {/* <CustomGradientBtn text="Register Now" color="black" /> */}
-                Register Now
+                {/* Register Now
               </div>
             </Link>
           ) : (
             <>
               {roleType === 'CA' ? (
                 <Link href='/cap/tasks' passHref>
-                  <div className='landing-register-button'>
+                  <div className='landing-register-button'> */}
                     {/* <CustomGradientBtn text="Register Now" color="black" /> */}
-                    Dashboard
+                    {/* Dashboard
                   </div>
                 </Link>
               ) : (
                 <Link href='/nonca/events' passHref>
-                  <div className='landing-register-button'>
+                  <div className='landing-register-button'> */}
                     {/* <CustomGradientBtn text="Register Now" color="black" /> */}
-                    Dashboard
+                    {/* Dashboard
                   </div>
                 </Link>
               )}
@@ -129,7 +131,7 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
       </Link>
       <div className='Seo-text'><p>E-Summit 2022 organized by ecell IIT Roorkee will bring every one with lithora of opportunity.Esummit 2022 organized between 21 Jan to 23 Jan which promates the idea of startup india also giving opportunity of networkink funding and much more. Hope to see you in E-summit 22 organized by IIT Roorkee </p></div>
       
-      <Faq />
+      <Faq />  */}
     </div>
   );
 }
