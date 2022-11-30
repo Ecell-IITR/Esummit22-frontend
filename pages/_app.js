@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }) {
         </Script>
         <Header />
         <Component {...pageProps} />
-        {router.pathname=="/form" ? <></>: <PayNowCard />}
+        {router.pathname=="/form" ? <></>:<> </>}
       </MobileProvider>
     </AuthContext.Provider>
   );
