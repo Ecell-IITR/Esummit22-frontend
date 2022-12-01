@@ -148,8 +148,7 @@ const Footer = () => {
               PHONE
             </h2>
             <div className='new-footer-section-contact-subheading'>
-              Sarvesh: <br /> <p>+91 96236 32358 </p> <br /> Pratuysh: <br />{' '}
-              <p> +91 97990 42645 </p>
+              Sarvesh: <br /> <p>+91 96236 32358 </p> <br /> Pratuysh: <br /><p> +91 97990 42645 </p> <br /> Shashank : <br /><p> +91 91021 00531 </p>
             </div>
           </div>
           <div className='new-footer-section-contact-container new-footer-section-contact-container-additional-margin1'>

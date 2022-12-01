@@ -9,6 +9,7 @@ import { ALL_EVENTS_API, SPEAKERS_API } from '../utils/APIs';
 import FetchApi from '../utils/fetchAPI';
 import { getUserRoleType } from '../utils';
 import { AuthContext } from '../utils/auth-context';
+import Footer from '../components/footer';
 
 // import PayNowPopup from '../components/payNowPopup';
 // import Image from 'next/image';
@@ -23,7 +24,7 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
   // const { user } = useContext(AuthContext);
   // const roleType = getUserRoleType();
 
-  return (
+  return (<>
     <div style={{width:"100%", display:"flex",justifyContent: "center"}}>
       <div style={{width:"40rem"}} ><img src='/COM.png' alt='coming soon' /></div>
        {/* <EventJsonLd
@@ -132,7 +133,8 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
       <div className='Seo-text'><p>E-Summit 2022 organized by ecell IIT Roorkee will bring every one with lithora of opportunity.Esummit 2022 organized between 21 Jan to 23 Jan which promates the idea of startup india also giving opportunity of networkink funding and much more. Hope to see you in E-summit 22 organized by IIT Roorkee </p></div>
       
       <Faq />  */}
-    </div>
+      
+    </div><Footer /></>
   );
 }
 
