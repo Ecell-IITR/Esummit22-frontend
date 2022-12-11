@@ -130,9 +130,10 @@ export default function Home({ allEvents, allSpeakers,fourSpeakers }) {
           <CustomGradientBtn text='View All' color='black' />
         </div>
       </Link>
-      <div className='Seo-text'><p>E-Summit 2022 organized by ecell IIT Roorkee will bring every one with lithora of opportunity.Esummit 2022 organized between 21 Jan to 23 Jan which promates the idea of startup india also giving opportunity of networkink funding and much more. Hope to see you in E-summit 22 organized by IIT Roorkee </p></div>
       
       <Faq />  */}
+      <div className='Seo-text'><p>E-Summit 2022 organized by ecell IIT Roorkee will bring every one with lithora of opportunity.Esummit 2022 organized between 21 Jan to 23 Jan which promates the idea of startup india also giving opportunity of networkink funding and much more. Hope to see you in E-summit 22 organized by IIT Roorkee </p></div>
+      
       
     </div><Footer /></>
   );
