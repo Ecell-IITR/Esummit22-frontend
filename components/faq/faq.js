@@ -65,7 +65,7 @@ function Faq() {
         >
           FAQs
         </div>
-        {faqs.map((faq, id) => (
+        {faqs?.map((faq, id) => (
           <Accordion title={faq.question} content={faq.answer} key={id} />
         ))}
       </div>

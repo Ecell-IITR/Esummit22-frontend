@@ -36,7 +36,7 @@ export const Leaderboard = ({ allCompetitors }) => {
           </div>
         </div>
       </div>
-      {allCompetitors.map((leaderboard_entry, id) => (
+      {allCompetitors?.map((leaderboard_entry, id) => (
         <LeaderboardEntry
           key={id}
           rank={id + 1}

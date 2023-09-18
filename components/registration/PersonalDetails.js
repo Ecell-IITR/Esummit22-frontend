@@ -274,39 +274,39 @@ export class PersonalDetails extends Component {
     this.setState({ [name]: value });
   };
   getstate = () => {
-    return state_option.map((state) => ({
+    return state_option?.map((state) => ({
       value: state.name,
       label: state.name,
     }));
   };
   getGender = () => {
-    return gender_option.map((gender) => ({
+    return gender_option?.map((gender) => ({
       value: gender.value,
       label: gender.name,
     }));
   };
   getCities = (state) => {
     let cities = citys[state];
-    return cities.map((city) => ({ value: city, label: city }));
+    return cities?.map((city) => ({ value: city, label: city }));
     // return cities
   };
   getProfileType = () => {
-    return role_type_option.map((profile) => ({
+    return role_type_option?.map((profile) => ({
       value: profile.value,
       label: profile.name,
     }));
   };
   getYear = () => {
-    return year_option.map((year) => ({ value: year.name, label: year.name }));
+    return year_option?.map((year) => ({ value: year.name, label: year.name }));
   };
   getProgrammes = () => {
-    return programme_option.map((programme) => ({
+    return programme_option?.map((programme) => ({
       value: programme.name,
       label: programme.name,
     }));
   };
   getCollege = () => {
-    return college_option.map((college) => ({
+    return college_option?.map((college) => ({
       value: college.name,
       label: college.name,
     }));

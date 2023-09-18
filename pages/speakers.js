@@ -13,7 +13,7 @@ export default function Speakers({ speakers }) {
           <link rel="alternate" href="https://www.esummit.in/speakers" hreflang="en-in" /></Head>
         <div className='Speaker_page_title'>Speakers</div>
         <div className='Speaker_Card_Container'>
-          {speakers.map((det, id) => {
+          {speakers?.map((det, id) => {
             return (
               <div className='Speaker_Card_Loop' key={id}>
                 <Speaker_card

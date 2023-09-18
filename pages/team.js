@@ -37,7 +37,7 @@ export const team = ({ teamMembers }) => {
           </Head>
       <h2 className='esummit-team'>E-SUMMIT TEAM</h2>
       <div className='team-members'>
-        {teamMembers.map((member) => (
+        {teamMembers?.map((member) => (
           <TeamMemberCard
             key={member.id}
             post={member.post}

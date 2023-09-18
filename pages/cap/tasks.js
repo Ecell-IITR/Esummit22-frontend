@@ -66,7 +66,7 @@ export default function Task() {
           <div className='task_heading'>Completed Tasks</div>{' '}
           <div className='completed_task_cap_underline'></div>
           <div className='completed-task-flex'>
-            {completed_task.map((det, id) => {
+            {completed_task?.map((det, id) => {
               return (
                 <div key={id}>
                   <CompletedTask

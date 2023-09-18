@@ -15,7 +15,7 @@ export const Counter = () => {
     <>
       <hr />
       <div className='landing-counter-container py-24'>
-        {countertabs.map((tab) => (
+        {countertabs?.map((tab) => (
           // eslint-disable-next-line react/jsx-key
           <div className='landing-counter-subcontainer'>
             <CountUp end={tab.number} suffix={tab.suffix} duration={1.5}>

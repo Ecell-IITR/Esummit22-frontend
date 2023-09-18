@@ -113,7 +113,7 @@ export default function EventsDetails({
         <div className='details_container' id='sponsors'>
           <div className='details_about'>SPONSORS</div>
           <div className='details_sponsors'>
-            {detailsEvents[0].event_partners.map((det, id) => {
+            {detailsEvents[0].event_partners?.map((det, id) => {
               return (
                 <EventSponsor img={det.image} title={det.title} key={id} />
               );

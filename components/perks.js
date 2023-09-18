@@ -3,7 +3,7 @@ import React from 'react';
 export const Perk = ({ detailsEvents }) => {
   return (
     <>
-      {detailsEvents[0].event_perks.map((det, id) => {
+      {detailsEvents[0].event_perks?.map((det, id) => {
         return (
           <>
             <div className='perks-container-behind'>

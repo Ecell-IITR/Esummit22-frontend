@@ -160,7 +160,7 @@ export default function Sponsors() {
 
       <h1 className="sponsorspage-title">TITLE SPONSORS</h1>
       <div className="sponsorpage-container">
-        {TitleSponsors.map((d, i) => (
+        {TitleSponsors?.map((d, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={d.title}
@@ -170,7 +170,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">CO-ORGANISER</h1>
       <div className="sponsorpage-container">
-        {AssociateSponsors.map((d, i) => (
+        {AssociateSponsors?.map((d, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={d.title}
@@ -180,7 +180,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">UNDER PATRONAGE OF</h1>
       <div className="sponsorpage-container">
-        {UnderPertro.map((d, i) => (
+        {UnderPertro?.map((d, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={d.title}
@@ -190,7 +190,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">PRODUCTATHON PARTNERS</h1>
       <div className="sponsorpage-container">
-        {Poductathon.map((c, i) => (
+        {Poductathon?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -200,7 +200,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">CASE CHALLENGE PARTNERS</h1>
       <div className="sponsorpage-container">
-        {CaseChallenge.map((c, i) => (
+        {CaseChallenge?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -210,7 +210,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">KNOWLEDGE PARTNERS</h1>
       <div className="sponsorpage-container">
-        {KnowledgePartner.map((c, i) => (
+        {KnowledgePartner?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -220,7 +220,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">STREAMING PARTNERS</h1>
       <div className="sponsorpage-container">
-        {StreamingPartner.map((c, i) => (
+        {StreamingPartner?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -230,7 +230,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">SAVINGS PARTNERS</h1>
       <div className="sponsorpage-container">
-        {SavingsPartner.map((c, i) => (
+        {SavingsPartner?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -241,7 +241,7 @@ export default function Sponsors() {
 
       <h1 className="sponsorspage-title">SPONSOR PARTNERS</h1>
       <div className="sponsorpage-container">
-        {SponsorPartner.map((c, i) => (
+        {SponsorPartner?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -251,7 +251,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">LEGAL AND CONSULTING PARTNERS</h1>
       <div className="sponsorpage-container">
-        {LegaLconsultingPartner.map((c, i) => (
+        {LegaLconsultingPartner?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -261,7 +261,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">COMMUNITY PARTNERS</h1>
       <div className="sponsorpage-container">
-        {CommunityPartner.map((c, i) => (
+        {CommunityPartner?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -272,7 +272,7 @@ export default function Sponsors() {
 
       <h1 className="sponsorspage-title">JUNIOR HACKATHON PARTNERS</h1>
       <div className="sponsorpage-container">
-        {JuniorHackathonPartner.map((c, i) => (
+        {JuniorHackathonPartner?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -282,7 +282,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">SERVICES PARTNERS</h1>
       <div className="sponsorpage-container">
-        {ServicePartner.map((c, i) => (
+        {ServicePartner?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -292,7 +292,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">LEARNING PARTNERS</h1>
       <div className="sponsorpage-container">
-        {LearningPartner.map((c, i) => (
+        {LearningPartner?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -302,7 +302,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">TRAVELLING PARTNERS</h1>
       <div className="sponsorpage-container">
-        {TravellingPartner.map((c, i) => (
+        {TravellingPartner?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -312,7 +312,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">CERTIFICATE PARTNERS</h1>
       <div className="sponsorpage-container">
-        {CertificatePartner.map((c, i) => (
+        {CertificatePartner?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}
@@ -322,7 +322,7 @@ export default function Sponsors() {
       </div>
       <h1 className="sponsorspage-title">MEDIA PARTNERS</h1>
       <div className="sponsorpage-container">
-        {MediaPartners.map((c, i) => (
+        {MediaPartners?.map((c, i) => (
           <Sponsor
             key={i}
             sponsorsTitle={c.title}

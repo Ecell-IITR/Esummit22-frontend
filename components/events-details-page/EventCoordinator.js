@@ -3,7 +3,7 @@ import React from 'react';
 export const EventCoordinator = ({ detailsEvents }) => {
   return (
     <div className='coordinator_main'>
-      {detailsEvents[0].events_coordinators.map((det) => {
+      {detailsEvents[0].events_coordinators?.map((det) => {
         return (
           <div className='coordinator_details'>
             <div className='coordinator_name'>{det.name}</div>

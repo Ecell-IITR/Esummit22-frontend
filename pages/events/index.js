@@ -45,7 +45,7 @@ export const Events = ({
         <h1>EVENTS</h1>
       </div>
       <div className='esummit-events-page'>
-        {CompetitiveEvents.map((event) => (
+        {CompetitiveEvents?.map((event) => (
           <EventCard
             key={event.id}
             event_name={event.event_name}

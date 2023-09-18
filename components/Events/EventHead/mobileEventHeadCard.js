@@ -2,7 +2,7 @@ import TransparentGradientButton from '../../transparentGradientButton';
 export const MobileEventHead = ({ detailsEvents, CompetitiveEvents }) => {
   const getPreviousEventLink = () => {
     let previousLink = '';
-    CompetitiveEvents.map((event, index) => {
+    CompetitiveEvents?.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === 0) {
           previousLink =
@@ -16,7 +16,7 @@ export const MobileEventHead = ({ detailsEvents, CompetitiveEvents }) => {
   };
   const getPreviousEventName = () => {
     let previousName = '';
-    CompetitiveEvents.map((event, index) => {
+    CompetitiveEvents?.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === 0) {
           previousName =
@@ -31,7 +31,7 @@ export const MobileEventHead = ({ detailsEvents, CompetitiveEvents }) => {
 
   const getNextEventLink = () => {
     let NextLink = '';
-    CompetitiveEvents.map((event, index) => {
+    CompetitiveEvents?.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === CompetitiveEvents.length - 1) {
           NextLink = CompetitiveEvents[0].end_point;
@@ -45,7 +45,7 @@ export const MobileEventHead = ({ detailsEvents, CompetitiveEvents }) => {
 
   const getNextEventName = () => {
     let NextName = '';
-    CompetitiveEvents.map((event, index) => {
+    CompetitiveEvents?.map((event, index) => {
       if (event.id === detailsEvents[0].id) {
         if (index === CompetitiveEvents.length - 1) {
           NextName = CompetitiveEvents[0].event_name;
